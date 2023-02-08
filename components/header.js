@@ -8,7 +8,7 @@ const Header =()=> {
     <>
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 header-c" >
       <ul class="nav col-12 col-md-auto mb-2 justify-content-start mb-md-0 nav-c ">
-        <li><Link href="#" class="nav-link px-2 ">Products</Link></li>
+        <li><Link class="nav-link px-2 "data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Products</Link></li>
         <li><Link href="#" class="nav-link px-2 ">Learning Center</Link></li>
         <li><Link href="#" class="nav-link px-2 ">Pricing</Link></li>
 
