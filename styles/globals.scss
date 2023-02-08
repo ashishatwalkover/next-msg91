@@ -15,8 +15,35 @@ body,html{
         font-size: 20px;
     }
 }
+.notification{
+    background-color:#EDEEEE;
+    height: 40px;
+    padding: 0 120px;
+    div{
+        // font-size: 16px;
+        button{
+            font-size: 13px;
+            padding: 0 6px;
+            margin-right: 10px;
+        }
+        div{
+            margin-left: 40px;
+            
+        }
+        .n-ico{
+            margin-right: 10px;
+
+
+        }
+        
+    }
+}
 h1{
     font-family: 'charterbold', 'Times New Roman', Times, serif;
+}
+p{
+    margin: 0;
+    padding: 0;
 }
 .heading{
     font-size: 72px;
