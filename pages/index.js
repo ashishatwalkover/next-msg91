@@ -14,14 +14,9 @@ const IndexPage =()=> {
       <Notification/>
       <Header/>
       <Home/>
-      <ProductMenu/>
-      
-
-      
-      
+      <ProductMenu/>     
       <Footer/>
-    </div>
-    
+    </div>    
   )
 };
 export default IndexPage;
