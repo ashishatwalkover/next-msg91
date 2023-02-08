@@ -45,7 +45,10 @@ p {
   div {
     // font-size: 16px;
     .badge {
-      // background-color: green;
+      background-color: rgb(2, 210, 2);
+      font-weight: 500;
+      margin-right: 10px;
+
     }
     div {
       margin-left: 40px;
@@ -56,15 +59,17 @@ p {
   }
 }
 // Productmenu
-.product-menu {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  left: 0px;
-  top: 40px;
-  background: rgba(0, 0, 0, 0.15);
-  flex: none;
-  order: 13;
-  flex-grow: 0;
-  z-index: 13;
+
+// offcanvas
+#offcanvas{
+  width: 50%;
+  ul{
+    position: relative;
+    top:65px;
+    left: 120px;
+  }
+}
+.z-i-1046{
+  position: relative;
+  z-index: 1046;
 }

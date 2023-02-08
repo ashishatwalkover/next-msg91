@@ -6,9 +6,9 @@ import Image from "next/image";
 const Header =()=> {
   return (
     <>
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 header-c" >
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-start mb-md-0 nav-c ">
-        <li><Link class="nav-link px-2 "data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Products</Link></li>
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 header-c" tabindex="-1" >
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-start mb-md-0 nav-c z-i-1046">
+        <li><Link class="nav-link px-2 "data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas">Products</Link></li>
         <li><Link href="#" class="nav-link px-2 ">Learning Center</Link></li>
         <li><Link href="#" class="nav-link px-2 ">Pricing</Link></li>
 
