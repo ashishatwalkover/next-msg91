@@ -6,10 +6,16 @@ import Image from "next/image";
 
 const IndexPage =()=> {
   return (
-    <div className="body">
+    <div>
       <HeadTag/>
       <Header/>
-      <h1 className="styles.h1">Red</h1>
+      
+      <div class="text-center py-5">
+        <h1 class="fw-bold heading">Cloud communication platform</h1>
+        <p class="sub-heading">Customer conversation, segmentation, verification, notification. The All-In-One CPaaS Platform.</p>
+        <button class="btn btn-primary btn-lg" type="button">Get started for Free</button>
+      </div>
+
     </div>
   )
 };
