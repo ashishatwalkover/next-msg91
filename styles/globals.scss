@@ -1,16 +1,10 @@
-$black : black;
-*{
-    margin: 0;
-    padding: 0;
-}
+@import 'var';
+@import 'home';
 .header-c{
     padding: 120px;
 }
 .nav-c{
-    width: 514px;
-    a{
-        color: $black;
-    }
+    width: 514px;    
     li{
         padding: 0 40px 0 0;
         font-size: 20px;
