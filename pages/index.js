@@ -1,42 +1,19 @@
+
 import HeadTag from "@/components/head";
-import Footer from "@/components/footer";
-import Head from "next/head";
-import React from "react";
+import Header from "@/components/header";
+import Link from "next/link";
+import Image from "next/image";
+
 const IndexPage =()=> {
   return (
     <>
-    <Footer/>
+      <HeadTag/>
+      <Header/>
+      
+    
     </>
+
+
   )
 };
 export default IndexPage;
-
-// import HeadTag from "./head";
-
-// const style = {
-//     headerContainer: {
-// color: "#d3d3d3", fontSize:"24px"
-//     }
-// }
-
-// const Header = () => {
-//     return (
-//         <>
-//            <div style={style.headerContainer}>
-//             Hello
-//            </div>
-//         </>
-//     )
-// }
-
-// const Header = () => {
-//     return (
-//         <>
-//            <div style={{color: "blue", fontSize:"24px", hover: {color:"red"}}}>
-//             Hello
-//            </div>
-//         </>
-//     )
-// }
-
-// export default Header;
