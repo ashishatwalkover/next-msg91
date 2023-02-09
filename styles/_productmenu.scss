@@ -1,0 +1,52 @@
+#offcanvas {
+  width: 910px;
+  padding-top: 95px;
+}
+.z-i-1046 {
+  position: relative;
+  z-index: 1046;
+}
+// Productmenu
+.product-menu {
+  height: 668px;
+  width: 668px;
+  // width: 100%;
+  .pm {
+    width: 50%;
+    height: 100%;
+    margin-top: 40px;
+   
+  }
+  .pm-left {
+    // background-color: rgb(107, 129, 148);
+  }
+  .head-p {
+    text-transform: uppercase;
+  }
+  .pm-right {
+    // background-color: rgb(54, 147, 228);
+  }
+}
+.product-cont-cont{
+
+    gap: 24px;
+}
+.product-cont{
+    width: 100%;
+    padding: 0px;
+}
+.product-dis{
+    margin-left: 16px;
+    h4{
+        font-size: 24px;
+    }
+
+}
+
+.head-p {
+  text-transform: uppercase;
+}
+.sub-p {
+  text-transform: none;
+  font-size: 14px;
+}
