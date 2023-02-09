@@ -10,7 +10,7 @@
 .product-menu {
   height: 668px;
   width: 668px;
-  // width: 100%;
+  gap: 80px;
   .pm {
     width: 50%;
     height: 100%;
@@ -29,7 +29,7 @@
 }
 .product-cont-cont{
 
-    gap: 24px;
+    gap: 14px;
 }
 .product-cont{
     width: 100%;
@@ -42,11 +42,16 @@
     }
 
 }
-
+.utilities{
+    margin-top: 40px;
+}
 .head-p {
   text-transform: uppercase;
 }
 .sub-p {
   text-transform: none;
   font-size: 14px;
+}
+.applications{
+  gap:40px;
 }

@@ -9,7 +9,7 @@ const ProductsMenu = () => {
         id="offcanvas"
         aria-labelledby="offcanvas"
       >
-        <div className=" product-menu d-flex p-y-120">
+        <div className=" product-menu d-flex  m-y-120">
           <div className="pm-left pm ">
             <div className="product-cont-cont d-flex flex-column">
               <p className="head-p">applications</p>
@@ -42,9 +42,82 @@ const ProductsMenu = () => {
                 </div>
               </div>
             </div>
-            <div></div>
+            <div className="product-cont-cont d-flex flex-column utilities">
+              <p className="head-p ">Utiliteis</p>
+              <div className="d-flex align-items-center product-cont">
+                <Image src="../img/short URL.svg" width={40} height={40} />
+                <div className="product-dis">
+                  <h4 cl>URL Shrtnr</h4>
+                  <p className="sub-p">Customize and track URL's</p>
+                </div>
+              </div>
+              <div className="d-flex align-items-center product-cont">
+                <Image src="../img/KB.svg" width={40} height={40} />
+                <div className="product-dis">
+                  <h4 cl>Knowladgebase</h4>
+                  <p className="sub-p">Manage help Doc and guidess</p>
+                </div>
+              </div>
+              <div className="d-flex align-items-center product-cont">
+                <Image src="../img/Files.svg" width={40} height={40} />
+                <div className="product-dis">
+                  <h4 cl>File Hosting</h4>
+                  <p className="sub-p">Manage your files on cloud</p>
+                </div>
+              </div>
+             
+            </div>
+   
           </div>
-          <div className="pm-right pm"></div>
+          <div className="pm-right pm">
+          <div className="product-cont-cont d-flex flex-column applications">
+              <p className="head-p">channels</p>
+              <div className="d-flex align-items-center product-cont">
+                <Image src="../img/sms.svg" width={30} height={30} />
+                <div className="product-dis">
+                  <h4 >SMS</h4>
+                </div>
+              </div>
+              <div className="d-flex align-items-center product-cont">
+                <Image src="../img/Email.svg" width={30} height={30} />
+                <div className="product-dis">
+                  <h4 >Email</h4>
+                </div>
+              </div>
+              <div className="d-flex align-items-center product-cont">
+                <Image src="../img/voice.svg" width={30} height={30} />
+                <div className="product-dis">
+                  <h4 >Voice</h4>
+                </div>
+              </div>
+              <div className="d-flex align-items-center product-cont">
+                <Image src="../img/whatsapp.svg" width={30} height={30} />
+                <div className="product-dis">
+                  <h4 >WhatsApp</h4>
+                </div>
+              </div>
+              <div className="d-flex align-items-center product-cont">
+                <Image src="../img/Telegram.svg" width={30} height={30} />
+                <div className="product-dis">
+                  <h4 >Telegram</h4>
+                </div>
+              </div>
+              <div className="d-flex align-items-center product-cont">
+                <Image src="../img/rcs.svg" width={30} height={30} />
+                <div className="product-dis">
+                  <h4 >RCS</h4>
+                </div>
+              </div>
+              <div className="d-flex align-items-center product-cont">
+                <Image src="../img/push-notification.svg" width={30} height={30} />
+                <div className="product-dis">
+                  <h4 >Push Notification</h4>
+                </div>
+              </div>
+            </div>
+      
+
+          </div>
         </div>
         <div></div>
       </div>
