@@ -8,6 +8,7 @@ h1 {
 p {
   margin: 0;
   padding: 0;
+  font-size: 24px;
 }
 .heading {
   font-size: 72px;
@@ -56,6 +57,10 @@ p {
 h1,.charterbold{
     font-family: 'charterbold', 'Times New Roman', Times, serif;
 }
+h2,.charterregular{
+    font-family: 'charterregular', 'Times New Roman', Times, serif;
+}
+// Productmenu
 
 
 
@@ -75,4 +80,8 @@ h1,.charterbold{
 
 .m-y-120{
   margin: 0 120px;
+}
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
