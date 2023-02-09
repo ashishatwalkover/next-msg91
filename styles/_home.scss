@@ -14,20 +14,46 @@
   .spacer{
     height: 400px;
   }
-  .footer{
-    background: #1157A6;
+  .pro-footer{
+    background: rgba(17, 87, 166, 0.9);
     padding: 20px;
+    &.alt{
+      background: #1157A6;
+    }
+    .pro-text{
+      color: #fff;
+      margin-bottom: 16px;
+    }
     .icon{
       width: 40px;
       height: 40px;
     }
-    .button{
+    .pro-btn{
       display: flex;
       align-items: center;
+      padding: 8px 20px;
+      background: #fff;
+      border-radius: var(--radius);
+      width: 260px;
+      color: var(--bs-body-color);
+      text-decoration: none;
+      .btn-label{
+        font-size: 20px;
+        padding-left: 8px;
+      }
     }
   }
   .hello-icon{
     background: url(/img/hello.svg);
+  }
+  .segmento-icon{
+    background: url(/img/segmento.svg);
+  }
+  .campaign-icon{
+    background: url(/img/campaign.svg);
+  }
+  .otp-icon{
+    background: url(/img/otp.svg);
   }
   .hello{
     background: url(/img/hello.png);

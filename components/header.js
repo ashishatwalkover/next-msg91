@@ -21,7 +21,7 @@ const Header =()=> {
       <div className="nav col-md-3 justify-content-end nav-c">
 
         <li><Link href="#" className="nav-link px-2 link-dark">API Documentations</Link></li>
-        <button type="button" className="btn btn-primary ">Sign-up</button>
+        <button type="button" className="btn btn-primary ">SIGN UP</button>
       </div> 
 
     </header>
