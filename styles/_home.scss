@@ -9,7 +9,9 @@
 
 .products{
   .title{
-    font-size: 32px;  
+    font-size: 32px;
+    padding: 24px;
+    font-weight: normal;
   }
   .spacer{
     height: 400px;
@@ -58,5 +60,72 @@
   .hello{
     background: url(/img/hello.png);
     background-size: 100%;
+  }
+}
+
+.channels{
+  h2{
+    font-size: 48px;
+  }
+  .icon{
+    width: 40px;
+    height: 40px;
+  }
+  .chn-btn{
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    background: #fff;
+    border-radius: var(--radius);
+    color: var(--bs-body-color);
+    text-decoration: none;
+    min-width: 188px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    &.sms{
+      background: var(--sms-light);
+      .icon{
+        background: url(/img/sms.svg);
+      }
+    }
+    &.email{
+      background: var(--email-light);
+      .icon{
+        background: url(/img/email.svg);
+      }
+    }
+    &.whatsapp{
+      background: var(--whatsapp-light);
+      .icon{
+        background: url(/img/whatsapp.svg);
+      }
+    }
+    &.telegram{
+      background: var(--telegram-light);
+      .icon{
+        background: url(/img/telegram.svg);
+      }
+    }
+    &.voice{
+      background: var(--voice-light);
+      .icon{
+        background: url(/img/voice.svg);
+      }
+    }
+    &.rcs{
+      background: var(--rcs-light);
+      .icon{
+        background: url(/img/rcs.svg);
+      }
+    }
+    .btn-label{
+      font-size: 20px;
+      padding-left: 8px;
+    }
+  }
+  .stats-title{
+    font-size: 40px;
+    color: var(--primary-color);
+    font-weight: bold;
   }
 }

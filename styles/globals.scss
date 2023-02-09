@@ -8,6 +8,7 @@ h1 {
 p {
   margin: 0;
   padding: 0;
+  font-size: 24px;
 }
 .heading {
   font-size: 72px;
@@ -56,9 +57,30 @@ p {
 h1,.charterbold{
     font-family: 'charterbold', 'Times New Roman', Times, serif;
 }
+h2,.charterregular{
+    font-family: 'charterregular', 'Times New Roman', Times, serif;
+}
+// Productmenu
 
 
 // custom padding
+.p-l-10{
+  padding-left: 10px;
+}
+.p-r-16{
+  padding-right: 16px;
+}
+.p-r-10{
+  padding-right: 10px;
+}
+.m-r-16{
+  margin-right: 16px;
+}
+
 .m-y-120{
   margin: 0 120px;
+}
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }

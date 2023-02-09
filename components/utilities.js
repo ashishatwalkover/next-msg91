@@ -9,39 +9,44 @@ const Utilities = () => {
         <div className="us-cont">
           <div className="us-nav-cont">
             <div className="us-nav">
-              <div className="us-nav-options">
+              <div className="us-nav-options align-items-center d-flex">
                 <Image
                   src="../img/fill-circle.svg"
                   width={32}
                   height={32}
                 ></Image>
-                <p>URL Shortner</p>
+                <span span-t1>URL Shortner</span>
               </div>
-              <div className="us-nav-options">
+              <div className="us-nav-options align-items-center d-flex">
                 <Image
-                  src="../img/fill-circle.svg"
+                  src="../img/circle.svg"
                   width={32}
                   height={32}
                 ></Image>
-                <p>URL Shortner</p>
+                <span span-t1>Knowladgebase</span>
               </div>
-              <div className="us-nav-options">
+              <div className="us-nav-options align-items-center d-flex">
                 <Image
-                  src="../img/fill-circle.svg"
+                  src="../img/circle.svg"
                   width={32}
                   height={32}
                 ></Image>
-                <p>URL Shortner</p>
+                <span span-t1>File Hosting</span>
               </div>
+              
+              
             </div>
           </div>
           <div className="us-main-cont">
-            <div className="us-main">
-              <div className="us-main-heading">
+            
+            <div className="us-main d-flex align-item-center">
+            <div className="us-main-content d-flex flex-column justify-content-center ">
+              <div className="us-main-heading d-flex">
                 <Image
                   src="../img/short URL.svg"
                   width={40}
                   height={40}
+                  className="m-r-16"
                 ></Image>
                 <h2 className="Heading">URL shrtnr</h2>
               </div>
@@ -54,14 +59,18 @@ const Utilities = () => {
                 Primary
               </button>
             </div>
-            <div className="us-main">
-              <div className="us-main-heading">
+            <Image src="../img/placeholder.svg" width={544} height={294}/>
+            </div>
+            <div className="us-main d-flex align-item-center">
+            <div className="us-main-content d-flex flex-column  justify-content-center ">
+              <div className="us-main-heading d-flex">
                 <Image
-                  src="../img/short URL.svg"
+                  src="../img/KB.svg"
                   width={40}
                   height={40}
+                  className="m-r-16"
                 ></Image>
-                <h2 className="Heading">URL shrtnr</h2>
+                <h2 className="Heading">Knowladgebase</h2>
               </div>
               <p>
                 Engineered for high reliability, our globally distributed
@@ -72,14 +81,18 @@ const Utilities = () => {
                 Primary
               </button>
             </div>
-            <div className="us-main">
-              <div className="us-main-heading">
+            <Image src="../img/placeholder.svg" width={544} height={294}/>
+            </div>
+            <div className="us-main d-flex align-items-center ">
+            <div className="us-main-content d-flex flex-column justify-content-center">
+              <div className="us-main-heading d-flex">
                 <Image
-                  src="../img/short URL.svg"
+                  src="../img/Files.svg"
                   width={40}
                   height={40}
+                  className="m-r-16"
                 ></Image>
-                <h2 className="Heading">URL shrtnr</h2>
+                <h2 className="Heading">File Hosting</h2>
               </div>
               <p>
                 Engineered for high reliability, our globally distributed
@@ -90,6 +103,12 @@ const Utilities = () => {
                 Primary
               </button>
             </div>
+            <Image src="../img/placeholder.svg" width={544} height={294}/>
+            </div>
+            
+            
+            
+        
           </div>
         </div>
       </div>
