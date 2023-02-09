@@ -6,6 +6,7 @@ import ProductMenu from "@/components/productmenu";
 
 import Footer from "@/components/footer";
 import Home from "@/components/home";
+import Utilities from "@/components/utilities";
 
 const IndexPage =()=> {
   return (
@@ -15,6 +16,7 @@ const IndexPage =()=> {
       <Header/>
       <Home/>
       <ProductMenu/>     
+      <Utilities/>     
       <Footer/>
     </div>    
   )

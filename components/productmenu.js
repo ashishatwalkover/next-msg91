@@ -4,10 +4,7 @@ const ProductsMenu = () => {
   return (
     <>
       <div
-        class="offcanvas offcanvas-start"
-        tabindex="-1"
-        id="offcanvas"
-        aria-labelledby="offcanvas"
+        class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel"
       >
         <div className=" product-menu d-flex  m-y-120">
           <div className="pm-left pm ">
