@@ -1,6 +1,5 @@
 .footer {
     background-color: black;
-    height: 514.5px;
 }
 
 .text1 {
@@ -30,7 +29,13 @@
 }
 
 .text4 {
+    font-family: 'Proxima Nova';
+    font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    color: #6c6c6c;
+    color: #FFFFFF;
+}
+
+.text_End {
+    width: 100%;
 }
