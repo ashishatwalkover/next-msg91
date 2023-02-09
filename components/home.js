@@ -12,7 +12,7 @@ const Home = () => {
         <div className="mb-3">
           <MdFavorite className="love" /> Trusted by
         </div>
-        <div className="row justify-content-center">
+        <div className="d-flex justify-content-center">
 
           <div className="col-lg-2 col-md-4 col-6">
             <div className="mb-4 text-center align-middle">
