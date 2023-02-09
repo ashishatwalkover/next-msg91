@@ -19,11 +19,18 @@ const campaign = () => {
             Boost audience engagement through smart communication and on-time
             delivery.{" "}
           </h2>
-          <button className="btn btn-primary btn-lg " type="button">
+          <button className="btn btn-primary btn-lg mt-3" type="button">
             Get started for Free
           </button>
-          <p>Trusted by 30000+ Businesses</p>
+          <p className="mt-3">Trusted by 30,000+ Businesses</p>
+          <div className="mt-3"><Image src={"/img/ixigo.svg"} alt="#" width={51} height="24" />
+            <Image src={"/img/unacademy.svg"} alt="#" width={161} height="24" className="ms-4" />
+            <Image src={"/img/indeed.svg"} alt="#" width={89} height="24" className="ms-4 mb-2" />
+          </div>
         </div>
+      </div>
+      <div className="container d-flex justify-content-center">
+      <div className="mt-3"><Image src={"/img/Campaign_flow.svg"} alt="#" width={1198} height="610"/></div>
       </div>
     </>
   );

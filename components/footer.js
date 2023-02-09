@@ -37,6 +37,10 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+
+                {/* <div className="d-flex flex-direction-row justify-content-space-between align-items-flex-end">
+                    <div className="text4">Copyright</div>
+                </div> */}
             </div>
         </div>
             <footer className="footer p-4">
@@ -122,8 +126,7 @@ const Footer = () => {
                             <div className="text_End col-md-6 mt-3 justify-content-between">
                                 <ul className="text_End d-flex justify-content-space-between list-inline mb-0 small mt-md-0 ms-5">
                                     <li className="text3 list-inline-item me-5">Terms of use | Privacy policy | GDPR | NO spam | Startup policy | Developer Policy | Cookie Policy</li>
-                                    <li className="text3 list-inline-item mx-auto">A product of <Image src={"/img/walkover.svg"} alt="#" width={20} height="18" className="mx-auto" /> Walkover</li>
-
+                                    <li className="text3 list-inline-item"><span className="walkover">A product of <Image src={"/img/walkover.svg"} alt="#" width={20} height="18" className="mx-auto" /> Walkover </span></li>
                                 </ul>
                             </div>
                         </div>
