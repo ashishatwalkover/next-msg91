@@ -7,7 +7,20 @@ const ProductsMenu = () => {
         tabindex="-1"
         id="offcanvas"
         aria-labelledby="offcanvas"
-      ></div>
+      >
+        <div className="d-flex">
+            <div>
+                
+            </div>
+            <div>
+
+            </div>
+            
+        </div>
+        <div>
+
+        </div>
+      </div>
     </>
   );
 };
