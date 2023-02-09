@@ -1,4 +1,4 @@
-import { MdFavorite } from "react-icons/md";
+import { MdFavorite, MdArrowForward } from "react-icons/md";
 const Home = () => {
   return (
     <>
@@ -51,45 +51,45 @@ const Home = () => {
         <div className="col hello">
           <div className="title charterbold">Conversation</div>
           <div className="spacer"></div>
-          <div className="footer">
-            <div className="text">Empower your employees, Support your customers.</div>
-            <div className="button">
+          <div className="pro-footer">
+            <div className="pro-text">Empower your employees, Support your customers.</div>
+            <a href="/hello" target="_blank" className="pro-btn">
               <div className="icon hello-icon"></div>
-              <div className="btn-label">Hello</div>
-            </div>
+              <div className="btn-label d-flex flex-fill justify-content-between align-items-center">Hello <MdArrowForward/></div>
+            </a>
           </div>
         </div>
         <div className="col hello">
           <div className="title charterbold">Conversation</div>
           <div className="spacer"></div>
-          <div className="footer">
-            <div className="text">Empower your employees, Support your customers.</div>
-            <div className="button">
-              <div className="icon hello-icon"></div>
-              <div className="btn-label">Hello</div>
-            </div>
+          <div className="pro-footer alt">
+            <div className="pro-text">Empower your employees, Support your customers.</div>
+            <a href="/hello" target="_blank" className="pro-btn">
+              <div className="icon segmento-icon"></div>
+              <div className="btn-label d-flex flex-fill justify-content-between align-items-center">Segmento <MdArrowForward/></div>
+            </a>
           </div>
         </div>
         <div className="col hello">
           <div className="title charterbold">Conversation</div>
           <div className="spacer"></div>
-          <div className="footer">
-            <div className="text">Empower your employees, Support your customers.</div>
-            <div className="button">
-              <div className="icon hello-icon"></div>
-              <div className="btn-label">Hello</div>
-            </div>
+          <div className="pro-footer">
+            <div className="pro-text">Empower your employees, Support your customers.</div>
+            <a href="/hello" target="_blank" className="pro-btn">
+              <div className="icon campaign-icon"></div>
+              <div className="btn-label d-flex flex-fill justify-content-between align-items-center">Campaign <MdArrowForward/></div>
+            </a>
           </div>
         </div>
         <div className="col hello">
           <div className="title charterbold">Conversation</div>
           <div className="spacer"></div>
-          <div className="footer">
-            <div className="text">Empower your employees, Support your customers.</div>
-            <div className="button">
-              <div className="icon hello-icon"></div>
-              <div className="btn-label">Hello</div>
-            </div>
+          <div className="pro-footer alt">
+            <div className="pro-text">Empower your employees, Support your customers.</div>
+            <a href="/hello" target="_blank" className="pro-btn">
+              <div className="icon otp-icon"></div>
+              <div className="btn-label d-flex flex-fill justify-content-between align-items-center"> OTP <MdArrowForward/></div>
+            </a>
           </div>
         </div>
       </section>
