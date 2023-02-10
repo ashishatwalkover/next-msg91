@@ -2,6 +2,8 @@ import Header from "@/components/header";
 import Notification from "@/components/notification";
 import HeadTag from "@/components/head";
 import Image from "next/image";
+import Link from "next/link";
+
 const campaign = () => {
   return (
     <>
@@ -56,12 +58,51 @@ const campaign = () => {
         </div>
         <div className="campaign_Flow_1_1 col-6 flex-column align-items-flex-start mt-5 ms-5"></div>
       </div>
-      <div className="container d-flex flex-row align-items-center">
-        <div className="col-4 flex-column align-items-flex-start">
-          <div className="mt-5"><Image src={"/Img/done_outline.svg"} alt="#" width={40} height="40" ></Image></div>
+      <div className="container d-flex flex-row align-items-center mt-5 mb-5">
+        <div className="col-4 flex-column align-items-flex-start p-3 me-4">
+          <div className="mt-5 mb-3"><Image src={"/Img/done_outline.svg"} alt="#" width={40} height="40" ></Image></div>
+          <span className="text_2 mt-1">Pre-defined templates for improved productivity</span>
+          <div><span className="text_3 mt-2">Leverage our pre-defined templates to reduce turnaround time for your campaigns. Just import & deploy campaigns on the fly within minutes.</span></div>
         </div>
-        <div className="col-4 flex-column align-items-flex-start"></div>
-        <div className="col-4 flex-column align-items-flex-start"></div>
+        <div className="col-4 flex-column align-items-flex-start p-3 me-4">
+          <div className="mt-5 mb-3"><Image src={"/Img/done_outline.svg"} alt="#" width={40} height="40" ></Image></div>
+          <span className="text_2 mt-1">Pre-defined templates for improved productivity</span>
+          <div><span className="text_3 mt-2">Leverage our pre-defined templates to reduce turnaround time for your campaigns. Just import & deploy campaigns on the fly within minutes.</span></div>
+        </div>
+        <div className="col-4 flex-column align-items-flex-start p-2 ms-3">
+          <div className="mt-5 mb-3"><Image src={"/Img/done_outline.svg"} alt="#" width={40} height="40" ></Image></div>
+          <span className="text_2 mt-1">Pre-defined templates for improved productivity</span>
+          <div><span className="text_3 mt-2">Leverage our pre-defined templates to reduce turnaround time for your campaigns. Just import & deploy campaigns on the fly within minutes.</span></div>
+        </div>
+      </div>
+      <div className="container d-flex flex-row align-items-center">
+        <div className="col-6 d-flex flex-column align-items-flex-start mt-5">
+          <div className="d-flex flex-row align-items-center">
+            <span className="text_2">More features</span>
+          </div>
+          <div className="d-flex flex-column justify-content-center align-items-flex-start mt-2">
+            <span className="text_4">- Automate sending messages under defined conditions</span>
+            <span className="text_4 mt-1">- An all-in-one platform for all your campaigns</span>
+            <span className="text_4 mt-1">- Make your communication more secure</span>
+            <span className="text_4 mt-1">- Pre-defined templates for improved productivity</span>
+            <span className="text_4 mt-1">- Build a hassle-free communication flow</span>
+            <span className="text_4 mt-1">- Track campaign performance</span>
+          </div>
+        </div>
+        <div className="col-6 back_Color d-flex flex-row justify-content-center align-items-center mt-5">
+          <span className="col-6 text_2">Need something else</span>
+          <Link href="#" className="col-4 campaign_Button text_5 px-3">Request a Feature
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right ms-3" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg>
+          </Link>
+        </div>
+      </div>
+      <div className="d-flex flex-column align-items-center">
+        <div className="d-flex flex-row justify-content-center align-items-center">
+          <div className="d-flex flex-column justify-content-center align-items-flex-start">
+          </div>
+        </div>
       </div>
     </>
   );
