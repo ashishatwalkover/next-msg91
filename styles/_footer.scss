@@ -2,7 +2,7 @@
     padding: 0 15vw;
     background-color: var(--black-color);
     color: var(--white-color);
-    height: 50vh;
+    // height: 50vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -15,12 +15,10 @@ a{
   
   }
 .full-line{
-    height: 100%;
+    height: 250px;
     border-left: 1px solid var(--grey-color);
 }
-  .f-social-link-cont{
-    width: 10vw;
-  }
+  
   .f-menu-cont{
     // padding-left: 10vw;
     width: 800px;
@@ -36,8 +34,6 @@ a{
 
 
 
-.walkover{
-    padding-left: 369px;
-}
+
 
 
