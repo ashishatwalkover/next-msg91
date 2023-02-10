@@ -5,11 +5,11 @@ const Notification = () => {
   return (
     <>
       <div
-        class="d-flex justify-content-sm-between align-items-center notification"
+        className="d-flex justify-content-sm-between align-items-center notification"
         role="alert"
       >
         <div className="d-flex justify-content-sm-between align-items-center ">
-        <span class="badge badge-pill badge-dark">New</span>
+        <span className="badge badge-pill badge-dark">New</span>
           <span className="m-y-auto">Campaign version 2.0 released</span>
         </div>
         <div className="d-flex justify-content-sm-between align-items-end notification-cont">

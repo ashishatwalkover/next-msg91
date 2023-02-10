@@ -3,6 +3,7 @@ import HeadTag from "@/components/head";
 import Header from "@/components/header";
 import Notification from "@/components/notification";
 import ProductMenu from "@/components/productmenu";
+// import 'bootstrap/dist/css/bootstrap.css'
 
 import Footer from "@/components/footer";
 import Home from "@/components/home";

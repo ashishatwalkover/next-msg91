@@ -10,29 +10,29 @@ const Utilities = () => {
           <div className="us-cont">
             <div className="us-nav-cont">
               <div className="us-nav">
-                <div className="us-nav-options align-items-center d-flex">
+                <div className="us-nav-options align-items-center mb-2 d-flex">
                   <Image
                     src="../img/fill-circle.svg"
                     width={32}
                     height={32}
                   ></Image>
-                  <span className="span-t1">URL Shortner</span>
+                  <span className="c-fs-3">URL Shortner</span>
                 </div>
-                <div className="us-nav-options align-items-center d-flex">
+                <div className="us-nav-options align-items-center mb-2  d-flex">
                   <Image
                     src="../img/circle.svg"
                     width={32}
                     height={32}
                   ></Image>
-                  <span className="span-t1">Knowladgebase</span>
+                  <span className="c-fs-3">Knowladgebase</span>
                 </div>
-                <div className="us-nav-options align-items-center d-flex">
+                <div className="us-nav-options align-items-center mb-2 d-flex">
                   <Image
                     src="../img/circle.svg"
                     width={32}
                     height={32}
                   ></Image>
-                  <span className="span-t1">File Hosting</span>
+                  <span className="c-fs-3">File Hosting</span>
                 </div>
                 
                 
@@ -49,14 +49,14 @@ const Utilities = () => {
                     height={40}
                     className="me-4"
                   ></Image>
-                  <h2 className="Heading">URL shrtnr</h2>
+                  <h2 className="c-fs-2 c-ff-h">URL Shortner</h2>
                 </div>
-                <p>
+                <p className="c-fs-3 c-fw-r">
                   Engineered for high reliability, our globally distributed
                   carrier network and intelligent routing ensure the highest SMS
                   delivery and lowest latency.
                 </p>
-                <button type="button" class="btn btn-outline-primary">
+                <button type="button" class="btn btn-outline-primary c-fs-5 c-fw-m">
                   Primary
                 </button>
               </div>
@@ -71,14 +71,14 @@ const Utilities = () => {
                     height={40}
                     className="me-4"
                   ></Image>
-                  <h2 className="Heading">Knowladgebase</h2>
+                  <h2 className="c-fs-2 c-ff-h">Knowladgebase</h2>
                 </div>
-                <p>
+                <p className="c-fs-3 c-fw-r">
                   Engineered for high reliability, our globally distributed
                   carrier network and intelligent routing ensure the highest SMS
                   delivery and lowest latency.
                 </p>
-                <button type="button" class="btn btn-outline-primary">
+                <button type="button" class="btn btn-outline-primary c-fs-5 c-fw-m">
                   Primary
                 </button>
               </div>
@@ -93,14 +93,14 @@ const Utilities = () => {
                     height={40}
                     className="me-4"
                   ></Image>
-                  <h2 className="Heading">File Hosting</h2>
+                  <h2 className="c-fs-2 c-ff-h">File Hosting</h2>
                 </div>
-                <p>
+                <p className=" c-fs-3 c-fw-r">
                   Engineered for high reliability, our globally distributed
                   carrier network and intelligent routing ensure the highest SMS
                   delivery and lowest latency.
                 </p>
-                <button type="button" class="btn btn-outline-primary">
+                <button type="button" class="btn btn-outline-primary c-fs-5 c-fw-m">
                   Primary
                 </button>
               </div>
