@@ -30,7 +30,7 @@ const campaign = () => {
         </div>
       </div>
       <div className="container d-flex justify-content-center">
-      <div className="mt-3"><Image src={"/img/Campaign_flow.svg"} alt="#" width={1198} height="610"/></div>
+        <div className="mt-3"><Image src={"/img/Campaign_flow.svg"} alt="#" width={1198} height="610" /></div>
       </div>
       <div className="container d-flex flex-column align-items-flex-start">
         <span className="text_1 mt-5">Features</span>
@@ -43,7 +43,7 @@ const campaign = () => {
         <div className="campaign_Flow_1_1 col-6 flex-column align-items-flex-start mt-5 ms-5"></div>
       </div>
       <div className="container d-flex flex-row align-items-center mt-5">
-      <div className="campaign_Flow_1_1 col-6 flex-column align-items-flex-start mt-5 me-5"></div>
+        <div className="campaign_Flow_1_1 col-6 flex-column align-items-flex-start mt-5 me-5"></div>
         <div className="col-5 d-flex flex-column align-items-flex-start pb-4 ms-5">
           <span className="text_2">An all-in-one platform for all your campaigns</span>
           <span className="text_3 mt-3">Optimise your links and create short links that inspire confidence. Include short links in your custom messages with ease.</span>
@@ -55,6 +55,13 @@ const campaign = () => {
           <span className="text_3 mt-3">Now protect your Campaigns with our token-based workflow and a robust security framework. Implement best customer-engagement practices and shape communication to fit your brand while ensuring optimum security through and through.</span>
         </div>
         <div className="campaign_Flow_1_1 col-6 flex-column align-items-flex-start mt-5 ms-5"></div>
+      </div>
+      <div className="container d-flex flex-row align-items-center">
+        <div className="col-4 flex-column align-items-flex-start">
+          <div className="mt-5"><Image src={"/Img/done_outline.svg"} alt="#" width={40} height="40" ></Image></div>
+        </div>
+        <div className="col-4 flex-column align-items-flex-start"></div>
+        <div className="col-4 flex-column align-items-flex-start"></div>
       </div>
     </>
   );

@@ -1,3 +1,10 @@
+$primary: #1E75BA;
+$body-bg: #fff;
+$secondary: #8300d9;
+
+@import "~node_modules/bootstrap/scss/bootstrap";
+
+
 h4,p{
     margin: 0;
     padding: 0;
