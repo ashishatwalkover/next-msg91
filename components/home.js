@@ -2,15 +2,15 @@ import { MdFavorite, MdArrowForward } from "react-icons/md";
 const Home = () => {
   return (
     <>
-      <div className="text-center py-5">
-        <h1 className="heading">Empower Your Marketing</h1>
-        <p className="sub-heading col-4 m-auto">Boost your reach by the Best Cloud Communication Platform for <strong>Targeted Customers</strong> and <strong>Verified Results</strong></p>
+      <div className="text-center section">
+        <h1 className="heading">Level Up Your Engagement Game</h1>
+        <p className="sub-heading col-4 m-auto">Best Cloud Communication Platform to Enhance Present Customer Engagement and Boost Future Reach</p>
         <button className="btn btn-primary btn-lg mt-5" type="button">Get started for Free</button>
       </div>
 
       <section className="trusted-by text-center">
         <div className="mb-3">
-          <MdFavorite className="love" /> Trusted by
+          <MdFavorite className="love" /> Trusted by 
         </div>
         <div className="d-flex justify-content-center">
 
@@ -55,40 +55,40 @@ const Home = () => {
             <div className="pro-text">Empower your employees, Support your customers.</div>
             <a href="/hello" target="_blank" className="pro-btn">
               <div className="icon hello-icon"></div>
-              <div className="btn-label d-flex flex-fill justify-content-between align-items-center">Hello <MdArrowForward /></div>
+              <div className="btn-label d-flex flex-fill justify-content-between align-items-center"><span>Hello</span> <MdArrowForward /></div>
             </a>
           </div>
         </div>
-        <div className="col hello">
-          <h2 className="title">Conversation</h2>
+        <div className="col segmento">
+          <h2 className="title">Segmentation</h2>
           <div className="spacer"></div>
           <div className="pro-footer alt">
             <div className="pro-text">Empower your employees, Support your customers.</div>
             <a href="/hello" target="_blank" className="pro-btn">
               <div className="icon segmento-icon"></div>
-              <div className="btn-label d-flex flex-fill justify-content-between align-items-center">Segmento <MdArrowForward /></div>
+              <div className="btn-label d-flex flex-fill justify-content-between align-items-center"><span>Segmento</span> <MdArrowForward /></div>
             </a>
           </div>
         </div>
-        <div className="col hello">
-          <h2 className="title">Conversation</h2>
+        <div className="col campaign">
+          <h2 className="title">Flow/OneAPI</h2>
           <div className="spacer"></div>
           <div className="pro-footer">
             <div className="pro-text">Empower your employees, Support your customers.</div>
             <a href="/hello" target="_blank" className="pro-btn">
               <div className="icon campaign-icon"></div>
-              <div className="btn-label d-flex flex-fill justify-content-between align-items-center">Campaign <MdArrowForward /></div>
+              <div className="btn-label d-flex flex-fill justify-content-between align-items-center"><span>Campaign</span> <MdArrowForward /></div>
             </a>
           </div>
         </div>
-        <div className="col hello">
-          <h2 className="title">Conversation</h2>
+        <div className="col otp">
+          <h2 className="title">Verification</h2>
           <div className="spacer"></div>
           <div className="pro-footer alt">
             <div className="pro-text">Empower your employees, Support your customers.</div>
             <a href="/hello" target="_blank" className="pro-btn">
               <div className="icon otp-icon"></div>
-              <div className="btn-label d-flex flex-fill justify-content-between align-items-center"> OTP <MdArrowForward /></div>
+              <div className="btn-label d-flex flex-fill justify-content-between align-items-center"> <span>OTP</span> <MdArrowForward /></div>
             </a>
           </div>
         </div>
@@ -104,70 +104,62 @@ const Home = () => {
           
             <a href="/hello" target="_blank" className="chn-btn sms">
               <div className="icon sms-icon"></div>
-              <div className="btn-label d-flex flex-fill justify-content-between align-items-center">SMS <MdArrowForward /></div>
+              <div className="btn-label d-flex flex-fill justify-content-between align-items-center"><span>SMS</span> <MdArrowForward /></div>
             </a>
           
             <a href="/hello" target="_blank" className="chn-btn email">
               <div className="icon email-icon"></div>
-              <div className="btn-label d-flex flex-fill justify-content-between align-items-center">Email <MdArrowForward /></div>
+              <div className="btn-label d-flex flex-fill justify-content-between align-items-center"><span>Email</span> <MdArrowForward /></div>
             </a>
 
             <a href="/hello" target="_blank" className="chn-btn whatsapp">
               <div className="icon whatsapp-icon"></div>
-              <div className="btn-label d-flex flex-fill justify-content-between align-items-center">WhatsApp <MdArrowForward /></div>
+              <div className="btn-label d-flex flex-fill justify-content-between align-items-center"><span>WhatsApp</span> <MdArrowForward /></div>
             </a>
 
             <a href="/hello" target="_blank" className="chn-btn telegram">
               <div className="icon telegram-icon"></div>
-              <div className="btn-label d-flex flex-fill justify-content-between align-items-center">Telegram <MdArrowForward /></div>
+              <div className="btn-label d-flex flex-fill justify-content-between align-items-center"><span>Telegram</span> <MdArrowForward /></div>
             </a>
             <a href="/hello" target="_blank" className="chn-btn voice">
               <div className="icon voice-icon"></div>
-              <div className="btn-label d-flex flex-fill justify-content-between align-items-center">Voice <MdArrowForward /></div>
+              <div className="btn-label d-flex flex-fill justify-content-between align-items-center"><span>Voice</span> <MdArrowForward /></div>
             </a>
             <a href="/hello" target="_blank" className="chn-btn rcs">
               <div className="icon rcs-icon"></div>
-              <div className="btn-label d-flex flex-fill justify-content-between align-items-center">RCS <MdArrowForward /></div>
+              <div className="btn-label d-flex flex-fill justify-content-between align-items-center"><span>RCS</span> <MdArrowForward /></div>
             </a>
 
         </div>
 
-        <div className="row pt-5">          
-          <div className="col-md-6 col-lg-3">
-            <div className="py-7 ">
+        <div className="d-flex pt-5">          
+            <div className="py-7 stats">
               <div className="lh-1">
                 <div className="mb-1 stats-title">4.5 Million+</div>
                 <span>API calls</span>
               </div>
             </div>
-          </div>
 
-          <div className="col-md-6 col-lg-3">
-            <div className="py-7 ">              
+            <div className="py-7 stats">              
               <div className="lh-1">
                 <div className="mb-1 stats-title">192</div>
                 <span>Countries</span>
               </div>
             </div>
-          </div>
           
-          <div className="col-md-6 col-lg-3">
-            <div className="py-7 ">              
+            <div className="py-7 stats">              
               <div className="lh-1">
                 <div className="mb-1 stats-title">2.3 Million+</div>
                 <span>SMS Delivered</span>
               </div>
             </div>
-          </div>
 
-          <div className="col-md-6 col-lg-3">
-            <div className="py-7 ">              
+            <div className="py-7 stats">              
               <div className="lh-1">
                 <div className="mb-1 stats-title">150 Million+</div>
                 <span>Emails Delivered</span>
               </div>
             </div>
-          </div>
 
         </div>
 
