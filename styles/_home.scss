@@ -82,6 +82,9 @@
     min-width: 188px;
     margin-right: 24px;
     margin-bottom: 24px;
+    .icon{
+      background-size: 40px !important;
+    }
     &.sms{
       background: var(--sms-light);
       .icon{
@@ -128,4 +131,8 @@
     color: var(--primary-color);
     font-weight: bold;
   }
+}
+
+.utilities{
+  background: var(--sms-light);
 }

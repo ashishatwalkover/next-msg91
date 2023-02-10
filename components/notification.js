@@ -10,12 +10,12 @@ const Notification = () => {
       >
         <div className="d-flex justify-content-sm-between align-items-center ">
         <span class="badge badge-pill badge-dark">New</span>
-          <p className="m-y-auto">Campaign version 2.0 released</p>
+          <span className="m-y-auto">Campaign version 2.0 released</span>
         </div>
         <div className="d-flex justify-content-sm-between align-items-end notification-cont">
           <div className="d-flex  align-items-center p-r">
             <MdLanguage/>
-            <p className="m-y-auto">India</p>
+            <span className="m-y-auto">India</span>
             <Image
               src="../img/down.svg"
               width={20}
@@ -25,10 +25,10 @@ const Notification = () => {
           </div>
           <div className="d-flex  align-items-center">            
             <MdCall/>
-            <p className="m-y-auto">Support</p>
+            <span className="m-y-auto">Support</span>
           </div>
           <div className="d-flex  align-items-center">
-            <p className="m-y-auto">LOG IN</p>
+            <span className="m-y-auto">LOG IN</span>
           </div>
         </div>
       </div>
