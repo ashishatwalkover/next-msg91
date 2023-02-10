@@ -16,7 +16,7 @@ const Utilities = () => {
                     width={32}
                     height={32}
                   ></Image>
-                  <span span-t1>URL Shortner</span>
+                  <span className="span-t1">URL Shortner</span>
                 </div>
                 <div className="us-nav-options align-items-center d-flex">
                   <Image
@@ -24,7 +24,7 @@ const Utilities = () => {
                     width={32}
                     height={32}
                   ></Image>
-                  <span span-t1>Knowladgebase</span>
+                  <span className="span-t1">Knowladgebase</span>
                 </div>
                 <div className="us-nav-options align-items-center d-flex">
                   <Image
@@ -32,7 +32,7 @@ const Utilities = () => {
                     width={32}
                     height={32}
                   ></Image>
-                  <span span-t1>File Hosting</span>
+                  <span className="span-t1">File Hosting</span>
                 </div>
                 
                 
@@ -47,7 +47,7 @@ const Utilities = () => {
                     src="../img/short URL.svg"
                     width={40}
                     height={40}
-                    className="m-r-16"
+                    className="me-4"
                   ></Image>
                   <h2 className="Heading">URL shrtnr</h2>
                 </div>
@@ -69,7 +69,7 @@ const Utilities = () => {
                     src="../img/KB.svg"
                     width={40}
                     height={40}
-                    className="m-r-16"
+                    className="me-4"
                   ></Image>
                   <h2 className="Heading">Knowladgebase</h2>
                 </div>
@@ -91,7 +91,7 @@ const Utilities = () => {
                     src="../img/Files.svg"
                     width={40}
                     height={40}
-                    className="m-r-16"
+                    className="me-4"
                   ></Image>
                   <h2 className="Heading">File Hosting</h2>
                 </div>

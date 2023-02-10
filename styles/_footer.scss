@@ -1,94 +1,39 @@
-.footer {
-    background-color: black;
-}
-
-.text1 {
-    font-size: 16px;
-    color: white;
-    font-weight: 400;
-}
-
-.vl {
-    border-left: 1px solid #6c6c6c;
-    height: 264px;
-    top: 0;
-    margin-left: 88px;
-    margin-right: 88px;
-}
-
-.text2 {
-    font-weight: 700;
-    font-size: 16px;
-    color: white;
-}
-
-.text3 {
-    font-weight: 400;
-    font-size: 14px;
-    color: white;
-}
-
-.text4 {
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    color: #FFFFFF;
-}
-
-.text_End {
+.footer{
+    padding: 0 15vw;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    height: 50vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+a{
+    text-decoration: none;
+    color: var(--whiet-color);
+  
+  }
+.full-line{
+    height: 100%;
+    border-left: 1px solid var(--grey-color);
+}
+  .f-social-link-cont{
+    width: 10vw;
+  }
+  .f-menu-cont{
+    // padding-left: 10vw;
+    width: 800px;
+    justify-content: space-between;
+  }
+  .c-col-one{
+    color: var(-grey-color);
+  }
+  .f-nav-link-cont{
+    gap: 8px;
+  }
 
-.awesomeness {
-    background: rgba(123, 127, 130, 0.1);
-}
 
-.awesomeness_1 {
-    margin-left: 50px;
-}
 
-.awesomeness_2 {
-    margin-right: 30px;
-}
-
-.text5 {
-    font-family: 'Libre Baskerville';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-color: #3F4346;
-}
-
-.button_Style {
-    border: 2px solid #1E75BA;
-    border-radius: 4px;
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-color: #1E75BA;
-}
-
-.button_Style {
-    border: 2px solid #1E75BA;
-    border-radius: 4px;
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-color: #1E75BA;
-}
-
-.button_Style1 {
-    border: 2px solid #1E75BA;
-    border-radius: 4px;
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-color: #FFFFFF;
-background: #1E75BA;
-}
 
 
