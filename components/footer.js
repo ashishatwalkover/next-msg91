@@ -1,4 +1,3 @@
-import HeadTag from "./head";
 import SeccondFooter from "./seccond_footer";
 import Image from "next/image";
 import Link from "next/link";
