@@ -1,29 +1,39 @@
 import { MdFavorite, MdArrowForward } from "react-icons/md";
 import { useEffect, useRef } from "react";
-// import { useEffect, useState } from "react";
-
-
-
 
 const Home = () => {
-/*   const aboutRef = useRef();
+  const aboutRef = useRef();    
+
   useEffect(() => {
+    const shortner = document.getElementById("url-shortner");
+    const knowledge = document.getElementById("knowledge-base");
+    const file = document.getElementById("file-hosting");
+    
+    const linkShortner = document.getElementById("link-shortner");
+    const linkKnowledge = document.getElementById("link-knowledge");
+    const linkFile = document.getElementById("link-file");
+
     const handleScroll = (e) => {
-        if (window.scrollY >= 0 && window.scrollY <= window.innerHeight / 2) {
-          console.log(0)
-            // Set states for nav items here if the user is on the first section
-        } else if (aboutRef.current.offsetTop - window.scrollY < window.innerHeight / 2 && stuffRef.current.offsetTop - window.scrollY >= window.innerHeight / 2) {
-            // For the about section
-        } else {
-            // Etc...
-        }
+      console.log(shortner.offsetTop, window.scrollY)
+      if(window.scrollY >= shortner.offsetTop && window.scrollY <= shortner.offsetTop+500){
+        linkShortner.classList.add("active");        
+      }else{
+        linkShortner.classList.remove("active");
+      }
+      if(window.scrollY >= knowledge.offsetTop && window.scrollY <= knowledge.offsetTop+500){
+        linkKnowledge.classList.add("active");        
+      }else{
+        linkKnowledge.classList.remove("active");
+      }
+      if(window.scrollY >= file.offsetTop && window.scrollY <= file.offsetTop+500){
+        linkFile.classList.add("active");        
+      }else{
+        linkFile.classList.remove("active");
+      }
     }
     document.addEventListener('scroll', handleScroll);
-    return () => {
-        document.removeEventListener('scroll', handleScroll);
-    }
-  }, []); */
-  
+  }, []);
+
   // const [scrollY, setScrollY] = useState(0);
 
   // useEffect(() => {
