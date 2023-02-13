@@ -6,7 +6,7 @@ const Utilities = () => {
     <>
       <section className="utilities section">
         <div className="container ">
-          <h1>Utilities</h1>
+          <h1>Why choose Us?</h1>
           <div className="us-cont">
             <div className="us-nav-cont">
               <div className="us-nav">

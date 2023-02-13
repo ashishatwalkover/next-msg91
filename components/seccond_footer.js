@@ -6,7 +6,7 @@ const SeccondFooter =()=>{
                 <span className="c-fs-2 c-">Experience The Awesomeness</span>
                 <div>
                     <button className="btn btn-outline-primary"> Talk to sales</button>
-                    <button className="btn btn-outline-primary ms-4"> See Pricing</button>
+                    {/* <button className="btn btn-outline-primary ms-4"> See Pricing</button> */}
                     <button className="btn btn-primary ms-4"> Get started free</button>
                 </div>
             </div>
