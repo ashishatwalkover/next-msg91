@@ -132,7 +132,7 @@ const Home = () => {
 
         </div>
 
-        <div className="d-flex pt-5">          
+        <div className="d-flex pt-5 justify-content-between">          
             <div className="py-7 stats">
               <div className="lh-1">
                 <div className="mb-1 stats-title">4.5 Million+</div>

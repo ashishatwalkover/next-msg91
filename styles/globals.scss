@@ -1,15 +1,3 @@
-$theme-colors: (
-  'primary': #1E75BA,
-  'secondary': #833bec,
-  'success': #1ce1ac,
-  'info': #ff7d50,
-  'warning': #ffbe0b,
-  'danger': #ff007f,
-  'light': #c0ccda,
-  'dark': #001738,
-);
-
-@import '/node_modules/bootstrap/scss/bootstrap.scss';
 @import'import';
 
 body,html{
@@ -24,17 +12,10 @@ p {
   font-size: 24px;
 }
 
-
 // header scss
-.header-c {
-  padding: 120px;
-  height: 80px;
-}
 .nav-c {
-  width: 514px;
   li {
-    padding: 0 40px 0 0;
-    font-size: 20px;
+    
     a {
       color: var(--black-color);
     }
@@ -44,9 +25,7 @@ p {
 .notification {
   background-color: #edeeee;
   height:   40px;
-  padding: 0 120px;
   div {
-    // font-size: 16px;
     .badge {
       background-color: #29a653;
       font-weight: 500;
@@ -79,13 +58,17 @@ a{
 // custom padding
 
 
-.m-y-120{
-  margin: 0 120px;
-}
+
 .section{
     padding-top: 100px;
     padding-bottom: 100px;
 }
+.c-bg-grey{
+  background-color:#f0f7fd;
 
+}
 
-
+// #need something
+.need-something{
+  width: 80%;
+}
