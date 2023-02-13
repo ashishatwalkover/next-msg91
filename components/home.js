@@ -1,5 +1,58 @@
 import { MdFavorite, MdArrowForward } from "react-icons/md";
+import { useEffect, useRef } from "react";
+
 const Home = () => {
+  const aboutRef = useRef();    
+
+  useEffect(() => {
+    const shortner = document.getElementById("url-shortner");
+    const knowledge = document.getElementById("knowledge-base");
+    const file = document.getElementById("file-hosting");
+    
+    const linkShortner = document.getElementById("link-shortner");
+    const linkKnowledge = document.getElementById("link-knowledge");
+    const linkFile = document.getElementById("link-file");
+
+    const handleScroll = (e) => {
+      console.log(shortner.offsetTop, window.scrollY)
+      if(window.scrollY >= shortner.offsetTop && window.scrollY <= shortner.offsetTop+500){
+        linkShortner.classList.add("active");        
+      }else{
+        linkShortner.classList.remove("active");
+      }
+      if(window.scrollY >= knowledge.offsetTop && window.scrollY <= knowledge.offsetTop+500){
+        linkKnowledge.classList.add("active");        
+      }else{
+        linkKnowledge.classList.remove("active");
+      }
+      if(window.scrollY >= file.offsetTop && window.scrollY <= file.offsetTop+500){
+        linkFile.classList.add("active");        
+      }else{
+        linkFile.classList.remove("active");
+      }
+    }
+    document.addEventListener('scroll', handleScroll);
+  }, []);
+
+  // const [scrollY, setScrollY] = useState(0);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setScrollY(window.scrollY);
+  //   };
+
+  //   // just trigger this so that the initial state 
+  //   // is updated as soon as the component is mounted
+  //   // related: https://stackoverflow.com/a/63408216
+  //   handleScroll();
+
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, []);
   return (
     <>
       <div className="text-center section">
