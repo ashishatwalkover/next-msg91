@@ -99,41 +99,49 @@ const campaign = () => {
           </Link>
         </div>
       </div>
-      <div className="d-flex flex-column align-items-center">
-      <div className="m-4">
-        <div className="accordion" id="myAccordion">
-          <div className="accordion-item">
-            <h2 className="accordion-header" id="headingOne">
-              <button type="button" className="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false">1. What is HTML?</button>									
-            </h2>
-            <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#myAccordion" style={{}}>
-              <div className="card-body">
-                <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+      <div className="container col-1 mt-5 justify-content-center"><h1><strong>FAQs</strong></h1></div>
+      <div className="container flex-column align-items-center">
+        <div className="py-2">
+          <div className="accordion" id="myAccordion">
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingOne">
+                <button type="button" className="text_5 accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false">What are the communication APIs?</button>
+              </h2>
+              <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#myAccordion" style={{}}>
+                <div className="card-body">
+                  <p className="text_6">Built for the communication space, communication APIs define rules of the possible interactions between servers and communication. They also function as the communication layer between appliccations and databases. Easy integrations and cost effective solutions.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="accordion-item">
-            <h2 className="accordion-header" id="headingTwo">
-              <button type="button" className="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">2. What is Bootstrap?</button>
-            </h2>
-            <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#myAccordion" style={{}}>
-              <div className="card-body">
-                <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingTwo">
+                <button type="button" className="text_5 accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">What are the communication APIs?</button>
+              </h2>
+              <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#myAccordion" style={{}}>
+                <div className="card-body">
+                  <p className="text_6">Built for the communication space, communication APIs define rules of the possible interactions between servers and communication. They also function as the communication layer between appliccations and databases. Easy integrations and cost effective solutions.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="accordion-item">
-            <h2 className="accordion-header" id="headingThree">
-              <button type="button" className="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">3. What is CSS?</button>                     
-            </h2>
-            <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#myAccordion">
-              <div className="card-body">
-                <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingThree">
+                <button type="button" className="text_5 accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">What are the communication APIs?</button>
+              </h2>
+              <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div className="card-body">
+                  <p className="text_6">Built for the communication space, communication APIs define rules of the possible interactions between servers and communication. They also function as the communication layer between appliccations and databases. Easy integrations and cost effective solutions.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div className="container col-2 justify-content-center">
+        <button className="border-0 bg-white"><Link className="text_7 ms-5" href="#">Learn more FAQs</Link>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="background_Color bi bi-arrow-right ms-2" viewBox="0 0 16 16" >
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+          </svg>
+        </button>
       </div>
     </>
   );
