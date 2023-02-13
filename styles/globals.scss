@@ -1,11 +1,15 @@
+$theme-colors: (
+  'primary': #1E75BA,
+  'secondary': #833bec,
+  'success': #1ce1ac,
+  'info': #ff7d50,
+  'warning': #ffbe0b,
+  'danger': #ff007f,
+  'light': #c0ccda,
+  'dark': #001738,
+);
 
-
-$primary: #1E75BA;
-$body-bg: #fff;
-$secondary: #8300d9;
-
-@import "~node_modules/bootstrap/scss/bootstrap";
-
+@import '/node_modules/bootstrap/scss/bootstrap.scss';
 @import'import';
 
 body,html{
