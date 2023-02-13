@@ -3,6 +3,7 @@ import Notification from "@/components/notification";
 import HeadTag from "@/components/head";
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "@/components/footer";
 
 
 const campaign = () => {
@@ -100,7 +101,7 @@ const campaign = () => {
         </div>
       </div>
       <div className="container col-1 mt-5 justify-content-center"><h1><strong>FAQs</strong></h1></div>
-      <div className="container flex-column align-items-center">
+      <div className="container col-8 flex-column align-items-center">
         <div className="py-2">
           <div className="accordion" id="myAccordion">
             <div className="accordion-item">
@@ -137,12 +138,13 @@ const campaign = () => {
         </div>
       </div>
       <div className="container col-2 justify-content-center">
-        <button className="border-0 bg-white"><Link className="text_7 ms-5" href="#">Learn more FAQs</Link>
+        <button className="border-0 bg-white mt-1"><Link className="text_7 ms-5" href="#">Learn more FAQs</Link>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="background_Color bi bi-arrow-right ms-2" viewBox="0 0 16 16" >
             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
           </svg>
         </button>
       </div>
+      <Footer/>
     </>
   );
 };
