@@ -1,13 +1,10 @@
 .us-cont{
-    width: 100%;
-    height: 200vh;
-    overflow: hidden;
-    display: flex;
+    width: 100%;    
+    display: flex;    
 }
 .us-nav-cont{
     height: 300vh;
     width: 386px;
-    // display: flex;
 }
 .us-nav{
     width: 386px;
@@ -17,17 +14,13 @@
    
 }
 .us-nav-options{
-    // padding: 8px 0;
     span{
-        // font-size: 24px;
         font-weight: 500;
         padding-left: 24px;
     }
-   
-    
 }
 .us-main{
-    padding: 40px 0;
+    padding: 100px 0;
     button{
         width: 124px;
     }

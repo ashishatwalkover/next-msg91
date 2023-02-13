@@ -1,5 +1,48 @@
 import { MdFavorite, MdArrowForward } from "react-icons/md";
+import { useEffect, useRef } from "react";
+// import { useEffect, useState } from "react";
+
+
+
+
 const Home = () => {
+/*   const aboutRef = useRef();
+  useEffect(() => {
+    const handleScroll = (e) => {
+        if (window.scrollY >= 0 && window.scrollY <= window.innerHeight / 2) {
+          console.log(0)
+            // Set states for nav items here if the user is on the first section
+        } else if (aboutRef.current.offsetTop - window.scrollY < window.innerHeight / 2 && stuffRef.current.offsetTop - window.scrollY >= window.innerHeight / 2) {
+            // For the about section
+        } else {
+            // Etc...
+        }
+    }
+    document.addEventListener('scroll', handleScroll);
+    return () => {
+        document.removeEventListener('scroll', handleScroll);
+    }
+  }, []); */
+  
+  // const [scrollY, setScrollY] = useState(0);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setScrollY(window.scrollY);
+  //   };
+
+  //   // just trigger this so that the initial state 
+  //   // is updated as soon as the component is mounted
+  //   // related: https://stackoverflow.com/a/63408216
+  //   handleScroll();
+
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, []);
   return (
     <>
       <div className="text-center section">
