@@ -6,7 +6,7 @@ const Utilities = () => {
     <>
       <section className="utilities section">
         <div className="container ">
-          <h1>Why choose Us?</h1>
+          <h1>Why choose Us?  </h1>
           <div className="us-cont">
             <div className="us-nav-cont">
               <div className="us-nav">
@@ -63,6 +63,7 @@ const Utilities = () => {
                 <Image src="../img/placeholder.svg" width={544} height={294} />
               </div>
               <div className="us-main d-flex align-item-center" id="knowledge-base">
+                    <Image src="../img/placeholder.svg" width={544} height={294} />
                 <div className="us-main-content d-flex flex-column  justify-content-center ">
                   <div className="us-main-heading d-flex">
                     <Image
@@ -82,7 +83,6 @@ const Utilities = () => {
                     Primary
                   </button>
                 </div>
-                <Image src="../img/placeholder.svg" width={544} height={294} />
               </div>
               <div className="us-main d-flex align-items-center" id="file-hosting">
                 <div className="us-main-content d-flex flex-column justify-content-center">

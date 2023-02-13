@@ -23,7 +23,7 @@ p {
 }
 // notification scss
 .notification {
-  background-color: #edeeee;
+  background-color: #F0F7FD;
   height:   40px;
   div {
     .badge {
@@ -71,4 +71,8 @@ a{
 // #need something
 .need-something{
   width: 80%;
+}
+// accordion
+.acc-container{
+  width: 50%;
 }

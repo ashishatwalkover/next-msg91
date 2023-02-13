@@ -3,7 +3,7 @@ const clintStories=()=>{
     return (
         <>
         <div className="container mt-5">
-            <h2>Our clint stories</h2>
+            <h2>Our Client stories</h2>
             <div className=" d-flex mt-3">
                 <div className="d-flex flex-column pe-5 ">
                     <Image src="../img/placeholder.svg" width={760*0.6} height={420*0.6}/>
