@@ -60,9 +60,11 @@ const campaign = () => {
       <div className="container d-flex flex-column align-items-flex-start">
         <span className="text_1 mt-5">Features</span>
       </div>
-      <div className="container d-flex flex-row align-items-center">
-        <div className="campaign_Flow_1_1 col-lg-6 col-md-6 col-sm-12 flex-column align-items-flex-start mt-5 ms-5 order-2"></div>
-        <div className="col-lg-6 col-md-6 col-sm-12 d-flex flex-column align-items-flex-start">
+      <div className="container d-lg-flex flex-row align-items-center">
+        <div className="campaign_Flow_1_1 col col-lg-6 col-md-6 col-sm-12 flex-column align-items-flex-start mt-lg-5 ms-lg-5 order-lg-2">
+          <img src="/Img/short-url-img.svg" />
+        </div>
+        <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
           <span className="text_2">
             Automate sending messages under defined conditions
           </span>
@@ -72,7 +74,7 @@ const campaign = () => {
             your audience under the right circumstances automatically, without
             any delays.
           </span>
-        </div>        
+        </div>
       </div>
       <div className="container d-flex flex-row align-items-center mt-5">
         <div className="campaign_Flow_1_1 col-6 flex-column align-items-flex-start mt-5 me-5"></div>
