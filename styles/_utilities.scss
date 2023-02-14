@@ -1,13 +1,14 @@
 .us-cont{
     width: 100%;    
-    display: flex;    
+    display: flex;   
+    gap:100px 
 }
 .us-nav-cont{
     height: auto;
-    width: 386px;
+    // width: 386px;
 }
 .us-nav{
-    width: 386px;
+    // width: 386px;
     height: 440px;
     position: sticky;
     top: 40%;
@@ -20,7 +21,7 @@
     }
 }
 .us-main{
-    padding: 100px 0;
+    padding:  0;
     button{
         width: 124px;
     }

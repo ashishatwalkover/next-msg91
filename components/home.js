@@ -55,43 +55,43 @@ const Home = () => {
   // }, []);
   return (
     <>
-      <div className="text-center section">
+      <div className="text-center col-xs-12 col-sm-10 col-md-8 col-l-6 mx-auto section">
         <h1 className="heading">Level Up Your Engagement Game</h1>
-        <p className="sub-heading col-6 m-auto">Best Cloud Communication Platform to Enhance Present Customer Engagement and Boost Future Reach</p>
+        <p className="sub-heading  m-auto">Best Cloud Communication Platform to Enhance Present Customer Engagement and Boost Future Reach</p>
         <button className="btn btn-primary btn-lg mt-3" type="button">Get started for Free</button>
       </div>
 
-      <section className="trusted-by text-center">
+      <section className="trusted-by  d-flex flex-column mx-auto text-center">
         <div className="mb-3">
           <MdFavorite className="love" /> Trusted by 
         </div>
-        <div className="d-flex justify-content-center mb-5">
+        <div className="d-flex flex-wrap justify-content-center col-12  mb-5 mx-auto">
 
-          <div className="col-lg-2 col-md-4 col-6">
+          <div className="col-lg-2 col-sm-3 col-md--3 col-6">
             <div className="mb-4 text-center align-middle">
               <img src="img/unacademy.svg" alt="" />
             </div>
           </div>
 
-          <div className="col-lg-2 col-md-4 col-6">
+          <div className="col-lg-2 col-sm-3 col-md--3 col-6">
             <div className="mb-4 text-center">
               <img src="img/housing.svg" alt="" />
             </div>
           </div>
 
-          <div className="col-lg-2 col-md-4 col-6">
+          <div className="col-lg-2 col-sm-3 col-md--3 col-6">
             <div className="mb-4 text-center">
               <img src="img/nestle.svg" alt="" />
             </div>
           </div>
 
-          <div className="col-lg-2 col-md-4 col-6">
+          <div className="col-lg-2 col-sm-3 col-md--3 col-6">
             <div className="mb-4 text-center">
               <img src="img/razorpay.svg" alt="" />
             </div>
           </div>
 
-          <div className="col-lg-2 col-md-4 col-6">
+          <div className="col-lg-2 col-sm-3 col-md--3 col-6">
             <div className="mb-4 text-center">
               <img src="img/tech-mahindra.svg" alt="" />
             </div>
@@ -100,7 +100,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="products d-flex">
+      <section className="products d-none">
         <div className="col hello">
           <h2 className="title">Conversation</h2>
           <div className="spacer"></div>
@@ -185,7 +185,7 @@ const Home = () => {
 
         </div>
 
-        <div className="d-flex pt-5 justify-content-between">          
+        <div className="d-flex flex-wrap g-4 pt-5 justify-content-between">          
             <div className="py-7 stats">
               <div className="lh-1">
                 <div className="mb-1 stats-title">4.5 Million+</div>
