@@ -28,3 +28,13 @@
 .us-main-content{
     gap:16px
 }
+.us-nav-options{
+    img{
+        opacity: 20%;
+    }
+}
+.active{
+    img{
+        opacity: 100!important;
+    }
+}

@@ -57,15 +57,15 @@ const Home = () => {
     <>
       <div className="text-center section">
         <h1 className="heading">Level Up Your Engagement Game</h1>
-        <p className="sub-heading col-4 m-auto">Best Cloud Communication Platform to Enhance Present Customer Engagement and Boost Future Reach</p>
-        <button className="btn btn-primary btn-lg mt-5" type="button">Get started for Free</button>
+        <p className="sub-heading col-6 m-auto">Best Cloud Communication Platform to Enhance Present Customer Engagement and Boost Future Reach</p>
+        <button className="btn btn-primary btn-lg mt-3" type="button">Get started for Free</button>
       </div>
 
       <section className="trusted-by text-center">
         <div className="mb-3">
           <MdFavorite className="love" /> Trusted by 
         </div>
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center mb-5">
 
           <div className="col-lg-2 col-md-4 col-6">
             <div className="mb-4 text-center align-middle">

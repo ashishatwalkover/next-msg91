@@ -10,7 +10,7 @@ const Utilities = () => {
           <div className="us-cont">
             <div className="us-nav-cont">
               <div className="us-nav">
-                <div className="us-nav-options align-items-center mb-2 d-flex" id="link-shortner">
+                <div className="us-nav-options align-items-center mb-2 d-flex active" id="link-shortner">
                   <Image
                     src="../img/fill-circle.svg"
                     width={32}
@@ -20,7 +20,7 @@ const Utilities = () => {
                 </div>
                 <div className="us-nav-options align-items-center mb-2  d-flex" id="link-knowledge">
                   <Image
-                    src="../img/circle.svg"
+                    src="../img/fill-circle.svg"
                     width={32}
                     height={32}
                   ></Image>
@@ -28,7 +28,7 @@ const Utilities = () => {
                 </div>
                 <div className="us-nav-options align-items-center mb-2 d-flex" id="link-file">
                   <Image
-                    src="../img/circle.svg"
+                    src="../img/fill-circle.svg"
                     width={32}
                     height={32}
                   ></Image>
@@ -60,10 +60,10 @@ const Utilities = () => {
                     Primary
                   </button>
                 </div>
-                <Image src="../img/placeholder.svg" width={544} height={294} />
+                <Image src="../img/Short Url img.svg" width={400} height={294} />
               </div>
               <div className="us-main d-flex align-item-center" id="knowledge-base">
-                    <Image src="../img/placeholder.svg" width={544} height={294} />
+                    <Image src="../img/KB img.svg" width={400} height={294} />
                 <div className="us-main-content d-flex flex-column  justify-content-center ">
                   <div className="us-main-heading d-flex">
                     <Image
@@ -104,7 +104,7 @@ const Utilities = () => {
                     Primary
                   </button>
                 </div>
-                <Image src="../img/placeholder.svg" width={544} height={294} />
+                <Image src="../img/Files img.svg" width={400} height={294} />
               </div>
 
 
