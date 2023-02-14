@@ -10,7 +10,7 @@ import ClintStories from "@/components/clintstories";
 
 const IndexPage =()=> {
   return (
-    <div>
+    <>
       <HeadTag/>
       <Notification/>
       <Header/>
@@ -19,7 +19,7 @@ const IndexPage =()=> {
       <Utilities/>     
       <ClintStories/>
       <Footer/>
-    </div>    
+    </>    
   )
 };
 export default IndexPage;
