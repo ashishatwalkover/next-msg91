@@ -50,6 +50,7 @@ const campaign = () => {
         <div className="mt-3">
           <Image
             src={"/img/Campaign_flow.svg"}
+            className="img-fluid"
             alt="#"
             width={1198}
             height="610"
@@ -60,7 +61,8 @@ const campaign = () => {
         <span className="text_1 mt-5">Features</span>
       </div>
       <div className="container d-flex flex-row align-items-center">
-        <div className="col-6 d-flex flex-column align-items-flex-start">
+        <div className="campaign_Flow_1_1 col-lg-6 col-md-6 col-sm-12 flex-column align-items-flex-start mt-5 ms-5 order-2"></div>
+        <div className="col-lg-6 col-md-6 col-sm-12 d-flex flex-column align-items-flex-start">
           <span className="text_2">
             Automate sending messages under defined conditions
           </span>
@@ -70,8 +72,7 @@ const campaign = () => {
             your audience under the right circumstances automatically, without
             any delays.
           </span>
-        </div>
-        <div className="campaign_Flow_1_1 col-6 flex-column align-items-flex-start mt-5 ms-5"></div>
+        </div>        
       </div>
       <div className="container d-flex flex-row align-items-center mt-5">
         <div className="campaign_Flow_1_1 col-6 flex-column align-items-flex-start mt-5 me-5"></div>
@@ -86,6 +87,7 @@ const campaign = () => {
         </div>
       </div>
       <div className="container d-flex flex-row align-items-center mt-5">
+        <div className="campaign_Flow_1_1 col-6 flex-column align-items-flex-start mt-5 ms-5 order-2"></div>
         <div className="col-6 d-flex flex-column align-items-flex-start pb-4">
           <span className="text_2">Make your communication more secure</span>
           <span className="text_3 mt-3">
@@ -94,8 +96,7 @@ const campaign = () => {
             practices and shape communication to fit your brand while ensuring
             optimum security through and through.
           </span>
-        </div>
-        <div className="campaign_Flow_1_1 col-6 flex-column align-items-flex-start mt-5 ms-5"></div>
+        </div>        
       </div>
       <div className="container d-flex flex-row align-items-center mt-5 mb-5">
         <div className="col-4 flex-column align-items-flex-start p-3 me-4">
