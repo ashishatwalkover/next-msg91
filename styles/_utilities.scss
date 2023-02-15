@@ -9,7 +9,7 @@
 }
 .us-nav{
     // width: 386px;
-    height: 440px;
+    // height: 440px;
     position: sticky;
     top: 40%;
    
@@ -20,14 +20,17 @@
         padding-left: 24px;
     }
 }
+.us-main-p{
+    padding: 0 0 200px 0;
+}
 .us-main{
-    padding:  0;
+    // padding:  100px 0;
     button{
         width: 124px;
     }
 }
 .us-main-content{
-    gap:16px
+    gap:15px
 }
 .us-nav-options{
     img{

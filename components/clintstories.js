@@ -5,7 +5,7 @@ const clintStories = () => {
     <>
       <div className="container mt-5">
         <h2 className="c-fs-2">Our Client stories</h2>
-        <div className=" d-flex mt-3 col-12 col-lg-12 flex-xl-row flex-lg-column flex-md-column flex-sm-column">
+        <div className=" d-flex mt-3 col-12 col-lg-12 flex-xl-row flex-lg-column flex-md-column flex-sm-column flex-column">
           <div className="d-flex flex-column pe-5 ">
             <Image
               src="/img/milkbasket img.png"
@@ -21,7 +21,7 @@ const clintStories = () => {
               information for their customers security and satisfaction.
             </p>
           </div>
-          <div className="d-flex flex-xl-column mt-xl-0 mt-lg-5 flex-lg-row col-xl-6 col-lg-12 flex-md-column flex-sm-column ">
+          <div className="d-flex flex-xl-column mt-xl-0 mt-lg-5 flex-lg-row col-xl-6 col-lg-12 flex-md-column flex-sm-column flex-column ">
             <div className=" d-flex ps-5 mb-xl-5 mb-lg-0 ">
               <Image src="/img/unacademy img.png" width={240} height={240} />
               <div className="container-fluid">

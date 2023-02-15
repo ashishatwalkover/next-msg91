@@ -54,10 +54,10 @@ const Notification = () => {
     <>
       <div className="container-fluid c-bg-grey">
         <div
-          className="container d-flex justify-content-sm-between align-items-center c-bg-grey notification"
+          className="container d-flex py-3   justify-content-start justify-content-md-between align-items-center c-bg-grey notification flex-column flex-md-row"
           role="alert"
         >
-          <div className="d-flex justify-content-sm-between align-items-center ">
+          <div className="d-flex justify-content-between align-items-center ">
             <span className="badge badge-pill badge-dark">New</span>
             <span className="m-y-auto">Campaign version 2.0 released</span>
           </div>

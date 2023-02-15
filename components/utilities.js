@@ -8,7 +8,7 @@ const Utilities = () => {
         <div className="container ">
           <h1>Why choose Us?  </h1>
           <div className="us-cont d-flex  container justify-content-between alighn-items-center col-12">
-            <div className="us-nav-cont col-3 d-lg-block d-md-none d-sm-none ">
+            <div className="us-nav-cont col-3 d-lg-block d-md-none d-sm-none d-none ">
               <div className="us-nav">
                 <div className="us-nav-options align-items-center mb-2 d-flex active" id="link-shortner">
                   <Image
@@ -38,9 +38,9 @@ const Utilities = () => {
 
               </div>
             </div>
-            <div className="us-main-cont col-lg-8 col-md-12 col-sm-12 col-xs-12">
+            <div className="us-main-cont col-lg-8 col-md-12 col-sm-12 col-12">
 
-              <div className="us-main container justify-content-between d-flex align-items-center col-12 flex-md-row flex-sm-column" id="url-shortner">
+              <div className="us-main us-main-p container justify-content-between d-flex align-items-center col-12 flex-md-row flex-sm-column flex-column" id="url-shortner">
                 <div className="us-main-content d-flex flex-column justify-content-center">
                   <div className="us-main-heading d-flex">
                     <Image
@@ -63,7 +63,7 @@ const Utilities = () => {
                 <Image src="../img/Short Url img.svg" width={400} height={294} />
               </div>
 
-              <div className="us-main d-flex align-item-center us-main container justify-content-between d-flex align-items-center col-12 flex-md-row flex-sm-column-reverse" id="knowledge-base">
+              <div className="us-main us-main-p d-flex align-item-center us-main container justify-content-between d-flex align-items-center col-12 flex-md-row flex-sm-column-reverse flex-column-reverse" id="knowledge-base">
                     <Image src="../img/KB img.svg" width={400} height={294} />
                 <div className="us-main-content d-flex flex-column  justify-content-center ">
                   <div className="us-main-heading d-flex">
@@ -85,7 +85,7 @@ const Utilities = () => {
                   </button>
                 </div>
               </div>
-              <div className="us-main d-flex align-items-center us-main container justify-content-between d-flex align-items-center col-12 flex-md-row flex-sm-column" id="file-hosting">
+              <div className="us-main d-flex align-items-center us-main container justify-content-between d-flex align-items-center col-12 flex-md-row flex-sm-column flex-column" id="file-hosting">
                 <div className="us-main-content d-flex flex-column justify-content-center">
                   <div className="us-main-heading d-flex">
                     <Image
