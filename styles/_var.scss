@@ -11,9 +11,10 @@
     --telegram-light: rgba(37, 162, 224, 0.1);
     --voice-light: rgba(105, 107, 239, 0.12);
     --rcs-light:  rgba(56, 146, 224, 0.12);
-
-    --heading:50px;
-    --sub-heading:28px;
+    
+    font-size: 10px;
+    --heading:clamp(3.6rem,4vw,6rem);
+    --sub-heading:clamp(2rem,3vw,3.6rem);
     --c-fs-1:42px;
     --c-fs-2:32px;
     --c-fs-3:24px;

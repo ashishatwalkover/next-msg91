@@ -64,7 +64,7 @@ const Home = () => {
   // }, []);
   return (
     <>
-      <div className="container text-md-center px-4 text-start col-xs-12 col-sm-10 col-md-8 col-l-6 mx-auto section">
+      <div className="container text-center px-4  col-xs-12 col-sm-10 col-md-8 col-l-6 mx-auto section">
         <h1 className="heading">Level Up Your Engagement Game</h1>
         <p className="sub-heading  m-auto">
           Best Cloud Communication Platform to Enhance Present Customer
