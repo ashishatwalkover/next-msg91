@@ -145,7 +145,7 @@
     // text-align: center;
     // width: 225px;  
     .stats-title{
-      font-size: 40px;
+      font-size: var(--sub-heading);
       color: var(--primary-color);
       font-weight: bold;
     }

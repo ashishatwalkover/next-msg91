@@ -1,9 +1,8 @@
       
 import Link from "next/link";
-import Image from "next/image";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
 
 const Header =()=> {
   return (
@@ -25,7 +24,7 @@ const Header =()=> {
           <Nav className="ms-auto">
             <Nav.Link className="c-fs-4 c-fw-r" href="#products">API Documentations</Nav.Link>
             <Nav.Link className="c-fs-4 c-fw-r d-lg-none d-block" href="#products">Sign In </Nav.Link>
-            <button type="button" className="btn btn-primary d-lg-block d-none">SIGN UP</button>
+            <button type="button" className="btn btn-primary c-fs-4 d-lg-block d-none">Sign UP</button>
           </Nav>
         </Navbar.Collapse>
     </Navbar>

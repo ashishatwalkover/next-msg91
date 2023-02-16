@@ -15,11 +15,11 @@
     font-size: 10px;
     --heading:clamp(3.6rem,4vw,6rem);
     --sub-heading:clamp(2rem,3vw,3.6rem);
-    --c-fs-1:42px;
-    --c-fs-2:32px;
-    --c-fs-3:24px;
-    --c-fs-4:20px;
-    --c-fs-5:16px;
+    --c-fs-1:clamp(3.6rem,4vw,4.2rem);
+    --c-fs-2:clamp(2.4rem,2.2vw,3.2rem);
+    --c-fs-3:clamp(1.8rem,2vw,2.4rem);
+    --c-fs-4:clamp(1.6rem,1.8vw,2rem);
+    --c-fs-5:clamp(1.4rem,1.5vw,1.6rem);
     --c-fs-6:14px;
     --c-fs-7:12px;
     --c-ff-h:charterbold;

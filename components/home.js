@@ -70,43 +70,43 @@ const Home = () => {
           Best Cloud Communication Platform to Enhance Present Customer
           Engagement and Boost Future Reach
         </p>
-        <button className="btn btn-primary btn-lg mt-3" type="button">
+        <button className="btn btn-primary btn-lg c-fs-4 mt-3" type="button">
           Get started for Free
         </button>
       </div>
 
       <section className="trusted-by  d-flex flex-column mx-auto text-center">
-        <div className="mb-3">
+        <div className="mb-5 c-fs-4">
           <MdFavorite className="love" /> Trusted by
         </div>
         <div className="d-flex flex-wrap justify-content-center col-12  mb-5 mx-auto">
-          <div className="col-lg-2 col-sm-3 col-md--3 col-6">
+          <div className="col-lg-2 col-sm-3 col-md-3 col-6">
             <div className="mb-4 text-center align-middle">
+              <img src="img/ixigo.svg" alt="" />
+            </div>
+          </div>
+
+          <div className="col-lg-2 col-sm-3 col-md-3 col-6 d-none d-md-block">
+            <div className="mb-4 text-center">
               <img src="img/unacademy.svg" alt="" />
             </div>
           </div>
 
-          <div className="col-lg-2 col-sm-3 col-md--3 col-6">
+          <div className="col-lg-2 col-sm-3 col-md-3 col-6">
             <div className="mb-4 text-center">
-              <img src="img/housing.svg" alt="" />
+              <img src="img/indeed.svg" alt="" />
             </div>
           </div>
 
-          <div className="col-lg-2 col-sm-3 col-md--3 col-6">
+          <div className="col-lg-2 col-sm-3 col-md-3 col-6 d-none d-lg-block">
             <div className="mb-4 text-center">
-              <img src="img/nestle.svg" alt="" />
+              <img src="img/nsic.png" alt="" />
             </div>
           </div>
 
-          <div className="col-lg-2 col-sm-3 col-md--3 col-6">
+          <div className="col-lg-2 col-sm-3 col-md-3 col-6 d-none d-sm-block">
             <div className="mb-4 text-center">
-              <img src="img/razorpay.svg" alt="" />
-            </div>
-          </div>
-
-          <div className="col-lg-2 col-sm-3 col-md--3 col-6">
-            <div className="mb-4 text-center">
-              <img src="img/tech-mahindra.svg" alt="" />
+              <img src="img/xiaomi.png" alt="" />
             </div>
           </div>
         </div>
