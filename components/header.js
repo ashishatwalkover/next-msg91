@@ -9,7 +9,7 @@ const Header =()=> {
   return (
     <>
 
-<Navbar className="container" expand="lg">
+<Navbar className="container px-3 px-md-0" expand="lg">
           <img className=" d-lg-none d-block" src="/img/logo.svg"/>
         
         <Navbar.Toggle  aria-controls="basic-navbar-nav" />
