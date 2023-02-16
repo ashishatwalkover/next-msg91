@@ -7,11 +7,7 @@ const clintStories = () => {
         <h2 className="c-fs-2">Our Client stories</h2>
         <div className=" d-flex mt-3 col-12 col-lg-12 flex-xl-row flex-lg-column flex-md-column flex-sm-column flex-column">
           <div className="d-flex flex-column pe-5 ">
-            <Image
-              src="/img/milkbasket img.png"
-              width={760 * 0.8}
-              height={478 * 0.8}
-            />
+          <img src="/img/milkbasket img.png" className="img-fluid" />
             <p className="c-fs-4 pt-3 col-12">
               Milkbasket sends regular updates to their customers’ via MSG91.
               Milkbasket is an E-commerce platform providing milk and grocery at
@@ -23,7 +19,7 @@ const clintStories = () => {
           </div>
           <div className="d-flex flex-xl-column mt-xl-0 mt-lg-5 flex-lg-row col-xl-6 col-lg-12 flex-md-column flex-sm-column flex-column ">
             <div className=" d-flex ps-5 mb-xl-5 mb-lg-0 ">
-              <Image src="/img/unacademy img.png" width={240} height={240} />
+              <img src="/img/unacademy img.png" className="img-fluid" />
               <div className="container-fluid">
                 <p className="c-fs-4 ps-3">
                   Unacademy ensures seamless communication using SMS via MSG91.
