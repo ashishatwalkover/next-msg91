@@ -8,13 +8,15 @@ const ProductsMenu = () => {
         <div className="ps-5 d-flex  m-y-120 flex-wrap">
             <div className="menu nav-applications">
               <p className="head-p">applications</p>
-              <div className="d-flex align-items-center product-cont">
-                <Image src="../img/hello.svg" width={40} height={40} />
-                <div className="product-dis">
-                  <h4 className="charterregular">Hello</h4>
-                  <p className="sub-p">Ticketing and Chat</p>
+              <Link href="/">
+                <div className="d-flex align-items-center product-cont">
+                  <Image src="../img/hello.svg" width={40} height={40} />
+                  <div className="product-dis">
+                    <h4 className="charterregular">Hello</h4>
+                    <p className="sub-p">Ticketing and Chat</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
               <div className="d-flex align-items-center product-cont">
                 <Image src="../img/campaign.svg" width={40} height={40} />
                 <div className="product-dis">

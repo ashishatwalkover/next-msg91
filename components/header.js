@@ -2,6 +2,8 @@ import Link from "next/link";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useEffect } from "react";
+import ProductMenu from "@/components/productmenu";
+import LearningCenter from "@/components/learning_center";
 
 const Header = () => {
   useEffect(() => {
@@ -37,7 +39,7 @@ const Header = () => {
 
   }, []);
 
-  return (
+  return (    
     <div className="px-0 px-md-5">
       <Navbar className="px-3 px-md-5" expand="lg">
 
@@ -60,6 +62,9 @@ const Header = () => {
         <img className=" d-lg-none d-block nav-logo" src="/img/logo.svg" />
         <button type="button" className="btn c-fs-5 btn-outline-primary d-lg-none d-block">Log In</button>
       </Navbar>
+      
+      <ProductMenu/>
+      <LearningCenter/>
       <div id="menu-backdrop"></div>
     </div>
   )
