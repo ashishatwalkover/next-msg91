@@ -1,11 +1,12 @@
-const faqSection = () => {
+import Link from "next/link";
+const FaqSection = () => {
   return (
     <>
-      <div class="accordion container col-8 " id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header " id="headingOne">
+      <div className="accordion container col-lg-8 col-12 my-5" id="accordionExample">
+        <div className="accordion-item">
+          <h2 className="accordion-header " id="headingOne">
             <button
-              class="accordion-button c-fs-4 c-ff-b c-fw-m"
+              className="accordion-button c-fs-4 c-ff-b c-fw-m"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseOne"
@@ -17,11 +18,11 @@ const faqSection = () => {
           </h2>
           <div
             id="collapseOne"
-            class="accordion-collapse collapse show"
+            className="accordion-collapse collapse show"
             aria-labelledby="headingOne"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body c-fs-4 c-ff-b c-fw-r">
+            <div className="accordion-body c-fs-4 c-ff-b c-fw-r">
               Built for the communications space, communication APIs define
               rules of the possible interactions between servers and
               communication applications. They also function as the
@@ -30,10 +31,10 @@ const faqSection = () => {
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
+        <div className="accordion-item">
+          <h2 className="accordion-header" id="headingTwo">
             <button
-              class="accordion-button collapsed  c-fs-4 c-ff-b c-fw-m"
+              className="accordion-button collapsed  c-fs-4 c-ff-b c-fw-m"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseTwo"
@@ -45,11 +46,11 @@ const faqSection = () => {
           </h2>
           <div
             id="collapseTwo"
-            class="accordion-collapse collapse"
+            className="accordion-collapse collapse"
             aria-labelledby="headingTwo"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body c-fs-4 c-ff-b c-fw-r">
+            <div className="accordion-body c-fs-4 c-ff-b c-fw-r">
               Founded in 2010, MSG91 over the years has built a robust product
               portfolio of communication services over a broad set of APIs, all
               available in off-the-shelf modules. We thrive on innovation and
@@ -59,10 +60,10 @@ const faqSection = () => {
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
+        <div className="accordion-item">
+          <h2 className="accordion-header" id="headingThree">
             <button
-              class="accordion-button collapsed  c-fs-4 c-ff-b c-fw-m"
+              className="accordion-button collapsed  c-fs-4 c-ff-b c-fw-m"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseThree"
@@ -75,11 +76,11 @@ const faqSection = () => {
           </h2>
           <div
             id="collapseThree"
-            class="accordion-collapse collapse"
+            className="accordion-collapse collapse"
             aria-labelledby="headingThree"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body  c-fs-4 c-ff-b c-fw-r">
+            <div className="accordion-body  c-fs-4 c-ff-b c-fw-r">
               You can switch in just a few steps, you need to create your
               account with MSG91. Our Support Superheroes will help you in the
               integration process. You can also refer migration guides to ease
@@ -87,8 +88,28 @@ const faqSection = () => {
             </div>
           </div>
         </div>
+        <Link
+          href="#"
+          className=" c-fs-4 btn btn-link text-decoration-none py-2 px-3 mx-auto"
+        >
+          Request a Feature
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            className="bi bi-arrow-right ms-3"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+            />
+          </svg>
+        </Link>
       </div>
+
     </>
   );
 };
- export default faqSection;
+ export default FaqSection;

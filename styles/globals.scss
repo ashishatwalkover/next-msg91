@@ -103,3 +103,10 @@ a{
   width: clamp(158px,40vw,260px);
   height:clamp(158px,40vw,260px);
 }
+
+// page img
+
+.product-page-img{
+  width: clamp(80%,80vw,100px);
+  box-shadow: 4px 0px 42px rgba(0, 0, 0, 0.1), -4px -14px 42px rgba(0, 0, 0, 0.1);
+}

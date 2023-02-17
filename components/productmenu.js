@@ -90,21 +90,21 @@ const ProductsMenu = () => {
             <div className="menu nav-utilities">
               <p className="head-p ">Utiliteis</p>
               <div className="d-flex align-items-center product-cont">
-                <Image src="../img/short URL.svg" width={40} height={40} />
+                <Image src="../img/short-url-ico.svg" width={40} height={40} />
                 <div className="product-dis">
                   <h4 className="charterregular">URL Shrtnr</h4>
                   <p className="sub-p">Customize and track URL's</p>
                 </div>
               </div>
               <div className="d-flex align-items-center product-cont">
-                <Image src="../img/KB.svg" width={40} height={40} />
+                <Image src="../img/kb-ico.svg" width={40} height={40} />
                 <div className="product-dis">
                   <h4 className="charterregular">Knowladgebase</h4>
                   <p className="sub-p">Manage help Doc and guidess</p>
                 </div>
               </div>
               <div className="d-flex align-items-center product-cont">
-                <Image src="../img/Files.svg" width={40} height={40} />
+                <Image src="../img/files-ico.svg" width={40} height={40} />
                 <div className="product-dis">
                   <h4 className="charterregular">File Hosting</h4>
                   <p className="sub-p">Manage your files on cloud</p>
