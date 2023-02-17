@@ -96,3 +96,10 @@ a{
   left:0;
   background: rgba(0,0,0,0.2);
 }
+
+// clint stories
+
+.clint-img{
+  width: clamp(158px,40vw,260px);
+  height:clamp(158px,40vw,260px);
+}

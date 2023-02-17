@@ -8,7 +8,7 @@
 }
 .us-nav{
     position: sticky;
-    top: 40%;
+    top: 38%;
    
 }
 .us-nav-options{
@@ -21,13 +21,19 @@
         padding-left: 24px;
     }
 }
-.us-main-p{
-    padding: 0 0 200px 0;
-}
+
 .us-main{
-    // padding:  100px 0;
+    padding:  300px 0 0 0;
     button{
         width: 124px;
+    }
+}
+.pb-300{
+    padding-bottom:300px ;
+}
+@media only screen and (max-width: 992px) {
+    .us-main{
+        padding: 20px 0;
     }
 }
 .us-main-content{
@@ -45,5 +51,5 @@
 }
 
 .utility-img{
-    width: 340px;
+    width: clamp(320px,32vw,600px);
 }

@@ -112,8 +112,8 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="products  d-none flex-wrap  ">
-        <div className=" hello">
+      <section className="products d-none  ">
+        <div className=" hello col-3">
           <h2 className="title">Conversation</h2>
           <div className="spacer"></div>
           <div className="pro-footer">
@@ -128,7 +128,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className=" segmento">
+        <div className=" segmento col-3">
           <h2 className="title">Segmentation</h2>
           <div className="spacer"></div>
           <div className="pro-footer alt">
@@ -143,7 +143,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className=" campaign">
+        <div className=" campaign col-3">
           <h2 className="title">Flow/OneAPI</h2>
           <div className="spacer"></div>
           <div className="pro-footer">
@@ -158,7 +158,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className=" otp">
+        <div className=" otp col-3">
           <h2 className="title">Verification</h2>
           <div className="spacer"></div>
           <div className="pro-footer alt">

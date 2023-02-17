@@ -19,7 +19,7 @@ const IndexPage =()=> {
       <ProductMenu/>
       <LearningCenter/>
       <Utilities/>     
-      {/* <ClintStories/> */}
+      <ClintStories/>
       <Footer/>
     </>    
   )

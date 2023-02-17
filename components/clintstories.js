@@ -4,11 +4,11 @@ const clintStories = () => {
   return (
     <>
       <div className="container mt-5">
-        <h2 className="c-fs-2">Our Client stories</h2>
-        <div className=" d-flex mt-3 col-12 col-lg-12 flex-xl-row flex-lg-column flex-md-column flex-sm-column flex-column">
-          <div className="d-flex flex-column pe-5 ">
-          <img src="/img/milkbasket img.png" className="img-fluid" />
-            <p className="c-fs-4 pt-3 col-12">
+        <h2 className="c-ff-h c-fs-1 my-5">Our Client stories</h2>
+        <div className=" d-flex flex-column flex-md-row mt-3 ">
+          <div className="d-flex flex-column col-12 col-md-6 pe-0 pe-md-5 justify-content-center justify-content-md-start">
+          <img src="/img/milkbasket img.png" className="img-fluid " />
+            <p className="c-fs-4 pt-4 col-12 d-none d-md-block">
               Milkbasket sends regular updates to their customers’ via MSG91.
               Milkbasket is an E-commerce platform providing milk and grocery at
               doorsteps. With the vision to offer their customers a seamless
@@ -17,10 +17,10 @@ const clintStories = () => {
               information for their customers security and satisfaction.
             </p>
           </div>
-          <div className="d-flex flex-xl-column mt-xl-0 mt-lg-5 flex-lg-row col-xl-6 col-lg-12 flex-md-column flex-sm-column flex-column ">
-            <div className=" d-flex ps-5 mb-xl-5 mb-lg-0 ">
-              <img src="/img/unacademy img.png" className="img-fluid" />
-              <div className="container-fluid">
+          <div className="col-12 col-md-6 mt-5 mt-md-0 mt-lg-0 d-flex  flex-row flex-md-column justify-content-center justify-content-md-start  ">
+            <div className=" d-flex  mb-5 mb-lg-0 me-5  ">
+              <img src="/img/unacademy img.png" className="img-fluid clint-img" />
+              <div className="container-fluid d-none d-md-block">
                 <p className="c-fs-4 ps-3">
                   Unacademy ensures seamless communication using SMS via MSG91.
                 </p>
@@ -45,10 +45,10 @@ const clintStories = () => {
                 </Link>
               </div>
             </div>
-            <div className=" d-flex ps-5 mt-xl-5 mt-lg-0 mt-md-5 mt-sm-5">
-              <Image src="/img/ixigo img.png" width={240} height={240} />
-              <div className="container-fluid">
-                <p className="c-fs-4 ps-3">
+            <div className=" d-flex  mt-xl-5 mt-lg-5 mt-md-5 mt-0   ">
+              <img src="/img/ixigo img.png"  className="img-fluid clint-img"/>
+              <div className="container-fluid d-none d-md-block" >
+                <p className="c-fs-4 ps-3 ">
                   Ixigo ensures seamless communication using SMS via MSG91.
                 </p>
                 <Link
