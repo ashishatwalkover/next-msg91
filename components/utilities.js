@@ -9,8 +9,8 @@ const Utilities = () => {
           <h1>Why choose Us?  </h1>
           <div className="us-cont d-flex  container justify-content-between alighn-items-center col-12">
             <div className="us-nav-cont col-3 d-lg-block d-md-none d-sm-none d-none ">
-              <div className="us-nav">
-                <div className="us-nav-options align-items-center mb-2 d-flex active" id="link-shortner">
+              <div className="us-nav" id="utilities-items">
+                <div className="us-nav-options align-items-center mb-4 d-flex active" id="link-shortner">
                   <Image
                     src="../img/fill-circle.svg"
                     width={32}
@@ -18,7 +18,7 @@ const Utilities = () => {
                   ></Image>
                   <span className="c-fs-3">URL Shortner</span>
                 </div>
-                <div className="us-nav-options align-items-center mb-2  d-flex" id="link-knowledge">
+                <div className="us-nav-options align-items-center mb-4  d-flex" id="link-knowledge">
                   <Image
                     src="../img/fill-circle.svg"
                     width={32}
@@ -26,7 +26,7 @@ const Utilities = () => {
                   ></Image>
                   <span className="c-fs-3">Knowledgebase</span>
                 </div>
-                <div className="us-nav-options align-items-center mb-2 d-flex" id="link-file">
+                <div className="us-nav-options align-items-center mb-4 d-flex" id="link-file">
                   <Image
                     src="../img/fill-circle.svg"
                     width={32}

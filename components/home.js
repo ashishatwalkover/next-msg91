@@ -8,32 +8,32 @@ const Home = () => {
     const shortner = document.getElementById("url-shortner");
     const knowledge = document.getElementById("knowledge-base");
     const file = document.getElementById("file-hosting");
-
+    
+    const utilitiesItems = document.getElementById("utilities-items");
     const linkShortner = document.getElementById("link-shortner");
     const linkKnowledge = document.getElementById("link-knowledge");
     const linkFile = document.getElementById("link-file");
 
-    const handleScroll = (e) => {
-      console.log(shortner.offsetTop, window.scrollY);
+    const handleScroll = (e) => {      
       if (
-        window.scrollY >= shortner.offsetTop &&
-        window.scrollY <= shortner.offsetTop + 500
+        utilitiesItems.offsetTop >= shortner.offsetTop &&
+        utilitiesItems.offsetTop + 45 <= shortner.offsetTop + 495
       ) {
-        linkShortner.classList.add("active");
+        linkShortner.classList.add("active");        
       } else {
-        linkShortner.classList.remove("active");
+        linkShortner.classList.remove("active");        
       }
       if (
-        window.scrollY >= knowledge.offsetTop &&
-        window.scrollY <= knowledge.offsetTop + 500
+        utilitiesItems.offsetTop >= knowledge.offsetTop - 45 &&
+        utilitiesItems.offsetTop + 90 <= knowledge.offsetTop + 495
       ) {
         linkKnowledge.classList.add("active");
       } else {
         linkKnowledge.classList.remove("active");
       }
       if (
-        window.scrollY >= file.offsetTop &&
-        window.scrollY <= file.offsetTop + 500
+        utilitiesItems.offsetTop >= file.offsetTop - 90 &&
+        utilitiesItems.offsetTop <= file.offsetTop + 495
       ) {
         linkFile.classList.add("active");
       } else {

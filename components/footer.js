@@ -8,7 +8,7 @@ const Footer = () => {
     <SeccondFooter/>
       <div className="footer pt-5">
         <div className="footer-main-cont mt-4 mb-4 container">
-          <div className="row justify-content-center">
+          <div className="row justify-content-sm-between">
             <div className="col-12 col-lg-2 f-social-link-cont mb-4">
               <div className="footer-social-link-content">
                 <span className="footer-social-link-text  c-fs-5 d-flex flex-column">
