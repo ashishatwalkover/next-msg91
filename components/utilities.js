@@ -35,7 +35,7 @@ const Utilities = () => {
             </div>
            
             <div className="us-main-cont">
-              <div className="uc-main d-flex flex-md-row flex-column align-items-center">
+              <div className="uc-main d-flex flex-md-row flex-column align-items-center" id="url-shortner">
                 <div>
                   <div className="d-flex align-content-center">
                     <img src="/img/short-url-ico.svg" />
@@ -51,7 +51,7 @@ const Utilities = () => {
                 </div>
                 <img src="/img/short-url-img.svg" className="utility-img"/>
               </div>
-              <div className="uc-main d-flex flex-md-row-reverse flex-column align-items-center">
+              <div className="uc-main d-flex flex-md-row-reverse flex-column align-items-center" id="knowledge-base">
                 <div>
                   <div className="d-flex align-content-center">
                     <img src="/img/kb-ico.svg" />
@@ -66,7 +66,7 @@ const Utilities = () => {
                 </div>
                 <img src="/img/kb-img.svg" className="utility-img"/>
               </div>
-              <div className="uc-main d-flex flex-md-row flex-column align-items-center">
+              <div className="uc-main d-flex flex-md-row flex-column align-items-center" id="file-hosting">
                 <div>
                   <div className="d-flex align-content-center">
                     <img src="/img/files-ico.svg" />
