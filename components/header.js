@@ -1,39 +1,66 @@
-      
 import Link from "next/link";
-import Image from "next/image";
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { useEffect } from "react";
 
-const Header =()=> {
-  return (
-    <>
-    <nav class=" conatainer navbar navbar-expand-lg  justify-content-sm-between ">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-   <header className=" container c-fs-4 d-flex flex-wrap align-items-center justify-content-sm-between mb-4 header-c" tabindex="-1" >
-      <ul className="nav my-2 justify-content-start mb-md-0 nav-c ">
-        <li><Link className="nav-link px-2 " href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Products</Link></li>
-        <li><Link className="nav-link px-2 " data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas-Learning">Learning Center</Link></li>
-        <li><Link href="#" className="nav-link px-2 ">Pricing</Link></li>
-      </ul>
-
-      <Link href="/" >
-        <Image  src="/img/logo.svg" width={124} height={40}/>                      
-      </Link>
-
-      <div className="nav justify-content-end nav-c">
-        <li><Link href="#" className="nav-link px-2 link-dark">API Documentations</Link></li>
-        <button type="button" className="btn btn-primary ">SIGN UP</button>
-      </div> 
-
-    </header>
+const Header = () => {
+  useEffect(() => {
+    const productMenu = document.getElementById("product-menu");
+    const learningCenter = document.getElementById("learning-center");
+    const menuBackdrop = document.getElementById("menu-backdrop");
+    const linkProducts = document.getElementById("link-products");
+    const linkLearning = document.getElementById("link-learning");
+    const body = document.getElementsByTagName("body")[0];
     
-  </div>
-</nav>
+    const showNav = (e) => {
+      productMenu.classList.add("active");
+      learningCenter.classList.remove("active");
+      menuBackdrop.classList.add("active");      
+      body.classList.add("oh");      
+    }
+    linkProducts.addEventListener('mouseover', showNav);
+    
+    const showLearningCenter = (e) => {
+      learningCenter.classList.add("active");
+      menuBackdrop.classList.add("active");      
+      body.classList.add("oh");      
+    }
+    linkLearning.addEventListener('mouseover', showLearningCenter);
+    
+    const hideMenu = (e) => {
+      productMenu.classList.remove("active");
+      menuBackdrop.classList.remove("active");
+      learningCenter.classList.remove("active");
+      body.classList.remove("oh");
+    }
+    menuBackdrop.addEventListener('mouseover', hideMenu);
 
-    </>
+  }, []);
 
+  return (
+    <div className="px-5">
+      <Navbar className="px-5" expand="lg">
+        <img className=" d-lg-none d-block" src="/img/logo.svg" />
 
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse className=" col-4" id="basic-navbar-nav">
+          <Nav className="me-auto product-navbar">
+            <Nav.Link className="c-fs-4 c-fw-r" href="#products" id="link-products">Products</Nav.Link>
+            <Nav.Link className="c-fs-4 c-fw-r" href="#products" id="link-learning">Learning Center</Nav.Link>
+            <Nav.Link className="c-fs-4 c-fw-r" href="#products">Pricing</Nav.Link>
+          </Nav>
+
+          <img className=" d-lg-block d-none" src="/img/logo.svg" />
+
+          <Nav className="ms-auto">
+            <Nav.Link className="c-fs-4 c-fw-r" href="#products">API Documentations</Nav.Link>
+            <Nav.Link className="c-fs-4 c-fw-r d-lg-none d-block" href="#products">Sign In </Nav.Link>
+            <button type="button" className="btn btn-primary c-fs-4 d-lg-block d-none">Sign UP</button>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+      <div id="menu-backdrop"></div>
+    </div>
   )
 };
 export default Header;

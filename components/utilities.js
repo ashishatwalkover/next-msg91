@@ -4,13 +4,13 @@ import Image from "next/image";
 const Utilities = () => {
   return (
     <>
-      <section className="utilities section">
+      <section className="utilities col-12 section">
         <div className="container ">
-          <h1>Why choose Us?</h1>
-          <div className="us-cont">
-            <div className="us-nav-cont">
+          <h1>Why choose Us?  </h1>
+          <div className="us-cont d-flex  container justify-content-between alighn-items-center col-12">
+            <div className="us-nav-cont col-3 d-lg-block d-md-none d-sm-none d-none ">
               <div className="us-nav">
-                <div className="us-nav-options align-items-center mb-2 d-flex" id="link-shortner">
+                <div className="us-nav-options align-items-center mb-2 d-flex active" id="link-shortner">
                   <Image
                     src="../img/fill-circle.svg"
                     width={32}
@@ -20,7 +20,7 @@ const Utilities = () => {
                 </div>
                 <div className="us-nav-options align-items-center mb-2  d-flex" id="link-knowledge">
                   <Image
-                    src="../img/circle.svg"
+                    src="../img/fill-circle.svg"
                     width={32}
                     height={32}
                   ></Image>
@@ -28,7 +28,7 @@ const Utilities = () => {
                 </div>
                 <div className="us-nav-options align-items-center mb-2 d-flex" id="link-file">
                   <Image
-                    src="../img/circle.svg"
+                    src="../img/fill-circle.svg"
                     width={32}
                     height={32}
                   ></Image>
@@ -38,10 +38,10 @@ const Utilities = () => {
 
               </div>
             </div>
-            <div className="us-main-cont">
+            <div className="us-main-cont col-lg-8 col-md-12 col-sm-12 col-12">
 
-              <div className="us-main d-flex align-item-center" id="url-shortner">
-                <div className="us-main-content d-flex flex-column justify-content-center ">
+              <div className="us-main us-main-p container justify-content-between d-flex align-items-center col-12 flex-md-row flex-sm-column flex-column" id="url-shortner">
+                <div className="us-main-content d-flex flex-column justify-content-center">
                   <div className="us-main-heading d-flex">
                     <Image
                       src="../img/short URL.svg"
@@ -51,7 +51,7 @@ const Utilities = () => {
                     ></Image>
                     <h2 className="c-fs-2 c-ff-h">URL Shortner</h2>
                   </div>
-                  <p className="c-fs-3 c-fw-r">
+                  <p className=" c-fs-3 c-fw-r">
                     Engineered for high reliability, our globally distributed
                     carrier network and intelligent routing ensure the highest SMS
                     delivery and lowest latency.
@@ -60,9 +60,11 @@ const Utilities = () => {
                     Primary
                   </button>
                 </div>
-                <Image src="../img/placeholder.svg" width={544} height={294} />
+                <Image src="../img/Short Url img.svg" width={400} height={294} />
               </div>
-              <div className="us-main d-flex align-item-center" id="knowledge-base">
+
+              <div className="us-main us-main-p d-flex align-item-center us-main container justify-content-between d-flex align-items-center col-12 flex-md-row flex-sm-column-reverse flex-column-reverse" id="knowledge-base">
+                    <Image src="../img/KB img.svg" width={400} height={294} />
                 <div className="us-main-content d-flex flex-column  justify-content-center ">
                   <div className="us-main-heading d-flex">
                     <Image
@@ -82,9 +84,8 @@ const Utilities = () => {
                     Primary
                   </button>
                 </div>
-                <Image src="../img/placeholder.svg" width={544} height={294} />
               </div>
-              <div className="us-main d-flex align-items-center" id="file-hosting">
+              <div className="us-main d-flex align-items-center us-main container justify-content-between d-flex align-items-center col-12 flex-md-row flex-sm-column flex-column" id="file-hosting">
                 <div className="us-main-content d-flex flex-column justify-content-center">
                   <div className="us-main-heading d-flex">
                     <Image
@@ -104,7 +105,7 @@ const Utilities = () => {
                     Primary
                   </button>
                 </div>
-                <Image src="../img/placeholder.svg" width={544} height={294} />
+                <Image src="../img/Files img.svg" width={400} height={294} />
               </div>
 
 

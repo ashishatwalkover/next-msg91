@@ -1,8 +1,6 @@
-.footer{
-    padding: 0 15vw;
+.footer{    
     background-color: var(--black-color);
-    color: var(--white-color);
-    // height: 50vh;
+    color: var(--c-light-grey);    
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -11,12 +9,16 @@
 }
 a{
     text-decoration: none;
-    color: var(--whiet-color);
+    color: var(--c-light-grey);
+    &:hover{
+      color: var(--c-light-grey);
+      text-decoration: underline;
+    }
   
   }
 .full-line{
     height: 250px;
-    border-left: 1px solid var(--grey-color);
+    border-left: 1px solid var(--c-grey);
 }
   
   .f-menu-cont{
@@ -36,7 +38,12 @@ a{
 .grey-cont{
     background-color: #7f7b823a;
 }
-
+.footer2{
+  background: #1d2023;
+}
+.copyright{
+  color: var(--c-grey)
+}
 
 
 

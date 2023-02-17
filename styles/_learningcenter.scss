@@ -1,0 +1,33 @@
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+// Productmenu
+#learning-center{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 99;
+  padding-top: 120px;
+  overflow: auto;  
+  opacity: 0;
+  display: none;
+  -webkit-animation-duration: 0.25s;
+  animation-duration: 0.25s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;  
+  &.active{
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    display: block;
+    width: 50%;
+  }  
+}

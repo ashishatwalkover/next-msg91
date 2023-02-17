@@ -1,7 +1,7 @@
 @import'import';
 
 body,html{
-    font-family: 'Jost', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+  font-family: 'Jost', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;      
 }
 h1 {
   font-family: "charterbold", "Times New Roman", Times, serif;
@@ -21,10 +21,11 @@ p {
     }
   }
 }
+.oh{
+  overflow: hidden !important;
+}
 // notification scss
 .notification {
-  background-color: #edeeee;
-  height:   40px;
   div {
     .badge {
       background-color: #29a653;
@@ -54,21 +55,40 @@ a{
 
 }
 
-
 // custom padding
-
-
-
 .section{
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
+   padding: 80px 0;}
 .c-bg-grey{
   background-color:#f0f7fd;
 
 }
 
-// #need something
-.need-something{
-  width: 80%;
+// accordion
+.acc-container{
+  width: 50%;
+}
+.product-navbar{
+  position: relative;
+  z-index: 999;
+  margin-left: -8px;
+  .nav-link{
+    margin-right: 40px;
+  }
+}
+.v-divider{
+  width: 1px;
+  background: var(--border-color);  
+}
+.h-divider{
+  height: 1px;
+  background: var(--border-color);  
+}
+
+#menu-backdrop.active{
+  position: fixed;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  background: rgba(0,0,0,0.2);
 }
