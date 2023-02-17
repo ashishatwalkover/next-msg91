@@ -5,16 +5,17 @@
 }
 .us-nav-cont{
     height: auto;
-    // width: 386px;
 }
 .us-nav{
-    // width: 386px;
-    // height: 440px;
     position: sticky;
     top: 40%;
    
 }
 .us-nav-options{
+    img{
+        width: 30px;
+        height: 30px;
+    }
     span{
         font-weight: 500;
         padding-left: 24px;
@@ -41,4 +42,8 @@
     img{
         opacity: 100!important;
     }
+}
+
+.utility-img{
+    width: 340px;
 }
