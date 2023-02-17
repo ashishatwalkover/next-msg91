@@ -38,9 +38,8 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="px-5">
-      <Navbar className="px-5" expand="lg">
-        <img className=" d-lg-none d-block" src="/img/logo.svg" />
+    <div className="px-0 px-md-5">
+      <Navbar className="px-3 px-md-5" expand="lg">
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className=" col-4" id="basic-navbar-nav">
@@ -58,6 +57,8 @@ const Header = () => {
             <button type="button" className="btn btn-primary c-fs-4 d-lg-block d-none">Sign UP</button>
           </Nav>
         </Navbar.Collapse>
+        <img className=" d-lg-none d-block nav-logo" src="/img/logo.svg" />
+        <button type="button" className="btn c-fs-5 btn-outline-primary d-lg-none d-block">Log In</button>
       </Navbar>
       <div id="menu-backdrop"></div>
     </div>

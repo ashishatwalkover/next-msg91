@@ -176,118 +176,90 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="channels container px-sm-0 px-4 section">
-        <div className="row">
+      <section className="channels container px-sm-0 d-flex flex-column justify-content-center justift-content-sm-start section">
+        <div className="d-flex flex-column text-center text-sm-start  ">
           <h2 className="heading mb-3">Communication channels</h2>
-          <p>
+          <p className="c-fs-3 mx-2 mx-sm-0">
             Empower conversations with best-in-class communication API.
             Full-featured APIs for developers & businesses to connect and engage
             their customers globally.
           </p>
         </div>
 
-        <div className="d-flex flex-wrap my-4">
+        <div className="d-flex flex-wrap justify-content-sm-start justify-content-center my-4">
           <a href="/hello" target="_blank" className="chn-btn sms">
             <div className="icon sms-icon"></div>
-            <div className="btn-label d-flex flex-fill justify-content-between align-items-center">
-              <span>SMS</span> <MdArrowForward />
+            <div className="btn-label d-flex flex-none flex-md-fill justify-content-between align-items-center">
+              <span className="c-fs-4">SMS</span> <MdArrowForward className="d-none d-md-block" />
             </div>
           </a>
 
           <a href="/hello" target="_blank" className="chn-btn email">
             <div className="icon email-icon"></div>
-            <div className="btn-label d-flex flex-fill justify-content-between align-items-center">
-              <span>Email</span> <MdArrowForward />
+            <div className="btn-label d-flex flex-none flex-md-fill justify-content-between align-items-center">
+              <span className="c-fs-4">Email</span>{" "}
+              <MdArrowForward className="d-none d-md-block" />
             </div>
           </a>
 
           <a href="/hello" target="_blank" className="chn-btn voice">
             <div className="icon voice-icon"></div>
-            <div className="btn-label d-flex flex-fill justify-content-between align-items-center">
-              <span>Voice</span> <MdArrowForward />
+            <div className="btn-label d-flex flex-none flex-md-fill justify-content-between align-items-center">
+              <span className="c-fs-4">Voice</span>{" "}
+              <MdArrowForward className="d-none d-md-block" />
             </div>
           </a>
           <a href="/hello" target="_blank" className="chn-btn whatsapp">
             <div className="icon whatsapp-icon"></div>
-            <div className="btn-label d-flex flex-fill justify-content-between align-items-center">
-              <span>WhatsApp</span> <MdArrowForward />
+            <div className="btn-label d-flex flex-none flex-md-fill justify-content-between align-items-center">
+              <span className="c-fs-4">WhatsApp</span>{" "}
+              <MdArrowForward className="d-none d-md-block" />
             </div>
           </a>
 
           <a href="/hello" target="_blank" className="chn-btn telegram">
             <div className="icon telegram-icon"></div>
-            <div className="btn-label d-flex flex-fill justify-content-between align-items-center">
-              <span>Telegram</span> <MdArrowForward />
+            <div className="btn-label d-flex flex-none flex-md-fill justify-content-between align-items-center">
+              <span className="c-fs-4">Telegram</span>{" "}
+              <MdArrowForward className="d-none d-md-block" />
             </div>
           </a>
           <a href="/hello" target="_blank" className="chn-btn rcs">
             <div className="icon rcs-icon"></div>
-            <div className="btn-label d-flex flex-fill justify-content-between align-items-center">
-              <span>RCS</span> <MdArrowForward />
+            <div className="btn-label d-flex flex-none flex-md-fill justify-content-between align-items-center">
+              <span className="c-fs-4">RCS</span> <MdArrowForward className="d-none d-md-block" />
             </div>
           </a>
         </div>
 
-        <div className="d-none flex-column flex-lg-row g-4 pt-5 ">
-          <div className="d-flex flex-column  flex-sm-row me-5">
-            <div className="py-7 stats py-3 me-5 pe-3">
-              <div className="lh-1">
-                <div className="mb-1 stats-title">4.5 Million+</div>
-                <span>API calls</span>
-              </div>
-            </div>
-
-            <div className="py-7 stats py-3 pe-3">
-              <div className="lh-1">
-                <div className="mb-1 stats-title">150 Million+</div>
-                <span>Emails Delivered</span>
-              </div>
+        <div className="d-flex flex-wrap g-4 pt-5 ">
+          <div className="py-7 stats py-3 pe-3  col-6 col-lg-6 col-xl-3">
+            <div className="lh-1 d-flex flex-column align-items-center align-items-sm-start">
+              <span className="mb-1 stats-title">4.5 Million+</span>
+              <span className="c-fs-3 c-fw-m">API calls</span>
             </div>
           </div>
-          <div className="d-flex flex-column  flex-sm-row ">
-            <div className="py-7 stats py-3 me-5 pe-3">
-              <div className="lh-1">
-                <div className="mb-1 stats-title">2.3 Million+</div>
-                <span>SMS Delivered</span>
-              </div>
-            </div>
 
-            <div className="py-7 stats py-3 pe-3">
-              <div className="lh-1">
-                <div className="mb-1 stats-title">192</div>
-                <span>Countries</span>
-              </div>
+          <div className="py-7 stats py-3 pe-3   col-6 col-lg-6 col-xl-3">
+            <div className="lh-1 d-flex flex-column align-items-center align-items-sm-start">
+              <span className="mb-1 stats-title">150 Million+</span>
+              <span className="c-fs-3 c-fw-m">Emails Delivered</span>
+            </div>
+          </div>
+          <div className="py-7 stats py-3  pe-3  col-6 col-lg-6 col-xl-3">
+            <div className="lh-1 d-flex flex-column align-items-center align-items-sm-start">
+              <span className="mb-1 stats-title">2.3 Million+</span>
+              <span className="c-fs-3 c-fw-m">SMS Delivered</span>
+            </div>
+          </div>
+
+          <div className="py-7 stats py-3 pe-3   col-6 col-lg-6 col-xl-3">
+            <div className="lh-1 d-flex flex-column align-items-center align-items-sm-start">
+              <span className="mb-1 stats-title">192</span>
+              <span className="c-fs-3 c-fw-m">Countries</span>
             </div>
           </div>
         </div>
-        <div className="d-flex flex-wrap g-4 pt-5 ">
-            <div className="py-7 stats py-3 pe-3  col-12 col-lg-6 col-xl-3">
-              <div className="lh-1">
-                <div className="mb-1 stats-title">4.5 Million+</div>
-                <span className="c-fs-3 c-fw-m">API calls</span>
-              </div>
-            </div>
-
-            <div className="py-7 stats py-3 pe-3 col-12 col-lg-6 col-xl-3">
-              <div className="lh-1">
-                <div className="mb-1 stats-title">150 Million+</div>
-                <span className="c-fs-3 c-fw-m">Emails Delivered</span>
-              </div>
-            </div>
-            <div className="py-7 stats py-3  pe-3 col-12 col-lg-6 col-xl-3">
-              <div className="lh-1">
-                <div className="mb-1 stats-title">2.3 Million+</div>
-                <span className="c-fs-3 c-fw-m">SMS Delivered</span>
-              </div>
-            </div>
-
-            <div className="py-7 stats py-3 pe-3 col-12 col-lg-6 col-xl-3">
-              <div className="lh-1">
-                <div className="mb-1 stats-title">192</div>
-                <span className="c-fs-3 c-fw-m">Countries</span>
-              </div>
-            </div>
-          </div>
       </section>
     </>
   );

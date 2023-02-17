@@ -52,8 +52,8 @@ const CustomMenu = React.forwardRef(
 const Notification = () => {
   return (
     <>
-      <div className="px-5 c-bg-grey">
-        <div className="px-5 py-1 d-flex flex-md-row flex-column justify-content-md-between justify-content-start">
+      <div className="px-0 px-md-5 c-bg-grey">
+        <div className="px-3 px-md-5 py-1 d-flex flex-md-row flex-column justify-content-md-between justify-content-start">
           <span className="c-fs-6">
             The New and Improved Version Awaits :)
           </span>
