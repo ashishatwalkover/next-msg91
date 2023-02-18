@@ -74,6 +74,9 @@ h2,.charterregular{
   .nav-link{
     margin-right: 40px;
   }
+  .navbar-collapse{
+    flex-grow: unset;
+  }
 }
 .v-divider{
   width: 1px;
@@ -105,4 +108,17 @@ h2,.charterregular{
 .product-page-img{
   width: clamp(80%,80vw,100px);
   box-shadow: 4px 0px 42px rgba(0, 0, 0, 0.1), -4px -14px 42px rgba(0, 0, 0, 0.1);
+}
+
+/* Learning center menu */
+#learning-center{
+  padding-right: 120px;
+  a{
+    display: block;
+    margin: 8px 0;
+    color: var(--black-color);
+    &:hover{
+      color: var(--primary-color);
+    }
+  }
 }

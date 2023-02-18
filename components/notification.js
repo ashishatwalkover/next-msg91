@@ -1,7 +1,5 @@
 import { MdLanguage, MdCall } from "react-icons/md";
 import React, { useState } from "react";
-import Dropdown from "react-bootstrap/Dropdown";
-import Form from "react-bootstrap/Form";
 // The forwardRef is important!!
 // Dropdown needs access to the DOM node in order to position the Menu
 const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
@@ -37,6 +35,7 @@ const CustomMenu = React.forwardRef(
           placeholder="Type to filter..."
           onChange={(e) => setValue(e.target.value)}
           value={value}
+          data-netlify="true"
         />
         <ul className="list-unstyled">
           {React.Children.toArray(children).filter(
@@ -59,24 +58,7 @@ const Notification = () => {
           </span>
           <div className=" d-flex c-fs-5">
             <div className="d-flex  align-items-center">
-              <Dropdown>
-                <Dropdown.Toggle
-                  as={CustomToggle}
-                  className="align-items-center"
-                  id="dropdown-custom-components"
-                >
-                  <MdLanguage /> India
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu as={CustomMenu}>
-                  <Dropdown.Item eventKey="1">US</Dropdown.Item>
-                  <Dropdown.Item eventKey="2">UK</Dropdown.Item>
-                  <Dropdown.Item eventKey="3" active>
-                    India
-                  </Dropdown.Item>
-                  <Dropdown.Item eventKey="1">Nepal</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
+              <MdLanguage /> India              
             </div>
             <span className="ms-5"><MdCall /><a href="#">Support</a></span>
             <span className="ms-5"><a href="#">Log In</a></span>

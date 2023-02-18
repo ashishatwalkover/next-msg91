@@ -14,14 +14,13 @@ const campaign = () => {
       <Header />
       <div className="container d-flex justify-content-center">
         <div className="text-center py-5">
-          <p>Event based automation</p>
           <div className="d-flex justify-content-center align-items-center text-center">
-            <Image src="../img/campaign.svg" width={60} height={60} alt="#" />
-            <h1 className="heading">Campaign</h1>
+            <Image src="../img/hello.svg" width={60} height={60} alt="#" />
+            <h1 className="heading">Hello</h1>
           </div>
+          <p>Revolutionize customer support</p>
           <h2 className="sub-heading">
-            Boost audience engagement through smart communication and on-time
-            delivery.{" "}
+            Empower your employees, Support your customers.
           </h2>
           <button className="btn btn-primary btn-lg mt-3" type="button">
             Get started for Free
