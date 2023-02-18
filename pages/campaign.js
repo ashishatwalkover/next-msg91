@@ -12,10 +12,11 @@ const campaign = () => {
       <HeadTag />
       <Notification />
       <Header />
-      <div className="container d-flex flex-column justify-content-center my-2 my-md-5">
-        <div className="text-center justify-content-center py-5">
-          <div className="d-flex justify-content-center align-items-center text-center ">
-            <Image src="../img/campaign.svg" width={60} height={60} />
+      <div className="container d-flex justify-content-center">
+        <div className="text-center py-5">
+          <p>Event based automation</p>
+          <div className="d-flex justify-content-center align-items-center text-center">
+            <Image src="../img/campaign.svg" width={60} height={60} alt="" />
             <h1 className="heading">Campaign</h1>
           </div>
           <p className="c-fs-4">Event based automation</p>
@@ -58,7 +59,7 @@ const campaign = () => {
 
       <div className="container d-lg-flex flex-row align-items-center">
         <div className=" col col-lg-6 col-md-6 col-sm-12 flex-column align-items-flex-start mt-lg-5 ms-lg-5 order-lg-2">
-          <img src="/Img/short-url-img.svg" />
+          <img src="/Img/short-url-img.svg" alt="msg91" />
         </div>
         <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
           <span className="text_2">
@@ -75,7 +76,7 @@ const campaign = () => {
 
       <div className="container d-lg-flex flex-row align-items-center mt-5">
         <div className=" col col-lg-6 col-md-6 col-sm-12 flex-column align-items-flex-start mt-lg-5">
-          <img src="/Img/short-url-img.svg" />
+          <img src="/Img/short-url-img.svg" alt="msg91" />
         </div>
         <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
           <span className="text_2">
@@ -90,7 +91,7 @@ const campaign = () => {
 
       <div className="container d-lg-flex flex-row align-items-center mt-5">
         <div className=" col-6 flex-column align-items-flex-start order-2">
-          <img src="/Img/short-url-img.svg" />
+          <img src="/Img/short-url-img.svg" alt="msg91" />
         </div>
         <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
           <span className="text_2">Make your communication more secure</span>

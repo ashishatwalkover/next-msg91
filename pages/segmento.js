@@ -15,7 +15,7 @@ const campaign = () => {
       <div className="container d-flex justify-content-center">
         <div className="text-center py-5">          
           <div className="d-flex justify-content-center align-items-center text-center">
-            <Image src="../img/campaign.svg" width={60} height={60} alt="#" />
+            <Image src="../img/campaign.svg" width={60} height={60} alt="#"/>
             <h1 className="heading">Segmento</h1>
           </div>
           <p>target based marketing</p>

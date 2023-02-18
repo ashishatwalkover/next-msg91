@@ -20,8 +20,9 @@ const Footer = () => {
                     width={20}
                     height={23}
                     className="me-3"
+                    alt="#"
                   />
-                  <Image src="../img/apple.svg" width={20} height={24} />
+                  <Image src="../img/apple.svg" width={20} height={24} alt="#" />
                 </div>
               </div>
               <div className="footer-social-link-content mt-4">
@@ -34,14 +35,16 @@ const Footer = () => {
                     width={24}
                     height={24}
                     className="me-3"
+                    alt="#"
                   />
                   <Image
                     src="../img/Linkedin.svg"
                     width={24}
                     height={24}
                     className="me-3"
+                    alt="#"
                   />
-                  <Image src="../img/twitter.svg" width={24} height={24} />
+                  <Image src="../img/twitter.svg" width={24} height={24} alt="#"/>
                 </div>
               </div>
             </div>
@@ -188,7 +191,7 @@ const Footer = () => {
               <div>
                 <span>
                   A Product of{" "}
-                  <Image src="../img/walkover.svg" width={20} height={20} />{" "}
+                  <Image src="../img/walkover.svg" width={20} height={20} alt="#"/>
                   <Link href="https://walkover.in">Walkover</Link>
                 </span>
               </div>
