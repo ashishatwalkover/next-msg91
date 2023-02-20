@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useEffect } from "react";
 import ProductMenu from "@/components/productmenu";
 import LearningCenter from "@/components/learning_center";
+import $ from 'jquery'
 
 const Header = () => {
   useEffect(() => {
@@ -11,29 +12,25 @@ const Header = () => {
     const linkProducts = document.getElementById("link-products");
     const linkLearning = document.getElementById("link-learning");
     const body = document.getElementsByTagName("body")[0];
-
-    const showNav = (e) => {
-      productMenu.classList.add("active");
-      learningCenter.classList.remove("active");
-      menuBackdrop.classList.add("active");
-      body.classList.add("oh");
-    }
-    linkProducts.addEventListener('mouseover', showNav);
-
-    const showLearningCenter = (e) => {
-      learningCenter.classList.add("active");
-      menuBackdrop.classList.add("active");
-      body.classList.add("oh");
-    }
-    linkLearning.addEventListener('mouseover', showLearningCenter);
-
-    const hideMenu = (e) => {
-      productMenu.classList.remove("active");
-      menuBackdrop.classList.remove("active");
-      learningCenter.classList.remove("active");
-      body.classList.remove("oh");
-    }
-    menuBackdrop.addEventListener('mouseover', hideMenu);
+  
+    $( "#link-products" ).on( "mouseenter", function() { console.log('products');
+      $("#product-menu, #menu-backdrop").addClass("active");
+      $("body").addClass("oh");
+      $("#learning-center").removeClass("active");
+    });
+    
+    $( "#link-learning" ).on( "mouseenter", function() {
+      $("#learning-center, #menu-backdrop").addClass("active");
+      $("body").addClass("oh");      
+    });    
+    
+    $( "#menu-backdrop" ).on( "mouseenter", function() {
+      $("#product-menu, #learning-center, #menu-backdrop, body").removeClass("active");      
+    });
+        
+    $( "#product-menu a" ).on( "click", function() {
+      $("body").removeClass("oh");
+    });
 
   }, []);
 
