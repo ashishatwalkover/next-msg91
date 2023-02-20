@@ -10,10 +10,10 @@ import FaqSection from "@/components/faq";
 const campaign = () => {
   return (
     <>
-      <HeadTag /> 
+      <HeadTag />
       <Notification />
       <Header />
-      <div className="container text-center overflow-hidden px-4  col-12 col-sm-10  ">
+      <div className="container text-center px-4  col-12 col-sm-10  ">
         <div className="text-center justify-content-center py-5">
           <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
             <img src="../img/campaign.svg" className="product-page-logo" />
@@ -89,25 +89,85 @@ const campaign = () => {
         </div>
       </div>
 
-     
+      <div className="container d-flex flex-column flex-md-row align-items-center mt-5 mb-5">
+        <div className="col-lg-4 flex-column align-items-flex-start">
+          <div className="mt-5 mb-3">
+            <img
+              src={"/Img/done_outline.svg"}
+              alt="#"
+              className="feature-check"
+            />
+          </div>
+          <span className="c-fs-2 c-ff-h  mt-1">
+            Pre-defined templates for improved productivity
+          </span>
+          <div>
+            <span className="c-fs-3 mt-2">
+              Leverage our pre-defined templates to reduce turnaround time for
+              your campaigns. Just import & deploy campaigns on the fly within
+              minutes.
+            </span>
+          </div>
+        </div>
+        <div className="col-lg-4 flex-column align-items-flex-start">
+          <div className="mt-5 mb-3">
+            <img
+              src={"/Img/done_outline.svg"}
+              alt="#"
+              className="feature-check"
+            />
+          </div>
+          <span className="c-fs-2 c-ff-h c-fw-m mt-1">
+            Pre-defined templates for improved productivity
+          </span>
+          <div>
+            <span className="c-fs-3 mt-2">
+              Leverage our pre-defined templates to reduce turnaround time for
+              your campaigns. Just import & deploy campaigns on the fly within
+              minutes.
+            </span>
+          </div>
+        </div>
+        <div className="col-lg-4 flex-column align-items-flex-start">
+          <div className="mt-5 mb-3">
+            <img
+              src={"/Img/done_outline.svg"}
+              alt="#"
+              className="feature-check"
+            />
+          </div>
+          <span className="c-fs-2 c-ff-h c-fw-m mt-1">
+            Pre-defined templates for improved productivity
+          </span>
+          <div>
+            <span className="c-fs-3 mt-2">
+              Leverage our pre-defined templates to reduce turnaround time for
+              your campaigns. Just import & deploy campaigns on the fly within
+              minutes.
+            </span>
+          </div>
+        </div>
+      </div>
 
       <div className="container">
-        <span className="c-fs-2 c-fw-m c-ff-h">More Feature</span>
+        <span className="c-fs-2 c-fw-m c-ff-h">More features</span>
         <div className="container d-flex flex-column flex-md-row my-3">
           <div className="d-flex flex-column justify-content-center align-items-flex-start col-lg-6 mt-2">
             <span className="c-fs-3">
-              - Use a reliable solution to maximize customer engagement.
+              - Automate sending messages under defined conditions
             </span>
             <span className="c-fs-3 mt-1">
-              - Create unique and interactive campaigns that use different media formats.
+              - An all-in-one platform for all your campaigns
             </span>
             <span className="c-fs-3 mt-1">
-              - Customize campaigns to meet communication needs.
+              - Make your communication more secure
             </span>
             <span className="c-fs-3 mt-1">
-              - Include interactive elements like quizzes and polls to keep customers engaged.
+              - Pre-defined templates for improved productivity
             </span>
-            
+            <span className="c-fs-3 mt-1">
+              - Build a hassle-free communication flow
+            </span>
             <span className="c-fs-3 mt-1">- Track campaign performance</span>
           </div>
           <div className="my-auto mt-3 px-5 d-flex py-5 c-bg-grey flex-wrap justify-content-center">

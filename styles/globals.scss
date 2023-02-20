@@ -29,6 +29,12 @@ a{
 .oh{
   overflow: hidden !important;
 }
+.navbar, .navbar-collapse{
+  background-color: white;
+}
+.navbar-w{
+  width: 35%;
+}
 
 // notification scss
 .notification {
@@ -119,6 +125,7 @@ h2,.charterregular{
 /* Learning center menu */
 #learning-center{
   padding-right: 120px;
+  z-index: 100;
   a{
     display: block;
     margin: 8px 0;
