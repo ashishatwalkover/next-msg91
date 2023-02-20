@@ -3,7 +3,7 @@ import Notification from "@/components/notification";
 import HeadTag from "@/components/head";
 import Footer from "@/components/footer";
 
-const campaign = () => {
+const pricing = () => {
   return (
     <>
       <HeadTag />
@@ -165,4 +165,4 @@ const campaign = () => {
   );
 };
 
-export default campaign;
+export default pricing;
