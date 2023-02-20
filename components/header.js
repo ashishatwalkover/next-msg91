@@ -49,12 +49,12 @@ const Header = () => {
           <button type="button" className="btn btn-primary c-fs-4 d-lg-none d-block">Sign UP</button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav product-navbar">
-              <a className="nav-link c-fs-4 c-fw-r" href="#products" id="link-products">Products <span className="sr-only">(current)</span></a>
-              <a className="nav-link c-fs-4 c-fw-r" href="#products" id="link-learning">Learning Center</a>
-              <a className="nav-link c-fs-4 c-fw-r" href="#products" id="link-learning">Pricing</a>
+              <a className="nav-link c-fs-4 c-fw-r" href="#" id="link-products">Products <span className="sr-only">(current)</span></a>
+              <a className="nav-link c-fs-4 c-fw-r" href="#" id="link-learning">Learning Center</a>
+              <Link href="/pricing" className="nav-link c-fs-4 c-fw-r" id="link-pricing">Pricing</Link>
             </div>
             
-            <a className="navbar-brand m-auto" href="#"><img className=" d-lg-block d-none" src="/img/logo.svg" /></a>
+            <Link className="navbar-brand m-auto" href="/"><img className=" d-lg-block d-none" src="/img/logo.svg" alt="MSG91" /></Link>
             
             <div className="navbar-nav product-navbar d-none d-lg-flex">
               <a className="nav-link c-fs-4 c-fw-r" href="#products">API Documentations</a>            

@@ -112,66 +112,68 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="products d-none  ">
-        <div className=" hello col-3">
-          <h2 className="title">Conversation</h2>
-          <div className="spacer"></div>
-          <div className="pro-footer">
-            <div className="pro-text">
-              Empower your employees, Support your customers.
-            </div>
-            <a href="/hello" target="_blank" className="pro-btn">
-              <div className="icon hello-icon"></div>
-              <div className="btn-label d-flex flex-fill justify-content-between align-items-center">
-                <span>Hello</span> <MdArrowForward />
+      <section className="products">
+        <div className="row g-0">
+          <div className="hello col-12 col-lg-3 col-sm-6">
+            <h2 className="title">Conversation</h2>
+            <div className="spacer"></div>
+            <div className="pro-footer">
+              <div className="pro-text">
+                Empower your employees, Support your customers.
               </div>
-            </a>
+              <a href="/hello" target="_blank" className="pro-btn">
+                <div className="icon hello-icon"></div>
+                <div className="btn-label d-flex flex-fill justify-content-between align-items-center">
+                  <span>Hello</span> <MdArrowForward />
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-        <div className=" segmento col-3">
-          <h2 className="title">Segmentation</h2>
-          <div className="spacer"></div>
-          <div className="pro-footer alt">
-            <div className="pro-text">
-              Empower your employees, Support your customers.
-            </div>
-            <a href="/hello" target="_blank" className="pro-btn">
-              <div className="icon segmento-icon"></div>
-              <div className="btn-label d-flex flex-fill justify-content-between align-items-center">
-                <span>Segmento</span> <MdArrowForward />
+          <div className="segmento col-12 col-lg-3 col-sm-6">
+            <h2 className="title">Segmentation</h2>
+            <div className="spacer"></div>
+            <div className="pro-footer alt">
+              <div className="pro-text">
+                Empower your employees, Support your customers.
               </div>
-            </a>
+              <a href="/hello" target="_blank" className="pro-btn">
+                <div className="icon segmento-icon"></div>
+                <div className="btn-label d-flex flex-fill justify-content-between align-items-center">
+                  <span>Segmento</span> <MdArrowForward />
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-        <div className=" campaign col-3">
-          <h2 className="title">Flow/OneAPI</h2>
-          <div className="spacer"></div>
-          <div className="pro-footer">
-            <div className="pro-text">
-              Empower your employees, Support your customers.
-            </div>
-            <a href="/hello" target="_blank" className="pro-btn">
-              <div className="icon campaign-icon"></div>
-              <div className="btn-label d-flex flex-fill justify-content-between align-items-center">
-                <span>Campaign</span> <MdArrowForward />
+          <div className="campaign col-12 col-lg-3 col-sm-6">
+            <h2 className="title">Flow/OneAPI</h2>
+            <div className="spacer"></div>
+            <div className="pro-footer">
+              <div className="pro-text">
+                Empower your employees, Support your customers.
               </div>
-            </a>
+              <a href="/hello" target="_blank" className="pro-btn">
+                <div className="icon campaign-icon"></div>
+                <div className="btn-label d-flex flex-fill justify-content-between align-items-center">
+                  <span>Campaign</span> <MdArrowForward />
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-        <div className=" otp col-3">
-          <h2 className="title">Verification</h2>
-          <div className="spacer"></div>
-          <div className="pro-footer alt">
-            <div className="pro-text">
-              Empower your employees, Support your customers.
-            </div>
-            <a href="/hello" target="_blank" className="pro-btn">
-              <div className="icon otp-icon"></div>
-              <div className="btn-label d-flex flex-fill justify-content-between align-items-center">
-                {" "}
-                <span>OTP</span> <MdArrowForward />
+          <div className="otp col-12 col-lg-3 col-sm-6">
+            <h2 className="title">Verification</h2>
+            <div className="spacer"></div>
+            <div className="pro-footer alt">
+              <div className="pro-text">
+                Empower your employees, Support your customers.
               </div>
-            </a>
+              <a href="/hello" target="_blank" className="pro-btn">
+                <div className="icon otp-icon"></div>
+                <div className="btn-label d-flex flex-fill justify-content-between align-items-center">
+                  {" "}
+                  <span>OTP</span> <MdArrowForward />
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </section>
