@@ -2,11 +2,12 @@ import Header from "@/components/header";
 import Notification from "@/components/notification";
 import HeadTag from "@/components/head";
 import TrustedSec from "@/components/trusted_by";
+import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/footer";
 import FaqSection from "@/components/faq";
 
-const shorturl = () => {
+const campaign = () => {
   return (
     <>
       <HeadTag />
@@ -15,12 +16,13 @@ const shorturl = () => {
       <div className="container text-center px-4  col-12 col-sm-10  ">
         <div className="text-center justify-content-center py-5">
           <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
-            <img src="../img/short-url-ico.svg" className="product-page-logo" />
-            <h1 className="heading">Short URL</h1>
+            <img src="../img/campaign.svg" className="product-page-logo" />
+            <h1 className="heading">Campaign</h1>
           </div>
           <p className="c-fs-4 mx-auto">Event based automation</p>
           <h2 className="c-fs-2 c-ff-b c-fw-r w-100 mx-auto">
-          Customised Links for Business Success{" "}
+            Boost audience engagement through smart communication and on-time
+            delivery.{" "}
           </h2>
           <button className="btn btn-primary btn-lg mt-3 c-fs-3" type="button">
             Get started for Free
@@ -43,10 +45,13 @@ const shorturl = () => {
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-ff-h cc-fw-m">
-             Smart Links that magnify your conversions
+              Automate sending messages under defined conditions
             </span>
             <span className="c-fs-3  mt-3">
-            Enhance the deliverability of messages through our globally accepted best practices. Ensure improved deliverability and boost click-through rates for higher revenues.
+              Define different messaging parameters like time, region, number of
+              messages per day, and more to make sure that your campaigns reach
+              your audience under the right circumstances automatically, without
+              any delays.
             </span>
           </div>
         </div>
@@ -57,10 +62,11 @@ const shorturl = () => {
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-ff-h n">
-            Track performance to enhance campaign outcome
+              An all-in-one platform for all your campaigns
             </span>
             <span className="c-fs-3  mt-3">
-            Users can track the outcome of the messages sent out to the audience. Assessing performance can help in making suitable tweaks to the messages in future.
+              Optimise your links and create short links that inspire
+              confidence. Include short links in your custom messages with ease.
             </span>
           </div>
         </div>
@@ -71,10 +77,13 @@ const shorturl = () => {
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-ff-h ">
-            Optimise messages that convert more
+              Make your communication more secure
             </span>
             <span className="c-fs-3  mt-3">
-            Optimise your links and create short links that inspire confidence. Include short links in your custom messages with ease.
+              Now protect your Campaigns with our token-based workflow and a
+              robust security framework. Implement best customer-engagement
+              practices and shape communication to fit your brand while ensuring
+              optimum security through and through.
             </span>
           </div>
         </div>
@@ -190,4 +199,4 @@ const shorturl = () => {
   );
 };
 
-export default shorturl;
+export default campaign;
