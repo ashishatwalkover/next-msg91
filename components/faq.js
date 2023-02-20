@@ -92,7 +92,7 @@ const FaqSection = () => {
           href="#"
           className=" c-fs-4 btn btn-link text-decoration-none py-2 px-3 mx-auto"
         >
-          Request a Feature
+          More FAQs
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"

@@ -104,11 +104,17 @@ h2,.charterregular{
 }
 
 // page img
-
+.product-page-logo{
+  width: clamp(40px,4vw,60px);
+}
 .product-page-img{
   width: clamp(80%,80vw,100px);
   box-shadow: 4px 0px 42px rgba(0, 0, 0, 0.1), -4px -14px 42px rgba(0, 0, 0, 0.1);
 }
+.feature-img{
+  width: clamp(200px, 76vw,500px);
+}
+
 
 /* Learning center menu */
 #learning-center{
