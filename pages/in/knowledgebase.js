@@ -12,21 +12,20 @@ const campaign = () => {
       <HeadTag />
       <Notification />
       <Header />
-      <div className="container text-center px-4  col-xs-12 col-sm-10 col-md-8 col-lg-6 mx-auto section">
-        <div className="text-center justify-content-center py-5">
-          <div className="d-flex justify-content-center align-items-center text-center ">
-            <img src="../img/campaign.svg" className="product-page-logo" />
+      <div className="container d-flex justify-content-center">
+        <div className="text-center py-5">
+          <div className="d-flex justify-content-center align-items-center text-center">
+            <Image src="../img/hello.svg" width={60} height={60} alt="#" />
             <h1 className="heading">Campaign</h1>
           </div>
-          <p className="c-fs-4">Event based automation</p>
-          <h2 className="c-fs-2 c-ff-b c-fw-r w-75 mx-auto">
-            Boost audience engagement through smart communication and on-time
-            delivery.{" "}
+          <p>Event based Automation</p>
+          <h2 className="sub-heading">
+            Boost audience engagement through smart communication and on-time delivery. 
           </h2>
-          <button className="btn btn-primary btn-lg mt-3 c-fs-3" type="button">
+          <button className="btn btn-primary btn-lg mt-3" type="button">
             Get started for Free
           </button>
-          <p className="mt-3 c-fs-4">Trusted by 30,000+ Businesses</p>
+          <p className="mt-3">Trusted by 30,000+ Businesses</p>
           <div className="mt-3">
             <Image src={"/img/ixigo.svg"} alt="#" width={51} height="24" />
             <Image
@@ -45,26 +44,32 @@ const campaign = () => {
             />
           </div>
         </div>
-        <img
+      </div>
+      <div className="container d-flex justify-content-center">
+        <div className="mt-3">
+          <Image
             src={"/img/Campaign_flow.svg"}
-            className="img-fluid product-page-img mx-auto"
+            className="img-fluid"
             alt="#"
+            width={1198}
+            height="610"
           />
+        </div>
       </div>
       
       <div className="container d-flex flex-column align-items-flex-start">
-        <span className="c-fs-1 c-ff-h c-fw-m mt-5">Features</span>
+        <span className="text_1 mt-5">Features</span>
       </div>
 
       <div className="container d-lg-flex flex-row align-items-center">
         <div className=" col col-lg-6 col-md-6 col-sm-12 flex-column align-items-flex-start mt-lg-5 ms-lg-5 order-lg-2">
-          <img src="/Img/short-url-img.svg" />
+          <img src="/Img/short-url-img.svg" alt="msg91" />
         </div>
         <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-          <span className="c-fs-2 c-ff-h cc-fw-m">
+          <span className="text_2">
             Automate sending messages under defined conditions
           </span>
-          <span className="c-fs-3  mt-3">
+          <span className="text_3 mt-3">
             Define different messaging parameters like time, region, number of
             messages per day, and more to make sure that your campaigns reach
             your audience under the right circumstances automatically, without
@@ -75,13 +80,13 @@ const campaign = () => {
 
       <div className="container d-lg-flex flex-row align-items-center mt-5">
         <div className=" col col-lg-6 col-md-6 col-sm-12 flex-column align-items-flex-start mt-lg-5">
-          <img src="/Img/short-url-img.svg" />
+          <img src="/Img/short-url-img.svg" alt="msg91" />
         </div>
         <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-          <span className="c-fs-2 c-ff-h c-fw-m">
+          <span className="text_2">
             An all-in-one platform for all your campaigns
           </span>
-          <span className="c-fs-3  mt-3">
+          <span className="text_3 mt-3">
             Optimise your links and create short links that inspire confidence.
             Include short links in your custom messages with ease.
           </span>
@@ -90,11 +95,11 @@ const campaign = () => {
 
       <div className="container d-lg-flex flex-row align-items-center mt-5">
         <div className=" col-6 flex-column align-items-flex-start order-2">
-          <img src="/Img/short-url-img.svg" />
+          <img src="/Img/short-url-img.svg" alt="msg91" />
         </div>
         <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-          <span className="c-fs-2 c-ff-h c-fw-m">Make your communication more secure</span>
-          <span className="c-fs-3  mt-3">
+          <span className="text_2">Make your communication more secure</span>
+          <span className="text_3 mt-3">
             Now protect your Campaigns with our token-based workflow and a
             robust security framework. Implement best customer-engagement
             practices and shape communication to fit your brand while ensuring
@@ -114,11 +119,11 @@ const campaign = () => {
                 height="40"
               ></Image>
             </div>
-            <span className="c-fs-2 c-ff-h c-fw-m mt-1">
+            <span className="text_2 mt-1">
               Pre-defined templates for improved productivity
             </span>
             <div>
-              <span className="c-fs-3 mt-2">
+              <span className="text_3 mt-2">
                 Leverage our pre-defined templates to reduce turnaround time for
                 your campaigns. Just import & deploy campaigns on the fly within
                 minutes.
@@ -134,11 +139,11 @@ const campaign = () => {
                 height="40"
               ></Image>
             </div>
-            <span className="c-fs-2 c-ff-h c-fw-m mt-1">
+            <span className="text_2 mt-1">
               Pre-defined templates for improved productivity
             </span>
             <div>
-              <span className="c-fs-3 mt-2">
+              <span className="text_3 mt-2">
                 Leverage our pre-defined templates to reduce turnaround time for
                 your campaigns. Just import & deploy campaigns on the fly within
                 minutes.
@@ -154,11 +159,11 @@ const campaign = () => {
                 height="40"
               ></Image>
             </div>
-            <span className="c-fs-2 c-ff-h c-fw-m mt-1">
+            <span className="text_2 mt-1">
               Pre-defined templates for improved productivity
             </span>
             <div>
-              <span className="c-fs-3 mt-2">
+              <span className="text_3 mt-2">
                 Leverage our pre-defined templates to reduce turnaround time for
                 your campaigns. Just import & deploy campaigns on the fly within
                 minutes.
@@ -170,33 +175,33 @@ const campaign = () => {
 
       <div className="container">
         <div className="">
-          <span className="c-fs-2 c-fw-m c-ff-h">More features</span>
+          <span className="c-fs-2 c-ff-h">More features</span>
         </div>
         <div className="container my-3">
           <div className="row">
             <div className="d-flex flex-column justify-content-center align-items-flex-start col-lg-6 mt-2">
-              <span className="c-fs-3">
+              <span className="text_4">
                 - Automate sending messages under defined conditions
               </span>
-              <span className="c-fs-3 mt-1">
+              <span className="text_4 mt-1">
                 - An all-in-one platform for all your campaigns
               </span>
-              <span className="c-fs-3 mt-1">
+              <span className="text_4 mt-1">
                 - Make your communication more secure
               </span>
-              <span className="c-fs-3 mt-1">
+              <span className="text_4 mt-1">
                 - Pre-defined templates for improved productivity
               </span>
-              <span className="c-fs-3 mt-1">
+              <span className="text_4 mt-1">
                 - Build a hassle-free communication flow
               </span>
-              <span className="c-fs-3 mt-1">- Track campaign performance</span>
+              <span className="text_4 mt-1">- Track campaign performance</span>
             </div>
             <div className="need-something c-bg-grey d-flex justify-content-sm-between my-5 col-lg-6 align-items-center p-4">
-              <span className="c-fs-2 c-fw-m c-ff-h">Need something else</span>
+              <span className="c-fs-2 c-ff-h">Need something else</span>
               <Link
                 href="#"
-                className=" c-fs-4 btn btn-outline-primary py-2 ms-3   px-3"
+                className=" c-fs-4 btn btn-outline-primary py-2 px-3"
               >
                 Request a Feature
                 <svg
@@ -204,7 +209,7 @@ const campaign = () => {
                   width="16"
                   height="16"
                   fill="currentColor"
-                  className="bi bi-arrow-right ms-3 d-none d-md-block"
+                  className="bi bi-arrow-right ms-3"
                   viewBox="0 0 16 16"
                 >
                   <path
