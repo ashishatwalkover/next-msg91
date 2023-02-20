@@ -1,0 +1,28 @@
+.nav-pills .nav-link{
+  color: var(--black-color) !important;
+  &.active{
+    background: var(--light-blue) !important;
+  }
+}
+#pricing-pills-tab{
+  .nav-item{
+    .nav-link{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 16px 20px !important;
+      min-width: 120px;
+      img{
+        height: 30px;
+        display: block;
+      }
+    }    
+  }
+}
+.total-price{
+  background: var(--light-blue);
+  border-radius: var(--radius2);
+  .total{
+    color: var(--whatsapp);
+  }
+}
