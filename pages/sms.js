@@ -2,6 +2,7 @@ import Header from "@/components/header";
 import Notification from "@/components/notification";
 import HeadTag from "@/components/head";
 import TrustedSec from "@/components/trusted_by";
+import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/footer";
 import FaqSection from "@/components/faq";
@@ -60,7 +61,7 @@ const sms = () => {
             <img src="/img/camp-f-img-two.svg" className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-            <span className="c-fs-2 c-ff-h n">
+            <span className="c-fs-2 c-ff-h ">
               An all-in-one platform for all your campaigns
             </span>
             <span className="c-fs-3  mt-3">

@@ -23,9 +23,8 @@ const shorturl = () => {
           Customised Links for Business Success{" "}
           </h2>
           <button className="btn btn-primary btn-lg mt-3 c-fs-3" type="button">
-            Get started for Free
+            Get Demo
           </button>
-          <TrustedSec />
         </div>
         <img
           src={"/img/Campaign_flow.svg"}
@@ -80,92 +79,28 @@ const shorturl = () => {
         </div>
       </div>
 
-      <div className="container d-flex flex-column flex-md-row align-items-center mt-5 mb-5">
-        <div className="col-lg-4 flex-column align-items-flex-start">
-          <div className="mt-5 mb-3">
-            <img
-              src={"/Img/done_outline.svg"}
-              alt="#"
-              className="feature-check"
-            />
+      <div className="container d-lg-flex flex-row align-items-center mt-5">
+          <div className=" col col-lg-6 col-md-6 col-sm-12 flex-column align-items-flex-start mt-lg-5">
+            <img src="/img/camp-f-img-two.svg" className="feature-img" />
           </div>
-          <span className="c-fs-2 c-ff-h  mt-1">
-            Pre-defined templates for improved productivity
-          </span>
-          <div>
-            <span className="c-fs-3 mt-2">
-              Leverage our pre-defined templates to reduce turnaround time for
-              your campaigns. Just import & deploy campaigns on the fly within
-              minutes.
+          <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
+            <span className="c-fs-2 c-ff-h n">
+            Comprehensive and secure reports
+            </span>
+            <span className="c-fs-3  mt-3">
+            A single dashboard can allow users with requisite rights and privileges to track the performance of each campaign and the number of hits of the URL for each recipient. You can also assess the acceptance of messages across browsers and devices.
             </span>
           </div>
         </div>
-        <div className="col-lg-4 flex-column align-items-flex-start">
-          <div className="mt-5 mb-3">
-            <img
-              src={"/Img/done_outline.svg"}
-              alt="#"
-              className="feature-check"
-            />
-          </div>
-          <span className="c-fs-2 c-ff-h c-fw-m mt-1">
-            Pre-defined templates for improved productivity
-          </span>
-          <div>
-            <span className="c-fs-3 mt-2">
-              Leverage our pre-defined templates to reduce turnaround time for
-              your campaigns. Just import & deploy campaigns on the fly within
-              minutes.
-            </span>
-          </div>
-        </div>
-        <div className="col-lg-4 flex-column align-items-flex-start">
-          <div className="mt-5 mb-3">
-            <img
-              src={"/Img/done_outline.svg"}
-              alt="#"
-              className="feature-check"
-            />
-          </div>
-          <span className="c-fs-2 c-ff-h c-fw-m mt-1">
-            Pre-defined templates for improved productivity
-          </span>
-          <div>
-            <span className="c-fs-3 mt-2">
-              Leverage our pre-defined templates to reduce turnaround time for
-              your campaigns. Just import & deploy campaigns on the fly within
-              minutes.
-            </span>
-          </div>
-        </div>
-      </div>
 
       <div className="container">
-        <span className="c-fs-2 c-fw-m c-ff-h">More features</span>
         <div className="container d-flex flex-column flex-md-row my-3">
-          <div className="d-flex flex-column justify-content-center align-items-flex-start col-lg-6 mt-2">
-            <span className="c-fs-3">
-              - Automate sending messages under defined conditions
-            </span>
-            <span className="c-fs-3 mt-1">
-              - An all-in-one platform for all your campaigns
-            </span>
-            <span className="c-fs-3 mt-1">
-              - Make your communication more secure
-            </span>
-            <span className="c-fs-3 mt-1">
-              - Pre-defined templates for improved productivity
-            </span>
-            <span className="c-fs-3 mt-1">
-              - Build a hassle-free communication flow
-            </span>
-            <span className="c-fs-3 mt-1">- Track campaign performance</span>
-          </div>
           <div className="my-auto mt-3 px-5 d-flex py-5 c-bg-grey flex-wrap justify-content-center">
-            <span className="c-fs-2 c-ff-h">Looking for more?</span>
+            <span className="c-fs-1 c-ff-h">Flexi pricing to suit your needs</span>
+            <span className="c-fs-2">Personalised pricing plans that suit your budget</span>
             <button className="btn btn-outline-primary c-fs-4 ms-0 ms-md-3 mt-3 mt-md-0">
               {" "}
-              Request a Feature
+              Refer more FAQs
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -183,8 +118,6 @@ const shorturl = () => {
           </div>
         </div>
       </div>
-
-      <FaqSection />
       <Footer />
     </>
   );
