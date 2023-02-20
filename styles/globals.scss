@@ -29,7 +29,12 @@ a{
 .oh{
   overflow: hidden !important;
 }
-
+.navbar, .navbar-collapse{
+  background-color: white;
+}
+.navbar-w{
+  width: 35%;
+}
 
 // notification scss
 .notification {

@@ -222,7 +222,7 @@ const IndexPage = () => {
           <div className="us-cont d-flex  container justify-content-between alighn-items-center col-12">
             <div className="us-nav-cont col-3 d-lg-block d-md-none d-sm-none d-none ">
               <div className="us-nav" id="utilities-items">
-                <h1 className="c-fs-1 mb-5">More Benefits </h1>
+                <h1 className="c-fs-1 mb-5">More Services </h1>
                 <div
                   className="us-nav-options align-items-center mb-2 d-flex active"
                   id="link-shortner"

@@ -13,7 +13,7 @@ const campaign = () => {
       <HeadTag /> 
       <Notification />
       <Header />
-      <div className="container text-center px-4  col-12 col-sm-10  ">
+      <div className="container overflow-hidden text-center px-4  col-12 col-sm-10  ">
         <div className="text-center justify-content-center py-5">
           <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
             <img src="../img/campaign.svg" className="product-page-logo" />

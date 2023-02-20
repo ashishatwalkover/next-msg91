@@ -4,7 +4,7 @@ const ProductsMenu = () => {
 
   return (
     <>      
-      <div className="px-5" id="product-menu">
+      <div className="px-5 " id="product-menu">
         <div className="ps-5 d-flex  m-y-120 flex-wrap">
             <div className="menu nav-applications">
               <p className="head-p">applications</p>
