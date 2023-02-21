@@ -3,16 +3,10 @@ import { useEffect } from "react";
 import ProductMenu from "@/components/productmenu";
 import LearningCenter from "@/components/learning_center";
 import $ from 'jquery'
+import { useRouter } from 'next/router'
 
 const Header = () => {
   useEffect(() => {
-    const productMenu = document.getElementById("product-menu");
-    const learningCenter = document.getElementById("learning-center");
-    const menuBackdrop = document.getElementById("menu-backdrop");
-    const linkProducts = document.getElementById("link-products");
-    const linkLearning = document.getElementById("link-learning");
-    const body = document.getElementsByTagName("body")[0];
-  
     $( "#link-products" ).on( "mouseenter", function() { console.log('products');
       $("#product-menu, #menu-backdrop").addClass("active");
       $("body").addClass("oh");
@@ -25,18 +19,21 @@ const Header = () => {
     });    
     
     $( "#menu-backdrop" ).on( "mouseenter", function() {
-      $("#product-menu, #learning-center, #menu-backdrop, body").removeClass("active");      
+      $("#product-menu, #learning-center, #menu-backdrop").removeClass("active");      
+      $("body").removeClass("oh");      
     });
         
-    $( "#product-menu a" ).on( "click", function() {
+    $( "#menu-wrp a" ).on( "click", function() {
       $("body").removeClass("oh");
     });
-
   }, []);
 
+  const router = useRouter()
+  var path = router.pathname.split("/")[1];
+  path = (path.length == 2) ? '/'+path : '';
+  var home = (path.length) ? path : '/';
   return (
-    <div className="px-0    px-md-5">
-
+    <div className="px-0 px-md-5" id="menu-wrp">
       <nav className="navbar px-0 px-md-4 navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">          
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +48,7 @@ const Header = () => {
               <Link href="/pricing" className="nav-link c-fs-4 c-fw-r" id="link-pricing">Pricing</Link>
             </div>
             
-            <Link className="navbar-brand m-auto" href="/"><img className=" d-lg-block d-none" src="/img/logo.svg" alt="MSG91" /></Link>
+            <Link className="navbar-brand m-auto" href={`${home}`}><img className=" d-lg-block d-none" src="/img/logo.svg" alt="MSG91" /></Link>
             
             <div className="navbar-nav justify-content-end navbar-w product-navbar d-none d-lg-flex">
               <a className="nav-link c-fs-4 c-fw-r" href="#products">API Documentations</a>            

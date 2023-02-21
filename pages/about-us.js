@@ -294,15 +294,6 @@ const about_us = () => {
                 </div>
             </div>
 
-            {/* <div class="container row align-items-flex-start mx-auto">
-                <div class="col-lg-6 col-md-6 col-sm-12 px-5">
-                    <div class="h-100 p-5 bg-white border border-primary rounded-3">
-                        <h2>Thinking like a Customer</h2>
-                        <p>We try to get into your shoes to understand your communication issues and then, solve it with our problem-solving vision.</p>
-                    </div>
-                </div>
-            </div> */}
-
             <div class="container col-md-12 col-md-12 col-sm-12 mx-auto py-5">
                 <div class="h-100 p-5 bg-white border border-dark rounded-3">
                     <div className="d-lg-flex flex-row align-items-center justify-content-center">

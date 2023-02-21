@@ -2,6 +2,7 @@ import Header from "@/components/header";
 import Notification from "@/components/notification";
 import HeadTag from "@/components/head";
 import Footer from "@/components/footer";
+import { MdDone, MdClose } from "react-icons/md";
 
 const pricing = () => {
   return (
@@ -74,63 +75,96 @@ const pricing = () => {
               </ul>
             </div>
 
-            <div className="tab-content d-flex justi" id="pills-tabContent">
+            <div className="tab-content  " id="pills-tabContent">
               <div className="tab-pane fade show active" id="pills-sms" role="tabpanel" aria-labelledby="pills-sms-tab" tabIndex={0}>
-                <div className="g-3 d-flex justify-content-center col-lg-5 m-auto pb-5">
-                    <select className="form-select" aria-label="Default select example">
-                      <option>India</option>                    
-                    </select>
-                  <div className="px-4">To</div>
-                    <select className="form-select" aria-label="Default select example">
-                      <option>India</option>                    
-                    </select>
-                </div>
-                <div className="text-center c-fs-3 pb-4">Number of SMS</div>
-                <div className="sms-range">
-                  <input type="range" className="form-range" min="0" max="6" step="1" id="customRange1" />
-                </div>
-                
-                <div className="price-slab d-flex justify-content-between pb-5">
-                  <div className="slab">
-                    <div className="sms">5,000</div>
-                    <div className="price">₹ 0.25/SMS</div>
+              <div className="d-flex card-container align-items-end">
+              <div className="card w-25 border-0 text-center me-3 c-bg-grey">
+                <div className="card-body">
+                  <h3 className="c-fs-3">Free</h3>
+                  <h5 className="c-fs-4 mt-2">$0/Month</h5>
+                  <p className="c-fs-5"> - </p>
+                  <div className="c-fs-5 mt-2">
+                    <span className="text-success c-fs-3">
+                      <MdDone />
+                    </span>
+                    100,000 Emails
                   </div>
-                  <div className="slab">
-                    <div className="sms">20,000</div>
-                    <div className="price">₹ 0.20/SMS</div>
+                  <div className="c-fs-5 ">
+                    <span className="text-danger c-fs-3">
+                      <MdClose />
+                    </span>
+                    Email Varifications
                   </div>
-                  <div className="slab">
-                    <div className="sms">50,000</div>
-                    <div className="price">₹ 0.18/SMS</div>
-                  </div>
-                  <div className="slab">
-                    <div className="sms">1,00,000</div>
-                    <div className="price">₹ 0.16/SMS</div>
-                  </div>
-                  <div className="slab">
-                    <div className="sms">3,00,000</div>
-                    <div className="price">₹ 0.14/SMS</div>
-                  </div>
-                  <div className="slab">
-                    <div className="sms">5,0,000</div>
-                    <div className="price">₹ 0.12/SMS</div>
-                  </div>
-                  <div className="slab">
-                    <div className="sms">5,0,000+</div>
-                    <div className="price">₹ 0.10/SMS</div>
-                  </div>
-                </div>
 
-                <div className="d-flex align-items-center justify-content-center p-4 total-price col-lg-6 mx-auto mb-5">
-                  <div className="c-fs-3 me-3">Total Price</div>
-                  <div className="total c-fs-3 fw-bold me-3">₹ 5,000</div>
-                  <div className="me-3">+18% GST</div>
-                  <button className="btn btn-primary">Get started</button>
+                  <button className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
+                    Get Started
+                  </button>
                 </div>
+              </div>
+              <div className="card w-25 border-0 text-center mx-3 c-bg-grey">
+                <div className="card-body">
+                  <h3 className="c-fs-3">Basic</h3>
+                  <h5 className="c-fs-4 mt-2">$500/Month</h5>
+                  <p className="c-fs-5">+18%GST </p>
+                  <div className="c-fs-5 mt-2">
+                    <span className="text-success c-fs-3">
+                      <MdDone />
+                    </span>
+                    250,000 Emails
+                  </div>
+                  <div className="c-fs-5 ">
+                    <span className="text-success c-fs-3">
+                      <MdDone />
+                    </span>
+                    3,000 Email Varifications
+                  </div>
 
-                <div className="">
-                  Transactional SMS route can be used to send critical information, notifications, OTPs to your users. However, we highly recommend sending OTP via our dedicated platform OTP.
+                  <button className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
+                    Get Started
+                  </button>
                 </div>
+              </div>
+              <div className="  text-center d-flex flex-column align-items-center mx-3 w-25">
+                <div className="popular-chip c-fs-6">POPULAR</div>
+              <div className="card  w-100 card-popular border-primary text-center c-bg-grey">
+                <div className="card-body">
+                  <h3 className="c-fs-3">Alpha</h3>
+                  <h5 className="c-fs-4 mt-2">$1500/Month</h5>
+                  <p className="c-fs-5">+18%GST </p>
+                  <div className="c-fs-5 mt-2">
+                    <span className="text-success c-fs-3">
+                      <MdDone />
+                    </span>
+                    5,00,000 Emails
+                  </div>
+                  <div className="c-fs-5 ">
+                    <span className="text-success c-fs-3">
+                      <MdDone />
+                    </span>
+                    5,000 Email Varifications
+                  </div>
+
+                  <button className="c-fs-5 btn btn-sm w-100 btn-primary mt-2">
+                    Get Started
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="card w-25 border-0 text-center ms-3 c-bg-grey">
+                <div className="card-body">
+                  <h3 className="c-fs-3">Custom</h3>
+                  <h5 className="c-fs-4 mt-2">Custom Pricing</h5>
+                  <p className="c-fs-5">-</p>
+                  <div className="c-fs-5 mt-2">
+                    Need to send more? Talk to us for a customized plan.
+                  </div>
+                 
+
+                  <button className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
+                    Talk to an Expert
+                  </button>
+                </div>
+              </div>
               </div>
               <div className="tab-pane fade" id="pills-email" role="tabpanel" aria-labelledby="pills-email-tab" tabIndex={0}>
                 email
@@ -155,6 +189,7 @@ const pricing = () => {
               </div>
               <div className="tab-pane fade" id="pills-campaign" role="tabpanel" aria-labelledby="pills-campaign-tab" tabIndex={0}>
                 campaign
+              </div>
               </div>
             </div>
           </div>

@@ -37,7 +37,38 @@
     }
   }
 }
-
+.card-container{
+  .card{
+    height: 250px;
+    width: 250px  ;
+    justify-content: baseline;
+    .card-body{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}
 .card-popular{
-
+border: 2px solid var(--primary-color);
+box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.popular-chip{
+  position: relative;
+  top: 13px;
+  z-index: 3;
+  color:white;  
+  border-radius: 100px;
+  padding: 0.1rem 0.7rem;
+  background-color: var(--primary-color);
+  letter-spacing :1.6px ;
+  font-weight: 500;
+}
+.flex-gap > .card {
+  margin: 16px;
+}
+.text-green{
+  color:#29A653;
 }
