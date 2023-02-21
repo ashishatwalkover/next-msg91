@@ -16,7 +16,7 @@ const push_notification = () => {
         <div className="text-center justify-content-center py-5">
           <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
             <img src="../img/campaign.svg" className="product-page-logo" />
-            <h1 className="heading">Campaign</h1>
+            <h1 className="heading">Push-notification</h1>
           </div>
           <p className="c-fs-4 mx-auto">Event based automation</p>
           <h2 className="c-fs-2 c-ff-b c-fw-r w-100 mx-auto">

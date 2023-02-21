@@ -6,13 +6,6 @@ import $ from 'jquery'
 
 const Header = () => {
   useEffect(() => {
-    const productMenu = document.getElementById("product-menu");
-    const learningCenter = document.getElementById("learning-center");
-    const menuBackdrop = document.getElementById("menu-backdrop");
-    const linkProducts = document.getElementById("link-products");
-    const linkLearning = document.getElementById("link-learning");
-    const body = document.getElementsByTagName("body")[0];
-  
     $( "#link-products" ).on( "mouseenter", function() { console.log('products');
       $("#product-menu, #menu-backdrop").addClass("active");
       $("body").addClass("oh");
@@ -25,18 +18,17 @@ const Header = () => {
     });    
     
     $( "#menu-backdrop" ).on( "mouseenter", function() {
-      $("#product-menu, #learning-center, #menu-backdrop, body").removeClass("active");      
+      $("#product-menu, #learning-center, #menu-backdrop").removeClass("active");      
+      $("body").removeClass("oh");      
     });
         
-    $( "#product-menu a" ).on( "click", function() {
+    $( "#menu-wrp a" ).on( "click", function() {
       $("body").removeClass("oh");
     });
-
   }, []);
 
   return (
-    <div className="px-0    px-md-5">
-
+    <div className="px-0 px-md-5" id="menu-wrp">
       <nav className="navbar px-0 px-md-4 navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">          
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
