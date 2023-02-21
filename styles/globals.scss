@@ -6,6 +6,61 @@ body,html{
 h1 {
   font-family: "charterbold", "Times New Roman", Times, serif;
 }
+
+
+// font size
+.heading{
+  font-size: var(--heading);
+}
+.sub-heading{
+  font-size: var(--sub-heading);
+}
+.c-fs-1{
+  font-size: var(--c-fs-1);
+}
+.c-fs-2{
+  font-size: var(--c-fs-2);
+}
+.c-fs-3{
+  font-size: var(--c-fs-3);
+}
+.c-fs-4{
+  font-size: var(--c-fs-4);
+}
+.c-fs-5{
+  font-size: var(--c-fs-5);
+}
+.c-fs-6{
+  font-size: var(--c-fs-6);
+}
+.c-fs-7{
+  font-size: var(--c-fs-7);
+}
+// font variation
+.c-ff-h{
+  font-family: var(--c-ff-h);
+}
+.c-ff-b{
+  font-family: var(--c-ff-b);
+}
+// font weight
+.c-fw-t{
+  font-weight: 300;
+}
+.c-fw-r{
+  font-weight: 400;
+}
+.c-fw-m{
+  font-weight: 500;
+}
+.c-fw-sb{
+  font-weight: 600;
+}
+.c-fw-b{
+  font-weight: 700;
+}
+
+
 p {
   margin: 0;
   padding: 0;
