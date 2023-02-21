@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import ProductMenu from "@/components/productmenu";
 import LearningCenter from "@/components/learning_center";
 import $ from 'jquery'
+import { useRouter } from 'next/router'
 
 const Header = () => {
   useEffect(() => {
@@ -27,6 +28,10 @@ const Header = () => {
     });
   }, []);
 
+  const router = useRouter()
+  var path = router.pathname.split("/")[1];
+  path = (path.length == 2) ? '/'+path : '';
+  var home = (path.length) ? path : '/';
   return (
     <div className="px-0 px-md-5" id="menu-wrp">
       <nav className="navbar px-0 px-md-4 navbar-expand-lg bg-body-tertiary">
@@ -43,7 +48,7 @@ const Header = () => {
               <Link href="/pricing" className="nav-link c-fs-4 c-fw-r" id="link-pricing">Pricing</Link>
             </div>
             
-            <Link className="navbar-brand m-auto" href="/"><img className=" d-lg-block d-none" src="/img/logo.svg" alt="MSG91" /></Link>
+            <Link className="navbar-brand m-auto" href={`${home}`}><img className=" d-lg-block d-none" src="/img/logo.svg" alt="MSG91" /></Link>
             
             <div className="navbar-nav justify-content-end navbar-w product-navbar d-none d-lg-flex">
               <a className="nav-link c-fs-4 c-fw-r" href="#products">API Documentations</a>            
