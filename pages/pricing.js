@@ -7,6 +7,10 @@ import Pricingsms from "@/components/pricing-sms";
 import Pricingvoice from "@/components/pricing-voice";
 import Pricingotp from "@/components/pricing-otp";
 import Pricingwp from "@/components/pricing-whatsapp";
+import Pricinghello from "@/components/pricing-hello";
+import Pricingsegmento from "@/components/pricing-segmento";
+import Pricingcampaign from "@/components/pricing-campaign";
+import Pricingrcs from "@/components/pricing-rcs";
 const campaign = () => {
   return (
     <>
@@ -85,26 +89,27 @@ const campaign = () => {
               <div className="tab-pane fade w-100" id="pills-email" role="tabpanel" aria-labelledby="pills-email-tab" tabIndex={0}>
                <Pricingemail/>
               </div>
-              <div className="tab-pane fade" id="pills-voice" role="tabpanel" aria-labelledby="pills-voice-tab" tabIndex={0}>
+              <div className="tab-pane fade w-100" id="pills-voice" role="tabpanel" aria-labelledby="pills-voice-tab" tabIndex={0}>
                 <Pricingvoice/>
               </div>
-              <div className="tab-pane fade" id="pills-whatsapp" role="tabpanel" aria-labelledby="pills-whatsapp-tab" tabIndex={0}>
+              <div className="tab-pane fade w-100" id="pills-whatsapp" role="tabpanel" aria-labelledby="pills-whatsapp-tab" tabIndex={0}>
                 <Pricingwp/>
               </div>
-              <div className="tab-pane fade" id="pills-rcs" role="tabpanel" aria-labelledby="pills-rcs-tab" tabIndex={0}>
-                rcs
+              <div className="tab-pane fade w-100" id="pills-rcs" role="tabpanel" aria-labelledby="pills-rcs-tab" tabIndex={0}>
+                <Pricingrcs/>
+              
               </div>
-              <div className="tab-pane fade" id="pills-otp" role="tabpanel" aria-labelledby="pills-otp-tab" tabIndex={0}>
+              <div className="tab-pane fade w-100" id="pills-otp" role="tabpanel" aria-labelledby="pills-otp-tab" tabIndex={0}>
                 <Pricingotp/>
               </div>
-              <div className="tab-pane fade" id="pills-hello" role="tabpanel" aria-labelledby="pills-hello-tab" tabIndex={0}>
-                hello
+              <div className="tab-pane fade w-100" id="pills-hello" role="tabpanel" aria-labelledby="pills-hello-tab" tabIndex={0}>
+                <Pricinghello/>
               </div>
-              <div className="tab-pane fade" id="pills-segmento" role="tabpanel" aria-labelledby="pills-segmento-tab" tabIndex={0}>
-                segmento
+              <div className="tab-pane fade w-100" id="pills-segmento" role="tabpanel" aria-labelledby="pills-segmento-tab" tabIndex={0}>
+                <Pricingsegmento/>
               </div>
-              <div className="tab-pane fade" id="pills-campaign" role="tabpanel" aria-labelledby="pills-campaign-tab" tabIndex={0}>
-                campaign
+              <div className="tab-pane fade w-100" id="pills-campaign" role="tabpanel" aria-labelledby="pills-campaign-tab" tabIndex={0}>
+                <Pricingcampaign/>
               </div>
             </div>
           </div>
