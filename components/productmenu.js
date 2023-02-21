@@ -1,14 +1,22 @@
 import Link from "next/link";
 import Image from "next/image";
-const ProductsMenu = () => {
+import { useRouter } from 'next/router'
 
+const ProductsMenu = () => {
+  const router = useRouter()
+  var path;
+  if(router.pathname.includes("in")){
+    path = "/in/"
+  };
+  
+  console.log(router.pathname);
   return (
     <>      
       <div className="px-5 " id="product-menu">
         <div className="ps-5 d-flex  m-y-120 flex-wrap">
             <div className="menu nav-applications">
               <p className="head-p">applications</p>
-              <Link href="hello/" className="product-cont">
+              <Link href={`${path}hello`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/hello.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">

@@ -6,13 +6,6 @@ import $ from 'jquery'
 
 const Header = () => {
   useEffect(() => {
-    const productMenu = document.getElementById("product-menu");
-    const learningCenter = document.getElementById("learning-center");
-    const menuBackdrop = document.getElementById("menu-backdrop");
-    const linkProducts = document.getElementById("link-products");
-    const linkLearning = document.getElementById("link-learning");
-    const body = document.getElementsByTagName("body")[0];
-  
     $( "#link-products" ).on( "mouseenter", function() { console.log('products');
       $("#product-menu, #menu-backdrop").addClass("active");
       $("body").addClass("oh");
@@ -25,13 +18,13 @@ const Header = () => {
     });    
     
     $( "#menu-backdrop" ).on( "mouseenter", function() {
-      $("#product-menu, #learning-center, #menu-backdrop, body").removeClass("active");      
+      $("#product-menu, #learning-center, #menu-backdrop").removeClass("active");      
+      $("body").removeClass("oh");      
     });
         
     $( "#product-menu a" ).on( "click", function() {
       $("body").removeClass("oh");
     });
-
   }, []);
 
   return (
