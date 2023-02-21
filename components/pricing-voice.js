@@ -1,5 +1,5 @@
 import { MdDone, MdClose } from "react-icons/md";
-const pricingvoice = () => {
+const pricingsms = () => {
   return (
     <>
       <div className="g-3 d-flex justify-content-center col-lg-5 m-auto pb-5">
@@ -105,4 +105,4 @@ const pricingvoice = () => {
   );
 };
 
-export default pricingvoice;
+export default pricingsms;

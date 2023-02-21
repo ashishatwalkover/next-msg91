@@ -1,5 +1,5 @@
 import { MdDone, MdClose } from "react-icons/md";
-const pricingemail = () => {
+const pricingwp = () => {
   return (
     <>
     <select className="form-select w-25 mx-auto" aria-label="Default select example">
@@ -97,4 +97,4 @@ const pricingemail = () => {
   );
 };
 
-export default pricingemail;
+export default pricingwp;

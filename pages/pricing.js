@@ -4,6 +4,9 @@ import HeadTag from "@/components/head";
 import Footer from "@/components/footer";
 import Pricingemail from "@/components/pricing-email";
 import Pricingsms from "@/components/pricing-sms";
+import Pricingvoice from "@/components/pricing-voice";
+import Pricingotp from "@/components/pricing-otp";
+import Pricingwp from "@/components/pricing-whatsapp";
 const campaign = () => {
   return (
     <>
@@ -77,22 +80,22 @@ const campaign = () => {
 
             <div className="tab-content d-flex " id="pills-tabContent">
               <div className="tab-pane fade show active w-100" id="pills-sms" role="tabpanel" aria-labelledby="pills-sms-tab" tabIndex={0}>
-               <Pricingemail/>
-              </div>
-              <div className="tab-pane fade w-100" id="pills-email" role="tabpanel" aria-labelledby="pills-email-tab" tabIndex={0}>
                 <Pricingsms/>
               </div>
+              <div className="tab-pane fade w-100" id="pills-email" role="tabpanel" aria-labelledby="pills-email-tab" tabIndex={0}>
+               <Pricingemail/>
+              </div>
               <div className="tab-pane fade" id="pills-voice" role="tabpanel" aria-labelledby="pills-voice-tab" tabIndex={0}>
-                voice
+                <Pricingvoice/>
               </div>
               <div className="tab-pane fade" id="pills-whatsapp" role="tabpanel" aria-labelledby="pills-whatsapp-tab" tabIndex={0}>
-                whatsapp
+                <Pricingwp/>
               </div>
               <div className="tab-pane fade" id="pills-rcs" role="tabpanel" aria-labelledby="pills-rcs-tab" tabIndex={0}>
                 rcs
               </div>
               <div className="tab-pane fade" id="pills-otp" role="tabpanel" aria-labelledby="pills-otp-tab" tabIndex={0}>
-                otp
+                <Pricingotp/>
               </div>
               <div className="tab-pane fade" id="pills-hello" role="tabpanel" aria-labelledby="pills-hello-tab" tabIndex={0}>
                 hello
