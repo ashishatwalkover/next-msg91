@@ -20,7 +20,7 @@ const shorturl = () => {
           </div>
           <p className="c-fs-4 mx-auto">Event based automation</p>
           <h2 className="c-fs-2 c-ff-b c-fw-r w-100 mx-auto">
-            Customised Links for Business Success{" "}
+            Customised Links for Business Success
           </h2>
           <button className="btn btn-primary btn-lg mt-3 c-fs-3" type="button">
             Get Demo
