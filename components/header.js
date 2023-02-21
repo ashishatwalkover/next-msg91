@@ -22,14 +22,13 @@ const Header = () => {
       $("body").removeClass("oh");      
     });
         
-    $( "#product-menu a" ).on( "click", function() {
+    $( "#menu-wrp a" ).on( "click", function() {
       $("body").removeClass("oh");
     });
   }, []);
 
   return (
-    <div className="px-0    px-md-5">
-
+    <div className="px-0 px-md-5" id="menu-wrp">
       <nav className="navbar px-0 px-md-4 navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">          
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
