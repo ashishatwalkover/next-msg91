@@ -5,13 +5,14 @@ import { useRouter } from 'next/router'
 const ProductsMenu = () => {
   const router = useRouter()
   var path = router.pathname.split("/")[1];
+  path = (path.length == 2) ? path : '';
   return (
     <>      
       <div className="px-5 " id="product-menu">
         <div className="ps-5 d-flex  m-y-120 flex-wrap">
             <div className="menu nav-applications">
               <p className="head-p">applications</p>
-              <Link href={`${path}/hello`} className="product-cont">
+              <Link href={`/${path}/hello`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/hello.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">
@@ -21,7 +22,7 @@ const ProductsMenu = () => {
                 </div>
               </Link>
 
-              <Link href={`${path}/campaign`} className="product-cont">
+              <Link href={`/${path}/campaign`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/campaign.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">
@@ -31,17 +32,17 @@ const ProductsMenu = () => {
                 </div>
               </Link>
 
-              <Link href={`${path}/segmento`} className="product-cont">
+              <Link href={`/${path}/segmento`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/segmento.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">
-                    <h4 className="charterregular">Segmaneto</h4>
+                    <h4 className="charterregular">Segmento</h4>
                     <p className="sub-p">Contact Managment</p>
                   </div>
                 </div>
               </Link>
 
-              <Link href={`${path}/otp`} className="product-cont">
+              <Link href={`/${path}/otp`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/otp.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">
@@ -58,7 +59,7 @@ const ProductsMenu = () => {
             <div className="menu nav-channels">
               <p className="head-p">channels</p>
               
-              <Link href={`${path}/sms`} className="product-cont">
+              <Link href={`/${path}/sms`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/sms.svg" width={30} height={30} alt="#" />
                   <div className="product-dis">
@@ -67,7 +68,7 @@ const ProductsMenu = () => {
                 </div>
               </Link>
 
-              <Link href={`${path}/email`} className="product-cont">
+              <Link href={`/${path}/email`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/Email.svg" width={30} height={30} alt="#" />
                   <div className="product-dis">
@@ -76,7 +77,7 @@ const ProductsMenu = () => {
                 </div>
               </Link>
               
-              <Link href={`${path}/voice`} className="product-cont">
+              <Link href={`/${path}/voice`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/voice.svg" width={30} height={30} alt="#" />
                   <div className="product-dis">
@@ -85,7 +86,7 @@ const ProductsMenu = () => {
                 </div>
               </Link>
 
-              <Link href={`${path}/whatsapp`} className="product-cont">
+              <Link href={`/${path}/whatsapp`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/whatsapp.svg" width={30} height={30} alt="#" />
                   <div className="product-dis">
@@ -94,7 +95,7 @@ const ProductsMenu = () => {
                 </div>
               </Link>
 
-              <Link href={`${path}/telegram`} className="product-cont">
+              <Link href={`/${path}/telegram`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/Telegram.svg" width={30} height={30} alt="#" />
                   <div className="product-dis">
@@ -103,7 +104,7 @@ const ProductsMenu = () => {
                 </div>
               </Link>
 
-              <Link href={`${path}/rcs`} className="product-cont">
+              <Link href={`/${path}/rcs`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/rcs.svg" width={30} height={30} alt="#" />
                   <div className="product-dis">
@@ -112,7 +113,7 @@ const ProductsMenu = () => {
                 </div>
               </Link>
 
-              <Link href={`${path}/push-notification`} className="product-cont">
+              <Link href={`/${path}/push-notification`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/push-notification.svg" width={30} height={30} alt="#" />
                   <div className="product-dis">
@@ -126,7 +127,7 @@ const ProductsMenu = () => {
             <div className="menu nav-utilities">              
               <p className="head-p ">Utiliteis</p>
 
-              <Link href={`${path}/shorturl`} className="product-cont">
+              <Link href={`/${path}/shorturl`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/short-url-ico.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">
@@ -136,7 +137,7 @@ const ProductsMenu = () => {
                 </div>
               </Link>
 
-              <Link href={`${path}/knowledgebase`} className="product-cont">
+              <Link href={`/${path}/knowledgebase`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/kb-ico.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">
@@ -146,7 +147,7 @@ const ProductsMenu = () => {
                 </div>
               </Link>
 
-              <Link href={`${path}/files`} className="product-cont">
+              <Link href={`/${path}/files`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/files-ico.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">
