@@ -1,6 +1,6 @@
 import Header from "@/components/header";
 import Notification from "@/components/notification";
-import HeadTag from "@/components/head";
+import HeadTag from "@/components/head";  
 import TrustedSec from "@/components/trusted_by";
 import Link from "next/link";
 import Footer from "@/components/footer";
@@ -18,7 +18,7 @@ const hello= () => {
             <img src="../img/hello.svg" className="product-page-logo" />
             <h1 className="heading">Hello</h1>
           </div>
-          <p className="c-fs-4 mx-auto">Event based automation</p>
+          
           <h2 className="c-fs-2 c-ff-b c-fw-r w-100 mx-auto">
           Bridge the gap between you and your customers{" "}
           </h2>

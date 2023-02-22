@@ -10,6 +10,10 @@
     --radius2: 8px;
     --radius3: 16px;
     --radius4: 24px;
+    --hello :#E18700;
+    --otp:#3A73B5;
+    --segmento:#E55CA1;
+    --campaign:#9C5CE5;
     --sms-light: rgba(77, 160, 255, 0.16);
     --email-light: rgba(204, 82, 41, 0.12);
     --whatsapp-light: rgba(111, 202, 113, 0.16);
@@ -32,6 +36,14 @@
     --c-ff-h-r:charterregular;
     --c-ff-b:jost;
 
+    --heading:clamp(2.25rem,4vw,3.75rem); //36px 60px
+    --sub-heading:clamp(1.75rem,3vw,3rem); //28px 48px
+    --small-heading:clamp(1.25rem,2.6vw,2.25rem); //20px 36px
+    --c-fs-1:clamp(1.25rem,2.6vw,2.25rem); //20px 36px
+    --c-fs-2:clamp(1rem,1.5vw,1.75rem); //16px 20px
+    --c-fs-2:clamp(1rem,1.5vw,1.75rem); //16px 20px
+
 }
+
 
     

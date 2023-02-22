@@ -19,7 +19,7 @@ const campaign = () => {
             <img src="../img/campaign.svg" className="product-page-logo" />
             <h1 className="heading">Campaign</h1>
           </div>
-          <p className="c-fs-4 mx-auto">Event based automation</p>
+          <p className="c-fs-4 c-fw-sb col-campaign c-ls-20 mx-auto">EVENT BASED AUTOMATION</p>
           <h2 className="c-fs-2 c-ff-b c-fw-r w-100 mx-auto">
             Boost audience engagement through smart communication and on-time
             delivery.{" "}

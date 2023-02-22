@@ -18,7 +18,7 @@ const otp = () => {
             <img src="../img/otp.svg" className="product-page-logo" />
             <h1 className="heading">OTP</h1>
           </div>
-          <p className="c-fs-4 mx-auto">INSTANT SECURE VERIFICATION</p>
+          <p className="c-fs-4 c-fw-sb col-otp c-ls-20 mx-auto">INSTANT SECURE VERIFICATION</p>
           <h2 className="c-fs-2 c-ff-b c-fw-r w-100 mx-auto">
           Quick and reliable authentication by 2FA using multiple channels..{" "}
           </h2>
