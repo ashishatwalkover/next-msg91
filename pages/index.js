@@ -189,7 +189,7 @@ const IndexPage = () => {
           <div className="py-7 stats py-3 pe-3  col-6 col-lg-6 col-xl-3">
             <div className="lh-1 d-flex flex-column align-items-center align-items-sm-start">
               <span className="mb-1 stats-title">4.5 Million+</span>
-              <span className="c-fs-3 c-fw-m">API calls</span>
+              <span className="c-fs-3 c-fw-m">API calls /Month</span>
             </div>
           </div>
 
@@ -201,15 +201,15 @@ const IndexPage = () => {
           </div>
           <div className="py-7 stats py-3  pe-3  col-6 col-lg-6 col-xl-3">
             <div className="lh-1 d-flex flex-column align-items-center align-items-sm-start">
-              <span className="mb-1 stats-title">2.3 Million+</span>
+              <span className="mb-1 stats-title">2.3 Billon +</span>
               <span className="c-fs-3 c-fw-m">SMS Delivered</span>
             </div>
           </div>
 
           <div className="py-7 stats py-3 pe-3   col-6 col-lg-6 col-xl-3">
             <div className="lh-1 d-flex flex-column align-items-center align-items-sm-start">
-              <span className="mb-1 stats-title">192</span>
-              <span className="c-fs-3 c-fw-m">Countries</span>
+              <span className="mb-1 stats-title">'add new stat'</span>
+              <span className="c-fs-3 c-fw-m">Tickets resolved / Month</span>
             </div>
           </div>
         </div>
