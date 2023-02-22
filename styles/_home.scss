@@ -59,19 +59,31 @@
 
   .segmento{
     background: url(/img/segmento-pro.png);
-    background-size: 100%;
+    // background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .hello{
     background: url(/img/hello-pro.png);
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // background-size: 100%;
   }
   .campaign{
     background: url(/img/campaign2-pro.png);
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // background-size: 100%;
   }
   .otp{
     background: url(/img/otp-pro.png);
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // background-size: 100%;
   }
 }
 

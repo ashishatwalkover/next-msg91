@@ -33,8 +33,8 @@ const Header = () => {
   path = (path.length == 2) ? '/'+path : '';
   var home = (path.length) ? path : '/';
   return (
-    <div className="px-0 px-md-5" id="menu-wrp">
-      <nav className="navbar px-0 px-md-4 navbar-expand-lg bg-body-tertiary">
+    <div className="px-0 px-xl-5" id="menu-wrp">
+      <nav className="navbar px-0 px-xl-4 navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">          
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />

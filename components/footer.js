@@ -192,7 +192,7 @@ const Footer = () => {
                 <span>
                   A Product of{" "}
                   <Image src="../img/walkover.svg" width={20} height={20} alt="#"/>
-                  <Link href="https://walkover.in">Walkover</Link>
+                  <Link href="https://walkover.in" target="_blank">Walkover</Link>
                 </span>
               </div>
             </div>
