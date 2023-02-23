@@ -37,7 +37,8 @@ const HeadTag =()=> {
     }    
     { path === 'ph' ?
       <>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
         <link href="/styles/ph.css" rel="stylesheet"/>
       </>
       :''
