@@ -135,7 +135,7 @@ const Footer = () => {
                 <Link href="#" className="c-fs-6 c-fw-t">
                   MSG91 For Developers
                 </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
+                <Link href="/startup" className="c-fs-6 c-fw-t">
                   MSG91 For Startups
                 </Link>
                 <Link href="#" className="c-fs-6 c-fw-t">
