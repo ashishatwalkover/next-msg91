@@ -1,6 +1,5 @@
 :root{    
-    --c-ff-h: 'Manrope', sans-serif;
-    --c-ff-b: 'Manrope', sans-serif;;
+    --c-ff-h-b: charterbold;
+    --c-ff-h: charterregular;
+    --c-ff-b: jost;
 }
-
-    

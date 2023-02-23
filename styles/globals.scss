@@ -5,19 +5,23 @@ body,html{
   font-family: var(--c-ff-b);
 }
 h1 {
-  font-family: var(--c-ff-h-b);
+  font-family: var(--c-ff-h);
 }
 
 
 // font size
 .heading{
   font-size: var(--heading);
+  font-family: var(--c-ff-h);
+  font-weight: 600!important;
 }
 .sub-heading{
   font-size: var(--sub-heading);
+  font-family: var(--c-ff-h);
 }
 .small-heading{
   font-size: var(--small-heading);
+  font-family: var(--c-ff-h);
 }
 .c-fs-1{
   font-size: var(--c-fs-1);
@@ -98,7 +102,7 @@ a{
   background-color: white;
 }
 .navbar-w{
-  width: 35%;
+  width: 44%;
 }
 
 // notification scss
