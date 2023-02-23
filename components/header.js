@@ -33,17 +33,19 @@ const Header = () => {
   path = (path.length == 2) ? '/'+path : '';
   var home = (path.length) ? path : '/';
   return (
-    <div className="px-0 px-xl-5" id="menu-wrp">
+    <div className="px-0  px-md-5" id="menu-wrp">
       <nav className="navbar px-0 px-xl-5 navbar-expand-lg bg-body-tertiary c-fs-3">
-        <div className="container-fluid">          
+        <div className=" w-100 px-3">      
+        <div className="d-flex w-100 justify-content-between">    
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
           </button>
           <a className="navbar-brand m-auto d-lg-none d-block" href="#"><img src="/img/logo.svg" alt="msg91" /></a>
           <button type="button" className="btn btn-primary c-fs-3 d-lg-none d-block">Sign UP</button>
-          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav navbar-w product-navbar">
-              <a className="nav-link c-fs-3 c-fw-r" href="#" id="link-products">Products <span className="sr-only"></span></a>
+          </div>
+          <div className="collapse w-100 navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav px-3 product-navbar">
+              <a className="nav-link c-fs-3 c-fw-r " href="#" id="link-products">Products <span className="sr-only"></span></a>
               <a className="nav-link c-fs-3 c-fw-r" href="#" id="link-learning">Learning Center</a>
               <Link href="/pricing" className="nav-link c-fs-3 c-fw-r" id="link-pricing">Pricing</Link>
             </div>

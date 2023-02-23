@@ -8,7 +8,7 @@ const HeadTag =()=> {
   <Head>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>    
     <link rel="icon" href="/fav.svg"/>
-    { path === 'startup' ?
+    { path === '' ?
       <>
         <link href="/styles/global.css" rel="stylesheet"/>
       </>
