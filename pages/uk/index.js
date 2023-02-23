@@ -14,7 +14,7 @@ const IndexPage = () => {
       <Header />
       <Home />
       <div className="container text-center px-4   col-xs-12 col-sm-10 col-md-8 mx-auto section">
-        <h1 className="heading c-fw-m">Level Up Your Engagement Game</h1>
+        <h1 className="heading">Level Up Your Engagement Game</h1>
         <p className="small-heading  m-auto">
           Best Cloud Communication Platform to Enhance Present Customer
           Engagement and Boost Future Reach
@@ -64,7 +64,7 @@ const IndexPage = () => {
       <section className="products">
         <div className="row g-0">
           <div className="hello col-12 col-lg-3 col-sm-6">
-            <h2 className="small-heading c-ff-h">Conversation</h2>
+            <h2 className="small-heading m-3">Conversation</h2>
             <div className="spacer"></div>
             <div className="pro-footer">
               <div className="c-fs-2 text-white">
@@ -79,7 +79,7 @@ const IndexPage = () => {
             </div>
           </div>
           <div className="segmento col-12 col-lg-3 col-sm-6">
-            <h2 className="small-heading c-ff-h">Segmentation</h2>
+            <h2 className="small-heading m-3">Segmentation</h2>
             <div className="spacer"></div>
             <div className="pro-footer alt">
               <div className="c-fs-2 text-white">
@@ -94,7 +94,7 @@ const IndexPage = () => {
             </div>
           </div>
           <div className="campaign col-12 col-lg-3 col-sm-6">
-            <h2 className="small-heading c-ff-h ">Flow/OneAPI</h2>
+            <h2 className="small-heading m-3">Flow/OneAPI</h2>
             <div className="spacer"></div>
             <div className="pro-footer">
               <div className="c-fs-2 text-white">
@@ -109,7 +109,7 @@ const IndexPage = () => {
             </div>
           </div>
           <div className="otp col-12 col-lg-3 col-sm-6">
-            <h2 className="title">Verification</h2>
+            <h2 className="small-heading m-3">Verification</h2>
             <div className="spacer"></div>
             <div className="pro-footer alt">
               <div className="c-fs-2 text-white">
