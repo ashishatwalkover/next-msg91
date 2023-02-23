@@ -1,4 +1,4 @@
-import Header from "@/components/header";
+  import Header from "@/components/header";
 import Notification from "@/components/notification";
 import HeadTag from "@/components/head";
 import TrustedSec from "@/components/trusted_by";

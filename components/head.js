@@ -21,10 +21,16 @@ const HeadTag =()=> {
       </>
       :''
     }    
+    { path === 'us' ?
+      <>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"/>
+        <link href="/styles/us.css" rel="stylesheet"/>
+      </>
+      :''
+    }    
   </Head>
     
     </>
   )
 };
 export default HeadTag;
-//in, ph, sg, es, ae, uk, us

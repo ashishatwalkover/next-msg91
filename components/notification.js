@@ -23,12 +23,12 @@ const Notification = () => {
   }, []);
   return (
     <>
-      <div className="px-0 px-md-5 c-bg-grey">
+      <div className="px-0 px-md-5 c-bg-grey c-fs-4">
         <div className="px-3 px-md-5 py-1 d-flex flex-md-row flex-column align-items-start   align-items-md-center  justify-content-md-between justify-content-start">
-          <p className="c-fs-6 ">
+          <p className="">
             The New and Improved Version Awaits :)
           </p>
-          <div className=" text-dark d-flex c-fs-5">
+          <div className=" text-dark d-flex  ">
             <div className="d-flex  align-items-center">              
               <div className="dropdown" id="change-country">
                 <button className="btn btn-link dropdown-toggle btn-sm text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
