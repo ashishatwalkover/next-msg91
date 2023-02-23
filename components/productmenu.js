@@ -9,6 +9,7 @@ const ProductsMenu = () => {
   return (
     <>      
       <div className="px-5 " id="product-menu">
+        <div className="container-fluid">
         <div className="ps-5 d-flex  m-y-120 flex-wrap">
             <div className="menu nav-applications">
               <p className="head-p">applications</p>
@@ -159,6 +160,7 @@ const ProductsMenu = () => {
             </div>
                          
             <div className="v-divider mx-5"></div>
+        </div>
         </div>
       </div>
     </>
