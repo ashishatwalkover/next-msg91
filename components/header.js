@@ -35,7 +35,7 @@ const Header = () => {
   return (
     <div className="px-0 px-xl-5" id="menu-wrp">
       <nav className="navbar px-0 px-xl-5 navbar-expand-lg bg-body-tertiary c-fs-3">
-        <div className="w-100">          
+        <div className="container-fluid">          
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
           </button>

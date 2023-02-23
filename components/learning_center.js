@@ -3,6 +3,7 @@ const LearningCenter = () => {
 
   return (
     <div className="ps-5" id="learning-center">
+      <div className="container-fluid"> 
       <div className="ps-5 m-y-120">
         <div className="c-fs-5 text-uppercase">Guides</div>
         <div className="c-fs-4">
@@ -35,6 +36,7 @@ const LearningCenter = () => {
           <a href="#">Become a Partner (MSG91 Partner Program)</a>
           <a href="#">Talk to Sales : +91 999 99 999 99</a>          
         </div>
+      </div>
       </div>
 
     </div>
