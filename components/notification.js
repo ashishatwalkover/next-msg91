@@ -38,10 +38,10 @@ const Notification = () => {
                   <ul className="dropdown-menu">
                     <li><Link href="/" className="dropdown-item c-fs-4">Global</Link></li>
                     <li><Link href="/in" className="dropdown-item c-fs-4">India</Link></li>
+                    <li><Link href="/ae" className="dropdown-item c-fs-4">United Arab Emirates</Link></li>
                     <li><Link href="/ph" className="dropdown-item c-fs-4">Philippines</Link></li>
                     <li><Link href="/sg" className="dropdown-item c-fs-4">Singapore</Link></li>
                     <li><Link href="/es" className="dropdown-item c-fs-4">Spain</Link></li>
-                    <li><Link href="/ae" className="dropdown-item c-fs-4">United Arab Emirates</Link></li>
                     <li><Link href="/uk" className="dropdown-item c-fs-4">United Kingdom</Link></li>
                     <li><Link href="/us" className="dropdown-item c-fs-4">United States</Link></li>
                     
