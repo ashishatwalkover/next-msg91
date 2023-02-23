@@ -13,9 +13,9 @@ const IndexPage = () => {
       <Notification />
       <Header />
       <Home />
-      <div className="container text-center px-4   col-xs-12 col-sm-10 col-md-8 mx-auto section">
+      <div className="container text-center px-4   col-xs-12 col-sm-10 col-md-10 mx-auto section">
         <h1 className="heading">Level Up Your Engagement Game</h1>
-        <p className="small-heading  m-auto">
+        <p className="c-fs-1  m-auto">
           Best Cloud Communication Platform to Enhance Present Customer
           Engagement and Boost Future Reach
         </p>
