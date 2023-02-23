@@ -9,7 +9,7 @@ const Utilities = () => {
           <div className="us-cont d-flex  container justify-content-between alighn-items-center col-12">
             <div className="us-nav-cont col-3 d-lg-block d-md-none d-sm-none d-none ">
               <div className="us-nav" id="utilities-items">
-          <h1 className="c-fs-1 mb-5">More Benefits </h1>
+                <h1 className="c-fs-1 mb-5">More Benefits </h1>
                 <div
                   className="us-nav-options align-items-center mb-2 d-flex active"
                   id="link-shortner"
@@ -35,6 +35,8 @@ const Utilities = () => {
             </div>
 
             <div className="us-main-cont ">
+              <div className="us-spacer"></div>
+              
               <div
                 className="us-main d-flex flex-md-row flex-column align-items-center"
                 id="url-shortner"
@@ -59,6 +61,9 @@ const Utilities = () => {
                 </div>
                 <img src="/img/short-url-img.svg" className="utility-img" />
               </div>
+
+              <div className="us-spacer"></div>
+              
               <div
                 className="us-main d-flex flex-md-row-reverse flex-column align-items-center"
                 id="knowledge-base"
@@ -85,6 +90,9 @@ const Utilities = () => {
                 </div>
                 <img src="/img/kb-img.svg" className="utility-img" />
               </div>
+              
+              <div className="us-spacer"></div>
+
               <div
                 className="us-main pb-300 d-flex flex-md-row flex-column align-items-center"
                 id="file-hosting"
