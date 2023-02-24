@@ -8,17 +8,17 @@ const ProductsMenu = () => {
   path = (path.length == 2) ? '/'+path : '';
   return (
     <>      
-      <div className="px-0 px-md-5" id="product-menu">
+      <div className="px-2 px-md-5" id="product-menu">
         <div className="container-fluid">
         <div className=" d-flex  px-0 px-xl-5 flex-wrap">
             <div className="menu nav-applications">
-              <p className="head-p">applications</p>
+              <p className="c-fs-4 c-ff-h text-uppercase">applications</p>
               <Link href={`${path}/hello`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/hello.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">
-                    <h4 className="charterregular">Hello</h4>
-                    <p className="sub-p">Ticketing and Chat</p>
+                    <h4 className="c-fs-2 c-ff-h mb-1">Hello</h4>
+                    <p className="c-fs-5">Ticketing and Chat</p>
                   </div>
                 </div>
               </Link>
@@ -27,8 +27,8 @@ const ProductsMenu = () => {
                 <div className="d-flex align-items-center">
                   <Image src="../img/campaign.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">
-                    <h4 className="charterregular">Campaign</h4>
-                    <p className="sub-p">Event base automation</p>
+                    <h4 className="c-fs-2 c-ff-h mb-1">Campaign</h4>
+                    <p className="c-fs-5">Event base automation</p>
                   </div>
                 </div>
               </Link>
@@ -37,8 +37,8 @@ const ProductsMenu = () => {
                 <div className="d-flex align-items-center">
                   <Image src="../img/segmento.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">
-                    <h4 className="charterregular">Segmento</h4>
-                    <p className="sub-p">Contact Managment</p>
+                    <h4 className="c-fs-2 c-ff-h mb-1">Segmento</h4>
+                    <p className="c-fs-5">Contact Managment</p>
                   </div>
                 </div>
               </Link>
@@ -47,24 +47,24 @@ const ProductsMenu = () => {
                 <div className="d-flex align-items-center">
                   <Image src="../img/otp.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">
-                    <h4 className="charterregular">OTP</h4>
-                    <p className="sub-p">Simplified OTP Platform</p>
+                    <h4 className="c-fs-2 c-ff-h mb-1">OTP</h4>
+                    <p className="c-fs-5">Simplified OTP Platform</p>
                   </div>
                 </div>
               </Link>
-              <div className="h-divider my-5"></div>
+              {/* <div className="h-divider my-5"></div> */}
             </div> 
 
-            <div className="v-divider mx-5"></div>
+            {/* <div className="v-divider mx-5"></div> */}
             
             <div className="menu nav-channels">
-              <p className="head-p">channels</p>
+              <p className="c-fs-4 c-ff-h text-uppercase">channels</p>
               
               <Link href={`${path}/sms`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/sms.svg" width={30} height={30} alt="#" />
                   <div className="product-dis">
-                    <h4 className="charterregular">SMS</h4>
+                    <h4 className="c-fs-2 c-ff-h mb-1">SMS</h4>
                   </div>
                 </div>
               </Link>
@@ -73,7 +73,7 @@ const ProductsMenu = () => {
                 <div className="d-flex align-items-center">
                   <Image src="../img/Email.svg" width={30} height={30} alt="#" />
                   <div className="product-dis">
-                    <h4 className="charterregular">Email</h4>
+                    <h4 className="c-fs-2 c-ff-h mb-1">Email</h4>
                   </div>
                 </div>
               </Link>
@@ -82,7 +82,7 @@ const ProductsMenu = () => {
                 <div className="d-flex align-items-center">
                   <Image src="../img/voice.svg" width={30} height={30} alt="#" />
                   <div className="product-dis">
-                    <h4 className="charterregular">Voice</h4>
+                    <h4 className="c-fs-2 c-ff-h mb-1">Voice</h4>
                   </div>
                 </div>
               </Link>
@@ -91,7 +91,7 @@ const ProductsMenu = () => {
                 <div className="d-flex align-items-center">
                   <Image src="../img/whatsapp.svg" width={30} height={30} alt="#" />
                   <div className="product-dis">
-                    <h4 className="charterregular">WhatsApp</h4>
+                    <h4 className="c-fs-2 c-ff-h mb-1">WhatsApp</h4>
                   </div>
                 </div>
               </Link>
@@ -100,7 +100,7 @@ const ProductsMenu = () => {
                 <div className="d-flex align-items-center">
                   <Image src="../img/Telegram.svg" width={30} height={30} alt="#" />
                   <div className="product-dis">
-                    <h4 className="charterregular">Telegram</h4>
+                    <h4 className="c-fs-2 c-ff-h mb-1">Telegram</h4>
                   </div>
                 </div>
               </Link>
@@ -109,7 +109,7 @@ const ProductsMenu = () => {
                 <div className="d-flex align-items-center">
                   <Image src="../img/rcs.svg" width={30} height={30} alt="#" />
                   <div className="product-dis">
-                    <h4 className="charterregular">RCS</h4>
+                    <h4 className="c-fs-2 c-ff-h mb-1">RCS</h4>
                   </div>
                 </div>
               </Link>
@@ -118,7 +118,7 @@ const ProductsMenu = () => {
                 <div className="d-flex align-items-center">
                   <Image src="../img/push-notification.svg" width={30} height={30} alt="#" />
                   <div className="product-dis">
-                    <h4 className="charterregular">Push Notification</h4>
+                    <h4 className="c-fs-2 c-ff-h mb-1">Push Notification</h4>
                   </div>
                 </div>
               </Link>
@@ -126,14 +126,14 @@ const ProductsMenu = () => {
             </div>
 
             <div className="menu nav-utilities">              
-              <p className="head-p ">Utiliteis</p>
+              <p className="c-fs-4 c-ff-h text-uppercase">Utiliteis</p>
 
               <Link href={`${path}/shorturl`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/short-url-ico.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">
-                    <h4 className="charterregular">URL Shrtnr</h4>
-                    <p className="sub-p">Customize and track URL's</p>
+                    <h4 className="c-fs-2 c-ff-h mb-1">URL Shrtnr</h4>
+                    <p className="c-fs-5">Customize and track URL's</p>
                   </div>
                 </div>
               </Link>
@@ -142,8 +142,8 @@ const ProductsMenu = () => {
                 <div className="d-flex align-items-center">
                   <Image src="../img/kb-ico.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">
-                    <h4 className="charterregular">Knowladgebase</h4>
-                    <p className="sub-p">Manage help Doc and guidess</p>
+                    <h4 className="c-fs-2 c-ff-h mb-1">Knowladgebase</h4>
+                    <p className="c-fs-5">Manage help Doc and guidess</p>
                   </div>
                 </div>
               </Link>
@@ -152,14 +152,19 @@ const ProductsMenu = () => {
                 <div className="d-flex align-items-center">
                   <Image src="../img/files-ico.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">
-                    <h4 className="charterregular">File Hosting</h4>
-                    <p className="sub-p">Manage your files on cloud</p>
+                    <h4 className="c-fs-2 c-ff-h mb-1">File Hosting</h4>
+                    <p className="c-fs-5">Manage your files on cloud</p>
                   </div>
                 </div>
               </Link>  
             </div>
+            <div className="menu nav-utilities">
+            <a className="nav-link c-fs-2 c-fw-sb mb-3 mt-4" href="#" id="link-products">Products</a>
+              <a className="nav-link c-fs-2 c-fw-sb mb-3" href="#" id="link-learning">Learning Center</a>
+              <Link href="/pricing" className="nav-link c-fs-2 c-fw-sb mb-3" id="link-pricing">Pricing</Link>
+            </div>
                          
-            <div className="v-divider mx-5"></div>
+            {/* <div className="v-divider mx-5"></div> */}
         </div>
         </div>
       </div>

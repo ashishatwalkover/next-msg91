@@ -38,6 +38,7 @@
       width: 260px;
       color: var(--bs-body-color);
       text-decoration: none;
+      margin-top: 16px;
       .btn-label{
         font-size: 20px;
         padding-left: 8px;
@@ -98,7 +99,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 16px 24px;
-    width: 225px;
+    width: 240px;
     background: #fff;
     border-radius: var(--radius2);
     color: var(--bs-body-color);
@@ -186,5 +187,5 @@
 }
 
 .utilities{
-  background: var(--light-blue);
+  background: var(--light-blue);  
 }

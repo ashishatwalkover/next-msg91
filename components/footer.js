@@ -8,68 +8,27 @@ const Footer = () => {
     <SeccondFooter/>
       <div className="footer pt-5">
         <div className="footer-main-cont mt-4 mb-4 container">
-          <div className="row justify-content-sm-between">
-            <div className="col-12 col-lg-2 f-social-link-cont mb-4">
-              <div className="footer-social-link-content">
-                <span className="footer-social-link-text  c-fs-5 d-flex flex-column">
-                  Download Apps
-                </span>
-                <div className="footer-social-link d-flex mt-1">
-                  <Image
-                    src="../img/android.svg"
-                    width={20}
-                    height={23}
-                    className="me-3"
-                    alt="#"
-                  />
-                  <Image src="../img/apple.svg" width={20} height={24} alt="#" />
-                </div>
-              </div>
-              <div className="footer-social-link-content mt-4">
-                <span className="footer-social-link-text c-fs-5 d-flex flex-column">
-                  Follow Us
-                </span>
-                <div className="footer-social-link d-flex mt-1 align-items-center">
-                  <Image
-                    src="../img/facebook.svg"
-                    width={24}
-                    height={24}
-                    className="me-3"
-                    alt="#"
-                  />
-                  <Image
-                    src="../img/Linkedin.svg"
-                    width={24}
-                    height={24}
-                    className="me-3"
-                    alt="#"
-                  />
-                  <Image src="../img/twitter.svg" width={24} height={24} alt="#"/>
-                </div>
-              </div>
-            </div>
-            
-            {/* <div className="full-line d-sm-none"></div> */}
+          <div className="row justify-content-sm-between">                                    
 
-            <div className="col-12 col-lg-2 mb-4">
+            <div className="col-6 col-lg-2 mb-4">
               <h4 className=" c-fs-5 d-flex flex-column">Our Products</h4>
-              <div className="f-nav-link-cont d-flex flex-column mt-2 align-items-start">
-                <Link href="#" className="c-fs-6 c-fw-t">
-                  One API
-                </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
-                  Send OTP
-                </Link>
+              <div className="f-nav-link-cont d-flex flex-column mt-2 align-items-start">                
                 <Link href="#" className="c-fs-6 c-fw-t">
                   Hello
                 </Link>
                 <Link href="#" className="c-fs-6 c-fw-t">
                   Segmento
                 </Link>
+                <Link href="#" className="c-fs-6 c-fw-t">
+                  campaign
+                </Link>
+                <Link href="#" className="c-fs-6 c-fw-t">
+                  OTP
+                </Link>
               </div>
             </div>
 
-            <div className="col-12 col-lg-2 mb-4">
+            <div className="col-6 col-lg-2 mb-4">
               <h4 className=" c-fs-5 d-flex flex-column">Channels</h4>
               <div className="f-nav-link-cont d-flex flex-column mt-2 align-items-start">
                 <Link href="#" className="c-fs-6 c-fw-t">
@@ -90,13 +49,13 @@ const Footer = () => {
                 <Link href="#" className="c-fs-6 c-fw-t">
                   WhatsApp
                 </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
+                {/* <Link href="#" className="c-fs-6 c-fw-t">
                   View All Channels
-                </Link>
+                </Link> */}
               </div>
             </div>
 
-            <div className="col-12 col-lg-2 mb-4">
+            <div className="col-6 col-lg-2 mb-4">
               <h4 className="c-fs-5 d-flex flex-column">Resources</h4>
               <div className="f-nav-link-cont d-flex flex-column mt-2 align-items-start">
                 <Link href="#" className="c-fs-6 c-fw-t">
@@ -117,7 +76,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-12 col-lg-2 mb-4">
+            <div className="col-6 col-lg-2 mb-4">
               <h4 className=" c-fs-5 d-flex flex-column">Discover</h4>
               <div className="f-nav-link-cont d-flex flex-column mt-2 align-items-start">
                 <Link href="#" className="c-fs-6 c-fw-t">
@@ -150,45 +109,92 @@ const Footer = () => {
               </div>
             </div>
 
+            <div className="d-flex d-lg-block col-12 col-lg-2 f-social-link-cont mb-4 text-start text-lg-end order-first order-lg-last">
+              <div className="footer-social-link-content col-6 col-lg-12">
+                <span className="footer-social-link-text  c-fs-5 d-flex flex-column">
+                  Download Apps
+                </span>
+                <div className="footer-social-link d-flex mt-3 justify-content-start justify-content-lg-end">
+                  <a href="https://play.google.com/store/apps/details?id=com.msg91.android" target="_blank" className="me-4">
+                    <Image
+                      src="../img/android.svg"
+                      width={20}
+                      height={23}                      
+                      alt="#"
+                    />
+                  </a>
+                  <a href="https://itunes.apple.com/us/app/msg91/id981827687" target="_blank">
+                    <Image src="../img/apple.svg" width={20} height={24} alt="#" />
+                  </a>
+                </div>
+              </div>
+              <div className="footer-social-link-content col-6 col-lg-12 mt-lg-5">
+                <span className="footer-social-link-text c-fs-5 d-flex flex-column">
+                  Follow Us
+                </span>
+                <div className="footer-social-link d-flex mt-3 align-items-center justify-content-start justify-content-lg-end">
+                  <a href="https://www.facebook.com/msg91" target="_blank" className="me-4">                    
+                    <Image
+                      src="../img/facebook.svg"
+                      width={24}
+                      height={24}                      
+                      alt="#"
+                    />
+                  </a>
+                  <a href="https://www.linkedin.com/company/msg91/" target="_blank" className="me-4">
+                    <Image
+                      src="../img/Linkedin.svg"
+                      width={24}
+                      height={24}                      
+                      alt="#"
+                    />
+                  </a>
+                  <a href="https://twitter.com/msg91" target="_blank">
+                    <Image src="../img/twitter.svg" width={24} height={24} alt="#"/>
+                  </a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
         <div className="pt-4 pb-5 footer2 w-100">
           <div className="container">
-            <span className="c-fs-7 copyright">
+            <div className="c-fs-7 copyright mb-2">
               Copyright 2008-2020 MSG91 | All rights reserved.
-            </span>
-            <div className="d-flex justify-content-sm-between">
-              <div>
+            </div>
+            <div className="d-flex justify-content-sm-between flex-column flex-lg-row">
+              <div className="mt-4 mt-lg-0">
                 <Link href=" #" className="c-fs-6">
                   Terms of use
                 </Link>
-                <span> | </span>
+                <span className="f2-spacer"> | </span>
                 <Link href=" #" className="c-fs-6">
                   Privacy Policy
                 </Link>
-                <span> | </span>
+                <span className="f2-spacer"> | </span>
                 <Link href=" #" className="c-fs-6">
                   GDPR
                 </Link>
-                <span> | </span>
+                <span className="f2-spacer"> | </span>
                 <Link href=" #" className="c-fs-6">
                   No Spam
                 </Link>
-                <span> | </span>
+                <span className="f2-spacer"> | </span>
                 <Link href=" #" className="c-fs-6">
                   Startup Policy
                 </Link>
-                <span> | </span>
+                <span className="f2-spacer"> | </span>
                 <Link href=" #" className="c-fs-6">
                   Developer Policy
                 </Link>
-                <span> | </span>
+                <span className="f2-spacer"> | </span>
                 <Link href=" #" className="c-fs-6">
                   Cookie Policy
                 </Link>
               </div>
-              <div>
+              <div className="mt-4 mt-lg-0">
                 <span>
                   A Product of{" "}
                   <Image src="../img/walkover.svg" width={20} height={20} alt="#"/>

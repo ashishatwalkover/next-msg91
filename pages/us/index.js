@@ -127,7 +127,7 @@ const IndexPage = () => {
         </div>
       </section>
 
-      <section className="channels container px-sm-0 d-flex flex-column justify-content-center justift-content-sm-start section">
+      <section className="channels container d-flex flex-column justify-content-center justift-content-sm-start section">
         <div className="d-flex flex-column text-center text-sm-start  ">
           <h2 className="sub-heading c-ff-h mb-3">Communication channels</h2>
           <p className="c-fs-2 mx-2 mx-sm-0">
@@ -218,7 +218,6 @@ const IndexPage = () => {
       <ProductMenu />
 
       <section className="utilities col-12 section">
-        <div className="container ">
           <div className="us-cont d-flex  container justify-content-between alighn-items-center col-12">
             <div className="us-nav-cont col-3 d-lg-block d-md-none d-sm-none d-none ">
               <div className="us-nav" id="utilities-items">
@@ -336,7 +335,6 @@ const IndexPage = () => {
               </div>
             </div>
           </div>
-        </div>
       </section>
       <div className="container mt-5">
         <h2 className="sub-heading c-ff-h my-5">Our Client stories</h2>
