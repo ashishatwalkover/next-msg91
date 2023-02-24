@@ -56,7 +56,7 @@ const Header = () => {
             <Link className="navbar-brand d-block d-lg-none" href={`${home}`}>
               <img className=" nav-logo" src="/img/logo.svg" alt="MSG91" />
             </Link>
-            <span className="c-fs-1">
+            <span className="c-fs-1 d-block d-lg-none">
             <MdLogin />
             </span>
           </div>
