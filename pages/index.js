@@ -217,8 +217,9 @@ const IndexPage = () => {
 
       <ProductMenu />
 
-      <section className="utilities col-12 section">        
-          <div className="us-cont d-flex container justify-content-between alighn-items-center col-12">
+      <section className="utilities col-12 section">
+        
+          <div className="us-cont d-flex  container justify-content-between alighn-items-center col-12">
             <div className="us-nav-cont col-3 d-lg-block d-md-none d-sm-none d-none ">
               <div className="us-nav" id="utilities-items">
                 <h1 className="c-fs-1 mb-5">More Benefits </h1>
@@ -254,7 +255,7 @@ const IndexPage = () => {
                 className="us-main d-flex flex-md-row flex-column align-items-center"
                 id="url-shortner"
               >
-                <div className=" d-flex flex-column ">
+                <div className="">
                   <div className="d-flex align-content-center mb-2">
                     <img src="/img/short-url-ico.svg" className="pe-4"/>
                     <span className="c-fs-2 c-ff-h align-middle ">URl Shortner</span>
@@ -336,7 +337,8 @@ const IndexPage = () => {
               <div style={{marginTop: "70px"}}></div>
               
             </div>
-          </div>        
+          </div>
+        
       </section>
 
       <div className="container mt-5">
