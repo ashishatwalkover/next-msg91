@@ -255,7 +255,7 @@ const IndexPage = () => {
                 className="us-main d-flex flex-md-row flex-column align-items-center"
                 id="url-shortner"
               >
-                <div className="">
+                <div className=" d-flex flex-column ">
                   <div className="d-flex align-content-center mb-2">
                     <img src="/img/short-url-ico.svg" className="pe-4"/>
                     <span className="c-fs-2 c-ff-h align-middle ">URl Shortner</span>
