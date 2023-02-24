@@ -8,7 +8,7 @@ const ProductsMenu = () => {
   path = (path.length == 2) ? '/'+path : '';
   return (
     <>      
-      <div className="px-0 px-md-5" id="product-menu">
+      <div className="px-2 px-md-5" id="product-menu">
         <div className="container-fluid">
         <div className=" d-flex  px-0 px-xl-5 flex-wrap">
             <div className="menu nav-applications">

@@ -23,7 +23,7 @@ const Notification = () => {
   }, []);
   return (
     <>
-      <div className="px-0 px-md-5 c-bg-grey c-fs-4">
+      <div className="px-2 px-md-5 c-bg-grey c-fs-4">
         <div className="px-0 px-xl-5 py-1">
           <div className="px-3 d-flex flex-md-row flex-column align-items-start   align-items-md-center  justify-content-md-between justify-content-start">
             <p className="c-fs-4">
