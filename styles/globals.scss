@@ -86,7 +86,10 @@ a{
 }
 // header scss
 .nav-logo{
-  width: clamp(80px,12vw,160px);
+  width: clamp(90px,10vw,160px);
+}
+.outline-none{
+  outline: none;
 }
 .nav-c {
   li {
