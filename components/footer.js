@@ -12,18 +12,18 @@ const Footer = () => {
 
             <div className="col-6 col-lg-2 mb-4">
               <h4 className=" c-fs-5 d-flex flex-column">Our Products</h4>
-              <div className="f-nav-link-cont d-flex flex-column mt-2 align-items-start">
-                <Link href="#" className="c-fs-6 c-fw-t">
-                  One API
-                </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
-                  Send OTP
-                </Link>
+              <div className="f-nav-link-cont d-flex flex-column mt-2 align-items-start">                
                 <Link href="#" className="c-fs-6 c-fw-t">
                   Hello
                 </Link>
                 <Link href="#" className="c-fs-6 c-fw-t">
                   Segmento
+                </Link>
+                <Link href="#" className="c-fs-6 c-fw-t">
+                  campaign
+                </Link>
+                <Link href="#" className="c-fs-6 c-fw-t">
+                  OTP
                 </Link>
               </div>
             </div>
@@ -49,9 +49,9 @@ const Footer = () => {
                 <Link href="#" className="c-fs-6 c-fw-t">
                   WhatsApp
                 </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
+                {/* <Link href="#" className="c-fs-6 c-fw-t">
                   View All Channels
-                </Link>
+                </Link> */}
               </div>
             </div>
 
