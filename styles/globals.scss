@@ -216,6 +216,10 @@ h2,.charterregular{
 .startup-home-img{
   width:40%;
 }
+.signup-cont{
+  width: clamp(250px,19vw,300px);
+  height: clamp(200px,12vw,280px);
+}
 
 // page404
 .pageerror{
