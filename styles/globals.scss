@@ -220,7 +220,12 @@ h2,.charterregular{
   width: clamp(250px,19vw,300px);
   height: clamp(200px,12vw,280px);
 }
-
+.startup-count-cir{
+  width:5rem;
+  height:5rem;
+  border: var(--primary-color) 3px solid;
+  
+}
 // page404
 .pageerror{
   height: 100vh;

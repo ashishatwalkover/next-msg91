@@ -1,6 +1,6 @@
 import SeccondFooter from "./seccond_footer";
 import Image from "next/image";
-import Link from "next/link";
+// import a from "next/a";
 
 const Footer = () => {
   return (
@@ -12,109 +12,109 @@ const Footer = () => {
 
             <div className="col-6 col-lg-2 mb-4">
               <h4 className=" c-fs-5 d-flex flex-column">Our Products</h4>
-              <div className="f-nav-link-cont d-flex flex-column mt-2 align-items-start">                
-                <Link href="#" className="c-fs-6 c-fw-t">
+              <div className="a-nav-link-cont d-flex flex-column mt-2 align-items-start">                
+                <a href="/hello" className="c-fs-6 c-fw-t">
                   Hello
-                </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
+                </a>
+                <a href="/segmento" className="c-fs-6 c-fw-t">
                   Segmento
-                </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
+                </a>
+                <a href="/campaign" className="c-fs-6 c-fw-t">
                   campaign
-                </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
+                </a>
+                <a href="/otp" className="c-fs-6 c-fw-t">
                   OTP
-                </Link>
+                </a>
               </div>
             </div>
 
             <div className="col-6 col-lg-2 mb-4">
               <h4 className=" c-fs-5 d-flex flex-column">Channels</h4>
-              <div className="f-nav-link-cont d-flex flex-column mt-2 align-items-start">
-                <Link href="#" className="c-fs-6 c-fw-t">
+              <div className="a-nav-link-cont d-flex flex-column mt-2 align-items-start">
+                <a href="/sms" className="c-fs-6 c-fw-t">
                   SMS
-                </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
+                </a>
+                <a href="/email" className="c-fs-6 c-fw-t">
                   Email
-                </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
+                </a>
+                <a href="/voice" className="c-fs-6 c-fw-t">
                   Voice
-                </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
+                </a>
+                <a href="/rcs" className="c-fs-6 c-fw-t">
                   RCS
-                </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
+                </a>
+                <a href="/virtual-number" className="c-fs-6 c-fw-t">
                   Virtual Number
-                </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
+                </a>
+                <a href="/whatsapp" className="c-fs-6 c-fw-t">
                   WhatsApp
-                </Link>
-                {/* <Link href="#" className="c-fs-6 c-fw-t">
+                </a>
+                {/* <a href="#" className="c-fs-6 c-fw-t">
                   View All Channels
-                </Link> */}
+                </a> */}
               </div>
             </div>
 
             <div className="col-6 col-lg-2 mb-4">
               <h4 className="c-fs-5 d-flex flex-column">Resources</h4>
-              <div className="f-nav-link-cont d-flex flex-column mt-2 align-items-start">
-                <Link href="#" className="c-fs-6 c-fw-t">
+              <div className="a-nav-link-cont d-flex flex-column mt-2 align-items-start">
+                <a href="/industries" className="c-fs-6 c-fw-t">
                   Industries
-                </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
+                </a>
+                <a href="/blogs#" className="c-fs-6 c-fw-t">
                   Blogs
-                </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
+                </a>
+                <a href="/case-studies" className="c-fs-6 c-fw-t">
                   Case Studies
-                </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
+                </a>
+                <a href="/faq" className="c-fs-6 c-fw-t">
                   FAQ
-                </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
+                </a>
+                <a href="/api-documentation" className="c-fs-6 c-fw-t">
                   API Documentation
-                </Link>
+                </a>
               </div>
             </div>
 
             <div className="col-6 col-lg-2 mb-4">
               <h4 className=" c-fs-5 d-flex flex-column">Discover</h4>
-              <div className="f-nav-link-cont d-flex flex-column mt-2 align-items-start">
-                <Link href="#" className="c-fs-6 c-fw-t">
+              <div className="a-nav-link-cont d-flex flex-column mt-2 align-items-start">
+                <a href="/about-us" className="c-fs-6 c-fw-t">
                   About Us
-                </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
+                </a>
+                <a href="/pricing" className="c-fs-6 c-fw-t">
                   Pricing
-                </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
+                </a>
+                <a href="/contact-us" className="c-fs-6 c-fw-t">
                   Contact Us
-                </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
+                </a>
+                <a href="partner-program" className="c-fs-6 c-fw-t">
                   Partner Program
-                </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
+                </a>
+                <a href="/msg91-for-developers" className="c-fs-6 c-fw-t">
                   MSG91 For Developers
-                </Link>
-                <Link href="/startup" className="c-fs-6 c-fw-t">
+                </a>
+                <a href="/startup" className="c-fs-6 c-fw-t">
                   MSG91 For Startups
-                </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
+                </a>
+                <a href="/tools-and-addons" className="c-fs-6 c-fw-t">
                   Tools And Addons
-                </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
+                </a>
+                <a href="/our-programs" className="c-fs-6 c-fw-t">
                   Our Programs
-                </Link>
-                <Link href="#" className="c-fs-6 c-fw-t">
+                </a>
+                <a href="/career" className="c-fs-6 c-fw-t">
                   Career
-                </Link>
+                </a>
               </div>
             </div>
 
-            <div className="d-flex d-lg-block col-12 col-lg-2 f-social-link-cont mb-4 text-start text-lg-end order-first order-lg-last">
-              <div className="footer-social-link-content col-6 col-lg-12">
-                <span className="footer-social-link-text  c-fs-5 d-flex flex-column">
+            <div className="d-flex d-lg-block col-12 col-lg-2 f-social-a-cont mb-4 text-start text-lg-end order-first order-lg-last">
+              <div className="footer-social-a-content col-6 col-lg-12">
+                <span className="footer-social-a-text  c-fs-5 d-flex flex-column">
                   Download Apps
                 </span>
-                <div className="footer-social-link d-flex mt-3 justify-content-start justify-content-lg-end">
+                <div className="footer-social-a d-flex mt-3 justify-content-start justify-content-lg-end">
                   <a href="https://play.google.com/store/apps/details?id=com.msg91.android" target="_blank" className="me-4">
                     <Image
                       src="../img/android.svg"
@@ -128,11 +128,11 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-              <div className="footer-social-link-content col-6 col-lg-12 mt-lg-5">
-                <span className="footer-social-link-text c-fs-5 d-flex flex-column">
+              <div className="footer-social-a-content col-6 col-lg-12 mt-lg-5">
+                <span className="footer-social-a-text c-fs-5 d-flex flex-column">
                   Follow Us
                 </span>
-                <div className="footer-social-link d-flex mt-3 align-items-center justify-content-start justify-content-lg-end">
+                <div className="footer-social-a d-flex mt-3 align-items-center justify-content-start justify-content-lg-end">
                   <a href="https://www.facebook.com/msg91" target="_blank" className="me-4">                    
                     <Image
                       src="../img/facebook.svg"
@@ -143,7 +143,7 @@ const Footer = () => {
                   </a>
                   <a href="https://www.linkedin.com/company/msg91/" target="_blank" className="me-4">
                     <Image
-                      src="../img/Linkedin.svg"
+                      src="../img/aedin.svg"
                       width={24}
                       height={24}                      
                       alt="#"
@@ -166,39 +166,39 @@ const Footer = () => {
             </div>
             <div className="d-flex justify-content-sm-between flex-column flex-lg-row">
               <div className="mt-4 mt-lg-0">
-                <Link href=" #" className="c-fs-6">
+                <a href="/terms-of-use" className="c-fs-6">
                   Terms of use
-                </Link>
+                </a>
                 <span className="f2-spacer"> | </span>
-                <Link href=" #" className="c-fs-6">
+                <a href="/privacy-policy" className="c-fs-6">
                   Privacy Policy
-                </Link>
+                </a>
                 <span className="f2-spacer"> | </span>
-                <Link href=" #" className="c-fs-6">
+                <a href="/gdpr" className="c-fs-6">
                   GDPR
-                </Link>
+                </a>
                 <span className="f2-spacer"> | </span>
-                <Link href=" #" className="c-fs-6">
+                <a href="/no-spam" className="c-fs-6">
                   No Spam
-                </Link>
+                </a>
                 <span className="f2-spacer"> | </span>
-                <Link href=" #" className="c-fs-6">
+                <a href="/startup-policy" className="c-fs-6">
                   Startup Policy
-                </Link>
+                </a>
                 <span className="f2-spacer"> | </span>
-                <Link href=" #" className="c-fs-6">
+                <a href="/developer-policy" className="c-fs-6">
                   Developer Policy
-                </Link>
+                </a>
                 <span className="f2-spacer"> | </span>
-                <Link href=" #" className="c-fs-6">
+                <a href="/cookie-policy" className="c-fs-6">
                   Cookie Policy
-                </Link>
+                </a>
               </div>
               <div className="mt-4 mt-lg-0">
                 <span>
                   A Product of{" "}
                   <Image src="../img/walkover.svg" width={20} height={20} alt="#"/>
-                  <Link href="https://walkover.in" target="_blank">Walkover</Link>
+                  <a href="https://walkover.in" target="_blank">Walkover</a>
                 </span>
               </div>
             </div>
