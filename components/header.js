@@ -4,27 +4,40 @@ import ProductMenu from "@/components/productmenu";
 import LearningCenter from "@/components/learning_center";
 import $ from "jquery";
 import { useRouter } from "next/router";
-import {GiHamburgerMenu} from "react-icons/gi"
-import {MdLogin} from "react-icons/md"
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MdLogin } from "react-icons/md";
 import Airtable from "airtable";
 const Header = () => {
-  const [data,setData] = useState();
-  var base = new Airtable({apiKey:process.env.NEXT_PUBLIC_Airtable_Auth_Key }).base(process.env.NEXT_PUBLIC_Base_Auth_Key);
-  var  dataToPrint ="";
-  base('Table 1').select({
-    view: "Grid view"
-}).eachPage(function page(records, fetchNextPage) {
+  //airtable
+  const [data, setData] = useState();
+  let base = new Airtable({
+    apiKey: process.env.NEXT_PUBLIC_Airtable_Auth_Key,
+  }).base(process.env.NEXT_PUBLIC_Base_Auth_Key);
+  var productData = "";
+  base("msgone")
+    .select({
+      view: "Grid view",
+    })
+    .eachPage(
+      function page(records, fetchNextPage) {
+        records.forEach(function (record) {
+          productData = record.get("product");
+          console.log(productData);
+        });
+        fetchNextPage();
+        return productData;
 
-    records.forEach(function(record) {
-      dataToPrint+=record.get('Name');
-        //console.log( record.get('Name'));//record nane will be here 
-    });
-    setData(dataToPrint);
-    fetchNextPage();
+      },
+      // function done(err) {
+        //   if (err) {
+      //     console.error(err);
+      //     return;
+      //   }
+      // }
+      );
+        // console.log(productData);
 
-}, function done(err) {
-    if (err) { console.error(err); return; }
-});
+  //
   useEffect(() => {
     $("#link-products").on("mouseenter", function () {
       console.log("products");
@@ -60,7 +73,7 @@ const Header = () => {
         <div className=" w-100 ">
           <div className="d-flex w-100 justify-content-between align-items-center">
             <span
-              class="navbar-toggler outline-none"
+              className="navbar-toggler outline-none"
               type="button"
               data-toggle="collapse"
               data-target="#navbarNav"
@@ -68,13 +81,13 @@ const Header = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <GiHamburgerMenu/>
+              <GiHamburgerMenu />
             </span>
             <Link className="navbar-brand d-block d-lg-none" href={`${home}`}>
               <img className=" nav-logo" src="/img/logo.svg" alt="MSG91" />
             </Link>
             <span className="c-fs-1 d-block d-lg-none">
-            <MdLogin />
+              <MdLogin />
             </span>
           </div>
           <div
@@ -94,7 +107,8 @@ const Header = () => {
                 href="#"
                 id="link-learning"
               >
-                Learning Center
+                {/* Learning Center */}
+                {productData}
               </a>
               <Link
                 href="/pricing"
