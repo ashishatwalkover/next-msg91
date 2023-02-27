@@ -1,35 +1,30 @@
-const startupone=()=>{
-    return (
-        <>
-        
-      <div className="container d-flex  flex-column align-itmes-center justify-content-center mt-5">
-        <h1 className="text-center">
-          We’d love to collaborate! Let us know what you’re after.
-        </h1>
-        <div className="container d-flex flex-column  justify-content-center">
-          <div className="container d-flex align-itmes-center justify-content-center mt-5">
-            <div className="container d-flex flex-column align-items-center">
-              <span className="startup-count-cir rounded-circle d-flex align-items-center bg-primary  text-white justify-content-center c-fs-1">
-                1
-              </span>
-              <span className="text-primary c-fs-2 ">Personal Info</span>
-            </div>
-            <div className="container d-flex flex-column align-items-center">
-              <span className="startup-count-cir rounded-circle d-flex align-items-center justify-content-center bg-white text-primary c-fs-1">
-                2
-              </span>
-              <span className="text-primary c-fs-2 ">Startup Info</span>
-            </div>
-            <div className="container d-flex flex-column align-items-center">
-              <span className="startup-count-cir rounded-circle d-flex align-items-center justify-content-center bg-white text-primary c-fs-1">
-                3
-              </span>
-              <span className="text-primary c-fs-2 ">Other Info</span>
-            </div>
+const startupone = () => {
+  return (
+    <>
+      <div className="container d-flex flex-column  justify-content-center">
+        <div className="container d-flex align-itmes-center justify-content-center mt-5">
+          <div className="container d-flex flex-column align-items-center">
+            <span className="startup-count-cir rounded-circle d-flex align-items-center bg-primary  text-white justify-content-center c-fs-1">
+              1
+            </span>
+            <span className="text-primary c-fs-2 ">Personal Info</span>
           </div>
-          <span className="startup-count-line mx-auto" />
+          <div className="container d-flex flex-column align-items-center">
+            <span className="startup-count-cir rounded-circle d-flex align-items-center justify-content-center bg-white text-primary c-fs-1">
+              2
+            </span>
+            <span className="text-primary c-fs-2 ">Startup Info</span>
+          </div>
+          <div className="container d-flex flex-column align-items-center">
+            <span className="startup-count-cir rounded-circle d-flex align-items-center justify-content-center bg-white text-primary c-fs-1">
+              3
+            </span>
+            <span className="text-primary c-fs-2 ">Other Info</span>
+          </div>
         </div>
+        <span className="startup-count-line mx-auto" />
       </div>
+
       <div className="container d-flex flex-column">
         <form className="startup-form w-50 mx-auto mt-5 ">
           <div class="d-flex input-box-cont justify-content-between">
@@ -82,17 +77,14 @@ const startupone=()=>{
           </div>
 
           <div class="d-flex input-box-cont justify-content-between">
-          <button type="submit" class="btn btn-primary ms-auto">
-            Next
-          </button>
+            <button type="submit" class="btn btn-primary ms-auto">
+              Next
+            </button>
           </div>
         </form>
       </div>
-
-        
-        </>
-
-    );
+    </>
+  );
 };
 
 export default startupone;

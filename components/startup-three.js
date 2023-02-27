@@ -1,4 +1,4 @@
-const startuptwo = () => {
+const startupthree = () => {
   return (
     <>
       <div className="container d-flex flex-column  justify-content-center">
@@ -16,7 +16,7 @@ const startuptwo = () => {
             <span className="text-primary c-fs-2 ">Startup Info</span>
           </div>
           <div className="container d-flex flex-column align-items-center">
-            <span className="startup-count-cir rounded-circle d-flex align-items-center justify-content-center bg-white text-primary c-fs-1">
+            <span className="startup-count-cir rounded-circle d-flex align-items-center justify-content-center text-white bg-primary c-fs-1">
               3
             </span>
             <span className="text-primary c-fs-2 ">Other Info</span>
@@ -30,23 +30,23 @@ const startuptwo = () => {
           <div class="d-flex input-box-cont justify-content-between">
             <div class="mb-3 input-box">
               <label for="name" class="form-label c-fs-2">
-                Startup Name
+                Associated Company
               </label>
               <input
                 type="text"
                 class="form-control"
-                id="startup-name"
+                id="associated-company"
                 aria-describedby="emailHelp"
               />
             </div>
             <div class="mb-3 input-box">
               <label for="emailid" class="form-label c-fs-2">
-                Date
+                Association Type
               </label>
               <input
-                type="date"
+                type="text"
                 class="form-control"
-                id="date"
+                id="association-type"
                 aria-describedby="emailHelp"
               />
             </div>
@@ -54,66 +54,29 @@ const startuptwo = () => {
           <div class="d-flex input-box-cont justify-content-between">
             <div class="mb-3 input-box">
               <label for="yourrelo" class="form-label c-fs-2">
-                Registered Name
+                Incubator’s email
               </label>
               <input
-                type="text"
+                type="email"
                 class="form-control"
-                id="registered-name"
-                aria-describedby="emailHelp"
-              />
-            </div>
-            <div class="mb-3 d-flex justify-content-between input-box">
-              <div class="mb-3 input-box">
-                <label for="contact-number" class="form-label c-fs-2">
-                  City
-                </label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="city"
-                  aria-describedby="emailHelp"
-                />
-              </div>
-              <div class="mb-3 input-box">
-                <label for="contact-number" class="form-label c-fs-2">
-                  State
-                </label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="contact-number"
-                  aria-describedby="emailHelp"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="d-flex input-box-cont justify-content-between">
-            <div class="mb-3 input-box">
-              <label for="name" class="form-label c-fs-2">
-                Registered Address
-              </label>
-              <input
-                type="text"
-                class="form-control"
-                id="startup-name"
+                id="yourrole"
                 aria-describedby="emailHelp"
               />
             </div>
             <div class="mb-3 input-box">
-              <label for="emailid" class="form-label c-fs-2">
-                Country
+              <label for="contact-number" class="form-label c-fs-2">
+                Select Service
               </label>
               <input
                 type="text"
                 class="form-control"
-                id="emailid"
+                id="select-service"
                 aria-describedby="emailHelp"
               />
             </div>
           </div>
 
-          <div class="d-flex input-button-cont justify-content-between">
+          <div class="d-flex input-box-cont justify-content-between">
             <button type="submit" class="btn btn-outline-primary ">
               Back
             </button>
@@ -127,4 +90,4 @@ const startuptwo = () => {
   );
 };
 
-export default startuptwo;
+export default startupthree;
