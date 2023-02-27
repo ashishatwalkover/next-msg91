@@ -1,13 +1,30 @@
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import ProductMenu from "@/components/productmenu";
 import LearningCenter from "@/components/learning_center";
 import $ from "jquery";
 import { useRouter } from "next/router";
 import {GiHamburgerMenu} from "react-icons/gi"
 import {MdLogin} from "react-icons/md"
-
+import Airtable from "airtable";
 const Header = () => {
+  const [data,setData] = useState();
+  var base = new Airtable({apiKey:process.env.NEXT_PUBLIC_Airtable_Auth_Key }).base(process.env.NEXT_PUBLIC_Base_Auth_Key);
+  var  dataToPrint ="";
+  base('Table 1').select({
+    view: "Grid view"
+}).eachPage(function page(records, fetchNextPage) {
+
+    records.forEach(function(record) {
+      dataToPrint+=record.get('Name');
+        //console.log( record.get('Name'));//record nane will be here 
+    });
+    setData(dataToPrint);
+    fetchNextPage();
+
+}, function done(err) {
+    if (err) { console.error(err); return; }
+});
   useEffect(() => {
     $("#link-products").on("mouseenter", function () {
       console.log("products");
