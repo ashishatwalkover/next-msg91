@@ -48,7 +48,7 @@ const Notification = () => {
                   </ul>
                 </div>
               </div>
-              <span className="ms-5 align-items-center d-flex"><MdCall /><a href="#" className="text-dark">Support</a></span>
+              <span className="ms-5 align-items-center d-flex"><MdCall /><a href="#" className="text-dark ms-1">Support</a></span>
               <span className="ms-5 align-items-center d-flex"><a href="#"className="text-dark">Log In</a></span>
             </div>
           </div>
