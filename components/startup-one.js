@@ -1,3 +1,4 @@
+import { MdChevronRight } from 'react-icons/md';
 const startupone = () => {
   return (
     <>
@@ -77,8 +78,8 @@ const startupone = () => {
           </div>
 
           <div class="d-flex input-box-cont justify-content-between">
-            <button type="submit" class="btn btn-primary ms-auto">
-              Next
+          <button type="submit" class="btn btn-primary c-fs-4">
+              Submit <MdChevronRight className='c-fs-2'/>
             </button>
           </div>
         </form>
