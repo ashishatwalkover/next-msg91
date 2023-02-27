@@ -224,7 +224,13 @@ h2,.charterregular{
   width:5rem;
   height:5rem;
   border: var(--primary-color) 3px solid;
-  
+}
+.startup-count-line{
+  width: 70%;
+  border-top: 4px solid var(--primary-color);
+  position: relative;
+  top: -75px;
+  z-index: -1;
 }
 // page404
 .pageerror{
@@ -241,4 +247,19 @@ h2,.charterregular{
 }
 .error-page-gif{
   height: 200px;
+}
+
+// startupform
+.startup-form{
+  width: 100%;
+  .input-box-cont{
+    width: 100%;
+    .input-box{
+      width: 40%;
+    }
+  }
+  
+  input{
+    width: 100%;
+  }
 }
