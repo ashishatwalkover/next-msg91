@@ -71,7 +71,7 @@ const Email = () => {
         </div>
       </div>
 
-      <div className="container d-flex flex-column flex-md-row align-items-center mt-5 mb-5">
+      <div className="container d-flex flex-column flex-md-row align-items-flex-start mt-5 mb-5">
         <div className="col-lg-4 flex-column align-items-flex-start">
           <div className="mt-5 mb-3">
             <img
@@ -100,10 +100,12 @@ const Email = () => {
               className="feature-check"
             />
           </div>
-          <span className="c-fs-2 c-fw-m  mt-1">Get notified via Webhooks</span>
+          <span className="c-fs-2 c-fw-m  mt-1">
+          Get notified via Webhooks
+          </span>
           <div>
             <span className="c-fs-3 mt-2">
-              Get real-time data and information about your transactional emails
+            Get real-time data and information about your transactional emails
               with Webhooks. MSG91 webhooks notify your applications about key
               message events such as bounces, deliveries, clicks, opens, and
               spam complaints.
@@ -119,11 +121,11 @@ const Email = () => {
             />
           </div>
           <span className="c-fs-2 c-fw-m  mt-1">
-            Send data-driven transactional emails
+          Send data-driven transactional emails
           </span>
           <div>
             <span className="c-fs-3 mt-2">
-              Transactional emails are a unique set of one to one emails that
+            Transactional emails are a unique set of one to one emails that
               are ideally targeted for sending data-driven and personalized
               messages.
             </span>

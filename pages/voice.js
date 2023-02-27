@@ -83,7 +83,7 @@ const voice = () => {
         </div>
       </div>
 
-      <div className="container d-flex flex-column flex-md-row align-items-center mt-5 mb-5">
+      <div className="container d-flex flex-column flex-md-row align-items-flex-start mt-5 mb-5">
         <div className="col-lg-4 flex-column align-items-flex-start">
           <div className="mt-5 mb-3">
             <img
