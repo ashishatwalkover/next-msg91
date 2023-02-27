@@ -1,7 +1,7 @@
 const Trustedsec = () => {
   return (
     <>
-      <div className="mt-3">
+      <div className="mt-3 d-flex flex-column align-items-center justify-content-center">
         <span className="c-fs-4">Trusted by 30,000+ Businesses</span>
         <div className="mt-3">
           <img 
