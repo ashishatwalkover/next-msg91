@@ -29,7 +29,7 @@ const Notification = () => {
             <p className="c-fs-4">
               The New and Improved Version Awaits :)
             </p>
-            <div className=" text-dark d-flex  ">
+            <div className="d-flex text-dark justify-content-between">
               <div className="d-flex  align-items-center">              
                 <div className="dropdown" id="change-country">
                   <button className="btn btn-link dropdown-toggle btn-sm text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,8 +48,8 @@ const Notification = () => {
                   </ul>
                 </div>
               </div>
-              <span className="ms-5 align-items-center d-flex"><MdCall /><a href="#" className="text-dark ms-1">Support</a></span>
-              <span className="ms-5 align-items-center d-flex"><a href="#"className="text-dark">Log In</a></span>
+              <span className="align-items-center d-flex"><MdCall /><a href="#" className="text-dark ms-1">Support</a></span>
+              <span className="align-items-center d-flex"><a href="#"className="text-dark">Log In</a></span>
             </div>
           </div>
         </div>
