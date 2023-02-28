@@ -6,10 +6,10 @@ import $ from "jquery";
 import { useRouter } from "next/router";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdLogin } from "react-icons/md";
-import Airtable from "airtable";
+//import Airtable from "airtable";
 const Header = () => {
   //airtable
-  const [data, setData] = useState();
+/*   const [data, setData] = useState();
   let base = new Airtable({
     apiKey: process.env.NEXT_PUBLIC_Airtable_Auth_Key,
   }).base(process.env.NEXT_PUBLIC_Base_Auth_Key);
@@ -27,17 +27,9 @@ const Header = () => {
         fetchNextPage();
         return productData;
 
-      },
-      // function done(err) {
-        //   if (err) {
-      //     console.error(err);
-      //     return;
-      //   }
-      // }
-      );
-        // console.log(productData);
+      }      
+    ); */
 
-  //
   useEffect(() => {
     $("#link-products").on("mouseenter", function () {
       console.log("products");
@@ -107,8 +99,8 @@ const Header = () => {
                 href="#"
                 id="link-learning"
               >
-                {/* Learning Center */}
-                {productData}
+                Learning Center
+                {/* {productData} */}
               </a>
               <Link
                 href="/pricing"
@@ -130,16 +122,18 @@ const Header = () => {
             <div className="navbar-nav justify-content-end navbar-w product-navbar align-items-center d-lg-flex">
               <a
                 className="nav-link c-fs-3 c-fw-r d-lg-block d-none"
-                href="#products"
+                target="_blank"
+                href="https://docs.msg91.com/reference/send-sms"
               >
                 API Documentations
               </a>
-              <button
+              <a
                 className=" btn c-fs-5 btn-primary  d-lg-block d-none"
-                href="#products"
+                target="_blank"
+                href="https://control.msg91.com/signup/"
               >
                 Sign Up
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -152,3 +146,4 @@ const Header = () => {
   );
 };
 export default Header;
+

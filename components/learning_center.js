@@ -1,4 +1,5 @@
 import { MdEast } from "react-icons/md";
+import Document from '../pages/_document';
 const LearningCenter = () => {
 
   return (
@@ -18,7 +19,7 @@ const LearningCenter = () => {
       <div className="h-divider my-5"></div>
 
       <div className="ps-5 m-y-120">
-        <div className="c-fs-5 text-uppercase">FAQs</div>
+        <div className="c-fs-5 text-uppercase">Help doc</div>
         <div className="c-fs-4">
           <a href="#">- What is RCS and why should it matter to you?</a>
           <a href="#">- Transactional SMS – top brands benefit from it and you could too</a>
