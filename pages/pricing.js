@@ -11,7 +11,7 @@ import Pricinghello from "@/components/pricing-hello";
 import Pricingsegmento from "@/components/pricing-segmento";
 import Pricingcampaign from "@/components/pricing-campaign";
 import Pricingrcs from "@/components/pricing-rcs";
-const campaign = () => {
+const campaign = () => {  
   return (
     <>
       <HeadTag />

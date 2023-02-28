@@ -1,5 +1,24 @@
 import { MdDone, MdClose } from "react-icons/md";
+import { useEffect, useState } from "react";
+import $ from "jquery";
 const pricingvoice = () => {
+  useEffect(() => {
+    /* 
+    ₹1,259
+    ₹4,000
+    ₹9,000
+    ₹17,000
+    ₹48,000
+    ₹75,000
+     */
+    
+    $.ajax({
+      url: "https://test.msg91.com/api/v5/web/fetchPricingDetails?price=1000&currency=inr&originCountry=INDIA&destinationCountry=INDIA", 
+      success: function(result){
+        console.log('result', result);
+      }
+    });
+  }, []);
   return (
     <>
       <div className="g-3 d-flex justify-content-center col-lg-5 m-auto pb-5">
