@@ -19,10 +19,12 @@ h1 {
 .sub-heading{
   font-size: var(--sub-heading);
   font-family: var(--c-ff-h);
+  font-weight: 700!important;
 }
 .small-heading{
   font-size: var(--small-heading);
   font-family: var(--c-ff-h);
+  font-weight: 700!important;
 }
 .c-fs-1{
   font-size: var(--c-fs-1);
@@ -265,4 +267,19 @@ h2,.charterregular{
 }
 .input-button-cont{
   margin-left: 68%;
+}
+
+// partnership
+.partnership-sol-img{
+  width: 38rem;
+}
+.partnership-meet{
+  width: 30%;
+}
+.our-partner{
+  img{
+    height:  4rem;
+
+    // block-size: auto;
+  }
 }

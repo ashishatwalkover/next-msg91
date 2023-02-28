@@ -4,21 +4,22 @@ import Link from "next/link";
 import $ from 'jquery';
 import { useRouter } from 'next/router';
 import countries from 'components/countries.json';
+import { InlineWidget } from "react-calendly";
 
 const Notification = () => {
-  const router = useRouter();  
-  var path = router.pathname.split("/")[1]; 
+  const router = useRouter();
+  var path = router.pathname.split("/")[1];
   var country = 'Global';
-  for(let x in countries){
-    if(path.toUpperCase() === x){
+  for (let x in countries) {
+    if (path.toUpperCase() === x) {
       country = countries[x];
       break;
     }
   }
   useEffect(() => {
-    $( "#change-country a" ).on( "click", function() {
+    $("#change-country a").on("click", function () {
       var label = $(this).text();
-      $( "#change-country label").html(label);
+      $("#change-country label").html(label);
     });
   }, []);
   return (
@@ -29,11 +30,11 @@ const Notification = () => {
             <p className="c-fs-4">
               The New and Improved Version Awaits :)
             </p>
-            <div className="d-flex text-dark justify-content-between">
-              <div className="d-flex  align-items-center">              
+            <div className=" text-dark d-flex  ">
+              <div className="d-flex  align-items-center">
                 <div className="dropdown" id="change-country">
                   <button className="btn btn-link dropdown-toggle btn-sm text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <MdLanguage /> <label className="c-fs-4">{country}</label>
+                    <label className="c-fs-4">{country}</label>
                   </button>
                   <ul className="dropdown-menu">
                     <li><Link href="/" className="dropdown-item c-fs-4">Global</Link></li>
@@ -44,13 +45,40 @@ const Notification = () => {
                     <li><Link href="/es" className="dropdown-item c-fs-4">Spain</Link></li>
                     <li><Link href="/uk" className="dropdown-item c-fs-4">United Kingdom</Link></li>
                     <li><Link href="/us" className="dropdown-item c-fs-4">United States</Link></li>
-                    
+
                   </ul>
                 </div>
               </div>
-              <span className="align-items-center d-flex"><MdCall /><a href="#" className="text-dark ms-1">Support</a></span>
-              <span className="align-items-center d-flex"><a href="#"className="text-dark">Log In</a></span>
+              <span className="ms-5 align-items-center d-flex"><MdCall /><a href="#" data-bs-toggle="modal" data-bs-target="#support-modal" className="text-dark ms-1">Contact Us</a></span>
+              <span className="ms-5 align-items-center d-flex"><a href="https://control.msg91.com/signin/" target="_blank" className="text-dark">Log In</a></span>
             </div>
+          </div>
+        </div>
+      </div>
+      {/* <!-- Modal --> */}
+      <div className="modal fade" id="support-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-xl">
+          <div className="modal-content">            
+            <div className="modal-body">
+              <button type="button" className="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+              <ul className="d-flex justify-content-center nav nav-pills" id="pills-tab" role="tablist">
+                <li className="nav-item" role="presentation">
+                  <button className="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Sales</button>
+                </li>
+                <li className="nav-item" role="presentation">
+                  <button className="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Support</button>
+                </li>                
+              </ul>
+              <div className="tab-content" id="pills-tabContent">
+                <div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">                  
+                  <InlineWidget url="https://calendly.com/sales-msg91/pre-sales" />
+                  {/* <InlineWidget url="https://calendly.com/msg91international/talktoexpert" /> */}
+                </div>
+                <div className="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                  <InlineWidget url="https://calendly.com/support--msg91" />
+                </div>                
+              </div>
+            </div>            
           </div>
         </div>
       </div>

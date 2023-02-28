@@ -1,9 +1,8 @@
 import { useEffect, useRef } from "react";
+import Airtable from "airtable";
 import $ from 'jquery';
 
 const Home = () => {
-  const aboutRef = useRef();
-
   useEffect(() => {
     const handleScroll = (e) => {      
       console.log($("#link-knowledge").offset().top , $("#knowledge-base").offset().top);
@@ -20,6 +19,7 @@ const Home = () => {
         $("#link-file").addClass("active");
       }
     };
+
     document.addEventListener("scroll", handleScroll);
   }, []);
   return (
