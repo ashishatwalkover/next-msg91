@@ -14,7 +14,7 @@ const azim_Premji = () => {
       <Notification />
       <Header />
       <div className="container d-flex overflow-hidden bg-white py-5 flex-column flex-md-row mb-5 align-items-center">
-        <div className="row col-md-5 d-flex">
+        <div className="row col-12 col-md-5 d-flex">
           <div className="container border border-5 border-dark rounded-1 px-4 py-2">
             <div className="mb-3">
               <img src="../img/azim-premji.png"></img>
