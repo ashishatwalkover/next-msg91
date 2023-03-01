@@ -1,6 +1,6 @@
 import Header from "@/components/header";
 import Notification from "@/components/notification";
-import HeadTag from "@/components/head";  
+import HeadTag from "./head";  
 import TrustedSec from "@/components/trusted_by";
 import Link from "next/link";
 import Footer from "@/components/footer";
@@ -19,10 +19,14 @@ const hello= () => {
             <h1 className="heading">Hello</h1>
           </div>
           
-          <h2 className="c-fs-2 c-ff-b c-fw-r w-100 mx-auto">
+          <p className="c-fs-5 c-fw-sb text-uppercase col-campaign c-ls-20 mx-auto">
           Bridge the gap between you and your customers{" "}
+          </p>
+          <h2 className="small-heading c-ff-b c-fw-r w-100 mx-auto">
+            Boost audience engagement through smart communication and on-time
+            delivery.{" "}
           </h2>
-          <button className="btn btn-primary btn-lg mt-3 c-fs-3" type="button">
+          <button className="btn btn-primary btn-lg mt-3 c-fs-2" type="button">
             Get started for Free
           </button>
           <TrustedSec />
@@ -35,14 +39,14 @@ const hello= () => {
       </div>
 
       <div className=" c-bg-grey px-sm-0 d-flex flex-column justify-content-center justift-content-sm-start section ">
-        <span className="container c-fs-1 c-ff-h c-fw-m ">Features</span>
+        <span className="container sub-heading c-ff-h ">Features</span>
 
         <div className="container d-lg-flex flex-row align-items-center">
           <div className=" col col-lg-6 col-md-6 col-sm-12 flex-column align-items-flex-start mt-lg-5 ms-lg-5 order-lg-2">
             <img src="/img/camp-f-img-one.svg" className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-            <span className="c-fs-2 c-ff-h cc-fw-m">
+            <span className="c-fs-2 c-fw-m ">
             Empower your employees, Support your customers
             </span>
             <span className="c-fs-3  mt-3">
@@ -56,7 +60,7 @@ const hello= () => {
             <img src="/img/camp-f-img-two.svg" className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-            <span className="c-fs-2 c-ff-h n">
+            <span className="c-fs-2 c-fw-m ">
             Conversations made easier with RCS, WhatsApp and 30+ channels
             </span>
             <span className="c-fs-3  mt-3">
@@ -71,7 +75,7 @@ Connect with your users on their most trusted platform that includes RCS, WhatsA
             <img src="/img/camp-f-img-three.svg" className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-            <span className="c-fs-2 c-ff-h ">
+            <span className="c-fs-2 c-fw-m  ">
             Assist and call Customers directly from our platform
             </span>
             <span className="c-fs-3  mt-3">
@@ -85,7 +89,7 @@ Call redirecting, call recording and call assigning.
 
 
       <div className="container">
-        <span className="c-fs-2 c-fw-m c-ff-h">More features</span>
+        <span className="sub-heading">More features</span>
         <div className="container d-flex flex-column flex-md-row my-3">
           <div className="d-flex flex-column justify-content-center align-items-flex-start col-lg-6 mt-2">
             <span className="c-fs-3">

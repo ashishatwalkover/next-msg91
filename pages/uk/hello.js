@@ -1,6 +1,6 @@
 import Header from "@/components/header";
 import Notification from "@/components/notification";
-import HeadTag from "@/components/head";  
+import HeadTag from "./head";  
 import TrustedSec from "@/components/trusted_by";
 import Link from "next/link";
 import Footer from "@/components/footer";

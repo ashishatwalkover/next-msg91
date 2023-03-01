@@ -1,4 +1,4 @@
-import HeadTag from "@/components/head";
+import HeadTag from "./head";
 import Header from "@/components/header";
 import Footertwo from "@/components/footer-sec";
 import { MdKeyboardArrowRight, MdDone } from "react-icons/md";

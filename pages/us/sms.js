@@ -1,6 +1,6 @@
 import Header from "@/components/header";
 import Notification from "@/components/notification";
-import HeadTag from "@/components/head";
+import HeadTag from "./head";
 import TrustedSec from "@/components/trusted_by";
 import Image from "next/image";
 import Link from "next/link";
@@ -96,7 +96,7 @@ const sms = () => {
 
 
 
-      <div className="container d-flex flex-column flex-md-row align-items-center mt-5 mb-5">
+      <div className="container d-flex flex-column flex-md-row align-items-flex-start mt-5 mb-5">
         <div className="col-lg-4 flex-column align-items-flex-start">
           <div className="mt-5 mb-3">
             <img

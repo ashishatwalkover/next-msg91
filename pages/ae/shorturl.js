@@ -1,6 +1,6 @@
 import Header from "@/components/header";
 import Notification from "@/components/notification";
-import HeadTag from "@/components/head";
+import HeadTag from "./head";
 import TrustedSec from "@/components/trusted_by";
 import Link from "next/link";
 import Footer from "@/components/footer";
@@ -18,13 +18,14 @@ const shorturl = () => {
             <img src="../img/short-url-ico.svg" className="product-page-logo" />
             <h1 className="heading">Short URL</h1>
           </div>
-          <p className="c-fs-4 mx-auto">Event based automation</p>
-          <h2 className="c-fs-2 c-ff-b c-fw-r w-100 mx-auto">
+          <p className="c-fs-5 c-fw-sb text-uppercase col-campaign c-ls-20 mx-auto">Event based automation</p>
+          <h2 className="small-heading c-ff-b c-fw-r w-100 mx-auto">
             Customised Links for Business Success
           </h2>
-          <button className="btn btn-primary btn-lg mt-3 c-fs-3" type="button">
-            Get Demo
+          <button className="btn btn-primary btn-lg mt-3 c-fs-2" type="button">
+            Get Started for Free
           </button>
+          <TrustedSec />
         </div>
         <img
           src={"/img/Campaign_flow.svg"}
@@ -34,14 +35,14 @@ const shorturl = () => {
       </div>
 
       <div className=" c-bg-grey px-sm-0 d-flex flex-column justify-content-center justift-content-sm-start section ">
-        <span className="container c-fs-1 c-ff-h c-fw-m ">Features</span>
+        <span className="container sub-heading c-ff-h  ">Features</span>
 
         <div className="container d-lg-flex flex-row align-items-center">
           <div className=" col col-lg-6 col-md-6 col-sm-12 flex-column align-items-flex-start mt-lg-5 ms-lg-5 order-lg-2">
             <img src="/img/camp-f-img-one.svg" className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-            <span className="c-fs-2 c-ff-h cc-fw-m">
+          <span className="c-fs-2 c-fw-m ">
               Smart Links that magnify your conversions
             </span>
             <span className="c-fs-3  mt-3">
@@ -57,7 +58,7 @@ const shorturl = () => {
             <img src="/img/camp-f-img-two.svg" className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-            <span className="c-fs-2 c-ff-h n">
+          <span className="c-fs-2 c-fw-m ">
               Track performance to enhance campaign outcome
             </span>
             <span className="c-fs-3  mt-3">
@@ -73,7 +74,7 @@ const shorturl = () => {
             <img src="/img/camp-f-img-three.svg" className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-            <span className="c-fs-2 c-ff-h ">
+          <span className="c-fs-2 c-fw-m ">
               Optimise messages that convert more
             </span>
             <span className="c-fs-3  mt-3">
@@ -88,7 +89,7 @@ const shorturl = () => {
           <img src="/img/camp-f-img-two.svg" className="feature-img" />
         </div>
         <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-          <span className="c-fs-2 c-ff-h n">
+        <span className="c-fs-2 c-fw-m ">
             Comprehensive and secure reports
           </span>
           <span className="c-fs-3  mt-3">

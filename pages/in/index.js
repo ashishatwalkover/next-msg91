@@ -1,4 +1,4 @@
-import HeadTag from "@/components/head";
+import HeadTag from "./head";
 import Header from "@/components/header";
 import Notification from "@/components/notification";
 import ProductMenu from "@/components/productmenu";
@@ -13,7 +13,7 @@ const IndexPage = () => {
       <Notification />
       <Header />
       <Home />
-      <div className="container text-center px-4   col-xs-12 col-sm-10 col-md-10 mx-auto section">
+      <div className="container text-center px-4 col-xs-12 col-sm-10 col-md-10 mx-auto section">
         <h1 className="heading">Level Up Your Engagement Game</h1>
         <p className="c-fs-1  m-auto col-md-8">
           Best Cloud Communication Platform to Enhance Present Customer
@@ -218,124 +218,129 @@ const IndexPage = () => {
       <ProductMenu />
 
       <section className="utilities col-12 section">
-        <div className="us-cont d-flex  container justify-content-between alighn-items-center col-12">
-          <div className="us-nav-cont col-3 d-lg-block d-md-none d-sm-none d-none ">
-            <div className="us-nav" id="utilities-items">
-              <h1 className="Sub-heading c-ff-h mb-5">More Services </h1>
-              <div
-                className="us-nav-options align-items-center mb-2 d-flex active"
-                id="link-shortner"
-              >
-                <img src="../img/fill-circle.svg"></img>
-                <a href="#url-shortner">
-                  <span className="c-fs-2">URL Shortner</span>
-                </a>
-              </div>
-              <div
-                className="us-nav-options align-items-center mb-2  d-flex"
-                id="link-knowledge"
-              >
-                <img src="../img/fill-circle.svg"></img>
-                <a href="#knowledge-base">
-                  <span className="c-fs-2">Knowledgebase</span>
-                </a>
-              </div>
-              <div
-                className="us-nav-options align-items-center mb-2 d-flex"
-                id="link-file"
-              >
-                <img src="../img/fill-circle.svg"></img>
-                <a href="#file-hosting">
-                  <span className="c-fs-2">File Hosting</span>
-                </a>
+        
+          <div className="us-cont d-flex  container justify-content-between alighn-items-center col-12">
+            <div className="us-nav-cont col-3 d-lg-block d-md-none d-sm-none d-none ">
+              <div className="us-nav" id="utilities-items">
+                <h1 className="sub-heading mb-5">More Benefits </h1>
+                <div
+                  className="us-nav-options align-items-center mb-2 d-flex active"
+                  id="link-shortner"
+                >
+                  <img src="../img/fill-circle.svg"></img>
+                  <a href="#url-shortner" ><span className="small-heading">URL Shortner</span></a>
+                </div>
+                <div
+                  className="us-nav-options align-items-center mb-2  d-flex"
+                  id="link-knowledge"
+                >
+                  <img src="../img/fill-circle.svg"></img>
+                  <a href="#knowledge-base"><span className="small-heading">Knowledgebase</span></a>
+                </div>
+                <div
+                  className="us-nav-options align-items-center mb-2 d-flex"
+                  id="link-file"
+                >
+                  <img src="../img/fill-circle.svg"></img>
+                  <a href="#file-hosting"><span className="small-heading">File Hosting</span></a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="us-main-cont ">
-            <div
-              className="us-main d-flex flex-md-row flex-column align-items-center"
-              id="url-shortner"
-            >
-              <div className=" d-flex flex-column ">
-                <div className="d-flex align-content-center mb-2">
-                  <img src="/img/short-url-ico.svg" className="pe-4" />
-                  <span className="small-heading align-middle ">
-                    URl Shortner
-                  </span>
+            <div className="us-main-cont ">
+
+              <div style={{marginTop: "70px"}}></div>
+              
+              <div
+                className="us-main d-flex flex-md-row flex-column align-items-center"
+                id="url-shortner"
+              >
+                <div className="">
+                  <div className="d-flex align-items-center mb-2">
+                    <img src="/img/short-url-ico.svg" className="pe-4"/>
+                    <span className="small-heading align-middle ">URl Shortner</span>
+                  </div>
+                  <p className="c-fs-4 c-fw-b">Make a long story short</p>
+                  <p className="c-fs-4">
+                    Engineered for high reliability, our globally distributed
+                    carrier network and intelligent routing ensure the highest
+                    SMS delivery and lowest latency.
+                  </p>
+                  <button
+                    href="#"
+                    className="btn btn-outline-primary c-fs-4 c-fw-m mt-2"
+                  >
+                    Learn More <MdArrowForward />
+                  </button>
                 </div>
-                <p className="c-fs-2 c-fw-m">Make a long story short</p>
-                <p className="c-fs-2">
-                  Engineered for high reliability, our globally distributed
-                  carrier network and intelligent routing ensure the highest
-                  SMS delivery and lowest latency.
-                </p>
-                <button
-                  href="#"
-                  className="btn btn-outline-primary c-fs-4 c-fw-m mt-2"
-                >
-                  Learn More <MdArrowForward />
-                </button>
+                <img src="/img/short-url-img.svg" className="utility-img" />
               </div>
-              <img src="/img/short-url-img.svg" className="utility-img" />
-            </div>
-            <div
-              className="us-main d-flex flex-md-row-reverse flex-column align-items-center"
-              id="knowledge-base"
-            >
-              <div>
-                <div className="d-flex align-content-center mb-2">
-                  <img src="/img/kb-ico.svg" className="pe-4" />
-                  <span className="small-heading align-middle ">
-                    Knowledgebase
-                  </span>
+
+              <div className="us-spacer"></div>
+              
+              <div
+                className="us-main d-flex flex-md-row-reverse flex-column align-items-center"
+                id="knowledge-base"
+              >
+                <div>
+                  <div className="d-flex align-items-center mb-2">
+                    <img src="/img/kb-ico.svg" className="pe-4"/>
+                    <span className="small-heading align-middle ">Knowledgebase</span>
+                  </div>
+                  <p className="c-fs-4 c-fw-b">
+                    Maximize your productivity with no code.
+                  </p>
+                  <p className="c-fs-4">
+                    Engineered for high reliability, our globally distributed
+                    carrier network and intelligent routing ensure the highest
+                    SMS delivery and lowest latency.
+                  </p>
+                  <button
+                    href="#"
+                    className="btn btn-outline-primary c-fs-4 c-fw-m mt-2"
+                  >
+                    Learn More <MdArrowForward />
+                  </button>
                 </div>
-                <p className="c-fs-2 c-fw-m">
-                  Maximize your productivity with no code.
-                </p>
-                <p className="c-fs-2">
-                  Engineered for high reliability, our globally distributed
-                  carrier network and intelligent routing ensure the highest
-                  SMS delivery and lowest latency.
-                </p>
-                <button
-                  href="#"
-                  className="btn btn-outline-primary c-fs-4 c-fw-m mt-2"
-                >
-                  Learn More <MdArrowForward />
-                </button>
+                <img src="/img/kb-img.svg" className="utility-img" />
               </div>
-              <img src="/img/kb-img.svg" className="utility-img" />
-            </div>
-            <div
-              className="us-main pb-300 d-flex flex-md-row flex-column align-items-center"
-              id="file-hosting"
-            >
-              <div>
-                <div className="d-flex align-content-center mb-2">
-                  <img src="/img/files-ico.svg" className="pe-4" />
-                  <span className="small-heading align-middle ">Files</span>
+              
+              <div className="us-spacer"></div>
+
+              <div
+                className="us-main d-flex flex-md-row flex-column align-items-center"
+                id="file-hosting"
+              >
+                <div>
+                  <div className="d-flex align-items-center mb-2">
+                    <img src="/img/files-ico.svg"className="pe-4" />
+                    <span className="small-heading align-middle ">Files</span>
+                  </div>
+                   <p className="c-fs-4 c-fw-b">
+                    More storage more productivity.
+                  </p>
+                  <p className="c-fs-4">
+                    Engineered for high reliability, our globally distributed
+                    carrier network and intelligent routing ensure the highest
+                    SMS delivery and lowest latency.
+                  </p>
+                  <button
+                    href="#"
+                    className="btn btn-outline-primary c-fs-5 c-fw-m mt-2"
+                  >
+                    Learn More <MdArrowForward />
+                  </button>
                 </div>
-                <p className="c-fs-2 c-fw-m">
-                  More storage more productivity.
-                </p>
-                <p className="c-fs-2">
-                  Engineered for high reliability, our globally distributed
-                  carrier network and intelligent routing ensure the highest
-                  SMS delivery and lowest latency.
-                </p>
-                <button
-                  href="#"
-                  className="btn btn-outline-primary c-fs-4 c-fw-m mt-2"
-                >
-                  Learn More <MdArrowForward />
-                </button>
+                <img src="/img/files-img.svg" className="utility-img" />
               </div>
-              <img src="/img/files-img.svg" className="utility-img" />
+
+              <div style={{marginTop: "70px"}}></div>
+              
             </div>
           </div>
-        </div>
+        
       </section>
+
       <div className="container mt-5">
         <h2 className="sub-heading c-ff-h my-5">Our Client stories</h2>
         <div className=" d-flex flex-column flex-md-row mt-3 ">

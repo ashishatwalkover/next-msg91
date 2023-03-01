@@ -1,6 +1,6 @@
 import Header from "@/components/header";
 import Notification from "@/components/notification";
-import HeadTag from "@/components/head";
+import HeadTag from "./head";
 import TrustedSec from "@/components/trusted_by";
 import Link from "next/link";
 import Footer from "@/components/footer";
@@ -9,21 +9,20 @@ import FaqSection from "@/components/faq";
 const knowledgebase = () => {
   return (
     <>
-      <HeadTag />
+       <HeadTag /> 
       <Notification />
       <Header />
-      <div className="container text-center px-4 overflow-hidden col-12 col-sm-10  ">
+      <div className="container text-center overflow-hidden px-4  col-12 col-sm-10  ">
         <div className="text-center justify-content-center py-5">
           <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
-            <img src="../img/campaign.svg" className="product-page-logo" />
-            <h1 className="heading">Campaign</h1>
+            <img src="../img/kb-ico.svg" className="product-page-logo" />
+            <h1 className="heading">Knowledgebase</h1>
           </div>
-          <p className="c-fs-4 mx-auto">Event based automation</p>
-          <h2 className="c-fs-2 c-ff-b c-fw-r w-100 mx-auto">
-            Boost audience engagement through smart communication and on-time
-            delivery.{" "}
+          <p className="c-fs-5 c-fw-sb text-uppercase col-campaign c-ls-20 mx-auto">Event base automation</p>
+          <h2 className="small-heading c-ff-b c-fw-r w-100 mx-auto">
+            Boost audience engagement through smart communication and on-time delivery.{" "}
           </h2>
-          <button className="btn btn-primary btn-lg mt-3 c-fs-3" type="button">
+          <button className="btn btn-primary btn-lg mt-3 c-fs-2" type="button">
             Get started for Free
           </button>
           <TrustedSec />
@@ -36,14 +35,14 @@ const knowledgebase = () => {
       </div>
 
       <div className=" c-bg-grey px-sm-0 d-flex flex-column justify-content-center justift-content-sm-start section ">
-        <span className="container c-fs-1 c-ff-h c-fw-m ">Features</span>
+        <span className="container sub-heading c-ff-h ">Features</span>
 
         <div className="container d-lg-flex flex-row align-items-center">
           <div className=" col col-lg-6 col-md-6 col-sm-12 flex-column align-items-flex-start mt-lg-5 ms-lg-5 order-lg-2">
             <img src="/img/camp-f-img-one.svg" className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-            <span className="c-fs-2 c-ff-h cc-fw-m">
+            <span className="c-fs-2 c-fw-m ">
               Automate sending messages under defined conditions
             </span>
             <span className="c-fs-3  mt-3">
@@ -60,7 +59,7 @@ const knowledgebase = () => {
             <img src="/img/camp-f-img-two.svg" className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-            <span className="c-fs-2 c-ff-h n">
+            <span className="c-fs-2 c-fw-m ">
               An all-in-one platform for all your campaigns
             </span>
             <span className="c-fs-3  mt-3">
@@ -75,7 +74,7 @@ const knowledgebase = () => {
             <img src="/img/camp-f-img-three.svg" className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-            <span className="c-fs-2 c-ff-h ">
+            <span className="c-fs-2 c-fw-m ">
               Make your communication more secure
             </span>
             <span className="c-fs-3  mt-3">
@@ -88,85 +87,25 @@ const knowledgebase = () => {
         </div>
       </div>
 
-      <div className="container d-flex flex-column flex-md-row align-items-center mt-5 mb-5">
-        <div className="col-lg-4 flex-column align-items-flex-start">
-          <div className="mt-5 mb-3">
-            <img
-              src={"/Img/done_outline.svg"}
-              alt="#"
-              className="feature-check"
-            />
-          </div>
-          <span className="c-fs-2 c-ff-h  mt-1">
-            Pre-defined templates for improved productivity
-          </span>
-          <div>
-            <span className="c-fs-3 mt-2">
-              Leverage our pre-defined templates to reduce turnaround time for
-              your campaigns. Just import & deploy campaigns on the fly within
-              minutes.
-            </span>
-          </div>
-        </div>
-        <div className="col-lg-4 flex-column align-items-flex-start">
-          <div className="mt-5 mb-3">
-            <img
-              src={"/Img/done_outline.svg"}
-              alt="#"
-              className="feature-check"
-            />
-          </div>
-          <span className="c-fs-2 c-ff-h c-fw-m mt-1">
-            Pre-defined templates for improved productivity
-          </span>
-          <div>
-            <span className="c-fs-3 mt-2">
-              Leverage our pre-defined templates to reduce turnaround time for
-              your campaigns. Just import & deploy campaigns on the fly within
-              minutes.
-            </span>
-          </div>
-        </div>
-        <div className="col-lg-4 flex-column align-items-flex-start">
-          <div className="mt-5 mb-3">
-            <img
-              src={"/Img/done_outline.svg"}
-              alt="#"
-              className="feature-check"
-            />
-          </div>
-          <span className="c-fs-2 c-ff-h c-fw-m mt-1">
-            Pre-defined templates for improved productivity
-          </span>
-          <div>
-            <span className="c-fs-3 mt-2">
-              Leverage our pre-defined templates to reduce turnaround time for
-              your campaigns. Just import & deploy campaigns on the fly within
-              minutes.
-            </span>
-          </div>
-        </div>
-      </div>
+     
 
       <div className="container">
-        <span className="c-fs-2 c-fw-m c-ff-h">More features</span>
+        <span className="sub-heading  ">More Feature</span>
         <div className="container d-flex flex-column flex-md-row my-3">
           <div className="d-flex flex-column justify-content-center align-items-flex-start col-lg-6 mt-2">
             <span className="c-fs-3">
-              - Automate sending messages under defined conditions
+              - Use a reliable solution to maximize customer engagement.
             </span>
             <span className="c-fs-3 mt-1">
-              - An all-in-one platform for all your campaigns
+              - Create unique and interactive campaigns that use different media formats.
             </span>
             <span className="c-fs-3 mt-1">
-              - Make your communication more secure
+              - Customize campaigns to meet communication needs.
             </span>
             <span className="c-fs-3 mt-1">
-              - Pre-defined templates for improved productivity
+              - Include interactive elements like quizzes and polls to keep customers engaged.
             </span>
-            <span className="c-fs-3 mt-1">
-              - Build a hassle-free communication flow
-            </span>
+            
             <span className="c-fs-3 mt-1">- Track campaign performance</span>
           </div>
           <div className="my-auto mt-3 px-5 d-flex py-5 c-bg-grey flex-wrap justify-content-center">

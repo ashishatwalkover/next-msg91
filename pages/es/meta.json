@@ -67,5 +67,79 @@
   "shorturl": {
     "title": "Shorturl",
     "description": "Customised Links for Business Success Stand out with branded links that drive more clicks to improve conversion rates. Optimise smart links that can help you realise more revenues. Customising, tracking, managing, made easy. Get Demo Features Smart Links that magnify your conversions Enhance the deliverability of messages through our globally accepted best practices. Ensure improved..."
+  },
+
+  "_comment3": "Resources",
+
+  "industries": {
+    "title": "industries",
+    "description": ""
+  },
+
+  "blogs": {
+    "title": "blogs",
+    "description": ""
+  },
+
+  "case-studies": {
+    "title": "case-studies",
+    "description": ""
+  },
+
+  "faq": {
+    "title": "faq",
+    "description": ""
+  },
+
+  "api-documentation": {
+    "title": "api-documentation",
+    "description": ""
+  },
+
+  "_comment4": "Discover",
+
+  "about-us": {
+    "title": "about-us",
+    "description": ""
+  },
+
+  "pricing": {
+    "title": "pricing",
+    "description": ""
+  },
+
+  "contact-us": {
+    "title": "contact-us",
+    "description": ""
+  },
+
+  "partner-program": {
+    "title": "partner-program",
+    "description": ""
+  },
+
+  "msg91-for-developers": {
+    "title": "msg91-for-developers",
+    "description": ""
+  },
+
+  "startup": {
+    "title": "startup",
+    "description": ""
+  },
+
+  "tools-and-addons": {
+    "title": "tools-and-addons",
+    "description": ""
+  },
+
+  "our-programs": {
+    "title": "our-programs",
+    "description": ""
+  },
+
+  "career": {
+    "title": "career",
+    "description": ""
   }
 }
