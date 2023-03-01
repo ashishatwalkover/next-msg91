@@ -8,8 +8,8 @@ const startup = () => {
     <>
       <HeadTag />
       <Header />
-      <div className="container d-flex justify-content-between">
-        <div className="d-flex justify-content-center flex-column align-items-start ">
+      <div className="container mt-md-5 my-md-0 my-5 d-flex flex-column-reverse flex-md-row justify-content-between">
+        <div className="d-flex col-md-6 col-12 justify-content-center flex-column align-items-md-start me-md-5 me-0 mt-4 mt-md-0 text-center text-md-start align-items-center">
           <h1 className="heading">Expand your Vision with Us</h1>
           <p className="c-fs-1">
             Get a complimentary communication API package for every product
@@ -17,7 +17,10 @@ const startup = () => {
           </p>
           <button className="btn btn-primary c-fs-4 mt-2">Apply Now</button>
         </div>
-        <img className="startup-home-img" src="/img/startup-home-img.png" />
+        <div className="col-12 col-md-6">
+
+        <img className="startup-home-img flip-vertical  " src="/img/startup-home-img.svg" />
+        </div>
       </div>
       <section className="c-bg-grey p-5 text-center small-heading">
         "Today we help you, tomorrow we can can change the world together."
@@ -26,7 +29,7 @@ const startup = () => {
         <h3 className="sub-heading">
           Grow your Startup with Robust Infrastructure
         </h3>
-        <div className="d-flex my-5 align-items-center justify-content-center">
+        <div className="d-flex flex-column flex-md-row gap-5 gap-md-0 my-5 align-items-center justify-content-center">
           <div className="signup-cont c-bg-grey p-4 d-flex flex-column align-items-center justify-content-center">
             <span className="c-fs-2 c-fw-sb">Sign up</span>
             <p className="c-fs-4 mt-2">
@@ -34,7 +37,7 @@ const startup = () => {
             </p>
           </div>
 
-          <div className=" p-5 c-fs-1 c-col-grey d-flex flex-column align-items-center justify-content-center">
+          <div className=" d-none p-5 c-fs-1 c-col-grey d-md-flex flex-column align-items-center justify-content-center">
             <MdKeyboardArrowRight />
           </div>
           <div className="signup-cont c-bg-grey p-4 d-flex flex-column align-items-center justify-content-center">
@@ -44,7 +47,7 @@ const startup = () => {
             </p>
           </div>
 
-          <div className=" p-5 c-fs-1 c-col-grey d-flex flex-column align-items-center justify-content-center">
+          <div className=" p-5 c-fs-1 c-col-grey d-none d-md-flex flex-column align-items-center justify-content-center">
             <MdKeyboardArrowRight />
           </div>
           <div className="signup-cont c-bg-grey p-4 d-flex flex-column align-items-center justify-content-center">
@@ -55,9 +58,9 @@ const startup = () => {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="container px-3 px-md-auto">
         <h2 className="sub-heading">Benifits of Startup Program</h2>
-        <div className=" ">
+        <div className="mt-2 ">
           <span className="c-fs-1 c-fw-b text-green">
             <MdDone />
           </span>
@@ -65,7 +68,7 @@ const startup = () => {
             25000 SMS credits every months for 6 months.
           </span>
         </div>
-        <div className=" ">
+        <div className="mt-2 ">
           <span className="c-fs-1 c-fw-b text-green">
             <MdDone />
           </span>
@@ -73,7 +76,7 @@ const startup = () => {
             Can be used for OTP, Transactional SMS, Emails.
           </span>
         </div>
-        <div className=" ">
+        <div className=" mt-2">
           <span className="c-fs-1 c-fw-b text-green">
             <MdDone />
           </span>
@@ -82,7 +85,7 @@ const startup = () => {
             product.
           </span>
         </div>
-        <div className=" ">
+        <div className="mt-2 ">
           <span className="c-fs-1 c-fw-b text-green">
             <MdDone />
           </span>
@@ -92,9 +95,9 @@ const startup = () => {
         </div>
       </div>
       <section className="my-5 py-5 c-bg-grey">
-        <div className="container">
-          <h2 className="sub-heading">Our Collaborators</h2>
-          <p className="c-fs-4 w-75">
+        <div className="container px-3 px-md-auto">
+          <h2 className="sub-heading my-2">Our Collaborators</h2>
+          <p className="c-fs-4 w-100 mb-2 ">
             We’re proud to be associated with a growing set of Venture
             Capitalists, Accelerators,Incubators and Crowdfunding platforms
             across to inspire, identify and develop end-to-end solutions for
@@ -103,7 +106,7 @@ const startup = () => {
           <img className="w-100 collab-img mt-2" src="/img/collab-img.png" />
         </div>
       </section>
-      <div className="container">
+      <div className="container px-3 px-md-auto">
         <h2 className="sub-heading">
           Cecklist to become a part of the program
         </h2>

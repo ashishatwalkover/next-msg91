@@ -216,7 +216,13 @@ h2,.charterregular{
 
 //startup
 .startup-home-img{
-  width:40%;
+  // width:clamp(300px,45vw,700px);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  border-radius:  0 120px 0 0;
+  width: 100%;
+  
+  // height: auto;
 }
 .signup-cont{
   width: clamp(250px,19vw,300px);
@@ -256,6 +262,7 @@ h2,.charterregular{
   width: 100%;
   .input-box-cont{
     width: 100%;
+
     .input-box{
       width: 40%;
     }
@@ -271,7 +278,7 @@ h2,.charterregular{
 
 // partnership
 .partnership-sol-img{
-  width: 38rem;
+  width: clamp(18rem,38vw,38rem);
 }
 .partnership-meet{
   width: 30%;
@@ -279,7 +286,41 @@ h2,.charterregular{
 .our-partner{
   img{
     height:  4rem;
-
+    
     // block-size: auto;
   }
+}
+.partnership-sol-content{
+  width: clamp(18rem,38vw,38rem);
+}
+.c-w-pp{
+  width: 50%;
+}
+
+// casestudy
+.casestudycard{
+  height: 70vh;
+  width: 30vw;
+  h3{
+    max-height: 4rem;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 767px) {
+  .c-w-pp{
+    width: 100%;
+  }
+  //startup
+.startup-home-img{
+  width: 100%;
+
+  border-radius:  10px  10px 0 0;
+  
+  height: auto;
+}
 }
