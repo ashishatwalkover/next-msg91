@@ -1,10 +1,28 @@
-{
-    "hello": {
+{   
+    "":{
         "title": "Best Cloud Communication Platform for Businesses | MSG91 India",
         "description": "MSG91 India is one of the finest communication platforms that provide businesses to integrate themselves with SMS APIs, e-mail APIs, voice call APIs, etc."
     },
+    "hello": {
+        "title": "Customer Support Platform for your Business by MSG91",
+        "description": "Harness the power of omnichannel customer experience with HELLO, a robust and data-driven customer support platform to meet all your customer service needs."
+    },
     "campaign":{
-        "title": "caimpaign",
-        "description": "hello campaign"
+        "title": "SMS Campaign",
+        "description": "Boost audience engagement through smart communication and on-time delivery. It&#039;s not only about communicating, it&#039;s about communicating with your users smartly and efficiently. Get Demo Reach your segmented customers across the world, Send your messages at the right moment! Features Automate sending messages under defined conditions Define different messaging parameters like time, region, number of..."
+    },
+    "segmento":{
+        "title": "Customer Segmentation Software | MSG91",
+        "description": "Execute targeted marketing campaigns with the help of automated customer segmentation and targeted content. Try it out now."
+    },
+    "otp":{
+        "title": "Send OTP | OTP Service Providers India - MSG91 India",
+        "description": "Send OTP provides secure and reliable SMS API Integration that helps you easily send OTP to your users for 2 factor authentication."
+    },
+
+
+    "sms":{
+        "title": "Transactional SMS | Transactional SMS Provider in India - MSG91 India",
+        "description": "MSG91 is among the leading transactional SMS service providers in India. Empowering businesses with easy-to-integrate transactional SMS API to enhance customer satisfaction."
     }
 }

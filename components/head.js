@@ -8,7 +8,7 @@ const HeadTag =()=> {
   return (
     <>
   <Head>
-    
+      
     <title>{metadata[path].title}</title>
     <meta name="description" content={metadata[path].description}></meta>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>    
