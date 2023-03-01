@@ -6,7 +6,7 @@ import Link from "next/link";
 import Footer from "@/components/footer";
 import FaqSection from "@/components/faq";
 
-const otp = () => {
+const otp = () => {   
   return (
     <>
       <HeadTag />
