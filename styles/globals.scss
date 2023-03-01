@@ -271,7 +271,7 @@ h2,.charterregular{
 
 // partnership
 .partnership-sol-img{
-  width: 38rem;
+  width: clamp(18rem,38vw,38rem);
 }
 .partnership-meet{
   width: 30%;
@@ -279,8 +279,19 @@ h2,.charterregular{
 .our-partner{
   img{
     height:  4rem;
-
+    
     // block-size: auto;
+  }
+}
+.partnership-sol-content{
+  width: clamp(18rem,38vw,38rem);
+}
+.c-w-pp{
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .c-w-pp{
+    width: 100%;
   }
 }
 
