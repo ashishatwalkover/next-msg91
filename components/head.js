@@ -1,15 +1,21 @@
 import Head from "next/head"
 import { useRouter } from 'next/router'
+import metadata from "../components/meta.json"
 const HeadTag =()=> {
   const router = useRouter()
   var path = router.pathname.split("/")[1];
+  const rout = metadata.title
   return (
     <>
   <Head>
+    
+    <title>{metadata[path].title}</title>
+    <meta name="description" content={metadata[path].description}></meta>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>    
     <link rel="icon" href="/fav.svg"/>
     { path === '' || path.length > 2 ?
       <>
+      {console.log(path)}
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
         <link href="/styles/global.css" rel="stylesheet"/>
       </>
