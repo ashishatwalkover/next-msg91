@@ -13,7 +13,7 @@ const pricingvoice = () => {
       var newData = pricing
       newData.push(data.data)
       setPricing([...newData])
-      // pricing.push(data.data);      
+      //pricing.push(data.data);
     })
     .catch((error) => {
       console.log(error);  

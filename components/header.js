@@ -50,7 +50,8 @@ const Header = () => {
       $("body").removeClass("oh");
     });
 
-    $("#menu-wrp a").on("click", function () {
+    $("#product-menu, #learning-center").on("click", function () {
+      console.log('menu clicked');
       $("body").removeClass("oh");
     });
   }, []);
