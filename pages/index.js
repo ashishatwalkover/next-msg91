@@ -1,4 +1,4 @@
-import HeadTag from "@/components/head";
+import HeadTag from "./head";
 import Header from "@/components/header";
 import Notification from "@/components/notification";
 import ProductMenu from "@/components/productmenu";
@@ -6,11 +6,9 @@ import Footer from "@/components/footer";
 import Home from "@/components/home";
 import { MdFavorite, MdArrowForward } from "react-icons/md";
 import Link from "next/link";
-import Head from "next/head";
 const IndexPage = () => {
   return (
     <div>
-      <Head></Head>
       <HeadTag />
       <Notification />
       <Header />

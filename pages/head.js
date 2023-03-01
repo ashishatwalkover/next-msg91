@@ -1,6 +1,6 @@
 import Head from "next/head"
 import { useRouter } from 'next/router'
-import metadata from "../components/meta.json"
+import metadata from "./meta.json"
 const HeadTag =()=> {
   const router = useRouter()
   var path = router.pathname.split("/")[1];
