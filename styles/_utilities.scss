@@ -24,6 +24,7 @@
 .us-spacer{
     height: 200px;
 }
+
 .us-main{    
     button{
         justify-content: flex-start;
@@ -32,25 +33,42 @@
 .pb-300{
     padding-bottom:300px ;
 }
-@media only screen and (max-width: 992px) {
-    .us-main{
-        padding: 20px 0;
-    }
-}
+
 .us-main-content{
     gap:15px
 }
 .us-nav-options{
     img{
         opacity: 20%;
+        filter: saturate(0);
     }
 }
 .active{
     img{
         opacity: 100!important;
+        filter: saturate(1);
     }
 }
 
 .utility-img{
-    width: clamp(250px,30vw,500px);
+    width: clamp(300px,60vw,500px);
+}
+@media only screen and (max-width: 992px) {
+    .us-main{
+        padding: 10px;
+    }
+        .us-spacer{
+            height: 20px;
+        }
+        
+        .section{
+            padding: 0!important;
+        }
+    
+}
+@media only screen and (max-width: 768px) {
+    .utility-img{
+        margin: 20px auto;
+    }
+
 }

@@ -1,13 +1,35 @@
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import ProductMenu from "@/components/productmenu";
 import LearningCenter from "@/components/learning_center";
 import $ from "jquery";
 import { useRouter } from "next/router";
-import {GiHamburgerMenu} from "react-icons/gi"
-import {MdLogin} from "react-icons/md"
-
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MdLogin } from "react-icons/md";
+//import Airtable from "airtable";
 const Header = () => {
+  //airtable
+/*   const [data, setData] = useState();
+  let base = new Airtable({
+    apiKey: process.env.NEXT_PUBLIC_Airtable_Auth_Key,
+  }).base(process.env.NEXT_PUBLIC_Base_Auth_Key);
+  var productData = "";
+  base("msgone")
+    .select({
+      view: "Grid view",
+    })
+    .eachPage(
+      function page(records, fetchNextPage) {
+        records.forEach(function (record) {
+          productData = record.get("product");
+          console.log(productData);
+        });
+        fetchNextPage();
+        return productData;
+
+      }      
+    ); */
+
   useEffect(() => {
     $("#link-products").on("mouseenter", function () {
       console.log("products");
@@ -28,7 +50,8 @@ const Header = () => {
       $("body").removeClass("oh");
     });
 
-    $("#menu-wrp a").on("click", function () {
+    $("#product-menu, #learning-center").on("click", function () {
+      console.log('menu clicked');
       $("body").removeClass("oh");
     });
   }, []);
@@ -43,7 +66,7 @@ const Header = () => {
         <div className=" w-100 ">
           <div className="d-flex w-100 justify-content-between align-items-center">
             <span
-              class="navbar-toggler outline-none"
+              className="navbar-toggler outline-none"
               type="button"
               data-toggle="collapse"
               data-target="#navbarNav"
@@ -51,13 +74,13 @@ const Header = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <GiHamburgerMenu/>
+              <GiHamburgerMenu />
             </span>
             <Link className="navbar-brand d-block d-lg-none" href={`${home}`}>
               <img className=" nav-logo" src="/img/logo.svg" alt="MSG91" />
             </Link>
             <span className="c-fs-1 d-block d-lg-none">
-            <MdLogin />
+              <MdLogin />
             </span>
           </div>
           <div
@@ -78,6 +101,7 @@ const Header = () => {
                 id="link-learning"
               >
                 Learning Center
+                {/* {productData} */}
               </a>
               <Link
                 href="/pricing"
@@ -99,16 +123,18 @@ const Header = () => {
             <div className="navbar-nav justify-content-end navbar-w product-navbar align-items-center d-lg-flex">
               <a
                 className="nav-link c-fs-3 c-fw-r d-lg-block d-none"
-                href="#products"
+                target="_blank"
+                href="https://docs.msg91.com/reference/send-sms"
               >
                 API Documentations
               </a>
-              <button
+              <a
                 className=" btn c-fs-5 btn-primary  d-lg-block d-none"
-                href="#products"
+                target="_blank"
+                href="https://control.msg91.com/signup/"
               >
                 Sign Up
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -121,3 +147,4 @@ const Header = () => {
   );
 };
 export default Header;
+

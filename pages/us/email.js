@@ -1,9 +1,7 @@
 import Header from "@/components/header";
 import Notification from "@/components/notification";
-import HeadTag from "@/components/head";
+import HeadTag from "./head";
 import TrustedSec from "@/components/trusted_by";
-import Image from "next/image";
-import Link from "next/link";
 import Footer from "@/components/footer";
 import FaqSection from "@/components/faq";
 
@@ -19,11 +17,11 @@ const Email = () => {
             <img src="../img/email.svg" className="product-page-logo" />
             <h1 className="heading">Email</h1>
           </div>
-          <p className="c-fs-5 c-fw-sb text-uppercase col-campaign c-ls-20 mx-auto">
+          <p className="c-fs-4 text-uppercase col-campaign c-ls-20 mx-auto">
             Event base automation
           </p>
-          <h2 className="small-heading c-ff-b c-fw-r w-100 mx-auto">
-            Deliver a Consistent Experience with Transactional Email{" "}
+          <h2 className="small-heading w-md-75   w-100 mx-auto">
+          Best Transactional Email API Service for Developers in US
           </h2>
           <button className="btn btn-primary btn-lg mt-3 c-fs-2" type="button">
             Get started for Free
@@ -71,8 +69,8 @@ const Email = () => {
         </div>
       </div>
 
-      <div className="container d-flex flex-column flex-md-row align-items-center mt-5 mb-5">
-        <div className="col-lg-4 flex-column align-items-flex-start">
+      <div className="container d-flex flex-column flex-md-row align-items-flex-start mt-5 mb-5">
+        <div className="col-lg-4 flex-column p-3  align-items-flex-start">
           <div className="mt-5 mb-3">
             <img
               src={"/Img/done_outline.svg"}
@@ -92,25 +90,7 @@ const Email = () => {
             </span>
           </div>
         </div>
-        <div className="col-lg-4 flex-column align-items-flex-start">
-          <div className="mt-5 mb-3">
-            <img
-              src={"/Img/done_outline.svg"}
-              alt="#"
-              className="feature-check"
-            />
-          </div>
-          <span className="c-fs-2 c-fw-m  mt-1">Get notified via Webhooks</span>
-          <div>
-            <span className="c-fs-3 mt-2">
-              Get real-time data and information about your transactional emails
-              with Webhooks. MSG91 webhooks notify your applications about key
-              message events such as bounces, deliveries, clicks, opens, and
-              spam complaints.
-            </span>
-          </div>
-        </div>
-        <div className="col-lg-4 flex-column align-items-flex-start">
+        <div className="col-lg-4 flex-column p-3  align-items-flex-start">
           <div className="mt-5 mb-3">
             <img
               src={"/Img/done_outline.svg"}
@@ -119,11 +99,31 @@ const Email = () => {
             />
           </div>
           <span className="c-fs-2 c-fw-m  mt-1">
-            Send data-driven transactional emails
+          Get notified via Webhooks
           </span>
           <div>
             <span className="c-fs-3 mt-2">
-              Transactional emails are a unique set of one to one emails that
+            Get real-time data and information about your transactional emails
+              with Webhooks. MSG91 webhooks notify your applications about key
+              message events such as bounces, deliveries, clicks, opens, and
+              spam complaints.
+            </span>
+          </div>
+        </div>
+        <div className="col-lg-4 flex-column p-3 align-items-flex-start">
+          <div className="mt-5 mb-3">
+            <img
+              src={"/Img/done_outline.svg"}
+              alt="#"
+              className="feature-check"
+            />
+          </div>
+          <span className="c-fs-2 c-fw-m  mt-1">
+          Send data-driven transactional emails
+          </span>
+          <div>
+            <span className="c-fs-3 mt-2">
+            Transactional emails are a unique set of one to one emails that
               are ideally targeted for sending data-driven and personalized
               messages.
             </span>

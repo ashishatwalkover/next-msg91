@@ -1,6 +1,6 @@
 import Header from "@/components/header";
 import Notification from "@/components/notification";
-import HeadTag from "@/components/head";  
+import HeadTag from "./head";  
 import TrustedSec from "@/components/trusted_by";
 import Link from "next/link";
 import Footer from "@/components/footer";
@@ -19,12 +19,11 @@ const hello= () => {
             <h1 className="heading">Hello</h1>
           </div>
           
-          <p className="c-fs-5 c-fw-sb text-uppercase col-campaign c-ls-20 mx-auto">
-          Bridge the gap between you and your customers{" "}
+          <p className="c-fs-4 c-fw-r text-uppercase col-campaign c-ls-20 mx-auto">
+          Revolutionize customer support{" "}
           </p>
-          <h2 className="small-heading c-ff-b c-fw-r w-100 mx-auto">
-            Boost audience engagement through smart communication and on-time
-            delivery.{" "}
+          <h2 className="small-heading c-ff-b c-fw-r w-75 mx-auto">
+          Start Conversations, Drive Growth with the Best Contact Center Software in US
           </h2>
           <button className="btn btn-primary btn-lg mt-3 c-fs-2" type="button">
             Get started for Free
@@ -47,10 +46,10 @@ const hello= () => {
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-fw-m ">
-            Empower your employees, Support your customers
+            Support your customers with the best contact center software
             </span>
             <span className="c-fs-3  mt-3">
-            Deliver consistent customer experiences, unify and track all the customer conversations across omni channel platforms for uninterrupted flow of communication.
+            Say Hello to real-time communications that keep up with your customer experience requirements. With the best contact center messaging solution, stay in touch with customers to solve all their queries on the most trusted communication platforms like Facebook, WhatsApp, RCS, and more.
             </span>
           </div>
         </div>
@@ -61,11 +60,11 @@ const hello= () => {
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-fw-m ">
-            Conversations made easier with RCS, WhatsApp and 30+ channels
+            Solve all your
+customer issues through powerful calling features
             </span>
             <span className="c-fs-3  mt-3">
-            HELLO enables you to communicate for a real-time experience!
-Connect with your users on their most trusted platform that includes RCS, WhatsApp, facebook and more.
+            Say Hello to your customers via voice call. Redirecting calls, recording calls, IVR, and assigning calls made easy with our cloud contact center solutions that assure to exceed your expectations.
             </span>
           </div>
         </div>

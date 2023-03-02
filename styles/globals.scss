@@ -14,15 +14,17 @@ h1 {
 .heading{
   font-size: var(--heading);
   font-family: var(--c-ff-h);
-  font-weight: 800!important;
+  font-weight: 700!important;
 }
 .sub-heading{
   font-size: var(--sub-heading);
   font-family: var(--c-ff-h);
+  font-weight: 500!important;
 }
 .small-heading{
   font-size: var(--small-heading);
   font-family: var(--c-ff-h);
+  font-weight: 500!important;
 }
 .c-fs-1{
   font-size: var(--c-fs-1);
@@ -184,6 +186,9 @@ h2,.charterregular{
   width: clamp(158px,40vw,260px);
   height:clamp(158px,40vw,260px);
 }
+.clint-main-img{
+  width: 100%;
+}
 
 // page img
 .product-page-logo{
@@ -214,9 +219,30 @@ h2,.charterregular{
 
 //startup
 .startup-home-img{
-  width:40%;
+  // width:clamp(300px,45vw,700px);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  border-radius:  0 120px 0 0;
+  width: 100%;
+  
+  // height: auto;
 }
-
+.signup-cont{
+  width: clamp(250px,19vw,300px);
+  height: clamp(200px,12vw,280px);
+}
+.startup-count-cir{
+  width:5rem;
+  height:5rem;
+  border: var(--primary-color) 3px solid;
+}
+.startup-count-line{
+  width: 70%;
+  border-top: 4px solid var(--primary-color);
+  position: relative;
+  top: -75px;
+  z-index: -1;
+}
 // page404
 .pageerror{
   height: 100vh;
@@ -232,4 +258,68 @@ h2,.charterregular{
 }
 .error-page-gif{
   height: 200px;
+}
+
+// startupform
+.startup-form{
+  width: 100%;
+  .input-box-cont{
+    width: 100%;
+
+    .input-box{
+      width: 40%;
+    }
+  }
+  
+  input{
+    width: 100%;
+  }
+}
+.input-button-cont{
+  margin-left: 68%;
+}
+
+// partnership
+.partnership-sol-img{
+  width: clamp(18rem,38vw,38rem);
+}
+.partnership-meet{
+  width: 30%;
+}
+.our-partner{
+  img{
+    height:  4rem;
+    
+    // block-size: auto;
+  }
+}
+.partnership-sol-content{
+  width: clamp(18rem,38vw,38rem);
+}
+.c-w-pp{
+  width: 50%;
+}
+
+// casestudy
+.casestudycard{
+  width:clamp(300px,30vw,400px);
+}
+
+
+
+
+
+
+@media (max-width: 767px) {
+  .c-w-pp{
+    width: 100%;
+  }
+  //startup
+.startup-home-img{
+  width: 100%;
+
+  border-radius:  10px  10px 0 0;
+  
+  height: auto;
+}
 }

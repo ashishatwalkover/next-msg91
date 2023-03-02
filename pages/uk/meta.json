@@ -1,0 +1,145 @@
+{
+  "uk": {
+    "title": "Best Cloud Communication Platform for Businesses | MSG91 India",
+    "description": "MSG91 India is one of the finest communication platforms that provide businesses to integrate themselves with SMS APIs, e-mail APIs, voice call APIs, etc."
+  },
+  "hello": {
+    "title": "Customer Support Platform for your Business by MSG91",
+    "description": "Harness the power of omnichannel customer experience with HELLO, a robust and data-driven customer support platform to meet all your customer service needs."
+  },
+  "campaign": {
+    "title": "SMS Campaign",
+    "description": "Boost audience engagement through smart communication and on-time delivery. It&#039;s not only about communicating, it&#039;s about communicating with your users smartly and efficiently. Get Demo Reach your segmented customers across the world, Send your messages at the right moment! Features Automate sending messages under defined conditions Define different messaging parameters like time, region, number of..."
+  },
+  "segmento": {
+    "title": "Customer Segmentation Software | MSG91",
+    "description": "Execute targeted marketing campaigns with the help of automated customer segmentation and targeted content. Try it out now."
+  },
+  "otp": {
+    "title": "Send OTP | OTP Service Providers India - MSG91 India",
+    "description": "Send OTP provides secure and reliable SMS API Integration that helps you easily send OTP to your users for 2 factor authentication."
+  },
+
+  "_comment1": "channels",
+
+  "sms": {
+    "title": "Transactional SMS | Transactional SMS Provider in India - MSG91 India",
+    "description": "MSG91 is among the leading transactional SMS service providers in India. Empowering businesses with easy-to-integrate transactional SMS API to enhance customer satisfaction."
+  },
+
+  "email": {
+    "title": "Transactional Email | Transactional Email API - MSG91 India",
+    "description": "Send transactional emails to your customers with the help of Transactional Email API from MSG91 that is easy to integrate, secure and reliable."
+  },
+
+  "rcs": {
+    "title": "Rich Communication Services | Communication Software- MSG91 India",
+    "description": "RCS is the future of communication which helps brands engage with users by sending them media-rich messages as opposed to conventional text messages."
+  },
+
+  "voice": {
+    "title": "Voice API for your Business | Voice Call API | MSG91 India",
+    "description": "MSG91 India provides voice call api&#039;s to your business which helps to engage your customers over voice with our virtual phone numbers, and voice APIs."
+  },
+
+  "whatsapp": {
+    "title": "WhatsApp API for businesses | MSG91",
+    "description": "Send and receive instant messages and notification to provide real-time customer support globally on one of most preferred &amp; reliable chat platform. Integrate MSG91 WhatsApp API into your website or application now."
+  },
+
+  "oneapi": {
+    "title": "SMS API, Email API and Voice API Provider | MSG91",
+    "description": "Streamline your communication with customers by intergrating SMS, Email and Voice API with MSG91 One API. Experience now."
+  },
+
+  "_comment2": "Utilities",
+
+  "knowledgebase": {
+    "title": "knowledgebase",
+    "description": ""
+  },
+
+  "files": {
+    "title": "files",
+    "description": ""
+  },
+
+  "shorturl": {
+    "title": "Shorturl",
+    "description": "Customised Links for Business Success Stand out with branded links that drive more clicks to improve conversion rates. Optimise smart links that can help you realise more revenues. Customising, tracking, managing, made easy. Get Demo Features Smart Links that magnify your conversions Enhance the deliverability of messages through our globally accepted best practices. Ensure improved..."
+  },
+
+  "_comment3": "Resources",
+
+  "industries": {
+    "title": "industries",
+    "description": ""
+  },
+
+  "blogs": {
+    "title": "blogs",
+    "description": ""
+  },
+
+  "case-studies": {
+    "title": "case-studies",
+    "description": ""
+  },
+
+  "faq": {
+    "title": "faq",
+    "description": ""
+  },
+
+  "api-documentation": {
+    "title": "api-documentation",
+    "description": ""
+  },
+
+  "_comment4": "Discover",
+
+  "about-us": {
+    "title": "about-us",
+    "description": ""
+  },
+
+  "pricing": {
+    "title": "pricing",
+    "description": ""
+  },
+
+  "contact-us": {
+    "title": "contact-us",
+    "description": ""
+  },
+
+  "partner-program": {
+    "title": "partner-program",
+    "description": ""
+  },
+
+  "msg91-for-developers": {
+    "title": "msg91-for-developers",
+    "description": ""
+  },
+
+  "startup": {
+    "title": "startup",
+    "description": ""
+  },
+
+  "tools-and-addons": {
+    "title": "tools-and-addons",
+    "description": ""
+  },
+
+  "our-programs": {
+    "title": "our-programs",
+    "description": ""
+  },
+
+  "career": {
+    "title": "career",
+    "description": ""
+  }
+}

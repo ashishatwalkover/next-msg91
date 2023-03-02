@@ -7,6 +7,7 @@ $theme-colors: (
   'danger': #ff007f,
   'light': #c0ccda,
   'dark': #001738,
-);
+  );
+$btn-border-radius:0.2rem;
 
 @import '/node_modules/bootstrap/scss/bootstrap.scss';
