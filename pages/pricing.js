@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Header from "@/components/header";
 import Notification from "@/components/notification";
 import HeadTag from "./head";
@@ -11,7 +12,41 @@ import Pricinghello from "@/components/pricing-hello";
 import Pricingsegmento from "@/components/pricing-segmento";
 import Pricingcampaign from "@/components/pricing-campaign";
 import Pricingrcs from "@/components/pricing-rcs";
+import axios from "axios";
+
 const campaign = () => {
+
+  var [pricing, setPricing] = useState([]);
+  var [originCountry, setOriginCountry] = useState('INDIA');
+  var [destinationCountry, setDestinationCountry] = useState('United States');
+  // let pricing = []
+  const amountArr = ['1259', '4000', '9000', '17000', '48000', '75000'];
+  
+  const fetchSMSData = async (price,origin,destination) => {
+    var newData = price
+    amountArr.forEach(async function (item, index) {
+      if (price.length <= amountArr.length) {  
+        const response = await axios.get(`https://test.msg91.com/api/v5/web/fetchPricingDetails?price=${item}&currency=inr&originCountry=${origin}&destinationCountry=${destination}`)
+        newData.push(response.data.data)
+          setPricing([...newData])
+      } 
+    })
+  };
+  
+  const fetchEmailData = async () => {
+    const response = await axios.get(`https://test.msg91.com/api/v5/web/fetchPricingDetails?price=${item}&currency=inr&originCountry=INDIA&destinationCountry=INDIA`)    
+    var newData = pricing
+    newData.push(response.data.data)
+    if (newData.length <= amountArr.length){
+      setPricing([...newData])
+    }
+  };
+
+  
+  useEffect(() => {
+     fetchSMSData(pricing,originCountry,destinationCountry)
+  }, []);
+
   return (
     <>
       <HeadTag />
@@ -26,7 +61,7 @@ const campaign = () => {
             <div className="d-flex justify-content-center">
               <ul className="nav nav-pills c-fs-5 pb-5" id="pricing-pills-tab" role="tablist">
                 <li className="nav-item" role="presentation">
-                  <button className="nav-link active"  data-bs-toggle="pill" data-bs-target="#pills-sms" type="button" role="tab" aria-controls="pills-sms" aria-selected="true">
+                  <button onClick={()=>{fetchSMSData([],'INDIA','INDIA')}} className="nav-link active"  data-bs-toggle="pill" data-bs-target="#pills-sms" type="button" role="tab" aria-controls="pills-sms" aria-selected="true">
                     <img src="img/sms.svg" alt="#" />
                     SMS
                   </button>
@@ -84,7 +119,16 @@ const campaign = () => {
 
             <div className="tab-content d-flex " id="pills-tabContent">
               <div className="tab-pane fade show active w-100" id="pills-sms" role="tabpanel" aria-labelledby="pills-sms-tab" tabIndex={0}>
-                <Pricingsms/>
+                <Pricingsms 
+                amountArr={amountArr} 
+                pricing={pricing} 
+                setPricing={setPricing} 
+                fetchSMSData={fetchSMSData} 
+                originCountry={originCountry} 
+                setOriginCountry={setOriginCountry}
+                destinationCountry={destinationCountry} 
+                setDestinationCountry={setDestinationCountry}
+                />
               </div>
               <div className="tab-pane fade w-100" id="pills-email" role="tabpanel" aria-labelledby="pills-email-tab" tabIndex={0}>
                <Pricingemail/>
