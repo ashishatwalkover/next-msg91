@@ -299,11 +299,7 @@ h2,.charterregular{
 
 // casestudy
 .casestudycard{
-  height: 70vh;
-  width: 30vw;
-  h3{
-    max-height: 4rem;
-  }
+  width:clamp(300px,30vw,400px);
 }
 
 

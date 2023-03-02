@@ -1,5 +1,5 @@
 import Trustedsec from "@/components/trusted_by";
-import HeadTag from "@/components/head";
+import HeadTag from "./head";
 import Header from "@/components/header";
 import Footer from "@/components/footer-sec";
 import { MdDoneOutline, MdArrowForward } from "react-icons/md";
