@@ -1,7 +1,8 @@
-import HeadTag from "./head";
+
 const casestudycard = ()=>{
     return(
         <>
+      
         <div className="container d-flex">
 
         <div className="casestudycard mx-auto c-bg-grey d-flex gap-3 flex-column p-2">
