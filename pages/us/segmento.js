@@ -18,10 +18,9 @@ const segmento = () => {
             <img src="../img/segmento.svg" className="product-page-logo" />
             <h1 className="heading">Segmento</h1>
           </div>
-          <p className="c-fs-5 c-fw-sb text-uppercase col-campaign c-ls-20 mx-auto">STOP WONDERING, START SEGMENTING!</p>
-          <h2 className="small-heading c-ff-b c-fw-r w-100 mx-auto">
-          Run targeted campaigns, personalize marketing content,
-precise data access with customer segmentation.{" "}
+          <p className="c-fs-4 text-uppercase col-campaign c-ls-20 mx-auto">STOP WONDERING, START SEGMENTING!</p>
+          <h2 className="small-heading w-md-75 w-100 mx-auto">
+          Customer Segmentation Platform - Stop wondering, start segmenting with SEGMENTO
           </h2>
           <button className="btn btn-primary btn-lg mt-3 c-fs-2" type="button">
             Get started for Free

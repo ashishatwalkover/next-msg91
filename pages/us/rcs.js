@@ -2,7 +2,6 @@ import Header from "@/components/header";
 import Notification from "@/components/notification";
 import HeadTag from "./head";
 import TrustedSec from "@/components/trusted_by";
-import Link from "next/link";
 import Footer from "@/components/footer";
 import FaqSection from "@/components/faq";
 
@@ -18,12 +17,11 @@ const rcs = () => {
             <img src="../img/rcs.svg" className="product-page-logo" />
             <h1 className="heading">RCS</h1>
           </div>
-          <p className="c-fs-5 c-fw-sb text-uppercase col-campaign c-ls-20 mx-auto">
+          <p className="c-fs-4 text-uppercase col-campaign c-ls-20 mx-auto">
             Event base automation
           </p>
-          <h2 className="small-heading c-ff-b c-fw-r w-100 mx-auto">
-          Redefine A2P
-messaging with RCS - Rich Communication Services{" "}
+          <h2 className="small-heading  w-md-75 w-100 mx-auto">
+          Transform A2P messaging with the best Rich Communication Services
           </h2>
           <button className="btn btn-primary btn-lg mt-3 c-fs-2" type="button">
             Get started for Free

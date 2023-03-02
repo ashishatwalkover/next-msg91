@@ -20,8 +20,8 @@ const campaign = () => {
             <h1 className="heading">Campaign</h1>
           </div>
           <p className="c-fs-5 c-fw-sb text-uppercase col-campaign c-ls-20 mx-auto">Event base automation</p>
-          <h2 className="small-heading c-ff-b c-fw-r w-100 mx-auto">
-            Boost audience engagement through smart communication and on-time delivery.{" "}
+          <h2 className="small-heading  w-100 mx-auto">
+          Boost audience engagement through smart communication and on-time delivery.
           </h2>
           <button className="btn btn-primary btn-lg mt-3 c-fs-2" type="button">
             Get started for Free
@@ -44,7 +44,7 @@ const campaign = () => {
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-fw-m ">
-              Automate sending messages under defined conditions
+            Automate sending messages under defined conditions
             </span>
             <span className="c-fs-3  mt-3">
               Define different messaging parameters like time, region, number of
