@@ -7,6 +7,41 @@
       "campaign": "Empower your employees, Support your customers.",
       "segmento": "Empower your employees, Support your customers.",
       "otp": "Empower your employees, Support your customers."
+    },
+    "communication": "Empower conversations with best-in-class communication API. Full-featured APIs for developers & businesses to connect and engage their customers globally.",
+    "stats": {
+      "api": "4.5 Billon+",
+      "ticket": "20 Billon+",
+      "email": "150 Billon+",
+      "sms": "2.3 Billon+"
+    },
+    "utility": {
+      "urlshortener": {
+        "heading": "Make a long story short",
+        "content": "Engineered for high reliability, our globally distributed carrier network and intelligent routing ensure the highest SMS delivery and lowest latency."
+      },
+      "knowledgebase": {
+        "heading": "Maximize your productivity with no code.",
+        "content": "Engineered for high reliability, our globally distributed carrier network and intelligent routing ensure the highest SMS delivery and lowest latency."
+      },
+      "filehosting": {
+        "heading": "More storage more productivity.",
+        "content": "Engineered for high reliability, our globally distributed carrier network and intelligent routing ensure the highest SMS delivery and lowest latency."
+      }
+    },
+    "clintstory": {
+      "milkbasket": {
+        "heading": "Milkbasket sends regular updates to their customers’ via MSG91. Milkbasket is an E-commerce platform providing",
+        "content": "milk and grocery at doorsteps. With the vision to offer their customers a seamless customized delivery, and to ensure it happens efficiently, Milkbasket has been rigorously working on sending the updates and information for their customers security and satisfaction."
+      },
+      "unacademy": {
+        "heading": "Unacademy ensures seamless communication using SMS via MSG91.",
+        "content": "milk and grocery at doorsteps. With the vision to offer their customers a seamless customized delivery, and to ensure it happens efficiently, Milkbasket has been rigorously working on sending the updates and information for their customers security and satisfaction."
+      },
+      "ixigo": {
+        "heading": "Ixigo ensures seamless communication using SMS via MSG91.",
+        "content": "milk and grocery at doorsteps. With the vision to offer their customers a seamless customized delivery, and to ensure it happens efficiently, Milkbasket has been rigorously working on sending the updates and information for their customers security and satisfaction."
+      }
     }
   }
 }

@@ -25,8 +25,7 @@ const index = () => {
       <div className="container text-center px-4 col-xs-12 col-sm-10 col-md-10 mx-auto section">
         <h1 className="heading">{data?.index?.heading}</h1>
         <p className="c-fs-1  m-auto col-md-8">
-          Best Cloud Communication Platform to Enhance Present Customer
-          Engagement and Boost Future Reach
+        {data?.index?.tagline}
         </p>
         <button className="btn btn-primary btn-lg c-fs-3 mt-4" type="button">
           Get started for Free
@@ -77,7 +76,7 @@ const index = () => {
             <div className="spacer"></div>
             <div className="pro-footer">
               <div className="c-fs-2 text-white">
-              {data?.index?.products?.hello}
+                {data?.index?.products?.hello}
               </div>
               <a href="/hello" target="_blank" className="pro-btn">
                 <div className="icon hello-icon"></div>
@@ -93,7 +92,7 @@ const index = () => {
             <div className="spacer"></div>
             <div className="pro-footer alt">
               <div className="c-fs-2 text-white">
-              {data?.index?.products?.segmento}
+                {data?.index?.products?.segmento}
               </div>
               <a href="/hello" target="_blank" className="pro-btn">
                 <div className="icon segmento-icon"></div>
@@ -109,7 +108,7 @@ const index = () => {
             <div className="spacer"></div>
             <div className="pro-footer">
               <div className="c-fs-2 text-white">
-              {data?.index?.products?.campaign}
+                {data?.index?.products?.campaign}
               </div>
               <a href="/hello" target="_blank" className="pro-btn">
                 <div className="icon campaign-icon"></div>
@@ -125,7 +124,7 @@ const index = () => {
             <div className="spacer"></div>
             <div className="pro-footer alt">
               <div className="c-fs-2 text-white">
-              {data?.index?.products?.otp}
+                {data?.index?.products?.otp}
               </div>
               <a href="/hello" target="_blank" className="pro-btn">
                 <div className="icon otp-icon"></div>
@@ -142,11 +141,7 @@ const index = () => {
       <section className="channels container my-5 d-flex flex-column justify-content-center justift-content-sm-start section">
         <div className="d-flex flex-column text-center text-sm-start  ">
           <h2 className="sub-heading c-ff-h mb-3">Communication channels</h2>
-          <p className="c-fs-2 mx-2 mx-sm-0">
-            Empower conversations with best-in-class communication API.
-            Full-featured APIs for developers & businesses to connect and engage
-            their customers globally.
-          </p>
+          <p className="c-fs-2 mx-2 mx-sm-0">{data?.index?.communication}</p>
         </div>
 
         <div className="d-flex flex-wrap justify-content-md-start  justify-content-center my-4">
@@ -201,7 +196,7 @@ const index = () => {
           <div className="py-7 stats py-3 pe-3  col-6 col-lg-6 col-xl-3">
             <div className="lh-1 d-flex flex-column align-items-center align-items-sm-start">
               <span className="mb-1 small-heading c-fw-sb text-primary">
-                4.5 Billion+
+                {data?.index?.stats?.api}
               </span>
               <span className="c-fs-2 c-fw-m">API calls /Month</span>
             </div>
@@ -209,7 +204,7 @@ const index = () => {
           <div className="py-7 stats py-3 pe-3   col-6 col-lg-6 col-xl-3">
             <div className="lh-1 d-flex flex-column align-items-center align-items-sm-start">
               <span className="mb-1 small-heading c-fw-sb text-primary">
-                'add new stat'
+                {data?.index?.stats?.ticket}
               </span>
               <span className="c-fs-2 c-fw-m">Tickets resolved/Month</span>
             </div>
@@ -218,7 +213,7 @@ const index = () => {
           <div className="py-7 stats py-3 pe-3   col-6 col-lg-6 col-xl-3">
             <div className="lh-1 d-flex flex-column align-items-center align-items-sm-start">
               <span className="mb-1 small-heading c-fw-sb text-primary">
-                150 Billion+
+                {data?.index?.stats?.email}
               </span>
               <span className="c-fs-2 c-fw-m">Emails Sent/Month</span>
             </div>
@@ -226,7 +221,7 @@ const index = () => {
           <div className="py-7 stats py-3  pe-3  col-6 col-lg-6 col-xl-3">
             <div className="lh-1 d-flex flex-column align-items-center align-items-sm-start">
               <span className="mb-1 small-heading c-fw-sb text-primary">
-                2.3 Billion+
+                {data?.index?.stats?.sms}
               </span>
               <span className="c-fs-2 c-fw-m">SMS Sent/Month</span>
             </div>
@@ -283,11 +278,11 @@ const index = () => {
                     URl Shortner
                   </span>
                 </div>
-                <p className="c-fs-4 c-fw-b">Make a long story short</p>
+                <p className="c-fs-4 c-fw-b">
+                  {data?.index?.utility?.urlshortener?.heading}
+                </p>
                 <p className="c-fs-4">
-                  Engineered for high reliability, our globally distributed
-                  carrier network and intelligent routing ensure the highest SMS
-                  delivery and lowest latency.
+                  {data?.index?.utility?.urlshortener?.content}
                 </p>
                 <button
                   href="#"
@@ -313,12 +308,10 @@ const index = () => {
                   </span>
                 </div>
                 <p className="c-fs-4 c-fw-b">
-                  Maximize your productivity with no code.
+                  {data?.index?.utility?.knowledgebase?.heading}
                 </p>
                 <p className="c-fs-4">
-                  Engineered for high reliability, our globally distributed
-                  carrier network and intelligent routing ensure the highest SMS
-                  delivery and lowest latency.
+                  {data?.index?.utility?.knowledgebase?.content}
                 </p>
                 <button
                   href="#"
@@ -339,13 +332,15 @@ const index = () => {
               <div>
                 <div className="d-flex align-items-center mb-2">
                   <img src="/img/files-ico.svg" className="pe-4" />
-                  <span className="small-heading align-middle ">Files</span>
+                  <span className="small-heading align-middle ">
+                    File Hosting
+                  </span>
                 </div>
-                <p className="c-fs-4 c-fw-b">More storage more productivity.</p>
+                <p className="c-fs-4 c-fw-b">
+                  {data?.index?.utility?.filehosting?.heading}
+                </p>
                 <p className="c-fs-4">
-                  Engineered for high reliability, our globally distributed
-                  carrier network and intelligent routing ensure the highest SMS
-                  delivery and lowest latency.
+                  {data?.index?.utility?.filehosting?.content}
                 </p>
                 <button
                   href="#"
@@ -368,15 +363,10 @@ const index = () => {
           <div className="d-flex flex-column col-12 col-md-9  col-lg-6  pe-0 pe-md-5 justify-content-center justify-content-md-start">
             <img src="/img/milkbasket img.png" className="clint-main-img " />
             <p className="c-fs-2 c-fw-m pt-4 col-12 d-none d-md-block">
-              Milkbasket sends regular updates to their customers’ via MSG91.
-              Milkbasket is an E-commerce platform providing
+              {data?.index?.clintstory?.milkbasket?.heading}
             </p>
             <p className="c-fs-4 d-none d-md-block">
-              milk and grocery at doorsteps. With the vision to offer their
-              customers a seamless customized delivery, and to ensure it happens
-              efficiently, Milkbasket has been rigorously working on sending the
-              updates and information for their customers security and
-              satisfaction.
+            {data?.index?.clintstory?.milkbasket?.content}
             </p>
           </div>
           <div className="col-12 col-md-3 col-lg-6 mt-5 mt-md-0 mt-lg-0 d-flex  flex-row flex-md-column justify-content-center justify-content-md-start  ">
@@ -384,7 +374,7 @@ const index = () => {
               <img src="/img/unacademy img.png" className=" col-12 col-lg-4 " />
               <div className="container-fluid d-none d-lg-block">
                 <p className="c-fs-2 c-fw-m  ps-3">
-                  Unacademy ensures seamless communication using SMS via MSG91.
+                {data?.index?.clintstory?.unacademy?.heading}
                 </p>
                 <Link
                   href="#"
@@ -411,7 +401,7 @@ const index = () => {
               <img src="/img/ixigo img.png" className="col-12 col-lg-4 " />
               <div className="container-fluid d-none d-lg-block">
                 <p className="c-fs-2 c-fw-m  ps-3 ">
-                  Ixigo ensures seamless communication using SMS via MSG91.
+                {data?.index?.clintstory?.ixigo?.heading}
                 </p>
                 <Link
                   href="#"
