@@ -19,9 +19,9 @@ const sms = () => {
             <img src="../img/sms.svg" className="product-page-logo" />
             <h1 className="heading">SMS</h1>
           </div>
-          <p className="c-fs-5 c-fw-sb text-uppercase col-campaign c-ls-20 mx-auto">Event base automation</p>
-          <h2 className="small-heading c-ff-b c-fw-r w-100 mx-auto">
-          Send text messages globally with the powerful and robust Transactional SMS API.{" "}
+          <p className="c-fs-4 text-uppercase col-campaign c-ls-20 mx-auto">Event base automation</p>
+          <h2 className="small-heading w-100 w-md-75 mx-auto">
+          Leading Transactional SMS API Provider in the US
           </h2>
           <button className="btn btn-primary btn-lg mt-3 c-fs-2" type="button">
             Get started for Free
@@ -97,7 +97,7 @@ const sms = () => {
 
 
       <div className="container d-flex flex-column flex-md-row align-items-flex-start mt-5 mb-5">
-        <div className="col-lg-4 flex-column align-items-flex-start">
+        <div className="col-lg-4 p-3 flex-column align-items-flex-start">
           <div className="mt-5 mb-3">
             <img
               src={"/Img/done_outline.svg"}
@@ -114,7 +114,7 @@ const sms = () => {
             </span>
           </div>
         </div>
-        <div className="col-lg-4 flex-column align-items-flex-start">
+        <div className="col-lg-4 p-3 flex-column align-items-flex-start">
           <div className="mt-5 mb-3">
             <img
               src={"/Img/done_outline.svg"}
@@ -131,7 +131,7 @@ const sms = () => {
             </span>
           </div>
         </div>
-        <div className="col-lg-4 flex-column align-items-flex-start">
+        <div className="col-lg-4 p-3 flex-column align-items-flex-start">
           <div className="mt-5 mb-3">
             <img
               src={"/Img/done_outline.svg"}

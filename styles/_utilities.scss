@@ -40,11 +40,13 @@
 .us-nav-options{
     img{
         opacity: 20%;
+        filter: saturate(0);
     }
 }
 .active{
     img{
         opacity: 100!important;
+        filter: saturate(1);
     }
 }
 

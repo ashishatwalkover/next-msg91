@@ -18,9 +18,10 @@ const otp = () => {
             <img src="../img/otp.svg" className="product-page-logo" />
             <h1 className="heading">OTP</h1>
           </div>
-          <p className="c-fs-5 c-fw-sb text-uppercase col-campaign c-ls-20 mx-auto">Instant secure varification</p>
-          <h2 className="small-heading c-ff-b c-fw-r w-100 mx-auto">
-          Quick and reliable authentication by 2FA using multiple channels.{" "}
+          <p className="c-fs-4 text-uppercase col-campaign c-ls-20 mx-auto">Instant secure varification</p>
+          <h2 className="small-heading w-md-75 w-100 mx-auto">
+          Two-factor Authentication
+Providers with SendOTP
           </h2>
           <button className="btn btn-primary btn-lg mt-3 c-fs-2" type="button">
             Get started for Free

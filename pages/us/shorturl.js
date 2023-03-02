@@ -2,9 +2,7 @@ import Header from "@/components/header";
 import Notification from "@/components/notification";
 import HeadTag from "./head";
 import TrustedSec from "@/components/trusted_by";
-import Link from "next/link";
 import Footer from "@/components/footer";
-import FaqSection from "@/components/faq";
 
 const shorturl = () => {
   return (
@@ -18,8 +16,8 @@ const shorturl = () => {
             <img src="../img/short-url-ico.svg" className="product-page-logo" />
             <h1 className="heading">Short URL</h1>
           </div>
-          <p className="c-fs-5 c-fw-sb text-uppercase col-campaign c-ls-20 mx-auto">Event based automation</p>
-          <h2 className="small-heading c-ff-b c-fw-r w-100 mx-auto">
+          <p className="c-fs-4 text-uppercase col-campaign c-ls-20 mx-auto">Event based automation</p>
+          <h2 className="small-heading w-md-75 w-100 mx-auto">
             Customised Links for Business Success
           </h2>
           <button className="btn btn-primary btn-lg mt-3 c-fs-2" type="button">
