@@ -127,7 +127,7 @@ const IndexPage = () => {
         </div>
       </section>
 
-      <section className="channels container d-flex flex-column justify-content-center justift-content-sm-start section">
+      <section className="channels container my-5 d-flex flex-column justify-content-center justift-content-sm-start section">
         <div className="d-flex flex-column text-center text-sm-start  ">
           <h2 className="sub-heading c-ff-h mb-3">Communication channels</h2>
           <p className="c-fs-2 mx-2 mx-sm-0">
@@ -344,26 +344,26 @@ const IndexPage = () => {
       <div className="container mt-5">
         <h2 className="sub-heading c-ff-h my-5">Our Client stories</h2>
         <div className=" d-flex flex-column flex-md-row mt-3 ">
-          <div className="d-flex flex-column col-12 col-md-6 pe-0 pe-md-5 justify-content-center justify-content-md-start">
-            <img src="/img/milkbasket img.png" className="img-fluid " />
+          <div className="d-flex flex-column col-12 col-md-9  col-lg-6  pe-0 pe-md-5 justify-content-center justify-content-md-start">
+            <img src="/img/milkbasket img.png" className="clint-main-img " />
             <p className="c-fs-2 c-fw-m pt-4 col-12 d-none d-md-block">
               Milkbasket sends regular updates to their customers’ via MSG91.
               Milkbasket is an E-commerce platform providing 
               </p >
-              <p className="c-fs-4">milk and grocery at
+              <p className="c-fs-4 d-none d-md-block">milk and grocery at
               doorsteps. With the vision to offer their customers a seamless
               customized delivery, and to ensure it happens efficiently,
               Milkbasket has been rigorously working on sending the updates and
               information for their customers security and satisfaction.
             </p>
           </div>
-          <div className="col-12 col-md-6 mt-5 mt-md-0 mt-lg-0 d-flex  flex-row flex-md-column justify-content-center justify-content-md-start  ">
-            <div className=" d-flex  mb-5 mb-lg-0 me-5  ">
+          <div className="col-12 col-md-3 col-lg-6 mt-5 mt-md-0 mt-lg-0 d-flex  flex-row flex-md-column justify-content-center justify-content-md-start  ">
+            <div className=" d-flex  mb-5 mb-lg-0 me-0 me-lg-5  ">
               <img
                 src="/img/unacademy img.png"
-                className="img-fluid clint-img"
+                className=" col-12 col-lg-4 "
               />
-              <div className="container-fluid d-none d-md-block">
+              <div className="container-fluid d-none d-lg-block">
                 <p className="c-fs-2 c-fw-m  ps-3">
                   Unacademy ensures seamless communication using SMS via MSG91.
                 </p>
@@ -388,9 +388,9 @@ const IndexPage = () => {
                 </Link>
               </div>
             </div>
-            <div className=" d-flex  mt-xl-5 mt-lg-5 mt-md-5 mt-0   ">
-              <img src="/img/ixigo img.png" className="img-fluid clint-img" />
-              <div className="container-fluid d-none d-md-block">
+            <div className="  d-flex  mb-5 mb-lg-0 me-0 me-lg-5 ms-5 ms-md-0  mt-0 mt-lg-5  ">
+              <img src="/img/ixigo img.png" className="col-12 col-lg-4 " />
+              <div className="container-fluid d-none d-lg-block">
                 <p className="c-fs-2 c-fw-m  ps-3 ">
                   Ixigo ensures seamless communication using SMS via MSG91.
                 </p>
