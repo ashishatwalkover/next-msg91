@@ -137,7 +137,7 @@ const IndexPage = () => {
           </p>
         </div>
 
-        <div className="d-flex flex-wrap justify-content-sm-start justify-content-center my-4">
+        <div className="d-flex flex-wrap justify-content-md-start  justify-content-center my-4">
           <a href="/hello" target="_blank" className="chn-btn sms">
             <div className="icon sms-icon"></div>
             <div className="btn-label d-flex flex-none flex-md-fill justify-content-between align-items-center">
@@ -228,21 +228,21 @@ const IndexPage = () => {
                   id="link-shortner"
                 >
                   <img src="../img/fill-circle.svg"></img>
-                  <a href="#url-shortner" ><span className="small-heading">URL Shortner</span></a>
+                  <a href="#url-shortner" ><span className="c-fs-2">URL Shortner</span></a>
                 </div>
                 <div
                   className="us-nav-options align-items-center mb-2  d-flex"
                   id="link-knowledge"
                 >
                   <img src="../img/fill-circle.svg"></img>
-                  <a href="#knowledge-base"><span className="small-heading">Knowledgebase</span></a>
+                  <a href="#knowledge-base"><span className="c-fs-2">Knowledgebase</span></a>
                 </div>
                 <div
                   className="us-nav-options align-items-center mb-2 d-flex"
                   id="link-file"
                 >
                   <img src="../img/fill-circle.svg"></img>
-                  <a href="#file-hosting"><span className="small-heading">File Hosting</span></a>
+                  <a href="#file-hosting"><span className="c-fs-2">File Hosting</span></a>
                 </div>
               </div>
             </div>
@@ -273,7 +273,7 @@ const IndexPage = () => {
                     Learn More <MdArrowForward />
                   </button>
                 </div>
-                <img src="/img/short-url-img.svg" className="utility-img" />
+                <img src="/img/url-shortener-img.svg" className="utility-img" />
               </div>
 
               <div className="us-spacer"></div>
@@ -302,7 +302,7 @@ const IndexPage = () => {
                     Learn More <MdArrowForward />
                   </button>
                 </div>
-                <img src="/img/kb-img.svg" className="utility-img" />
+                <img src="/img/knowledgebase-img.svg" className="utility-img" />
               </div>
               
               <div className="us-spacer"></div>
@@ -331,7 +331,7 @@ const IndexPage = () => {
                     Learn More <MdArrowForward />
                   </button>
                 </div>
-                <img src="/img/files-img.svg" className="utility-img" />
+                <img src="/img/file-hosting-img.svg" className="utility-img" />
               </div>
 
               <div style={{marginTop: "70px"}}></div>

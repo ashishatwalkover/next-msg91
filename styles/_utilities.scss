@@ -24,6 +24,7 @@
 .us-spacer{
     height: 200px;
 }
+
 .us-main{    
     button{
         justify-content: flex-start;
@@ -32,11 +33,7 @@
 .pb-300{
     padding-bottom:300px ;
 }
-@media only screen and (max-width: 992px) {
-    .us-main{
-        padding: 20px 0;
-    }
-}
+
 .us-main-content{
     gap:15px
 }
@@ -52,5 +49,24 @@
 }
 
 .utility-img{
-    width: clamp(450px,30vw,500px);
+    width: clamp(300px,60vw,500px);
+}
+@media only screen and (max-width: 992px) {
+    .us-main{
+        padding: 10px;
+    }
+        .us-spacer{
+            height: 20px;
+        }
+        
+        .section{
+            padding: 0!important;
+        }
+    
+}
+@media only screen and (max-width: 768px) {
+    .utility-img{
+        margin: 20px auto;
+    }
+
 }
