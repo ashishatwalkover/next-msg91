@@ -6,9 +6,9 @@ const HeadTag =()=> {
   var path = router.pathname.split("/")[1];
   var page = router.pathname.split("/")[2];
   var pagemeta = router.pathname.length>3?page:path
-  console.log(pagemeta);
-  console.log(path);
-  console.log(page);
+  // console.log(pagemeta);
+  // console.log(path);
+  // console.log(page);
   return (
     <>
   <Head>

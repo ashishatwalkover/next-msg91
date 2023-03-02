@@ -1,6 +1,6 @@
 import Header from "@/components/header";
 import Notification from "@/components/notification";
-import HeadTag from "@/components/head";
+import HeadTag from "./head";
 import Footer from "@/components/footer";
 import Pricingemail from "@/components/pricing-email";
 import Pricingsms from "@/components/pricing-sms";
