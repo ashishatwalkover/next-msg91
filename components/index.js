@@ -15,7 +15,7 @@ const index = () => {
   }, []);
 
   var fetchData = async () => {
-    const response = await import(`../pages/ae/content/${path}.json`);
+    const response = await import(`../pages/content/${path}.json`);
     const jsonData = await response.default;
     return jsonData;
   };
@@ -77,7 +77,7 @@ const index = () => {
             <div className="spacer"></div>
             <div className="pro-footer">
               <div className="c-fs-2 text-white">
-                Empower your employees, Support your customers.
+              {data?.index?.products?.hello}
               </div>
               <a href="/hello" target="_blank" className="pro-btn">
                 <div className="icon hello-icon"></div>
@@ -93,7 +93,7 @@ const index = () => {
             <div className="spacer"></div>
             <div className="pro-footer alt">
               <div className="c-fs-2 text-white">
-                Empower your employees, Support your customers.
+              {data?.index?.products?.segmento}
               </div>
               <a href="/hello" target="_blank" className="pro-btn">
                 <div className="icon segmento-icon"></div>
@@ -109,7 +109,7 @@ const index = () => {
             <div className="spacer"></div>
             <div className="pro-footer">
               <div className="c-fs-2 text-white">
-                Empower your employees, Support your customers.
+              {data?.index?.products?.campaign}
               </div>
               <a href="/hello" target="_blank" className="pro-btn">
                 <div className="icon campaign-icon"></div>
@@ -125,7 +125,7 @@ const index = () => {
             <div className="spacer"></div>
             <div className="pro-footer alt">
               <div className="c-fs-2 text-white">
-                Empower your employees, Support your customers.
+              {data?.index?.products?.otp}
               </div>
               <a href="/hello" target="_blank" className="pro-btn">
                 <div className="icon otp-icon"></div>
