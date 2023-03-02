@@ -1,13 +1,13 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer-sec";
 import HeadTag from "./head";
-import Casestudycard from "@/components/casestudy-card";
+import Azimpremji from "./case-studies/card/azimpremji";
 const casestudy =()=>{
     return(
         <>
         <HeadTag/>
         <Header/>
-        <Casestudycard/>
+        <Azimpremji/>
         <Footer/>
         
         </>
