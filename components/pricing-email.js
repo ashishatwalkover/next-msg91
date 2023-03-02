@@ -1,5 +1,11 @@
 import { MdDone, MdClose } from "react-icons/md";
+import { useEffect, useState } from "react";
 const pricingemail = () => {
+  useEffect(() => {
+
+    console.log('email');
+
+  }, []);
   return (
     <>
     <select className="form-select w-25 mx-auto" aria-label="Default select example">
