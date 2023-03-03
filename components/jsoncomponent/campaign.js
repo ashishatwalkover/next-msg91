@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import TrustedSec from "@/components/trusted_by";
 
-const hello = () => {
+const campaign = () => {
   const router = useRouter();
   var path = router.pathname.split("/")[1];
   const [data, setData] = useState(null);
@@ -19,20 +19,21 @@ const hello = () => {
     const jsonData = await response.default;
     return jsonData;
   };
+
   return (
     <>
-      <div className="container text-center px-4 overflow-hidden col-12 col-sm-10  ">
+      <div className="container text-center overflow-hidden px-4  col-12 col-sm-10  ">
         <div className="text-center justify-content-center py-5">
           <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
-            <img src="../img/hello.svg" className="product-page-logo" />
-            <h1 className="heading">Hello</h1>
+            <img src="../img/campaign.svg" className="product-page-logo" />
+            <h1 className="heading">Campaign</h1>
           </div>
-
-          <p className="c-fs-4 text-uppercase col-campaign c-ls-20 mx-auto">
-            {data?.hello?.smallheading}
+          <p className="c-fs-5 c-fw-sb text-uppercase col-campaign c-ls-20 mx-auto">
+            Event base automation
           </p>
-          <h2 className="small-heading px-3 w-md-75 w-100 mx-auto">
-            {data?.hello?.tagline}
+          <h2 className="small-heading c-ff-b c-fw-r w-100 mx-auto">
+            Boost audience engagement through smart communication and on-time
+            delivery.{" "}
           </h2>
           <button className="btn btn-primary btn-lg mt-3 c-fs-2" type="button">
             Get started for Free
@@ -40,7 +41,7 @@ const hello = () => {
           <TrustedSec />
         </div>
         <img
-          src="/img/hello-page-img.png"
+          src={"/img/Campaign_flow.svg"}
           className="img-fluid product-page-img mx-auto"
           alt="#"
         />
@@ -51,28 +52,32 @@ const hello = () => {
 
         <div className="container d-lg-flex flex-row align-items-center">
           <div className=" col col-lg-6 col-md-6 col-sm-12 flex-column align-items-flex-start mt-lg-5 ms-lg-5 order-lg-2">
-            <img src={data?.hello?.features?.one?.img} className="feature-img" />
+            <img src="/img/camp-f-img-one.svg" className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-fw-m ">
-              {data?.hello?.features?.one?.heading}
+              Automate sending messages under defined conditions
             </span>
             <span className="c-fs-3  mt-3">
-              {data?.hello?.features?.one?.content}
+              Define different messaging parameters like time, region, number of
+              messages per day, and more to make sure that your campaigns reach
+              your audience under the right circumstances automatically, without
+              any delays.
             </span>
           </div>
         </div>
 
         <div className="container d-lg-flex flex-row align-items-center mt-5">
           <div className=" col col-lg-6 col-md-6 col-sm-12 flex-column align-items-flex-start mt-lg-5">
-            <img src={data?.hello?.features?.two?.img} className="feature-img" />
+            <img src="/img/camp-f-img-two.svg" className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-fw-m ">
-              {data?.hello?.features?.two?.heading}
+              An all-in-one platform for all your campaigns
             </span>
             <span className="c-fs-3  mt-3">
-            {data?.hello?.features?.two?.content}
+              Optimise your links and create short links that inspire
+              confidence. Include short links in your custom messages with ease.
             </span>
           </div>
         </div>
@@ -82,38 +87,41 @@ const hello = () => {
             <img src="/img/camp-f-img-three.svg" className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-            <span className="c-fs-2 c-fw-m  ">
-            {data?.hello?.features?.three?.heading}
+            <span className="c-fs-2 c-fw-m ">
+              Make your communication more secure
             </span>
             <span className="c-fs-3  mt-3">
-            {data?.hello?.features?.three?.content}
+              Now protect your Campaigns with our token-based workflow and a
+              robust security framework. Implement best customer-engagement
+              practices and shape communication to fit your brand while ensuring
+              optimum security through and through.
             </span>
           </div>
         </div>
       </div>
 
       <div className="container">
-        <span className="sub-heading">More features</span>
+        <span className="sub-heading  ">More Feature</span>
         <div className="container d-flex flex-column flex-md-row my-3">
           <div className="d-flex flex-column justify-content-center align-items-flex-start col-lg-6 mt-2">
             <span className="c-fs-3">
-              - {data?.hello?.morefeatures?.one}
+              - Use a reliable solution to maximize customer engagement.
             </span>
             <span className="c-fs-3 mt-1">
-              - {data?.hello?.morefeatures?.two}
+              - Create unique and interactive campaigns that use different media
+              formats.
             </span>
             <span className="c-fs-3 mt-1">
-              - {data?.hello?.morefeatures?.three}
+              - Customize campaigns to meet communication needs.
             </span>
             <span className="c-fs-3 mt-1">
-              - {data?.hello?.morefeatures?.four}
+              - Include interactive elements like quizzes and polls to keep
+              customers engaged.
             </span>
-            <span className="c-fs-3 mt-1">
-              - {data?.hello?.morefeatures?.five}
-            </span>
-            <span className="c-fs-3 mt-1">- {data?.hello?.morefeatures?.six}</span>
+
+            <span className="c-fs-3 mt-1">- Track campaign performance</span>
           </div>
-          <div className="my-auto mt-3 ms-4   px-5 d-flex py-5 c-bg-grey flex-wrap justify-content-center">
+          <div className="my-auto mt-3 px-5 d-flex py-5 c-bg-grey flex-wrap justify-content-center">
             <span className="c-fs-2 c-ff-h">Looking for more?</span>
             <button className="btn btn-outline-primary c-fs-4 ms-0 ms-md-3 mt-3 mt-md-0">
               {" "}
@@ -138,5 +146,4 @@ const hello = () => {
     </>
   );
 };
-
-export default hello;
+export default campaign;
