@@ -7,6 +7,12 @@
     "title": "Customer Support Platform for your Business by MSG91",
     "description": "Harness the power of omnichannel customer experience with HELLO, a robust and data-driven customer support platform to meet all your customer service needs."
   },
+
+  "index": {
+    "title": "index",
+    "description": ""
+  },
+
   "campaign": {
     "title": "SMS Campaign",
     "description": "Boost audience engagement through smart communication and on-time delivery. It&#039;s not only about communicating, it&#039;s about communicating with your users smartly and efficiently. Get Demo Reach your segmented customers across the world, Send your messages at the right moment! Features Automate sending messages under defined conditions Define different messaging parameters like time, region, number of..."
@@ -47,9 +53,19 @@
     "description": "Send and receive instant messages and notification to provide real-time customer support globally on one of most preferred &amp; reliable chat platform. Integrate MSG91 WhatsApp API into your website or application now."
   },
 
+  "telegram": {
+    "title": "telegram",
+    "description": "Harness the power of omnichannel customer experience with HELLO, a robust and data-driven customer support platform to meet all your customer service needs."
+  },
+
   "oneapi": {
     "title": "SMS API, Email API and Voice API Provider | MSG91",
     "description": "Streamline your communication with customers by intergrating SMS, Email and Voice API with MSG91 One API. Experience now."
+  },
+
+  "push-notification": {
+    "title": "push-notification",
+    "description": "Harness the power of omnichannel customer experience with HELLO, a robust and data-driven customer support platform to meet all your customer service needs."
   },
 
   "_comment2": "Utilities",
