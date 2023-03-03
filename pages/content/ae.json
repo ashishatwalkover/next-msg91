@@ -72,5 +72,36 @@
       "five": "Solution for remote access and support",
       "six": "Track campaign performance"
     }
+  },
+
+  "campaign": {
+    "pageimg": "/img/Campaign_flow.svg",
+    "smallheading": "BRIDGE THE GAP BETWEEN YOU AND YOUR CUSTOMERS",
+    "tagline": "Boost audience engagement through smart communication and on-time delivery.",
+    "features": {
+      "one": {
+        "img":"/img/camp-f-img-one.svg",
+        "heading": "Empower your employees, Support your customers",
+        "content": "Deliver consistent customer experiences, unify and track all the customer conversations across omni channel platforms for uninterrupted flow of communication."
+      },
+      "two": {
+        "img":"/img/camp-f-img-two.svg",
+        "heading": "Empower your employees, Support your customers",
+        "content": "Deliver consistent customer experiences, unify and track all the customer conversations across omni channel platforms for uninterrupted flow of communication."
+      },
+      "three": {
+        "img":"/img/camp-f-img-three.svg",
+        "heading": "Empower your employees, Support your customers",
+        "content": "Deliver consistent customer experiences, unify and track all the customer conversations across omni channel platforms for uninterrupted flow of communication."
+      }
+    },
+    "morefeatures": {
+      "one": "Provide customer support via screen sharing on a single click",
+      "two": "Troubleshooting over video in seconds",
+      "three": "Record agent performance for quality control",
+      "four": "Understand your customers emotions through sentiment analysis",
+      "five": "Solution for remote access and support",
+      "six": "Track campaign performance"
+    }
   }
 }

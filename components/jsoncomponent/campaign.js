@@ -41,7 +41,7 @@ const campaign = () => {
           <TrustedSec />
         </div>
         <img
-          src={"/img/Campaign_flow.svg"}
+          src={data?.campaign?.pageimg}
           className="img-fluid product-page-img mx-auto"
           alt="#"
         />
@@ -52,7 +52,7 @@ const campaign = () => {
 
         <div className="container d-lg-flex flex-row align-items-center">
           <div className=" col col-lg-6 col-md-6 col-sm-12 flex-column align-items-flex-start mt-lg-5 ms-lg-5 order-lg-2">
-            <img src="/img/camp-f-img-one.svg" className="feature-img" />
+            <img src={data?.campaign?.features?.one?.img} className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-fw-m ">
