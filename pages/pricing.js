@@ -14,15 +14,28 @@ import Pricingcampaign from "@/components/pricing-campaign";
 import Pricingrcs from "@/components/pricing-rcs";
 import axios from "axios";
 
+/*
+  API to get subscription plans
+  URL: https://subscription.msg91.com/api/plans?currency=USD&ms_id=1
+  currency = USD, INR, GBP
+  ms_id = microservice id
+  [
+    { "id": 1, "name": "Email" },
+    { "id": 2, "name": "Segmento" },
+    { "id": 5, "name": "Whatsapp" },
+    { "id": 6, "name": "Voice" }
+  ]
+*/
 const campaign = () => {
 
   var [pricing, setPricing] = useState([]);
+  var [subscription, setSubscription] = useState([]);
   var [originCountry, setOriginCountry] = useState('INDIA');
   var [destinationCountry, setDestinationCountry] = useState('United States');
   // let pricing = []
   const amountArr = ['1259', '4000', '9000', '17000', '48000', '75000'];
   
-  const fetchSMSData = async (price,origin,destination) => {
+  const fetchSMSData = async (price, origin, destination) => {
     var newData = price
     amountArr.forEach(async function (item, index) {
       if (price.length <= amountArr.length) {  
@@ -33,13 +46,10 @@ const campaign = () => {
     })
   };
   
-  const fetchEmailData = async () => {
-    const response = await axios.get(`https://test.msg91.com/api/v5/web/fetchPricingDetails?price=${item}&currency=inr&originCountry=INDIA&destinationCountry=INDIA`)    
-    var newData = pricing
-    newData.push(response.data.data)
-    if (newData.length <= amountArr.length){
-      setPricing([...newData])
-    }
+  const fetchSubscription = async (currency, msId) => {
+    const response = await axios.get(`https://subscription.msg91.com/api/plans?currency=${currency}&ms_id=${msId}`)    
+    setSubscription([...response.data.data])
+    console.log(response.data.data);
   };
 
   
@@ -49,7 +59,7 @@ const campaign = () => {
 
   return (
     <>
-      <HeadTag />
+      {/* <HeadTag /> */}
       <Notification />
       <Header />
       <div className="container d-flex justify-content-center">
@@ -67,7 +77,7 @@ const campaign = () => {
                   </button>
                 </li>
                 <li className="nav-item" role="presentation">
-                  <button className="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-email" type="button" role="tab" aria-controls="pills-email" aria-selected="false">
+                  <button onClick={()=>{fetchSubscription('INR', '1')}} className="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-email" type="button" role="tab" aria-controls="pills-email" aria-selected="false">
                   <img src="img/email.svg" alt="#" />
                     Email
                   </button>
@@ -131,7 +141,10 @@ const campaign = () => {
                 />
               </div>
               <div className="tab-pane fade w-100" id="pills-email" role="tabpanel" aria-labelledby="pills-email-tab" tabIndex={0}>
-               <Pricingemail/>
+               <Pricingemail
+               subscription={subscription}
+               fetchSubscription={fetchSubscription}
+               />
               </div>
               <div className="tab-pane fade w-100" id="pills-voice" role="tabpanel" aria-labelledby="pills-voice-tab" tabIndex={0}>
                 <Pricingvoice/>

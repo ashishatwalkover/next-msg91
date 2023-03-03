@@ -55,7 +55,7 @@ const pricingvoice = ({
               {amountArr[index] ?
                 amountArr[index] === '48000'
                   ?
-                  <div key={`card-${index}`} className="mx-3 text-center d-flex flex-column mb-4 mb-sm-0 align-items-center">
+                  <div key={`sms-card-${index}`} className="mx-3 text-center d-flex flex-column mb-4 mb-sm-0 align-items-center">
                     <div className="popular-chip c-fs-6">POPULAR</div>
                     <div className="card  text-center card-popular border-primary mb-4 mb-sm-0 c-bg-grey">
                       <div className="card-body">
@@ -71,7 +71,7 @@ const pricingvoice = ({
                     </div>
                   </div>
                   :
-                  <div className="card border-0 text-center mb-4 mb-sm-0 c-bg-grey">
+                  <div key={`sms-card-${index}`} className="card border-0 text-center mb-4 mb-sm-0 c-bg-grey">
                     <div className="card-body">
                       <h3 className="c-fs-3">{item[4]?.totalNoOfSms} SMS</h3>
                       <h5 className="c-fs-4 mt-2">₹{item[4]?.rate}/SMS</h5>

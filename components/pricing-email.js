@@ -1,103 +1,140 @@
 import { MdDone, MdClose } from "react-icons/md";
 import { useEffect, useState } from "react";
-const pricingemail = () => {
-  useEffect(() => {
+const pricingemail = ({subscription}) => {
+  const [selectedCurrency, setSelectedCurrency] = useState('INR');
+  const [selectedMode, setSelectedMode] = useState("Monthly");
+  const [symbol, setSymbol] = useState("₹");
+  
+  const changeCurrency = (currency) => {
+    setSelectedCurrency(currency)
+    fetchSubscription(currency, '1');
+  };
+    
+  var tmpPlans = [];
+  subscription?.map((item, index) => {
+    let obj = {}
+    
+    obj.symbol = symbol;
+    
+    let amount = item.plan_amounts.find(
+      (o) =>        
+        o.plan_type.name === selectedMode
+    );
+    obj.amount = amount;
+    
+    item.plan_services.forEach((o,i) => {
+      (i == 0)
+        obj.email = o.service_credit.free_credits +" "+o.service_credit.service.name;
+      (i == 1)
+        obj.validation = o.service_credit.free_credits +" "+o.service_credit.service.name;      
+    });
+    console.log(obj);
+    //tmpPlans.push(obj)
+  })  
 
-    console.log('email');
-
+  useEffect(() => {    
+    switch (selectedCurrency) {
+      case "INR":
+        setSymbol("₹");
+        break;
+      case "USD":
+        setSymbol("$");
+        break;      
+      case "GBP":
+        setSymbol("£");
+        break;
+    }
   }, []);
   return (
     <>
-    <select className="form-select w-25 mx-auto" aria-label="Default select example">
-                      <option>India</option>                    
-                    </select>
+      <select className="form-select w-25 mx-auto" aria-label="Default select example" onChange={()=>{changeCurrency(e.target.value)}}>
+        <option value="INR">INR</option>
+        <option value="USD">USD</option>
+        <option value="GBP">GBP</option>
+      </select>
       <div className="d-flex flex-wrap flex-gap justify-content-center w-100  card-container align-items-end">
-        <div className="card  border-0 text-center mb-4 mb-sm-0 c-bg-grey">
-          <div className="card-body">
-            <h3 className="c-fs-3">Free</h3>
-            <h5 className="c-fs-4 mt-2">$0/Month</h5>
-            <p className="c-fs-5"> - </p>
-            <div className="c-fs-5 mt-2">
-              <span className="text-success c-fs-3">
-                <MdDone />
-              </span>
-              100,000 Emails
-            </div>
-            <div className="c-fs-5 ">
-              <span className="text-danger c-fs-3">
-                <MdClose />
-              </span>
-              Email Varifications
-            </div>
+      {subscription.length &&
+        subscription?.map((item, index) => {          
+          return(
+            <>
+            {item.plan_amounts[0].plan_amount === 7500
+            ?
+              <div key={`email-card-${index}`} className="mx-3 text-center d-flex flex-column mb-4 mb-sm-0 align-items-center ">
+                <div className="popular-chip c-fs-6">POPULAR</div>
+                <div className="card-popular card text-center mb-4 mb-sm-0 c-bg-grey">                  
+                  <div className="card-body">
+                    <h3 className="c-fs-3">{item.name}</h3>
+                    <h5 className="c-fs-4 mt-2">
+                      {symbol}
+                      {(selectedMode === 'Monthly') ? item.plan_amounts[0].plan_amount : item.plan_amounts[1].plan_amount}
+                      /
+                      {(selectedMode === 'Monthly') ? 'Month' : 'Yearly'}
+                    </h5>
+                    <p className="c-fs-5"> 
+                      {(item.plan_amounts[0].plan_amount === 0) ? '-' : '+18%GST'}
+                    </p>
+                    <div className="c-fs-5 mt-2">
+                      <span className="text-success c-fs-3">
+                        <MdDone />
+                      </span>
+                      {item.plan_services[0].service_credit.free_credits} Emails
+                    </div>
+                    <div className="c-fs-5 ">                  
+                        {
+                        (item.plan_amounts[0].plan_amount === 0) ? 
+                        <span className="text-danger c-fs-3"><MdClose /></span> 
+                        : 
+                        <span className="text-success c-fs-3"><MdDone /></span> 
+                        }
+                      {item.plan_services[1].service_credit.free_credits} Email Varifications
+                    </div>
 
-            <button className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
-              Get Started
-            </button>
-          </div>
-        </div>
-        <div className="card  border-0 text-center mb-4 mb-sm-0 c-bg-grey">
-          <div className="card-body">
-            <h3 className="c-fs-3">Basic</h3>
-            <h5 className="c-fs-4 mt-2">$500/Month</h5>
-            <p className="c-fs-5">+18%GST </p>
-            <div className="c-fs-5 mt-2">
-              <span className="text-success c-fs-3">
-                <MdDone />
-              </span>
-              250,000 Emails
-            </div>
-            <div className="c-fs-5 ">
-              <span className="text-success c-fs-3">
-                <MdDone />
-              </span>
-              3,000 Email Varifications
-            </div>
+                    <button className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
+                      Get Started
+                    </button>
+                  </div>
+                </div>
+              </div>  
+            :
+              <div key={`email-card-${index}`} className="card border-0 text-center mb-4 mb-sm-0 c-bg-grey">                
+                <div className="card-body">
+                  <h3 className="c-fs-3">{item.name}</h3>
+                  <h5 className="c-fs-4 mt-2">
+                    {symbol}
+                    {(selectedMode === 'Monthly') ? item.plan_amounts[0].plan_amount : item.plan_amounts[1].plan_amount}
+                    /
+                    {(selectedMode === 'Monthly') ? 'Month' : 'Yearly'}
+                  </h5>
+                  <p className="c-fs-5"> 
+                    {(item.plan_amounts[0].plan_amount === 0) ? '-' : '+18%GST'}
+                  </p>
+                  <div className="c-fs-5 mt-2">
+                    <span className="text-success c-fs-3">
+                      <MdDone />
+                    </span>
+                    {item.plan_services[0].service_credit.free_credits} Emails
+                  </div>
+                  <div className="c-fs-5 ">                  
+                      {
+                      (item.plan_amounts[0].plan_amount === 0) ? 
+                      <span className="text-danger c-fs-3"><MdClose /></span> 
+                      : 
+                      <span className="text-success c-fs-3"><MdDone /></span> 
+                      }
+                    {item.plan_services[1].service_credit.free_credits} Email Varifications
+                  </div>
 
-            <button className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
-              Get Started
-            </button>
-          </div>
-        </div>
-        <div className="  mx-3 text-center d-flex flex-column mb-4 mb-sm-0 align-items-center ">
-          <div className="popular-chip c-fs-6">POPULAR</div>
-          <div className="card  card-popular border-primary text-center c-bg-grey">
-            <div className="card-body">
-              <h3 className="c-fs-3">Alpha</h3>
-              <h5 className="c-fs-4 mt-2">$1500/Month</h5>
-              <p className="c-fs-5">+18%GST </p>
-              <div className="c-fs-5 mt-2">
-                <span className="text-success c-fs-3">
-                  <MdDone />
-                </span>
-                5,00,000 Emails
+                  <button className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
+                    Get Started
+                  </button>
+                </div>
               </div>
-              <div className="c-fs-5 ">
-                <span className="text-success c-fs-3">
-                  <MdDone />
-                </span>
-                5,000 Email Varifications
-              </div>
-
-              <button className="c-fs-5 btn btn-sm w-100 btn-primary mt-2">
-                Get Started
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="card mb-4 mb-sm-0 border-0 text-center c-bg-grey">
-          <div className="card-body">
-            <h3 className="c-fs-3">Custom</h3>
-            <h5 className="c-fs-4 mt-2">Custom Pricing</h5>
-            <p className="c-fs-5">-</p>
-            <div className="c-fs-5 mt-2">
-              Need to send more? Talk to us for a customized plan.
-            </div>
-
-            <button className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
-              Talk to an Expert
-            </button>
-          </div>
-        </div>
+            }
+            </>           
+                               
+          )
+        })
+      }
       </div>
     </>
   );
