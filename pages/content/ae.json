@@ -46,6 +46,13 @@
   },
   "hello":{
     "smallheading": "BRIDGE THE GAP BETWEEN YOU AND YOUR CUSTOMERS",
-    "tagline": "Boost audience engagement through smart communication and on-time delivery."
+    "tagline": "Boost audience engagement through smart communication and on-time delivery.",
+    "features": {
+      "one":{
+        "heading": "100% Secure and Robust APIs for SMS, Email, Voice, Authentication and more.",
+        "content": "Secure and Robust APIs for SMS, Email, Voice, Authentication and more."
+      },
+      "two":{}
+    }
   }
 }
