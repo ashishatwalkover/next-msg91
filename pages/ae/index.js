@@ -4,7 +4,7 @@ import Notification from "@/components/notification";
 import ProductMenu from "@/components/productmenu";
 import Footer from "@/components/footer";
 import Home from "@/components/home";
-import Index from "@/components/index";
+import Index from "@/components/jsoncomponent/index";
 const IndexPage = () => {
   return (
     <div>

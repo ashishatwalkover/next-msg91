@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { MdFavorite, MdArrowForward } from "react-icons/md";
 import { useRouter } from "next/router";
+import { MdFavorite, MdArrowForward } from "react-icons/md";
 import Link from "next/link";
 const index = () => {
   const router = useRouter();
@@ -15,7 +15,7 @@ const index = () => {
   }, []);
 
   var fetchData = async () => {
-    const response = await import(`../pages/content/${path}.json`);
+    const response = await import(`@/pages/content/${path}.json`);
     const jsonData = await response.default;
     return jsonData;
   };
