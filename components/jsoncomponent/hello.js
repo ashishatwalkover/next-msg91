@@ -56,12 +56,10 @@ const hello = () => {
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-fw-m ">
-              Empower your employees, Support your customers
+              {data?.hello?.features?.one?.heading}
             </span>
             <span className="c-fs-3  mt-3">
-              Deliver consistent customer experiences, unify and track all the
-              customer conversations across omni channel platforms for
-              uninterrupted flow of communication.
+              {data?.hello?.features?.one?.content}
             </span>
           </div>
         </div>
@@ -72,12 +70,10 @@ const hello = () => {
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-fw-m ">
-              Conversations made easier with RCS, WhatsApp and 30+ channels
+              {data?.hello?.features?.two?.heading}
             </span>
             <span className="c-fs-3  mt-3">
-              HELLO enables you to communicate for a real-time experience!
-              Connect with your users on their most trusted platform that
-              includes RCS, WhatsApp, facebook and more.
+            {data?.hello?.features?.two?.content}
             </span>
           </div>
         </div>
@@ -88,11 +84,10 @@ const hello = () => {
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-fw-m  ">
-              Assist and call Customers directly from our platform
+            {data?.hello?.features?.three?.heading}
             </span>
             <span className="c-fs-3  mt-3">
-              Our contact centre solution empowers interaction through IVR, Call
-              redirecting, call recording and call assigning.
+            {data?.hello?.features?.three?.content}
             </span>
           </div>
         </div>
@@ -103,21 +98,21 @@ const hello = () => {
         <div className="container d-flex flex-column flex-md-row my-3">
           <div className="d-flex flex-column justify-content-center align-items-flex-start col-lg-6 mt-2">
             <span className="c-fs-3">
-              - Provide customer support via screen sharing on a single click
+              - {data?.hello?.morefeatures?.one}
             </span>
             <span className="c-fs-3 mt-1">
-              - Troubleshooting over video in seconds
+              - {data?.hello?.morefeatures?.two}
             </span>
             <span className="c-fs-3 mt-1">
-              - Record agent performance for quality control
+              - {data?.hello?.morefeatures?.three}
             </span>
             <span className="c-fs-3 mt-1">
-              - Understand your customers emotions through sentiment analysis
+              - {data?.hello?.morefeatures?.four}
             </span>
             <span className="c-fs-3 mt-1">
-              - Solution for remote access and support
+              - {data?.hello?.morefeatures?.five}
             </span>
-            <span className="c-fs-3 mt-1">- Track campaign performance</span>
+            <span className="c-fs-3 mt-1">- {data?.hello?.morefeatures?.six}</span>
           </div>
           <div className="my-auto mt-3 ms-4   px-5 d-flex py-5 c-bg-grey flex-wrap justify-content-center">
             <span className="c-fs-2 c-ff-h">Looking for more?</span>

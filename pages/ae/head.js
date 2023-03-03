@@ -6,14 +6,9 @@ const HeadTag =()=> {
   var path = router.pathname.split("/")[1];
   var page = router.pathname.split("/")[2];
   var pagemeta = router.pathname.length>3?page:path
-  // console.log(pagemeta);
-  // console.log(path);
-  // console.log(page);
   return (
     <>
-  <Head>
-    {/* {console.log(metadata[pagemeta].title)} */}
-      
+  <Head>    
     <title>{metadata[pagemeta].title}</title>
     <meta name="description" content={metadata[pagemeta].description}></meta>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>    
