@@ -14,8 +14,8 @@ const HeadTag =()=> {
   <Head>
     {/* {console.log(metadata[pagemeta].title)} */}
       
-    <title>{metadata[pagemeta].title}</title>
-    <meta name="description" content={metadata[pagemeta].description}></meta>
+    <title>{metadata[pagemeta]?.title}</title>
+    <meta name="description" content={metadata[pagemeta]?.description}></meta>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>    
     <link rel="icon" href="/fav.svg"/>
     { path === '' || path.length > 2 ?
