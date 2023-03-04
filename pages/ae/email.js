@@ -5,7 +5,7 @@ import Footer from "@/components/footer";
 import FaqSection from "@/components/faq";
 import Email from "@/components/jsoncomponent/email";
 
-const Email = () => {
+const email = () => {
   return (
     <>
       <HeadTag />
@@ -18,4 +18,4 @@ const Email = () => {
   );
 };
 
-export default Email;
+export default email;
