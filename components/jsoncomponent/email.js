@@ -73,7 +73,8 @@ return (
           </div>
         </div>
       </div>
-      <span className="sub-heading">More features</span>
+      <div className="container">
+        <span className="sub-heading">More features</span>
         <div className="container d-flex flex-column flex-md-row my-3">
           <div className="d-flex flex-column justify-content-center align-items-flex-start col-lg-6 mt-2">
             <span className="c-fs-3">
@@ -115,7 +116,6 @@ return (
           </div>
         </div>
       </div>
-    </>
       </>
       );
 };
