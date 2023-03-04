@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import TrustedSec from "@/components/trusted_by";
-
 const hello = () => {
   const router = useRouter();
   var path = router.pathname.split("/")[1];
@@ -79,7 +78,7 @@ const hello = () => {
 
         <div className="container d-lg-flex flex-row align-items-center mt-5">
           <div className=" col-6 flex-column align-items-flex-start order-2">
-            <img src="/img/camp-f-img-three.svg" className="feature-img" />
+            <img src={data?.hello?.features?.three?.img} className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-fw-m  ">

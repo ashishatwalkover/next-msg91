@@ -49,17 +49,17 @@
     "tagline": "Boost audience engagement through smart communication and on-time delivery.",
     "features": {
       "one": {
-        "img":"/img/camp-f-img-one.svg",
+        "img":"/img/ae/hello-feature-one.svg",
         "heading": "Empower your employees, Support your customers",
         "content": "Deliver consistent customer experiences, unify and track all the customer conversations across omni channel platforms for uninterrupted flow of communication."
       },
       "two": {
-        "img":"/img/camp-f-img-two.svg",
+        "img":"/img/ae/hello-feature-two.svg",
         "heading": "Empower your employees, Support your customers",
         "content": "Deliver consistent customer experiences, unify and track all the customer conversations across omni channel platforms for uninterrupted flow of communication."
       },
       "three": {
-        "img":"/img/camp-f-img-three.svg",
+        "img":"/img/ae/hello-feature-three.svg",
         "heading": "Empower your employees, Support your customers",
         "content": "Deliver consistent customer experiences, unify and track all the customer conversations across omni channel platforms for uninterrupted flow of communication."
       }
