@@ -29,11 +29,10 @@ const campaign = () => {
             <h1 className="heading">Campaign</h1>
           </div>
           <p className="c-fs-5 c-fw-sb text-uppercase col-campaign c-ls-20 mx-auto">
-            Event base automation
+          {data?.campaign?.samllheading}
           </p>
           <h2 className="small-heading c-ff-b c-fw-r w-100 mx-auto">
-            Boost audience engagement through smart communication and on-time
-            delivery
+          {data?.campaign?.tagline}
           </h2>
           <button className="btn btn-primary btn-lg mt-3 c-fs-2" type="button">
             Get started for Free
@@ -56,13 +55,10 @@ const campaign = () => {
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-fw-m ">
-              Automate sending messages under defined conditions
+            {data?.campaign?.features?.one?.heading}
             </span>
             <span className="c-fs-3  mt-3">
-              Define different messaging parameters like time, region, number of
-              messages per day, and more to make sure that your campaigns reach
-              your audience under the right circumstances automatically, without
-              any delays.
+            {data?.campaign?.features?.one?.content}
             </span>
           </div>
         </div>
@@ -73,11 +69,10 @@ const campaign = () => {
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-fw-m ">
-              An all-in-one platform for all your campaigns
+            {data?.campaign?.features?.two?.heading}
             </span>
             <span className="c-fs-3  mt-3">
-              Optimise your links and create short links that inspire
-              confidence. Include short links in your custom messages with ease.
+            {data?.campaign?.features?.two?.content}
             </span>
           </div>
         </div>
@@ -88,13 +83,10 @@ const campaign = () => {
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-fw-m ">
-              Make your communication more secure
+            {data?.campaign?.features?.three?.heading}
             </span>
             <span className="c-fs-3  mt-3">
-              Now protect your Campaigns with our token-based workflow and a
-              robust security framework. Implement best customer-engagement
-              practices and shape communication to fit your brand while ensuring
-              optimum security through and through.
+            {data?.campaign?.features?.three?.content}
             </span>
           </div>
         </div>
@@ -105,21 +97,19 @@ const campaign = () => {
         <div className="container d-flex flex-column flex-md-row my-3">
           <div className="d-flex flex-column justify-content-center align-items-flex-start col-lg-6 mt-2">
             <span className="c-fs-3">
-              - Use a reliable solution to maximize customer engagement.
+              - {data?.campaign?.morefeatures?.one}
             </span>
             <span className="c-fs-3 mt-1">
-              - Create unique and interactive campaigns that use different media
-              formats.
+              - {data?.campaign?.morefeatures?.two}.
             </span>
             <span className="c-fs-3 mt-1">
-              - Customize campaigns to meet communication needs.
+              - {data?.campaign?.morefeatures?.three}
             </span>
             <span className="c-fs-3 mt-1">
-              - Include interactive elements like quizzes and polls to keep
-              customers engaged.
+              - {data?.campaign?.morefeatures?.four}
             </span>
 
-            <span className="c-fs-3 mt-1">- Track campaign performance</span>
+            <span className="c-fs-3 mt-1">- {data?.campaign?.morefeatures?.five}</span>
           </div>
           <div className="my-auto mt-3 px-5 d-flex py-5 c-bg-grey flex-wrap justify-content-center">
             <span className="c-fs-2 c-ff-h">Looking for more?</span>

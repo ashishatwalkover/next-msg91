@@ -29,10 +29,10 @@ return (
             <h1 className="heading">Voice</h1>
           </div>
           <p className="c-fs-5 c-fw-sb text-uppercase col-campaign c-ls-20 mx-auto">
-            Event base automation
+          {data?.voice?.smallheading}
           </p>
           <h2 className="small-heading c-ff-b c-fw-r w-100 mx-auto">
-            MSG91 Voice Call API Programmable yet personal
+          {data?.voice?.tagline}
           </h2>
           <button className="btn btn-primary btn-lg mt-3 c-fs-2" type="button">
             Get started for Free
@@ -54,12 +54,9 @@ return (
             <img src={data?.voice?.features?.one?.img} className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-            <span className="c-fs-2 c-fw-m ">Customise & Craft Calls</span>
+            <span className="c-fs-2 c-fw-m ">{data?.voice?.features?.one?.heading}</span>
             <span className="c-fs-3  mt-3">
-              The intuitive Voice Call API lets you build the call experience
-              you want. Every call can be customised.Route customers to the
-              right department or agent for solving their problem. A simple HTTP
-              request allows you to embed PSTN, SIP or VoIP into your tool.
+            {data?.voice?.features?.one?.content}
             </span>
           </div>
         </div>
@@ -69,11 +66,9 @@ return (
             <img src={data?.voice?.features?.two?.img} className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-            <span className="c-fs-2 c-fw-m ">Clear Calls</span>
+            <span className="c-fs-2 c-fw-m ">{data?.voice?.features?.two?.heading}</span>
             <span className="c-fs-3  mt-3">
-              Ensuring high quality so you enjoy clear audio with low latency.
-              Our main goal is to keep your customer satisfied and help them to
-              scale their business rapidly.
+            {data?.voice?.features?.two?.content}
             </span>
           </div>
         </div>
@@ -82,67 +77,54 @@ return (
             <img src={data?.voice?.features?.three?.img} className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-            <span className="c-fs-2 c-fw-m ">Control Calls</span>
+            <span className="c-fs-2 c-fw-m ">{data?.voice?.features?.three?.heading}</span>
             <span className="c-fs-3  mt-3">
-              Get extensive reports to analyze and further build comprehensive
-              calling experience. Provide your customers everything they need-
-              customer history, order details, previous call records- all in one
-              place, for fast personal support.
+            {data?.voice?.features?.three?.content}
             </span>
           </div>
         </div>
       </div>
 
-      <div className="container d-flex flex-column flex-md-row align-items-flex-start mt-5 mb-5">
-        <div className="col-lg-4 flex-column align-items-flex-start">
-          <div className="mt-5 mb-3">
-            <img
-              src={"/Img/done_outline.svg"}
-              alt="#"
-              className="feature-check"
-            />
-          </div>
-          <span className="c-fs-2 c-fw-m  mt-1">Seamless Integration</span>
-          <div>
-            <span className="c-fs-3 mt-2">
-              You need no additional support and resources while integrating
-              Voice API into your system. Setup for a headset, an internet
-              connection and patient ears that are ready to listen.
+      <div className="container">
+        <span className="sub-heading">More features</span>
+        <div className="container d-flex flex-column flex-md-row my-3">
+          <div className="d-flex flex-column justify-content-center align-items-flex-start col-lg-6 mt-2">
+            <span className="c-fs-3">
+              - {data?.voice?.morefeatures?.one}
             </span>
-          </div>
-        </div>
-        <div className="col-lg-4 flex-column align-items-flex-start">
-          <div className="mt-5 mb-3">
-            <img
-              src={"/Img/done_outline.svg"}
-              alt="#"
-              className="feature-check"
-            />
-          </div>
-          <span className="c-fs-2 c-fw-m  mt-1">Low Latency</span>
-          <div>
-            <span className="c-fs-3 mt-2">
-              Be ready to make your call with very minimal delay in reach of
-              time. Our support team keeps an eagle eye on the tracking,
-              analysis and making sure your call ends with an amazing
-              experience.
+            <span className="c-fs-3 mt-1">
+              - {data?.voice?.morefeatures?.two}
             </span>
-          </div>
-        </div>
-        <div className="col-lg-4 flex-column align-items-flex-start">
-          <div className="mt-5 mb-3">
-            <img
-              src={"/Img/done_outline.svg"}
-              alt="#"
-              className="feature-check"
-            />
-          </div>
-          <span className="c-fs-2 c-fw-m  mt-1">Global Connectivity</span>
-          <div>
-            <span className="c-fs-3 mt-2">
-              Our API allows the global connectivity of network’s so that the
-              world becomes smaller while you connect to any part of the world.
+            <span className="c-fs-3 mt-1">
+              - {data?.voice?.morefeatures?.three} 
             </span>
+            <span className="c-fs-3 mt-1">
+              - {data?.voice?.morefeatures?.four}
+            </span>
+            <span className="c-fs-3 mt-1">
+              - {data?.voice?.morefeatures?.five}
+            </span>
+            <span className="c-fs-3 mt-1">- {data?.voice?.morefeatures?.six}</span>
+          </div>
+          <div className="my-auto mt-3 ms-4   px-5 d-flex py-5 c-bg-grey flex-wrap justify-content-center">
+            <span className="c-fs-2 c-ff-h">Looking for more?</span>
+            <button className="btn btn-outline-primary c-fs-4 ms-0 ms-md-3 mt-3 mt-md-0">
+              {" "}
+              Request a Feature
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="bi bi-arrow-right ms-2"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </div>

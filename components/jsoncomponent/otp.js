@@ -28,9 +28,9 @@ const otp = () => {
             <img src="../img/otp.svg" className="product-page-logo" />
             <h1 className="heading">OTP</h1>
           </div>
-          <p className="c-fs-5 c-fw-sb text-uppercase col-campaign c-ls-20 mx-auto">Instant secure varification</p>
+          <p className="c-fs-5 c-fw-sb text-uppercase col-campaign c-ls-20 mx-auto">{data?.otp?.smallheading}</p>
           <h2 className="small-heading c-ff-b c-fw-r w-100 mx-auto">
-          Quick and reliable authentication by 2FA using multiple channels.{" "}
+          {data?.otp?.tagline}
           </h2>
           <button className="btn btn-primary btn-lg mt-3 c-fs-2" type="button">
             Get started for Free
@@ -53,11 +53,10 @@ const otp = () => {
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-fw-m ">
-            Pin Generation
+            {data?.otp?.features?.one?.heading}
             </span>
             <span className="c-fs-3  mt-3">
-            Our OTP service platform provides the back-end logic needed for PIN generation (OTP) so you don't have to.
-Each code is tied to an individual user and can only be used once.
+            {data?.otp?.features?.one?.content}
             </span>
           </div>
         </div>
@@ -68,10 +67,10 @@ Each code is tied to an individual user and can only be used once.
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-fw-m ">
-            Number Lookup
+            {data?.otp?.features?.two?.heading}
             </span>
             <span className="c-fs-3  mt-3">
-            Save money and increase conversation rates with our number validation. We're able to catch invalid numbers as they're entered, making sure your message is headed to a valid number.
+            {data?.otp?.features?.two?.heading}
             </span>
           </div>
         </div>
@@ -82,11 +81,55 @@ Each code is tied to an individual user and can only be used once.
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-fw-m ">
-            Voice Failover
+            {data?.otp?.features?.three?.smallheading}
             </span>
             <span className="c-fs-3  mt-3">
-            Voice-based 2FA adds the text-to-speech capability to the standard 2FA process, enabling you to place calls and deliver user authentication PINs via voice audio. By adding voice failover message delivery rates can be pushed close to 100 percent.
+            {data?.otp?.features?.three?.content}
             </span>
+          </div>
+        </div>
+      </div>
+
+      <div className="container">
+        <span className="sub-heading">More features</span>
+        <div className="container d-flex flex-column flex-md-row my-3">
+          <div className="d-flex flex-column justify-content-center align-items-flex-start col-lg-6 mt-2">
+            <span className="c-fs-3">
+              - {data?.otp?.morefeatures?.one}
+            </span>
+            <span className="c-fs-3 mt-1">
+              - {data?.otp?.morefeatures?.otp}
+            </span>
+            <span className="c-fs-3 mt-1">
+              - {data?.otp?.morefeatures?.three}
+            </span>
+            <span className="c-fs-3 mt-1">
+              - {data?.otp?.morefeatures?.four}
+            </span>
+            <span className="c-fs-3 mt-1">
+              - {data?.otp?.morefeatures?.five}
+            </span>
+            <span className="c-fs-3 mt-1">- {data?.otp?.morefeatures?.six}</span>
+          </div>
+          <div className="my-auto mt-3 ms-4   px-5 d-flex py-5 c-bg-grey flex-wrap justify-content-center">
+            <span className="c-fs-2 c-ff-h">Looking for more?</span>
+            <button className="btn btn-outline-primary c-fs-4 ms-0 ms-md-3 mt-3 mt-md-0">
+              {" "}
+              Request a Feature
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="bi bi-arrow-right ms-2"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </div>

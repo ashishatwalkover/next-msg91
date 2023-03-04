@@ -284,7 +284,7 @@
   "shorturl": {
     "pageimg": "/img/Campaign_flow.svg",
     "smallheading": "INSTANT SECURE VARIFICATION",
-    "tagline": "Customised Links for Business Success",
+    "tagline": "Stop wondering, Start segmenting!",
     "features": {
       "one": {
         "img":"/img/camp-f-img-one.svg",
@@ -312,25 +312,25 @@
     }
   },
 
-  "shorturl": {
+  "Knowledgebase": {
     "pageimg": "/img/Campaign_flow.svg",
     "smallheading": "INSTANT SECURE VARIFICATION",
-    "tagline": "Customised Links for Business Success",
+    "tagline": "Run targeted campaigns, personalize marketing content, precise data access with customer segmentation.",
     "features": {
       "one": {
         "img":"/img/camp-f-img-one.svg",
-        "heading": "Smart Links that magnify your conversions",
-        "content": "Enhance the deliverability of messages through our globally accepted best practices. Ensure improved deliverability and boost click-through rates for higher revenues."
+        "heading": "Personalize Marketing Content",
+        "content": "Generate personalized content for different segments. Subdivide and send relevant content to users, boost up your customer retention by tailoring and segmenting."
       },
       "two": {
         "img":"/img/camp-f-img-two.svg",
-        "heading": "Track performance to enhance campaign outcome",
-        "content": "Users can track the outcome of the messages sent out to the audience. Assessing performance can help in making suitable tweaks to the messages in future."
+        "heading": "Run Targeted Campaigns",
+        "content": "Filter out ceasing and inactive customers, personalize information for them, rebuild permanent customers by running targeted campaigns."
       },
       "three": {
         "img":"/img/camp-f-img-three.svg",
-        "heading": "Optimise messages that convert more",
-        "content": "Optimise your links and create short links that inspire confidence. Include short links in your custom messages with ease."
+        "heading": "Precise Data Access",
+        "content": "Slice it off and only access data that you need. Teams can segment data according to their needs by filtering it and take actions accordingly."
       }
     },
     "morefeatures": {
