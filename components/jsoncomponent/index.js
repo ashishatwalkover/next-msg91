@@ -5,7 +5,7 @@ import Link from "next/link";
 const index = () => {
   
   const router = useRouter();
-  console.log(router.pathname);
+  // console.log(router.pathname);
   var path
   if(router.pathname=='/'){
    var path = "global"

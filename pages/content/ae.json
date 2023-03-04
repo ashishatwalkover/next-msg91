@@ -45,8 +45,10 @@
     }
   },
   "hello": {
+    "pageimg":"/img/Caimpaign_flow.svg",
     "smallheading": "BRIDGE THE GAP BETWEEN YOU AND YOUR CUSTOMERS",
     "tagline": "Boost audience engagement through smart communication and on-time delivery.",
+    
     "features": {
       "one": {
         "img": "/img/ae/hello-feature-one.svg",

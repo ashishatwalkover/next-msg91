@@ -5,7 +5,7 @@ import TrustedSec from "@/components/trusted_by";
 const pushnotification = () => {
   
   const router = useRouter();
-  console.log(router.pathname);
+  // console.log(router.pathname);
   var path
   if(router.pathname=='/'){
    var path = "global"
