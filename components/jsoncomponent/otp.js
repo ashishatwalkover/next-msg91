@@ -107,7 +107,7 @@ const otp = () => {
               - {data?.otp?.morefeatures?.one}
             </span>
             <span className="c-fs-3 mt-1">
-              - {data?.otp?.morefeatures?.otp}
+              - {data?.otp?.morefeatures?.two}
             </span>
             <span className="c-fs-3 mt-1">
               - {data?.otp?.morefeatures?.three}

@@ -106,7 +106,7 @@ return (
               - {data?.sms?.morefeatures?.one}
             </span>
             <span className="c-fs-3 mt-1">
-              - {data?.hsms?.morefeatures?.two}
+              - {data?.sms?.morefeatures?.two}
             </span>
             <span className="c-fs-3 mt-1">
               - {data?.sms?.morefeatures?.three}
