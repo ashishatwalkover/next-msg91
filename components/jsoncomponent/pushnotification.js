@@ -3,22 +3,18 @@ import { useRouter } from "next/router";
 import TrustedSec from "@/components/trusted_by";
 
 const pushnotification = () => {
-  
   const router = useRouter();
-  // console.log(router.pathname);
-  var path
-  if(router.pathname=='/'){
-   var path = "global"
+  var path;
 
+  if (
+    router.pathname.split("/")[1].length > 3 ||
+    router.pathname.split("/")[1].length === 0
+  ) {
+    path = "global";
+  } else {
+    path = router.pathname.split("/")[1];
   }
-  else if(router.pathname.split("/")[1]>3){
-   var path = global ;
 
-  }
-  else{
-
-    var path = router.pathname.split("/")[1];
-  }
   const [data, setData] = useState(null);
   useEffect(() => {
     const fetchD = async () => {
@@ -33,7 +29,6 @@ const pushnotification = () => {
     const jsonData = await response.default;
     return jsonData;
   };
-
   return (
     <>
       <div className="container text-center overflow-hidden px-4  col-12 col-sm-10  ">

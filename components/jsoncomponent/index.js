@@ -3,22 +3,18 @@ import { useRouter } from "next/router";
 import { MdFavorite, MdArrowForward } from "react-icons/md";
 import Link from "next/link";
 const index = () => {
-  
   const router = useRouter();
-  // console.log(router.pathname);
-  var path
-  if(router.pathname=='/'){
-   var path = "global"
+  var path;
 
+  if (
+    router.pathname.split("/")[1].length > 3 ||
+    router.pathname.split("/")[1].length === 0
+  ) {
+    path = "global";
+  } else {
+    path = router.pathname.split("/")[1];
   }
-  else if(router.pathname.split("/")[1]>3){
-   var path = global ;
 
-  }
-  else{
-
-    var path = router.pathname.split("/")[1];
-  }
   const [data, setData] = useState(null);
   useEffect(() => {
     const fetchD = async () => {
@@ -33,7 +29,6 @@ const index = () => {
     const jsonData = await response.default;
     return jsonData;
   };
-
   return (
     <>
       <div className="container text-center px-4 col-xs-12 col-sm-10 col-md-10 mx-auto section">
