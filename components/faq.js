@@ -2,7 +2,7 @@ import Link from "next/link";
 const FaqSection = () => {
   return (
     <>
-      <div className="accordion container col-lg-8 col-12 my-5" id="accordionExample">
+      <div className="accordion  d-none container col-lg-8 col-12 my-5" id="accordionExample">
         <div className="accordion-item">
           <h2 className="accordion-header " id="headingOne">
             <button
