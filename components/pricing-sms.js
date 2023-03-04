@@ -48,14 +48,14 @@ const pricingvoice = ({
 
       </div>
       <div className="d-flex flex-wrap flex-gap justify-content-center w-100  card-container align-items-end">
-        {pricing.map((item, index) => {
+        {pricing?.map((item, index) => {
           return (
-            <>
+            <div key={`sms-card-${index}`} className="mx-3">
 
               {amountArr[index] ?
                 amountArr[index] === '48000'
                   ?
-                  <div key={`card-${index}`} className="mx-3 text-center d-flex flex-column mb-4 mb-sm-0 align-items-center">
+                  <div className="text-center d-flex flex-column mb-4 mb-sm-0 align-items-center">
                     <div className="popular-chip c-fs-6">POPULAR</div>
                     <div className="card  text-center card-popular border-primary mb-4 mb-sm-0 c-bg-grey">
                       <div className="card-body">
@@ -84,8 +84,7 @@ const pricingvoice = ({
                     </div>
                   </div>:""
               }
-
-            </>
+            </div>
           );
         })}
       </div>

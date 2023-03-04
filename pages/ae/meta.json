@@ -51,6 +51,10 @@
     "title": "SMS API, Email API and Voice API Provider | MSG91",
     "description": "Streamline your communication with customers by intergrating SMS, Email and Voice API with MSG91 One API. Experience now."
   },
+  "telegram": {
+    "title": "SMS API, Email API and Voice API Provider | MSG91",
+    "description": "Streamline your communication with customers by intergrating SMS, Email and Voice API with MSG91 One API. Experience now."
+  },
 
   "_comment2": "Utilities",
 
@@ -65,6 +69,10 @@
   },
 
   "shorturl": {
+    "title": "Shorturl",
+    "description": "Customised Links for Business Success Stand out with branded links that drive more clicks to improve conversion rates. Optimise smart links that can help you realise more revenues. Customising, tracking, managing, made easy. Get Demo Features Smart Links that magnify your conversions Enhance the deliverability of messages through our globally accepted best practices. Ensure improved..."
+  },
+  "push-notification": {
     "title": "Shorturl",
     "description": "Customised Links for Business Success Stand out with branded links that drive more clicks to improve conversion rates. Optimise smart links that can help you realise more revenues. Customising, tracking, managing, made easy. Get Demo Features Smart Links that magnify your conversions Enhance the deliverability of messages through our globally accepted best practices. Ensure improved..."
   },
