@@ -32,7 +32,7 @@ const rcs = () => {
           {data?.rcs?.smallheading}
           </p>
           <h2 className="small-heading c-ff-b c-fw-r w-100 mx-auto">
-          {data?.rcs?.content}
+          {data?.rcs?.tagline}
           </h2>
           <button className="btn btn-primary btn-lg mt-3 c-fs-2" type="button">
             Get started for Free
