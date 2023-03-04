@@ -5,12 +5,14 @@ import Link from "next/link";
 const index = () => {
   const router = useRouter();
   var path;
-  
-  if(router.pathname.split("/")[1].length > 3 || router.pathname.split("/")[1].length === 0){
-    path = "global"
-  }
-  else{
-    path = router.pathname.split("/")[1]
+
+  if (
+    router.pathname.split("/")[1].length > 3 ||
+    router.pathname.split("/")[1].length === 0
+  ) {
+    path = "global";
+  } else {
+    path = router.pathname.split("/")[1];
   }
 
   const [data, setData] = useState(null);
@@ -27,7 +29,6 @@ const index = () => {
     const jsonData = await response.default;
     return jsonData;
   };
-
   return (
     <>
       <div className="container text-center px-4 col-xs-12 col-sm-10 col-md-10 mx-auto section">
