@@ -76,12 +76,12 @@ const segmento = () => {
 
         <div className="container d-lg-flex flex-row align-items-center mt-5">
           <div className=" col-6 flex-column align-items-flex-start order-2">
-            <img src={data?.hello?.features?.three?.img} className="feature-img" />
+            <img src={data?.segmento?.features?.three?.img} className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-            <span className="c-fs-2 c-fw-m ">{data?.hello?.features?.three?.heading}</span>
+            <span className="c-fs-2 c-fw-m ">{data?.segmento?.features?.three?.heading}</span>
             <span className="c-fs-3  mt-3">
-            {data?.hello?.features?.three?.content}
+            {data?.segmento?.features?.three?.content}
             </span>
           </div>
         </div>
