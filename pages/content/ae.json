@@ -45,10 +45,9 @@
     }
   },
   "hello": {
-    "pageimg":"/img/Caimpaign_flow.svg",
-    "smallheading": "BRIDGE THE GAP BETWEEN YOU AND YOUR CUSTOMERS",
+    "pageimg":"/img/Campaign_flow.svg",
+    "smallheading": "BRIDGE THE GAP BEWEEN YOU AND YOUR CUSTOMERS",
     "tagline": "Boost audience engagement through smart communication and on-time delivery.",
-    
     "features": {
       "one": {
         "img": "/img/ae/hello-feature-one.svg",
@@ -344,7 +343,7 @@
     }
   },
 
-  "Knowledgebase": {
+  "knowledgebase": {
     "pageimg": "/img/Campaign_flow.svg",
     "smallheading": "INSTANT SECURE VARIFICATION",
     "tagline": "Run targeted campaigns, personalize marketing content, precise data access with customer segmentation.",

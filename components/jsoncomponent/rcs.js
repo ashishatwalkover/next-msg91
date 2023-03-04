@@ -7,7 +7,7 @@ const rcs = () => {
   var path;
 
   if (
-    router.pathname.split("/")[1].length > 3 ||
+    router.pathname.split("/")[1].length > 2 ||
     router.pathname.split("/")[1].length === 0
   ) {
     path = "global";

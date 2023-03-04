@@ -10,9 +10,9 @@ const Notification = () => {
   const router = useRouter();
   var path = router.pathname.split("/")[1];
   var country = 'Global';
-  for (let x in countries) {
-    if (path.toUpperCase() === x) {
-      country = countries[x];
+  for (let x in countries) {    
+    if (path.toUpperCase() === countries[x].abbreviation) {
+      country = countries[x].country;
       break;
     }
   }
