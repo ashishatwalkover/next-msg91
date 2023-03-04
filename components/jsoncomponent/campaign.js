@@ -33,7 +33,7 @@ const campaign = () => {
           </p>
           <h2 className="small-heading c-ff-b c-fw-r w-100 mx-auto">
             Boost audience engagement through smart communication and on-time
-            delivery.{" "}
+            delivery
           </h2>
           <button className="btn btn-primary btn-lg mt-3 c-fs-2" type="button">
             Get started for Free
@@ -69,7 +69,7 @@ const campaign = () => {
 
         <div className="container d-lg-flex flex-row align-items-center mt-5">
           <div className=" col col-lg-6 col-md-6 col-sm-12 flex-column align-items-flex-start mt-lg-5">
-            <img src="/img/camp-f-img-two.svg" className="feature-img" />
+            <img src={data?.campaign?.features?.two?.img} className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-fw-m ">
@@ -84,7 +84,7 @@ const campaign = () => {
 
         <div className="container d-lg-flex flex-row align-items-center mt-5">
           <div className=" col-6 flex-column align-items-flex-start order-2">
-            <img src="/img/camp-f-img-three.svg" className="feature-img" />
+            <img src={data?.campaign?.features?.three?.img} className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-fw-m ">

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import TrustedSec from "@/components/trusted_by";
 
-const otp = () => {
+const rcs = () => {
   const router = useRouter();
   var path = router.pathname.split("/")[1];
   const [data, setData] = useState(null);
@@ -22,15 +22,17 @@ const otp = () => {
 
   return (
     <>
-      <div className="container text-center px-4 overflow-hidden col-12 col-sm-10  ">
+      <div className="container text-center overflow-hidden px-4  col-12 col-sm-10  ">
         <div className="text-center justify-content-center py-5">
           <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
-            <img src="../img/otp.svg" className="product-page-logo" />
-            <h1 className="heading">OTP</h1>
+            <img src="../img/rcs.svg" className="product-page-logo" />
+            <h1 className="heading">RCS</h1>
           </div>
-          <p className="c-fs-5 c-fw-sb text-uppercase col-campaign c-ls-20 mx-auto">Instant secure varification</p>
+          <p className="c-fs-5 c-fw-sb text-uppercase col-campaign c-ls-20 mx-auto">
+            Event base automation
+          </p>
           <h2 className="small-heading c-ff-b c-fw-r w-100 mx-auto">
-          Quick and reliable authentication by 2FA using multiple channels.{" "}
+          Redefine A2P messaging with RCS - Rich Communication Services{" "}
           </h2>
           <button className="btn btn-primary btn-lg mt-3 c-fs-2" type="button">
             Get started for Free
@@ -38,7 +40,7 @@ const otp = () => {
           <TrustedSec />
         </div>
         <img
-          src={data?.otp?.pageimg}
+          src={data?.rcs?.pageimg}
           className="img-fluid product-page-img mx-auto"
           alt="#"
         />
@@ -49,43 +51,35 @@ const otp = () => {
 
         <div className="container d-lg-flex flex-row align-items-center">
           <div className=" col col-lg-6 col-md-6 col-sm-12 flex-column align-items-flex-start mt-lg-5 ms-lg-5 order-lg-2">
-            <img src={data?.otp?.features?.one?.img} className="feature-img" />
+            <img src={data?.rcs?.features?.one?.img} className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-            <span className="c-fs-2 c-fw-m ">
-            Pin Generation
-            </span>
+            <span className="c-fs-2 c-fw-m ">Bring on the conversations across every channel</span>
             <span className="c-fs-3  mt-3">
-            Our OTP service platform provides the back-end logic needed for PIN generation (OTP) so you don't have to.
-Each code is tied to an individual user and can only be used once.
+            Serve your customers wherever they are.
             </span>
           </div>
         </div>
 
         <div className="container d-lg-flex flex-row align-items-center mt-5">
           <div className=" col col-lg-6 col-md-6 col-sm-12 flex-column align-items-flex-start mt-lg-5">
-            <img src={data?.otp?.features?.two?.img} className="feature-img" />
+            <img src={data?.rcs?.features?.two?.img} className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-            <span className="c-fs-2 c-fw-m ">
-            Number Lookup
-            </span>
+            <span className="c-fs-2 c-fw-m ">Add modern messaging into every application</span>
             <span className="c-fs-3  mt-3">
-            Save money and increase conversation rates with our number validation. We're able to catch invalid numbers as they're entered, making sure your message is headed to a valid number.
+            Initiate a modern messaging experience for your customers into your brand’s website and mobile apps.
             </span>
           </div>
         </div>
-
-        <div className="container d-lg-flex flex-row align-items-center mt-5">
-          <div className=" col-6 flex-column align-items-flex-start order-2">
-            <img src={data?.otp?.features?.three?.img} className="feature-img" />
+        <div className="container d-lg-flex flex-row align-items-center">
+          <div className=" col col-lg-6 col-md-6 col-sm-12 flex-column align-items-flex-start mt-lg-5 ms-lg-5 order-lg-2">
+            <img src={data?.rcs?.features?.three.img} className="feature-img" />
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-            <span className="c-fs-2 c-fw-m ">
-            Voice Failover
-            </span>
+            <span className="c-fs-2 c-fw-m ">Deliver consistent and interactive experience</span>
             <span className="c-fs-3  mt-3">
-            Voice-based 2FA adds the text-to-speech capability to the standard 2FA process, enabling you to place calls and deliver user authentication PINs via voice audio. By adding voice failover message delivery rates can be pushed close to 100 percent.
+            Be extraordinary while live chat with AI, bots and integrated apps for conversational business at scale.
             </span>
           </div>
         </div>
@@ -93,4 +87,4 @@ Each code is tied to an individual user and can only be used once.
     </>
   );
 };
-export default otp;
+export default rcs;
