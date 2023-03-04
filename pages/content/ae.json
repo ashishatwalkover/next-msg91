@@ -341,6 +341,99 @@
       "five": "18/7 Ticket support",
       "six": "Provides feature of send-time optimization for real-time delivery"
     }
+  },
+
+  "filehosting": {
+    "pageimg": "/img/Campaign_flow.svg",
+    "smallheading": "INSTANT SECURE VARIFICATION",
+    "tagline": "Run targeted campaigns, personalize marketing content, precise data access with customer segmentation.",
+    "features": {
+      "one": {
+        "img":"/img/camp-f-img-one.svg",
+        "heading": "Personalize Marketing Content",
+        "content": "Generate personalized content for different segments. Subdivide and send relevant content to users, boost up your customer retention by tailoring and segmenting."
+      },
+      "two": {
+        "img":"/img/camp-f-img-two.svg",
+        "heading": "Run Targeted Campaigns",
+        "content": "Filter out ceasing and inactive customers, personalize information for them, rebuild permanent customers by running targeted campaigns."
+      },
+      "three": {
+        "img":"/img/camp-f-img-three.svg",
+        "heading": "Precise Data Access",
+        "content": "Slice it off and only access data that you need. Teams can segment data according to their needs by filtering it and take actions accordingly."
+      }
+    },
+    "morefeatures": {
+      "one": "Assured delivery with 4x delivery speeds",
+      "two": "30 Days of Log history to help you regulate",
+      "three": "Transparent delivery tracking on every email",
+      "four": "Easy and scalable developer-friendly API to integrate",
+      "five": "18/7 Ticket support",
+      "six": "Provides feature of send-time optimization for real-time delivery"
+    }
+  },
+
+  "telegram": {
+    "pageimg": "/img/Campaign_flow.svg",
+    "smallheading": "INSTANT SECURE VARIFICATION",
+    "tagline": "Run targeted campaigns, personalize marketing content, precise data access with customer segmentation.",
+    "features": {
+      "one": {
+        "img":"/img/camp-f-img-one.svg",
+        "heading": "Personalize Marketing Content",
+        "content": "Generate personalized content for different segments. Subdivide and send relevant content to users, boost up your customer retention by tailoring and segmenting."
+      },
+      "two": {
+        "img":"/img/camp-f-img-two.svg",
+        "heading": "Run Targeted Campaigns",
+        "content": "Filter out ceasing and inactive customers, personalize information for them, rebuild permanent customers by running targeted campaigns."
+      },
+      "three": {
+        "img":"/img/camp-f-img-three.svg",
+        "heading": "Precise Data Access",
+        "content": "Slice it off and only access data that you need. Teams can segment data according to their needs by filtering it and take actions accordingly."
+      }
+    },
+    "morefeatures": {
+      "one": "Assured delivery with 4x delivery speeds",
+      "two": "30 Days of Log history to help you regulate",
+      "three": "Transparent delivery tracking on every email",
+      "four": "Easy and scalable developer-friendly API to integrate",
+      "five": "18/7 Ticket support",
+      "six": "Provides feature of send-time optimization for real-time delivery"
+    }
+  },
+
+  "pushnotification": {
+    "pageimg": "/img/Campaign_flow.svg",
+    "smallheading": "INSTANT SECURE VARIFICATION",
+    "tagline": "Run targeted campaigns, personalize marketing content, precise data access with customer segmentation.",
+    "features": {
+      "one": {
+        "img":"/img/camp-f-img-one.svg",
+        "heading": "Personalize Marketing Content",
+        "content": "Generate personalized content for different segments. Subdivide and send relevant content to users, boost up your customer retention by tailoring and segmenting."
+      },
+      "two": {
+        "img":"/img/camp-f-img-two.svg",
+        "heading": "Run Targeted Campaigns",
+        "content": "Filter out ceasing and inactive customers, personalize information for them, rebuild permanent customers by running targeted campaigns."
+      },
+      "three": {
+        "img":"/img/camp-f-img-three.svg",
+        "heading": "Precise Data Access",
+        "content": "Slice it off and only access data that you need. Teams can segment data according to their needs by filtering it and take actions accordingly."
+      }
+    },
+    "morefeatures": {
+      "one": "Assured delivery with 4x delivery speeds",
+      "two": "30 Days of Log history to help you regulate",
+      "three": "Transparent delivery tracking on every email",
+      "four": "Easy and scalable developer-friendly API to integrate",
+      "five": "18/7 Ticket support",
+      "six": "Provides feature of send-time optimization for real-time delivery"
+    }
   }
 
 }
