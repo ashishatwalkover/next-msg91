@@ -30,7 +30,7 @@ const campaign = () => {
 
   var [pricing, setPricing] = useState([]);
   var [originCountry, setOriginCountry] = useState('INDIA');
-  var [destinationCountry, setDestinationCountry] = useState('United States');
+  var [destinationCountry, setDestinationCountry] = useState('INDIA');
   const amountArr = ['1259', '4000', '9000', '17000', '48000', '75000'];
   
   var [subscriptionEmail, setSubscriptionEmail] = useState([]);
