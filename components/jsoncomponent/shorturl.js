@@ -30,7 +30,7 @@ const shorturl = () => {
           </div>
           <p className="c-fs-5 c-fw-sb text-uppercase col-campaign c-ls-20 mx-auto">Event based automation</p>
           <h2 className="small-heading c-ff-b c-fw-r w-100 mx-auto">
-            Customised Links for Business Success
+            Customised Links for Business
           </h2>
           <button className="btn btn-primary btn-lg mt-3 c-fs-2" type="button">
             Get Started for Free
