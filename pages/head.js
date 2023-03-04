@@ -4,7 +4,7 @@ import metadata from "./meta.json"
 const HeadTag =()=> {
   const router = useRouter()
   var path = router.pathname.split("/")[1];
-  var page = router.pathname.split("/")[2];
+  // var page = router.pathname.split("/")[2];
   var pagemeta = path
   // console.log(pagemeta);
   // console.log(path);
@@ -12,7 +12,7 @@ const HeadTag =()=> {
   return (
     <>
   <Head>
-    {/* {console.log(metadata[pagemeta].title)} */}
+    {console.log(pagemeta)}
       
     <title>{metadata[pagemeta]?.title}</title>
     <meta name="description" content={metadata[pagemeta]?.description}></meta>

@@ -29,11 +29,15 @@ import axios from "axios";
 const campaign = () => {
 
   var [pricing, setPricing] = useState([]);
-  var [subscription, setSubscription] = useState([]);
   var [originCountry, setOriginCountry] = useState('INDIA');
   var [destinationCountry, setDestinationCountry] = useState('United States');
-  // let pricing = []
   const amountArr = ['1259', '4000', '9000', '17000', '48000', '75000'];
+  
+  var [subscriptionEmail, setSubscriptionEmail] = useState([]);
+  var [subscriptionVoice, setSubscriptionVoice] = useState([]);
+  var [subscriptionWhatsapp, setSubscriptionWhatsapp] = useState([]);
+  var [subscriptionSegmento, setSubscriptionSegmento] = useState([]);
+  // let pricing = []
   
   const fetchSMSData = async (price, origin, destination) => {
     var newData = price
@@ -46,20 +50,35 @@ const campaign = () => {
     })
   };
   
-  const fetchSubscription = async (currency, msId) => {
+  const fetchSubscriptionEmail = async (currency, msId) => {
     const response = await axios.get(`https://subscription.msg91.com/api/plans?currency=${currency}&ms_id=${msId}`)    
-    setSubscription([...response.data.data])
+    setSubscriptionEmail([...response.data.data])
+    console.log(response.data.data);
+  };
+  const fetchSubscriptionVoice = async (currency, msId) => {
+    const response = await axios.get(`https://subscription.msg91.com/api/plans?currency=${currency}&ms_id=${msId}`)    
+    setSubscriptionVoice([...response.data.data])
+    console.log(response.data.data);
+  };
+  const fetchSubscriptionWhatsapp = async (currency, msId) => {
+    const response = await axios.get(`https://subscription.msg91.com/api/plans?currency=${currency}&ms_id=${msId}`)    
+    setSubscriptionWhatsapp([...response.data.data])
+    console.log(response.data.data);
+  };
+  const fetchSubscriptionSegmento = async (currency, msId) => {
+    const response = await axios.get(`https://subscription.msg91.com/api/plans?currency=${currency}&ms_id=${msId}`)    
+    setSubscriptionSegmento([...response.data.data])
     console.log(response.data.data);
   };
 
   
   useEffect(() => {
-     fetchSMSData(pricing,originCountry,destinationCountry)
+     fetchSMSData(pricing, originCountry, destinationCountry)
   }, []);
 
   return (
     <>
-      {/* <HeadTag /> */}
+      <HeadTag />
       <Notification />
       <Header />
       <div className="container d-flex justify-content-center">
@@ -77,19 +96,19 @@ const campaign = () => {
                   </button>
                 </li>
                 <li className="nav-item" role="presentation">
-                  <button onClick={()=>{fetchSubscription('INR', '1')}} className="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-email" type="button" role="tab" aria-controls="pills-email" aria-selected="false">
+                  <button onClick={()=>{fetchSubscriptionEmail('INR', '1')}} className="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-email" type="button" role="tab" aria-controls="pills-email" aria-selected="false">
                   <img src="img/email.svg" alt="#" />
                     Email
                   </button>
                 </li>
                 <li className="nav-item" role="presentation">
-                  <button className="nav-link"  data-bs-toggle="pill" data-bs-target="#pills-voice" type="button" role="tab" aria-controls="pills-voice" aria-selected="false">
+                  <button onClick={()=>{fetchSubscriptionVoice('INR', '6')}} className="nav-link"  data-bs-toggle="pill" data-bs-target="#pills-voice" type="button" role="tab" aria-controls="pills-voice" aria-selected="false">
                     <img src="img/voice.svg" alt="#" />
                     Voice
                   </button>
                 </li>          
                 <li className="nav-item" role="presentation">
-                  <button className="nav-link"  data-bs-toggle="pill" data-bs-target="#pills-whatsapp" type="button" role="tab" aria-controls="pills-whatsapp" aria-selected="false">
+                  <button onClick={()=>{fetchSubscriptionWhatsapp('INR', '5')}} className="nav-link"  data-bs-toggle="pill" data-bs-target="#pills-whatsapp" type="button" role="tab" aria-controls="pills-whatsapp" aria-selected="false">
                     <img src="img/whatsapp.svg" alt="#" />
                     WhatsApp
                   </button>
@@ -101,7 +120,7 @@ const campaign = () => {
                   </button>
                 </li>          
                 <li className="nav-item" role="presentation">
-                  <button className="nav-link"  data-bs-toggle="pill" data-bs-target="#pills-otp" type="button" role="tab" aria-controls="pills-otp" aria-selected="false">
+                  <button onClick={()=>{fetchSMSData([],'INDIA','INDIA')}} className="nav-link"  data-bs-toggle="pill" data-bs-target="#pills-otp" type="button" role="tab" aria-controls="pills-otp" aria-selected="false">
                     <img src="img/otp.svg" alt="#" />
                     OTP
                   </button>
@@ -113,7 +132,7 @@ const campaign = () => {
                   </button>
                 </li>          
                 <li className="nav-item" role="presentation">
-                  <button className="nav-link"  data-bs-toggle="pill" data-bs-target="#pills-segmento" type="button" role="tab" aria-controls="pills-segmento" aria-selected="false">
+                  <button onClick={()=>{fetchSubscriptionSegmento('INR', '2')}} className="nav-link"  data-bs-toggle="pill" data-bs-target="#pills-segmento" type="button" role="tab" aria-controls="pills-segmento" aria-selected="false">
                     <img src="img/segmento.svg" alt="#" />
                     Segmento
                   </button>
@@ -142,28 +161,46 @@ const campaign = () => {
               </div>
               <div className="tab-pane fade w-100" id="pills-email" role="tabpanel" aria-labelledby="pills-email-tab" tabIndex={0}>
                <Pricingemail
-               subscription={subscription}
-               fetchSubscription={fetchSubscription}
+               subscriptionEmail={subscriptionEmail}
+               fetchSubscriptionEmail={fetchSubscriptionEmail}
                />
               </div>
               <div className="tab-pane fade w-100" id="pills-voice" role="tabpanel" aria-labelledby="pills-voice-tab" tabIndex={0}>
-                <Pricingvoice/>
+                <Pricingvoice
+                subscriptionVoice={subscriptionVoice}
+                fetchSubscriptionVoice={fetchSubscriptionVoice}
+                />
               </div>
               <div className="tab-pane fade w-100" id="pills-whatsapp" role="tabpanel" aria-labelledby="pills-whatsapp-tab" tabIndex={0}>
-                <Pricingwp/>
+                <Pricingwp
+                subscriptionWhatsapp={subscriptionWhatsapp}
+                fetchSubscriptionWhatsapp={fetchSubscriptionWhatsapp}
+                />
               </div>
               <div className="tab-pane fade w-100" id="pills-rcs" role="tabpanel" aria-labelledby="pills-rcs-tab" tabIndex={0}>
                 <Pricingrcs/>
               
               </div>
               <div className="tab-pane fade w-100" id="pills-otp" role="tabpanel" aria-labelledby="pills-otp-tab" tabIndex={0}>
-                <Pricingotp/>
+                <Pricingotp
+                amountArr={amountArr} 
+                pricing={pricing} 
+                setPricing={setPricing} 
+                fetchSMSData={fetchSMSData} 
+                originCountry={originCountry} 
+                setOriginCountry={setOriginCountry}
+                destinationCountry={destinationCountry} 
+                setDestinationCountry={setDestinationCountry}
+                />
               </div>
               <div className="tab-pane fade w-100" id="pills-hello" role="tabpanel" aria-labelledby="pills-hello-tab" tabIndex={0}>
                 <Pricinghello/>
               </div>
               <div className="tab-pane fade w-100" id="pills-segmento" role="tabpanel" aria-labelledby="pills-segmento-tab" tabIndex={0}>
-                <Pricingsegmento/>
+                <Pricingsegmento
+                subscriptionSegmento={subscriptionSegmento}
+                fetchSubscriptionSegmento={fetchSubscriptionSegmento}
+                />
               </div>
               <div className="tab-pane fade w-100" id="pills-campaign" role="tabpanel" aria-labelledby="pills-campaign-tab" tabIndex={0}>
                 <Pricingcampaign/>
