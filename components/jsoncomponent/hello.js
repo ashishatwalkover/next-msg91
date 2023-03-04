@@ -72,7 +72,7 @@ const hello = () => {
               {data?.hello?.features?.two?.heading}
             </span>
             <span className="c-fs-3  mt-3">
-            {data?.hello?.features?.two?.content}
+              {data?.hello?.features?.two?.content}
             </span>
           </div>
         </div>
@@ -83,10 +83,10 @@ const hello = () => {
           </div>
           <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-fw-m  ">
-            {data?.hello?.features?.three?.heading}
+              {data?.hello?.features?.three?.heading}
             </span>
             <span className="c-fs-3  mt-3">
-            {data?.hello?.features?.three?.content}
+              {data?.hello?.features?.three?.content}
             </span>
           </div>
         </div>
