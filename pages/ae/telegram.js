@@ -14,7 +14,7 @@ const rcs = () => {
       <Notification />
       <Header />
       <Telegram />
-            <FaqSection />
+      <FaqSection />
       <Footer />
     </>
   );

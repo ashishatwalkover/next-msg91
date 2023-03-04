@@ -11,7 +11,7 @@ import Sms from "@/components/jsoncomponent/sms";
 const sms = () => {
   return (
     <>
-         <HeadTag /> 
+      <HeadTag />
       <Notification />
       <Header />
       <Sms />
