@@ -7,7 +7,7 @@ const otp = () => {
   var path;
 
   if (
-    router.pathname.split("/")[1].length > 3 ||
+    router.pathname.split("/")[1].length > 2 ||
     router.pathname.split("/")[1].length === 0
   ) {
     path = "global";
@@ -29,6 +29,7 @@ const otp = () => {
     const jsonData = await response.default;
     return jsonData;
   };
+
   return (
     <>
       <div className="container text-center px-4 overflow-hidden col-12 col-sm-10  ">
