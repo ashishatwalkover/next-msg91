@@ -53,22 +53,22 @@ const campaign = () => {
   const fetchSubscriptionEmail = async (currency, msId) => {
     const response = await axios.get(`https://subscription.msg91.com/api/plans?currency=${currency}&ms_id=${msId}`)    
     setSubscriptionEmail([...response.data.data])
-    console.log(response.data.data);
+    // console.log(response.data.data);
   };
   const fetchSubscriptionVoice = async (currency, msId) => {
     const response = await axios.get(`https://subscription.msg91.com/api/plans?currency=${currency}&ms_id=${msId}`)    
     setSubscriptionVoice([...response.data.data])
-    console.log(response.data.data);
+    // console.log(response.data.data);
   };
   const fetchSubscriptionWhatsapp = async (currency, msId) => {
     const response = await axios.get(`https://subscription.msg91.com/api/plans?currency=${currency}&ms_id=${msId}`)    
     setSubscriptionWhatsapp([...response.data.data])
-    console.log(response.data.data);
+    // console.log(response.data.data);
   };
   const fetchSubscriptionSegmento = async (currency, msId) => {
     const response = await axios.get(`https://subscription.msg91.com/api/plans?currency=${currency}&ms_id=${msId}`)    
     setSubscriptionSegmento([...response.data.data])
-    console.log(response.data.data);
+    // console.log(response.data.data);
   };
 
   

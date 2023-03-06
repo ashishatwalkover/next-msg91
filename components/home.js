@@ -7,7 +7,6 @@ const Home = () => {
   const router = useRouter()
   var path = router.pathname.split("/")[1];
   useEffect(() => {
-    console.log(path);
     const handleScroll = (e) => {
       if(path.length <= 2){        
         if ( $("#link-shortner").offset()?.top >= $("#url-shortner").offset()?.top) {
