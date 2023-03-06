@@ -9,5 +9,6 @@ $theme-colors: (
   'dark': #001738,
   );
 $btn-border-radius:0.2rem;
+$enable-negative-margins: true;
 
 @import '/node_modules/bootstrap/scss/bootstrap.scss';

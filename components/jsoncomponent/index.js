@@ -249,7 +249,7 @@ const index = () => {
               >
                 <img src="../img/fill-circle.svg"></img>
                 <a href="#url-shortner">
-                  <span className="c-fs-2">URL Shortner</span>
+                  <span className="c-fs-2 text-dark">URL Shortner</span>
                 </a>
               </div>
               <div
@@ -258,7 +258,7 @@ const index = () => {
               >
                 <img src="../img/fill-circle.svg"></img>
                 <a href="#knowledge-base">
-                  <span className="c-fs-2">Knowledgebase</span>
+                  <span className="c-fs-2 text-dark">Knowledgebase</span>
                 </a>
               </div>
               <div
@@ -267,7 +267,7 @@ const index = () => {
               >
                 <img src="../img/fill-circle.svg"></img>
                 <a href="#file-hosting">
-                  <span className="c-fs-2">File Hosting</span>
+                  <span className="c-fs-2 text-dark">File Hosting</span>
                 </a>
               </div>
             </div>

@@ -22,7 +22,6 @@ const Header = () => {
       function page(records, fetchNextPage) {
         records.forEach(function (record) {
           productData = record.get("product");
-          console.log(productData);
         });
         fetchNextPage();
         return productData;
@@ -32,7 +31,7 @@ const Header = () => {
 
   useEffect(() => {
     $("#link-products").on("mouseenter", function () {
-      console.log("products");
+
       $("#product-menu, #menu-backdrop").addClass("active");
       $("body").addClass("oh");
       $("#learning-center").removeClass("active");
@@ -51,7 +50,6 @@ const Header = () => {
     });
 
     $("#product-menu, #learning-center").on("click", function () {
-      console.log('menu clicked');
       $("body").removeClass("oh");
     });
   }, []);
