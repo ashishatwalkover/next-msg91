@@ -158,7 +158,7 @@ const ProductsMenu = () => {
                 </div>
               </Link>  
             </div>
-            <div className="menu nav-utilities">
+            <div className="menu nav-utilities d-block d-sm-none">
             <a className="nav-link c-fs-2 c-fw-sb mb-3 mt-4" href="#" id="link-products">Products</a>
               <a className="nav-link c-fs-2 c-fw-sb mb-3" href="#" id="link-learning">Learning Center</a>
               <Link href="/pricing" className="nav-link c-fs-2 c-fw-sb mb-3" id="link-pricing">Pricing</Link>
