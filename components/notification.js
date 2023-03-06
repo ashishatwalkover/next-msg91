@@ -55,8 +55,8 @@ const Notification = () => {
           </div>
         </div>
       </div>
-      {/* <!-- Modal --> */}
-      <div className="modal fade" id="support-modal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      
+      {/* <div className="modal fade" id="support-modal" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog modal-xl">
           <div className="modal-content">            
             <div className="modal-body">
@@ -72,7 +72,7 @@ const Notification = () => {
               <div className="tab-content" id="pills-tabContent">
                 <div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">                  
                   <InlineWidget url="https://calendly.com/sales-msg91/pre-sales" />
-                  {/* <InlineWidget url="https://calendly.com/msg91international/talktoexpert" /> */}
+                 
                 </div>
                 <div className="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                   <InlineWidget url="https://calendly.com/support--msg91" />
@@ -81,7 +81,7 @@ const Notification = () => {
             </div>            
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
