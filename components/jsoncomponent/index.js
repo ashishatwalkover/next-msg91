@@ -238,7 +238,7 @@ const index = () => {
         </div>
       </section>
 
-      <section className="utilities col-12 section">
+      <section className="utilities section">
         <div className="us-cont d-flex  container justify-content-between alighn-items-center col-12">
           <div className="us-nav-cont col-3 d-lg-block d-md-none d-sm-none d-none ">
             <div className="us-nav" id="utilities-items">
@@ -273,7 +273,7 @@ const index = () => {
             </div>
           </div>
 
-          <div className="us-main-cont ">
+          <div className="us-main-cont col-9 ">
             <div style={{ marginTop: "70px" }}></div>
 
             <div
@@ -287,10 +287,10 @@ const index = () => {
                     URl Shortner
                   </span>
                 </div>
-                <p className="c-fs-4 c-fw-b">
+                <p className="c-fs-2 c-fw-b mb-3">
                   {data?.index?.utility?.urlshortener?.heading}
                 </p>
-                <p className="c-fs-4">
+                <p className="c-fs-2">
                   {data?.index?.utility?.urlshortener?.content}
                 </p>
                 <button
@@ -316,10 +316,10 @@ const index = () => {
                     Knowledgebase
                   </span>
                 </div>
-                <p className="c-fs-4 c-fw-b">
+                <p className="c-fs-2 c-fw-b mb-3">
                   {data?.index?.utility?.knowledgebase?.heading}
                 </p>
-                <p className="c-fs-4">
+                <p className="c-fs-2">
                   {data?.index?.utility?.knowledgebase?.content}
                 </p>
                 <button
@@ -338,27 +338,27 @@ const index = () => {
               className="us-main d-flex flex-md-row flex-column align-items-center"
               id="file-hosting"
             >
-              <div>
-                <div className="d-flex align-items-center mb-2">
+              <div className="col-7">
+                <div className="d-flex align-items-center mb-2 col-12">
                   <img src="/img/files-ico.svg" className="pe-4" />
                   <span className="small-heading align-middle ">
                     File Hosting
                   </span>
                 </div>
-                <p className="c-fs-4 c-fw-b">
+                <p className="c-fs-2 c-fw-b mb-3">
                   {data?.index?.utility?.filehosting?.heading}
                 </p>
-                <p className="c-fs-4">
+                <p className="c-fs-2">
                   {data?.index?.utility?.filehosting?.content}
                 </p>
                 <button
-                  href="#"
+                  href="#" 
                   className="btn btn-outline-primary c-fs-5 c-fw-m mt-2"
                 >
                   Learn More <MdArrowForward />
                 </button>
               </div>
-              <img src="/img/file-hosting-img.svg" className="utility-img" />
+              <img src="/img/file-hosting-img.svg" className="utility-img col-5" />
             </div>
 
             <div style={{ marginTop: "70px" }}></div>
