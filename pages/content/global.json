@@ -1,5 +1,6 @@
 {
   "index": {
+    "pageimg":"hello-page-img.png",
     "heading": "Cloud Communication platform for all your ideas!",
     "tagline": "Secure and Robust APIs for SMS, Email, Voice, Authentication and more.",
     "products": {
@@ -81,17 +82,17 @@
     "tagline": "Boost audience engagement through smart communication and on-time delivery.",
     "features": {
       "one": {
-        "img": "/img/camp-f-img-one.svg",
+        "img": "/img/campaign-feature-one.svg",
         "heading": "Automate sending messages under defined conditions",
         "content": "Define different messaging parameters like time, region, number of messages per day, and more to make sure that your campaigns reach your audience under the right circumstances automatically, without any delays."
       },
       "two": {
-        "img": "/img/camp-f-img-two.svg",
+        "img": "/img/campaign-feature-two.svg",
         "heading": "An all-in-one platform for all your campaigns",
         "content": "Optimise your links and create short links that inspire confidence. Include short links in your custom messages with ease."
       },
       "three": {
-        "img": "/img/camp-f-img-three.svg",
+        "img": "/img/campaign-feature-three.svg",
         "heading": "Make your communication more secure",
         "content": "Now protect your Campaigns with our token-based workflow and a robust security framework. Implement best customer-engagement practices and shape communication to fit your brand while ensuring optimum security through and through."
       }

@@ -59,14 +59,14 @@ const hello = () => {
       <div className=" c-bg-grey px-sm-0 d-flex flex-column justify-content-center justift-content-sm-start section ">
         <span className="container sub-heading c-ff-h ">Features</span>
 
-        <div className="container d-lg-flex flex-row align-items-center">
-          <div className=" col col-lg-6 col-md-6 col-sm-12 flex-column align-items-flex-start mt-lg-5 ms-lg-5 order-lg-2">
+        <div className="container d-flex flex-column flex-md-row-reverse align-items-center justify-content-md-between justify-content-center mb-5">
+          <div className="  col-7">
             <img
               src={data?.hello?.features?.one?.img}
               className="feature-img"
             />
           </div>
-          <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
+          <div className="col col-lg-4 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-fw-m ">
               {data?.hello?.features?.one?.heading}
             </span>
@@ -75,15 +75,14 @@ const hello = () => {
             </span>
           </div>
         </div>
-
-        <div className="container d-lg-flex flex-row align-items-center mt-5">
-          <div className=" col col-lg-6 col-md-6 col-sm-12 flex-column align-items-flex-start mt-lg-5">
+        <div className="container d-flex flex-row align-items-center justify-content-between mb-5">
+          <div className="  col-7">
             <img
               src={data?.hello?.features?.two?.img}
               className="feature-img"
             />
           </div>
-          <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
+          <div className="col col-lg-4 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
             <span className="c-fs-2 c-fw-m ">
               {data?.hello?.features?.two?.heading}
             </span>
@@ -92,16 +91,15 @@ const hello = () => {
             </span>
           </div>
         </div>
-
-        <div className="container d-lg-flex flex-row align-items-center mt-5">
-          <div className=" col-6 flex-column align-items-flex-start order-2">
+        <div className="container d-flex flex-row-reverse align-items-center justify-content-between mb-5">
+          <div className="  col-7">
             <img
               src={data?.hello?.features?.three?.img}
               className="feature-img"
             />
           </div>
-          <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-            <span className="c-fs-2 c-fw-m  ">
+          <div className="col col-lg-4 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
+            <span className="c-fs-2 c-fw-m ">
               {data?.hello?.features?.three?.heading}
             </span>
             <span className="c-fs-3  mt-3">
@@ -109,6 +107,8 @@ const hello = () => {
             </span>
           </div>
         </div>
+
+        
       </div>
 
       <div className="container">

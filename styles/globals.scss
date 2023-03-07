@@ -199,7 +199,9 @@ h2,.charterregular{
   box-shadow: 4px 0px 42px rgba(0, 0, 0, 0.1), -4px -14px 42px rgba(0, 0, 0, 0.1);
 }
 .feature-img{
-  width: clamp(200px, 76vw,600px);
+  width: clamp(200px, 66vw,700px);
+  // background:var(--light-blue);
+  border-radius: 16px;
 }
 
 
