@@ -273,14 +273,14 @@ const index = () => {
             </div>
           </div>
 
-          <div className="us-main-cont col-9 ">
+          <div className="us-main-cont col-lg-9 col-12  ">
             <div style={{ marginTop: "70px" }}></div>
 
             <div
-              className="us-main d-flex flex-md-row flex-column align-items-center"
+              className="us-main d-flex flex-lg-row flex-column align-items-center"
               id="url-shortner"
             >
-              <div className="">
+              <div className="col-lg-7  mx-auto col-12">
                 <div className="d-flex align-items-center mb-2">
                   <img src="/img/short-url-ico.svg" className="pe-4" />
                   <span className="small-heading align-middle ">
@@ -300,16 +300,16 @@ const index = () => {
                   Learn More <MdArrowForward />
                 </button>
               </div>
-              <img src="/img/url-shortener-img.svg" className="utility-img" />
+              <img src="/img/url-shortener-img.svg" className="utility-img col-12 mx-auto col-lg-5" />
             </div>
 
             <div className="us-spacer"></div>
 
             <div
-              className="us-main d-flex flex-md-row-reverse flex-column align-items-center"
+              className="us-main d-flex flex-lg-row flex-column align-items-center"
               id="knowledge-base"
             >
-              <div>
+              <div className="col-lg-7  mx-auto col-12">
                 <div className="d-flex align-items-center mb-2">
                   <img src="/img/kb-ico.svg" className="pe-4" />
                   <span className="small-heading align-middle ">
@@ -329,16 +329,16 @@ const index = () => {
                   Learn More <MdArrowForward />
                 </button>
               </div>
-              <img src="/img/knowledgebase-img.svg" className="utility-img" />
+              <img src="/img/knowledgebase-img.svg" className="utility-img col-12 mx-auto col-lg-5" />
             </div>
 
             <div className="us-spacer"></div>
 
             <div
-              className="us-main d-flex flex-md-row flex-column align-items-center"
+              className="us-main d-flex flex-lg-row flex-column align-items-center"
               id="file-hosting"
             >
-              <div className="col-7">
+              <div className="col-lg-7  mx-auto col-12">
                 <div className="d-flex align-items-center mb-2 col-12">
                   <img src="/img/files-ico.svg" className="pe-4" />
                   <span className="small-heading align-middle ">
@@ -358,7 +358,7 @@ const index = () => {
                   Learn More <MdArrowForward />
                 </button>
               </div>
-              <img src="/img/file-hosting-img.svg" className="utility-img col-5" />
+              <img src="/img/file-hosting-img.svg" className="utility-img col-12 mx-auto col-lg-5" />
             </div>
 
             <div style={{ marginTop: "70px" }}></div>
