@@ -201,8 +201,8 @@ const index = () => {
           </a>
         </div>
 
-        <div className="d-flex flex-wrap g-4 pt-5 ">
-          <div className="py-7 stats py-3 pe-3  col-6 col-lg-6 col-xl-3">
+        <div className="d-flex flex-wrap g-4 pt-5 mx-2">
+          <div className="py-7 stats py-3 pe-3  col-12 col-sm-6 col-xl-3">
             <div className="lh-1 d-flex flex-column align-items-center align-items-sm-start">
               <span className="mb-1 small-heading c-fw-sb text-primary">
                 {data?.index?.stats?.api}
@@ -210,7 +210,7 @@ const index = () => {
               <span className="c-fs-2 c-fw-m">API calls /Month</span>
             </div>
           </div>
-          <div className="py-7 stats py-3 pe-3   col-6 col-lg-6 col-xl-3">
+          <div className="py-7 stats py-3 pe-3   col-12 col-sm-6 col-xl-3">
             <div className="lh-1 d-flex flex-column align-items-center align-items-sm-start">
               <span className="mb-1 small-heading c-fw-sb text-primary">
                 {data?.index?.stats?.ticket}
@@ -219,7 +219,7 @@ const index = () => {
             </div>
           </div>
 
-          <div className="py-7 stats py-3 pe-3   col-6 col-lg-6 col-xl-3">
+          <div className="py-7 stats py-3 pe-3 col-12 col-sm-6 col-xl-3">
             <div className="lh-1 d-flex flex-column align-items-center align-items-sm-start">
               <span className="mb-1 small-heading c-fw-sb text-primary">
                 {data?.index?.stats?.email}
@@ -227,7 +227,7 @@ const index = () => {
               <span className="c-fs-2 c-fw-m">Emails Sent/Month</span>
             </div>
           </div>
-          <div className="py-7 stats py-3  pe-3  col-6 col-lg-6 col-xl-3">
+          <div className="py-7 stats py-3  pe-3  col-12 col-sm-6 col-xl-3">
             <div className="lh-1 d-flex flex-column align-items-center align-items-sm-start">
               <span className="mb-1 small-heading c-fw-sb text-primary">
                 {data?.index?.stats?.sms}
@@ -273,7 +273,7 @@ const index = () => {
             </div>
           </div>
 
-          <div className="us-main-cont col-lg-9 col-12  ">
+          <div className="us-main-cont col-lg-9 col-12 ps-0 ps-lg-4 ">
             <div style={{ marginTop: "70px" }}></div>
 
             <div
