@@ -369,7 +369,7 @@ const index = () => {
       <div className="container mt-5">
         <h2 className="sub-heading c-ff-h my-5">Our Client stories</h2>
         <div className=" d-flex flex-column flex-md-row mt-3 ">
-          <div className="d-flex flex-column col-12 col-md-9  col-lg-6  pe-0 pe-md-5 justify-content-center justify-content-md-start">
+          <div className="d-flex flex-column col-12 col-lg-9 col-xl-6  pe-0 pe-md-5 justify-content-center justify-content-md-start">
             <img src="/img/milkbasket img.png" className="clint-main-img " />
             <p className="c-fs-2 c-fw-m pt-4 col-12 d-none d-md-block">
               {data?.index?.clintstory?.milkbasket?.heading}
@@ -378,10 +378,10 @@ const index = () => {
             {data?.index?.clintstory?.milkbasket?.content}
             </p>
           </div>
-          <div className="col-12 col-md-3 col-lg-6 mt-5 mt-md-0 mt-lg-0 d-flex  flex-row flex-md-column justify-content-center justify-content-md-start  ">
+          <div className="col-12 col-lg-3 col-xl-6 mt-5 mt-md-0 mt-lg-0 d-flex  flex-row flex-md-column justify-content-center justify-content-md-start  ">
             <div className=" d-flex  mb-5 mb-lg-0 me-0 me-lg-5  ">
-              <img src="/img/unacademy img.png" className=" col-12 col-lg-4 " />
-              <div className="container-fluid d-none d-lg-block">
+              <img src="/img/unacademy img.png" className=" col-12 col-md-4 col-lg-12 col-xl-4 " />
+              <div className="container-fluid d-none d-xl-block">
                 <p className="c-fs-2 c-fw-m  ps-3">
                 {data?.index?.clintstory?.unacademy?.heading}
                 </p>
@@ -407,8 +407,8 @@ const index = () => {
               </div>
             </div>
             <div className="  d-flex  mb-5 mb-lg-0 me-0 me-lg-5 ms-5 ms-md-0  mt-0 mt-lg-5  ">
-              <img src="/img/ixigo img.png" className="col-12 col-lg-4 " />
-              <div className="container-fluid d-none d-lg-block">
+              <img src="/img/ixigo img.png" className="col-12  col-lg-12 col-md-4 col-xl-4 " />
+              <div className="container-fluid d-none d-xl-block">
                 <p className="c-fs-2 c-fw-m  ps-3 ">
                 {data?.index?.clintstory?.ixigo?.heading}
                 </p>
