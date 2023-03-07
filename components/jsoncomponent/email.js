@@ -29,6 +29,8 @@ const email = () => {
     Prism.highlightAll();
   }, []);
 
+
+  
   var fetchData = async () => {
     const response = await import(`@/pages/content/${path}.json`);
     const jsonData = await response.default;
