@@ -4,6 +4,11 @@ import Footer from "@/components/footer-sec";
 import Terms from "@/components/termsofuse/terms";
 import Privacypolicy from "@/components/termsofuse/privacy-policy";
 import Gdpr from "@/components/termsofuse/gdpr";
+import Refundpolicy from "@/components/termsofuse/refund-policy";
+import Cookiepolicy from "@/components/termsofuse/cookie-policy";
+import Startuppolicy from "@/components/termsofuse/startup-policy";
+import Fairpricingpolicy from "@/components/termsofuse/fair-pricing-policy";
+import Nospam from "@/components/termsofuse/no-spam";
 const termsofuse = () => {
   return (
     <>
@@ -40,8 +45,12 @@ const termsofuse = () => {
           <div className="col-10 h-100">
             {/* <Terms/> */}
             {/* <Privacypolicy /> */}
-        <Gdpr />
-        
+        {/* <Gdpr /> */}
+        {/* <Refundpolicy /> */}
+        {/* <Cookiepolicy /> */}
+        {/* <Startuppolicy /> */}
+        {/* <Fairpricingpolicy /> */}
+        <Nospam />
         </div>
       </div>
       <Footer />
