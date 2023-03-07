@@ -2,6 +2,8 @@ import HeadTag from "./head";
 import Header from "@/components/header";
 import Footer from "@/components/footer-sec";
 import Terms from "@/components/termsofuse/terms";
+import Privacypolicy from "@/components/termsofuse/privacy-policy";
+import Gdpr from "@/components/termsofuse/gdpr";
 const termsofuse = () => {
   return (
     <>
@@ -36,9 +38,9 @@ const termsofuse = () => {
           </a>
         </div>
           <div className="col-10 h-100">
-            <Terms/>
-            
-        
+            {/* <Terms/> */}
+            {/* <Privacypolicy /> */}
+        <Gdpr />
         
         </div>
       </div>
