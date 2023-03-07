@@ -2,7 +2,13 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import TrustedSec from "@/components/trusted_by";
 
-const sms = () => {
+//import { HTTPSnippet } from 'httpsnippet';
+import Prism from "prismjs";
+import "prismjs/themes/prism-tomorrow.css";
+
+const sms = () => {  
+  var HTTPSnippet = require('httpsnippet');
+
   const router = useRouter();
   var path;
 
@@ -22,6 +28,8 @@ const sms = () => {
       setData(content);
     };
     fetchD();
+
+    Prism.highlightAll();
   }, []);
 
   var fetchData = async () => {
@@ -29,6 +37,59 @@ const sms = () => {
     const jsonData = await response.default;
     return jsonData;
   };
+
+  const myCode = `import hljs from 'highlight.js/lib/core'
+  import json from 'highlight.js/lib/languages/json'
+  hljs.registerLanguage('json', json)
+  
+  // accepts a javascript object, which it will display as JSON
+  export default function JsonBlock() {
+    const myObject = { example: 'object' }
+    const myJson = JSON.stringify(myObject, null, 2)
+    const myHtml = hljs.highlight(myJson, { language: 'json' }).value
+    return (
+      <pre>
+        <code dangerouslySetInnerHTML={{ __html: myHtml }} />
+      </pre>
+    )
+  }`
+  
+  const snippet = new HTTPSnippet({
+    "log": {
+        "version": "1.2",
+        "entries": [
+            {
+                "request": {
+                    "method": "POST",
+                    "url": "https://control.msg91.com/api/v5/flow/",
+                    "httpVersion": "HTTP/1.1",
+                    "cookies": [],
+                    "headers": [
+                        {
+                            "name": "accept",
+                            "value": "application/json"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "queryString": [],
+                    "headersSize": -1,
+                    "bodySize": -1,
+                    "postData": {
+                        "mimeType": "application/json",
+                        "text": "\n{\n     \"template_id\": \"EntertemplateID\",\n     \"sender\": \"EnterSenderID\",\n     \"short_url\": \"1 (On) or 0 (Off)\",\n     \"mobiles\": \"919XXXXXXXXX\",\n     \"VAR1\": \"VALUE 1\",\n     \"VAR2\": \"VALUE 2\"\n}\n"
+                    }
+                }
+            }
+        ]
+    }
+  });
+  
+  //const options = { indent: '\t' };
+  const output = snippet.convert('node');
+
 return (
     <>
 <div className="container text-center overflow-hidden px-4  col-12 col-sm-10  ">
@@ -45,7 +106,10 @@ return (
             Get started for Free
           </button>
           <TrustedSec />
-        </div>
+        </div>        
+      <pre>
+        <code className={`language-javascript`}>{output}</code>
+      </pre>
         <img
           src={data?.sms?.pageimg}
           className="img-fluid product-page-img mx-auto"
