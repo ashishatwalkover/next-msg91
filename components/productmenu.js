@@ -1,4 +1,4 @@
-import Link from "next/link";
+
 import Image from "next/image";
 import { useRouter } from 'next/router'
 
@@ -13,7 +13,7 @@ const ProductsMenu = () => {
         <div className=" d-flex  px-0 px-xl-5 flex-wrap">
             <div className="menu nav-applications">
               <p className="c-fs-4 c-ff-h text-uppercase">applications</p>
-              <Link href={`${path}/hello`} className="product-cont">
+              <a href={`${path}/hello`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/hello.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">
@@ -21,9 +21,9 @@ const ProductsMenu = () => {
                     <p className="c-fs-5">Ticketing and Chat</p>
                   </div>
                 </div>
-              </Link>
+              </a>
 
-              <Link href={`${path}/campaign`} className="product-cont">
+              <a href={`${path}/campaign`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/campaign.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">
@@ -31,9 +31,9 @@ const ProductsMenu = () => {
                     <p className="c-fs-5">Event base automation</p>
                   </div>
                 </div>
-              </Link>
+              </a>
 
-              <Link href={`${path}/segmento`} className="product-cont">
+              <a href={`${path}/segmento`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/segmento.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">
@@ -41,9 +41,9 @@ const ProductsMenu = () => {
                     <p className="c-fs-5">Contact Managment</p>
                   </div>
                 </div>
-              </Link>
+              </a>
 
-              <Link href={`${path}/otp`} className="product-cont">
+              <a href={`${path}/otp`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/otp.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">
@@ -51,7 +51,7 @@ const ProductsMenu = () => {
                     <p className="c-fs-5">Simplified OTP Platform</p>
                   </div>
                 </div>
-              </Link>
+              </a>
               {/* <div className="h-divider my-5"></div> */}
             </div> 
 
@@ -60,75 +60,75 @@ const ProductsMenu = () => {
             <div className="menu nav-channels">
               <p className="c-fs-4 c-ff-h text-uppercase">channels</p>
               
-              <Link href={`${path}/sms`} className="product-cont">
+              <a href={`${path}/sms`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/sms.svg" width={30} height={30} alt="#" />
                   <div className="product-dis">
                     <h4 className="c-fs-2 c-ff-h mb-1">SMS</h4>
                   </div>
                 </div>
-              </Link>
+              </a>
 
-              <Link href={`${path}/email`} className="product-cont">
+              <a href={`${path}/email`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/Email.svg" width={30} height={30} alt="#" />
                   <div className="product-dis">
                     <h4 className="c-fs-2 c-ff-h mb-1">Email</h4>
                   </div>
                 </div>
-              </Link>
+              </a>
               
-              <Link href={`${path}/voice`} className="product-cont">
+              <a href={`${path}/voice`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/voice.svg" width={30} height={30} alt="#" />
                   <div className="product-dis">
                     <h4 className="c-fs-2 c-ff-h mb-1">Voice</h4>
                   </div>
                 </div>
-              </Link>
+              </a>
 
-              <Link href={`${path}/whatsapp`} className="product-cont">
+              <a href={`${path}/whatsapp`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/whatsapp.svg" width={30} height={30} alt="#" />
                   <div className="product-dis">
                     <h4 className="c-fs-2 c-ff-h mb-1">WhatsApp</h4>
                   </div>
                 </div>
-              </Link>
+              </a>
 
-              <Link href={`${path}/telegram`} className="product-cont">
+              <a href={`${path}/telegram`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/Telegram.svg" width={30} height={30} alt="#" />
                   <div className="product-dis">
                     <h4 className="c-fs-2 c-ff-h mb-1">Telegram</h4>
                   </div>
                 </div>
-              </Link>
+              </a>
 
-              <Link href={`${path}/rcs`} className="product-cont">
+              <a href={`${path}/rcs`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/rcs.svg" width={30} height={30} alt="#" />
                   <div className="product-dis">
                     <h4 className="c-fs-2 c-ff-h mb-1">RCS</h4>
                   </div>
                 </div>
-              </Link>
+              </a>
 
-              <Link href={`${path}/push-notification`} className="product-cont">
+              <a href={`${path}/push-notification`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/push-notification.svg" width={30} height={30} alt="#" />
                   <div className="product-dis">
                     <h4 className="c-fs-2 c-ff-h mb-1">Push Notification</h4>
                   </div>
                 </div>
-              </Link>
+              </a>
 
             </div>
 
             <div className="menu nav-utilities">              
               <p className="c-fs-4 c-ff-h text-uppercase">Utiliteis</p>
 
-              <Link href={`${path}/shorturl`} className="product-cont">
+              <a href={`${path}/shorturl`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/short-url-ico.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">
@@ -136,9 +136,9 @@ const ProductsMenu = () => {
                     <p className="c-fs-5">Customize and track URL's</p>
                   </div>
                 </div>
-              </Link>
+              </a>
 
-              <Link href={`${path}/knowledgebase`} className="product-cont">
+              <a href={`${path}/knowledgebase`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/kb-ico.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">
@@ -146,9 +146,9 @@ const ProductsMenu = () => {
                     <p className="c-fs-5">Manage help Doc and guidess</p>
                   </div>
                 </div>
-              </Link>
+              </a>
 
-              <Link href={`${path}/files`} className="product-cont">
+              <a href={`${path}/files`} className="product-cont">
                 <div className="d-flex align-items-center">
                   <Image src="../img/files-ico.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">
@@ -156,12 +156,12 @@ const ProductsMenu = () => {
                     <p className="c-fs-5">Manage your files on cloud</p>
                   </div>
                 </div>
-              </Link>  
+              </a>  
             </div>
-            <div className="menu nav-utilities">
-            <a className="nav-link c-fs-2 c-fw-sb mb-3 mt-4" href="#" id="link-products">Products</a>
-              <a className="nav-link c-fs-2 c-fw-sb mb-3" href="#" id="link-learning">Learning Center</a>
-              <Link href="/pricing" className="nav-link c-fs-2 c-fw-sb mb-3" id="link-pricing">Pricing</Link>
+            <div className="menu nav-utilities d-block d-sm-none">
+            <a className="nav-a c-fs-2 c-fw-sb mb-3 mt-4" href="#" id="a-products">Products</a>
+              <a className="nav-a c-fs-2 c-fw-sb mb-3" href="#" id="a-learning">Learning Center</a>
+              <a href="/pricing" className="nav-a c-fs-2 c-fw-sb mb-3" id="a-pricing">Pricing</a>
             </div>
                          
             {/* <div className="v-divider mx-5"></div> */}

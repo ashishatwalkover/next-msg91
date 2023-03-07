@@ -45,7 +45,7 @@
     }
   },
   "hello": {
-    "pageimg":"/img/Campaign_flow.svg",
+    "pageimg":"/img/hello-page-img.png",
     "smallheading": "BRIDGE THE GAP BEWEEN YOU AND YOUR CUSTOMERS",
     "tagline": "Boost audience engagement through smart communication and on-time delivery.",
     "features": {
@@ -282,7 +282,7 @@
   },
 
   "otp": {
-    "pageimg": "/img/Campaign_flow.svg",
+    "pageimg": "/img/otp-page-img.png",
     "smallheading": "INSTANT SECURE VARIFICATION",
     "tagline": "Quick and reliable authentication by 2FA using multiple channels.",
     "features": {

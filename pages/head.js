@@ -3,9 +3,23 @@ import { useRouter } from 'next/router'
 import metadata from "./meta.json"
 const HeadTag =()=> {
   const router = useRouter()
-  var path = router.pathname.split("/")[1];
-  var page = router.pathname.split("/")[2];
-  var pagemeta = router.pathname.length>3?page:path
+  if (router.pathname.length == '1')
+  {
+    var pagemeta = "global"
+    var path = router.pathname.split("/")[1];
+    var page = router.pathname.split("/")[2];  
+  }
+  else{
+    var path = router.pathname.split("/")[1];
+    var page = router.pathname.split("/")[2];
+    if (router.pathname.length >3){
+      var pagemeta = path
+    }
+    else{
+      var pagemeta = page
+    }
+  }
+  // console.log(pagemeta)
   return (
     <>
   <Head>    
@@ -14,6 +28,7 @@ const HeadTag =()=> {
     <meta name="viewport" content="width=device-width, initial-scale=1"/>    
     <link rel="icon" href="/fav.svg"/>
     { path === '' || path.length > 2 ?
+  
       <>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
         <link href="/styles/global.css" rel="stylesheet"/>
