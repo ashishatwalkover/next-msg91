@@ -10,6 +10,26 @@ h1 {
   font-family: var(--c-ff-h);
 }
 
+/* Overwrite the default to keep the scrollbar always visible */
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;  
+  height: 7px;
+  overflow: overlay;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+  display:none;
+}
+
 // font size
 .heading {
   font-size: var(--heading);
@@ -338,3 +358,20 @@ h2,
     height: auto;
   }
 }
+<<<<<<< HEAD
+=======
+}
+
+:not(pre) > code[class*="language-"], pre[class*="language-"]{
+  min-height: 400px;
+}
+.code-wrp{
+  background: #2d2d2d;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 80px;
+  .nav-link:not(.active){
+    color: #ccc !important;
+  }
+}
+>>>>>>> cabda870bfb609fab88698b1b6e4185402b24931
