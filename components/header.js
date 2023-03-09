@@ -5,7 +5,9 @@ import LearningCenter from "@/components/learning_center";
 import $ from "jquery";
 import { useRouter } from "next/router";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { MdLogin } from "react-icons/md";
+import { MdOutlineClose } from "react-icons/md";
+import Image from "next/image";
+import Mininav from "./mininav";
 //import Airtable from "airtable";
 const Header = () => {
   //airtable
@@ -32,12 +34,10 @@ const Header = () => {
     const [showOverlay, setShowOverlay] = useState(false)
 
   const toggleOverlay = () => {
-    setShowOverlay(!showOverlay)
+    setShowOverlay(true);
+    // setShowOverlay(!showOverlay)
   }
 
-  const hideOverlay = () => {
-    setShowOverlay(false)
-  }
 
   useEffect(() => {
     $("#link-products").on("mouseenter", function () {
@@ -68,14 +68,20 @@ const Header = () => {
   path = path.length == 2 ? "/" + path : "";
   var home = path.length ? path : "/";
   return (
+    <>
+    {showOverlay== true?<Mininav setFalse={setShowOverlay}/>:""}
+{/* <----------------------------------> */}
+      
     <div className="px-2  px-md-5" id="menu-wrp">
       <nav className="navbar px-0 px-xl-5 navbar-expand-lg bg-body-tertiary c-fs-3">
         <div className=" w-100 ">
-          <div className="d-flex w-100 justify-content-between align-items-center">
+          <div className="d-flex d-lg-none w-100 justify-content-between align-items-center">
             <span
-              className=" w-25 outline-none  outline-none"
+              className=" w-25 "
             >
-              <span>
+              <span className="d-flex align-items-center justify-content-start"
+              onClick={toggleOverlay}
+              >
 
               <GiHamburgerMenu/>
               </span>
@@ -150,6 +156,7 @@ const Header = () => {
       <LearningCenter />
       <div id="menu-backdrop"></div>
     </div>
+    </>
   );
 };
 export default Header;
