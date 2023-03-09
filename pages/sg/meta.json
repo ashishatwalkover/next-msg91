@@ -1,55 +1,55 @@
 {
   "sg": {
-    "title": "Best Cloud Communication Platform for Businesses | MSG91 India",
-    "description": "MSG91 India is one of the finest communication platforms that provide businesses to integrate themselves with SMS APIs, e-mail APIs, voice call APIs, etc."
+    "title": "Modernize your software with our SMS, Email, and Voice APIs",
+    "description": "You can create global customer engagement products using One API, the best communication API in Singapore."
   },
   "hello": {
-    "title": "Customer Support Platform for your Business by MSG91",
-    "description": "Harness the power of omnichannel customer experience with HELLO, a robust and data-driven customer support platform to meet all your customer service needs."
+    "title": "Offer support. Solve issues.Grow your business.",
+    "description": "MSG91 is a leading contact center software as a service provider in Singapore.Extended customer support service | Free of cost | Integration in website | Secure Online Experiences"
   },
   "campaign": {
-    "title": "SMS Campaign",
-    "description": "Boost audience engagement through smart communication and on-time delivery. It&#039;s not only about communicating, it&#039;s about communicating with your users smartly and efficiently. Get Demo Reach your segmented customers across the world, Send your messages at the right moment! Features Automate sending messages under defined conditions Define different messaging parameters like time, region, number of..."
+    "title": "Track and optimize your SMS campaign",
+    "description": "Learn who and how are you customers interacting with your SMS campaign."
   },
   "segmento": {
-    "title": "Customer Segmentation Software | MSG91",
-    "description": "Execute targeted marketing campaigns with the help of automated customer segmentation and targeted content. Try it out now."
+    "title": "Stop wondering, Start segmenting!",
+    "description": "Run targeted campaigns, personalize marketing content, precise data access with customer segmentation."
   },
   "otp": {
-    "title": "Send OTP | OTP Service Providers India - MSG91 India",
-    "description": "Send OTP provides secure and reliable SMS API Integration that helps you easily send OTP to your users for 2 factor authentication."
+    "title": "OTP Verification Service Provider In Singapore",
+    "description": "With SendOTP, you can enable mobile number verification, 2-factor login, voice backup call, and OTP-protected transactions. Enjoy the increased security and speed from a dedicated OTP service platform your business deserves."
   },
 
   "_comment1": "channels",
 
   "sms": {
-    "title": "Transactional SMS | Transactional SMS Provider in India - MSG91 India",
-    "description": "MSG91 is among the leading transactional SMS service providers in India. Empowering businesses with easy-to-integrate transactional SMS API to enhance customer satisfaction."
+    "title": "Transactional SMS Gateway In Singapore",
+    "description": "Use our powerful and flexible transactional SMS service and reach every customer within Singapore and across the globe."
   },
 
   "email": {
-    "title": "Transactional Email | Transactional Email API - MSG91 India",
-    "description": "Send transactional emails to your customers with the help of Transactional Email API from MSG91 that is easy to integrate, secure and reliable."
+    "title": "Best Transactional Email Templates",
+    "description": "Integrate our developer-friendly transactional email API instantly and experience high open rates."
   },
 
   "rcs": {
-    "title": "Rich Communication Services | Communication Software- MSG91 India",
-    "description": "RCS is the future of communication which helps brands engage with users by sending them media-rich messages as opposed to conventional text messages."
+    "title": "We’re revolutionizing A2P messaging with RCS in Singapore",
+    "description": "Use rich, branded, and conversational RCS messaging to engage your users. With MSG91, get the best Rich Communication Services."
   },
 
   "voice": {
-    "title": "Voice API for your Business | Voice Call API | MSG91 India",
-    "description": "MSG91 India provides voice call api&#039;s to your business which helps to engage your customers over voice with our virtual phone numbers, and voice APIs."
+    "title": "Leading Voice Call API Provider in Singapore",
+    "description": "Build easy and functional call flows wherever you like. Solve complex problems of your customers with personalized support."
   },
 
   "whatsapp": {
-    "title": "WhatsApp API for businesses | MSG91",
-    "description": "Send and receive instant messages and notification to provide real-time customer support globally on one of most preferred &amp; reliable chat platform. Integrate MSG91 WhatsApp API into your website or application now."
+    "title": "Best Whatsapp Business API Solution In Singapore",
+    "description": "Modernize and scale your customer experience with robust Whatsapp API. Connect with your customers in the most simple, secure and reliable way."
   },
 
   "oneapi": {
-    "title": "SMS API, Email API and Voice API Provider | MSG91",
-    "description": "Streamline your communication with customers by intergrating SMS, Email and Voice API with MSG91 One API. Experience now."
+    "title": "Modernize your software with our SMS, Email, and Voice APIs",
+    "description": "You can create global customer engagement products using One API, the best communication API in Singapore."
   },
   "telegram": {
     "title": "SMS API, Email API and Voice API Provider | MSG91",
@@ -69,8 +69,8 @@
   },
 
   "shorturl": {
-    "title": "Shorturl",
-    "description": "Customised Links for Business Success Stand out with branded links that drive more clicks to improve conversion rates. Optimise smart links that can help you realise more revenues. Customising, tracking, managing, made easy. Get Demo Features Smart Links that magnify your conversions Enhance the deliverability of messages through our globally accepted best practices. Ensure improved..."
+    "title": "Customised Links for Business Success",
+    "description": "Stand out with branded links that drive more clicks to improve conversion rates. Optimise smart links that can help you realise more revenues. Customising, tracking, managing, made easy."
   },
   "push-notification": {
     "title": "Shorturl",
