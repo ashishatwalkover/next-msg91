@@ -34,17 +34,13 @@ const index = () => {
     <>
       <div className="container text-center px-4 col-xs-12 col-sm-10 col-md-10 mx-auto section">
         <h1 className="heading">{data?.index?.heading}</h1>
-        <p className="c-fs-1  m-auto col-md-8">
-        {data?.index?.tagline}
-        </p>
+        <p className="c-fs-1  m-auto col-md-8">{data?.index?.tagline}</p>
         <button className="btn btn-primary btn-lg c-fs-3 mt-4" type="button">
           Get started for Free
         </button>
       </div>
 
-
-      <Trustedsec/>
-
+      <Trustedsec />
 
       <section className="products">
         <div className="row g-0">
@@ -268,7 +264,10 @@ const index = () => {
                   Learn More <MdArrowForward />
                 </button>
               </div>
-              <img src="/img/url-shortener-img.svg" className="utility-img col-12 mx-auto col-lg-5" />
+              <img
+                src="/img/url-shortener-img.svg"
+                className="utility-img col-12 mx-auto col-lg-5"
+              />
             </div>
 
             <div className="us-spacer"></div>
@@ -297,7 +296,10 @@ const index = () => {
                   Learn More <MdArrowForward />
                 </button>
               </div>
-              <img src="/img/knowledgebase-img.svg" className="utility-img col-12 mx-auto col-lg-5" />
+              <img
+                src="/img/knowledgebase-img.svg"
+                className="utility-img col-12 mx-auto col-lg-5"
+              />
             </div>
 
             <div className="us-spacer"></div>
@@ -320,13 +322,16 @@ const index = () => {
                   {data?.index?.utility?.filehosting?.content}
                 </p>
                 <button
-                  href="#" 
+                  href="#"
                   className="btn btn-outline-primary c-fs-5 c-fw-m mt-2"
                 >
                   Learn More <MdArrowForward />
                 </button>
               </div>
-              <img src="/img/file-hosting-img.svg" className="utility-img col-12 mx-auto col-lg-5" />
+              <img
+                src="/img/file-hosting-img.svg"
+                className="utility-img col-12 mx-auto col-lg-5"
+              />
             </div>
 
             <div style={{ marginTop: "70px" }}></div>
@@ -343,15 +348,18 @@ const index = () => {
               {data?.index?.clintstory?.milkbasket?.heading}
             </p>
             <p className="c-fs-4 d-none d-md-block">
-            {data?.index?.clintstory?.milkbasket?.content}
+              {data?.index?.clintstory?.milkbasket?.content}
             </p>
           </div>
           <div className="col-12 col-md-3 col-xl-6 mt-5 mt-md-0 mt-lg-0 d-flex  flex-row flex-md-column justify-content-center justify-content-md-start  ">
             <div className=" d-flex  mb-5 mb-lg-0 me-0 me-lg-5  ">
-              <img src="/img/unacademy img.png" className=" col-12 col-md-12 col-lg-12 col-xl-4 " />
+              <img
+                src="/img/unacademy img.png"
+                className=" col-12 col-md-12 col-lg-12 col-xl-4 "
+              />
               <div className="container-fluid d-none d-xl-block">
                 <p className="c-fs-2 c-fw-m  ps-3">
-                {data?.index?.clintstory?.unacademy?.heading}
+                  {data?.index?.clintstory?.unacademy?.heading}
                 </p>
                 <Link
                   href="#"
@@ -375,10 +383,13 @@ const index = () => {
               </div>
             </div>
             <div className="  d-flex  mb-5 mb-lg-0 me-0 me-lg-5 ms-5 ms-md-0  mt-0 mt-lg-5  ">
-              <img src="/img/ixigo img.png" className="col-12  col-lg-12 col-md-12 col-xl-4 " />
+              <img
+                src="/img/ixigo img.png"
+                className="col-12  col-lg-12 col-md-12 col-xl-4 "
+              />
               <div className="container-fluid d-none d-xl-block">
                 <p className="c-fs-2 c-fw-m  ps-3 ">
-                {data?.index?.clintstory?.ixigo?.heading}
+                  {data?.index?.clintstory?.ixigo?.heading}
                 </p>
                 <Link
                   href="#"

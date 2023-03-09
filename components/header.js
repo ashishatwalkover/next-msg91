@@ -9,7 +9,7 @@ import { MdLogin } from "react-icons/md";
 //import Airtable from "airtable";
 const Header = () => {
   //airtable
-/*   const [data, setData] = useState();
+  /*   const [data, setData] = useState();
   let base = new Airtable({
     apiKey: process.env.NEXT_PUBLIC_Airtable_Auth_Key,
   }).base(process.env.NEXT_PUBLIC_Base_Auth_Key);
@@ -29,9 +29,18 @@ const Header = () => {
       }      
     ); */
 
+    const [showOverlay, setShowOverlay] = useState(false)
+
+  const toggleOverlay = () => {
+    setShowOverlay(!showOverlay)
+  }
+
+  const hideOverlay = () => {
+    setShowOverlay(false)
+  }
+
   useEffect(() => {
     $("#link-products").on("mouseenter", function () {
-
       $("#product-menu, #menu-backdrop").addClass("active");
       $("body").addClass("oh");
       $("#learning-center").removeClass("active");
@@ -64,21 +73,20 @@ const Header = () => {
         <div className=" w-100 ">
           <div className="d-flex w-100 justify-content-between align-items-center">
             <span
-              className="navbar-toggler outline-none"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+              className=" w-25 outline-none  outline-none"
             >
-              <GiHamburgerMenu />
+              <span>
+
+              <GiHamburgerMenu/>
+              </span>
+              
             </span>
             <Link className="navbar-brand d-block d-lg-none" href={`${home}`}>
               <img className=" nav-logo" src="/img/logo.svg" alt="MSG91" />
             </Link>
-            <span className="c-fs-1 d-block d-lg-none">
-              <MdLogin />
+            <span className="w-25 d-flex c-fs-5 d-block d-lg-none">
+              <button className="ms-auto btn btn-sm  btn-outline-primary">
+              Login</button>
             </span>
           </div>
           <div
@@ -145,4 +153,3 @@ const Header = () => {
   );
 };
 export default Header;
-
