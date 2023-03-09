@@ -1,55 +1,55 @@
 {
   "us": {
-    "title": "Best Cloud Communication Platform for Businesses | MSG91 India",
-    "description": "MSG91 India is one of the finest communication platforms that provide businesses to integrate themselves with SMS APIs, e-mail APIs, voice call APIs, etc."
+    "title": "One-stop cloud communication platform to help you innovate (and grow)",
+    "description": "MSG91 US is one of the finest communication platforms that provide businesses to integrate themselves with SMS APIs, e-mail APIs, voice call APIs, etc."
   },
   "hello": {
-    "title": "Customer Support Platform for your Business by MSG91",
-    "description": "Harness the power of omnichannel customer experience with HELLO, a robust and data-driven customer support platform to meet all your customer service needs."
+    "title": "Start Conversations, Drive Growth with the Best Contact Center Software in US",
+    "description": "HELLO, a leading contact center software, is designed to meet all your customer support needs.Enjoy speedy integration, free cost, and omnichannel capability."
   },
   "campaign": {
-    "title": "SMS Campaign",
-    "description": "Boost audience engagement through smart communication and on-time delivery. It&#039;s not only about communicating, it&#039;s about communicating with your users smartly and efficiently. Get Demo Reach your segmented customers across the world, Send your messages at the right moment! Features Automate sending messages under defined conditions Define different messaging parameters like time, region, number of..."
+    "title": "Boost audience engagement through smart communication and on-time delivery.",
+    "description": "It's not only about communicating, it's about communicating with your users smartly and efficiently."
   },
   "segmento": {
-    "title": "Customer Segmentation Software | MSG91",
-    "description": "Execute targeted marketing campaigns with the help of automated customer segmentation and targeted content. Try it out now."
+    "title": "Customer Segmentation Platform - Stop wondering, start segmenting with SEGMENTO",
+    "description": "Run targeted campaigns, personalize marketing content, precise data access with customer segmentation."
   },
   "otp": {
-    "title": "Send OTP | OTP Service Providers India - MSG91 India",
-    "description": "Send OTP provides secure and reliable SMS API Integration that helps you easily send OTP to your users for 2 factor authentication."
+    "title": "Two-factor Authentication Providers with SendOTP",
+    "description": "Enable mobile number verification, 2-factor login, voice backup call, OTP protected transactions with enhanced security and speed with our dedicated OTP service platform."
   },
 
   "_comment1": "channels",
 
   "sms": {
-    "title": "Transactional SMS | Transactional SMS Provider in India - MSG91 India",
-    "description": "MSG91 is among the leading transactional SMS service providers in India. Empowering businesses with easy-to-integrate transactional SMS API to enhance customer satisfaction."
+    "title": "Leading Transactional SMS API Provider in the US",
+    "description": "Use our flawless transactional SMS service to send Transactional SMS within the USA and across the world."
   },
 
   "email": {
-    "title": "Transactional Email | Transactional Email API - MSG91 India",
-    "description": "Send transactional emails to your customers with the help of Transactional Email API from MSG91 that is easy to integrate, secure and reliable."
+    "title": "Best Transactional Email API Service for Developers in US",
+    "description": "Deliver transactional emails effortlessly with high open rates using our robust and developer-friendly APIs."
   },
 
   "rcs": {
-    "title": "Rich Communication Services | Communication Software- MSG91 India",
-    "description": "RCS is the future of communication which helps brands engage with users by sending them media-rich messages as opposed to conventional text messages."
+    "title": "Transform A2P messaging with the best Rich Communication Services",
+    "description": "Interact with your users via RCS messaging that is rich, branded, and conversational."
   },
 
   "voice": {
-    "title": "Voice API for your Business | Voice Call API | MSG91 India",
-    "description": "MSG91 India provides voice call api&#039;s to your business which helps to engage your customers over voice with our virtual phone numbers, and voice APIs."
+    "title": "Trusted Voice Call API Services in the US",
+    "description": "Create seamless call flows to customers in the US using our Voice Call API. Offer personalized support and help your customers fix issues quickly and easily."
   },
 
   "whatsapp": {
-    "title": "WhatsApp API for businesses | MSG91",
-    "description": "Send and receive instant messages and notification to provide real-time customer support globally on one of most preferred &amp; reliable chat platform. Integrate MSG91 WhatsApp API into your website or application now."
+    "title": "WhatsApp API Services",
+    "description": "Modernize and scale your customer experience with robust Whatsapp API. Connect with your customers in the most simple, secure and reliable way."
   },
 
   "oneapi": {
-    "title": "SMS API, Email API and Voice API Provider | MSG91",
-    "description": "Streamline your communication with customers by intergrating SMS, Email and Voice API with MSG91 One API. Experience now."
+    "title": "Best Communication API that Aligns With Your Growth Needs",
+    "description": "Our developer-friendly communication APIs allow you to create global customer engagement products that scale exponentially."
   },
   "telegram": {
     "title": "SMS API, Email API and Voice API Provider | MSG91",
@@ -69,8 +69,8 @@
   },
 
   "shorturl": {
-    "title": "Shorturl",
-    "description": "Customised Links for Business Success Stand out with branded links that drive more clicks to improve conversion rates. Optimise smart links that can help you realise more revenues. Customising, tracking, managing, made easy. Get Demo Features Smart Links that magnify your conversions Enhance the deliverability of messages through our globally accepted best practices. Ensure improved..."
+    "title": "Customised Links for Business Success",
+    "description": "Stand out with branded links that drive more clicks to improve conversion rates. Optimise smart links that can help you realise more revenues. Customising, tracking, managing, made easy."
   },
   "push-notification": {
     "title": "Shorturl",
