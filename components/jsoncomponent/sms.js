@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import TrustedSec from "@/components/trusted_by";
 
-//import { HTTPSnippet } from 'httpsnippet';
 import Prism from "prismjs";
 import "prismjs/themes/prism-tomorrow.css";
 
@@ -37,62 +36,54 @@ const sms = () => {
     const jsonData = await response.default;
     return jsonData;
   };
-
-  const myCode = `import hljs from 'highlight.js/lib/core'
-  import json from 'highlight.js/lib/languages/json'
-  hljs.registerLanguage('json', json)
-  
-  // accepts a javascript object, which it will display as JSON
-  export default function JsonBlock() {
-    const myObject = { example: 'object' }
-    const myJson = JSON.stringify(myObject, null, 2)
-    const myHtml = hljs.highlight(myJson, { language: 'json' }).value
-    return (
-      <pre>
-        <code dangerouslySetInnerHTML={{ __html: myHtml }} />
-      </pre>
-    )
-  }`
-  
+    
   const snippet = new HTTPSnippet({
     "log": {
-        "version": "1.2",
-        "entries": [
-            {
-                "request": {
-                    "method": "POST",
-                    "url": "https://control.msg91.com/api/v5/flow/",
-                    "httpVersion": "HTTP/1.1",
-                    "cookies": [],
-                    "headers": [
-                        {
-                            "name": "accept",
-                            "value": "application/json"
-                        },
-                        {
-                            "name": "content-type",
-                            "value": "application/json"
-                        }
-                    ],
-                    "queryString": [],
-                    "headersSize": -1,
-                    "bodySize": -1,
-                    "postData": {
-                        "mimeType": "application/json",
-                        "text": "\n{\n     \"template_id\": \"EntertemplateID\",\n     \"sender\": \"EnterSenderID\",\n     \"short_url\": \"1 (On) or 0 (Off)\",\n     \"mobiles\": \"919XXXXXXXXX\",\n     \"VAR1\": \"VALUE 1\",\n     \"VAR2\": \"VALUE 2\"\n}\n"
-                    }
-                }
+      "version": "1.2",
+      "entries": [
+        {
+          "request": {
+            "method": "POST",
+            "url": "https://control.msg91.com/api/v5/flow/",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Authkey",
+                "value": "<authkey>"
+              },
+              {
+                "name": "accept",
+                "value": "application/json"
+              },
+              {
+                "name": "content-type",
+                "value": "application/json"
+              }
+            ],
+            "queryString": [],
+            "headersSize": -1,
+            "bodySize": -1,
+            "postData": {
+              "mimeType": "application/json",
+              "text": "{\"template_id\":\"EntertemplateID\",\"sender\":\"EnterSenderID\",\"short_url\":\"1 (On) or 0 (Off)\",\"mobiles\":\"919XXXXXXXXX\",\"VAR1\":\"VALUE 1\",\"VAR2\":\"VALUE 2\"}"
             }
-        ]
+          }
+        }
+      ]
     }
   });
   
-  //const options = { indent: '\t' };
-  const output = snippet.convert('node');
+  
+  const node = snippet.convert('node');
+  const cURL = snippet.convert('shell', 'curl');  
+  const php = snippet.convert('php');
+  const python = snippet.convert('python');
+  const ruby = snippet.convert('ruby'); 
 
 return (
     <>
-<div className="container text-center overflow-hidden px-4  col-12 col-sm-10  ">
+      <div className="container text-center overflow-hidden px-4  col-12 col-sm-10  ">
         <div className="text-center justify-content-center py-5">
           <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
             <img src="../img/sms.svg" className="product-page-logo" />
@@ -106,15 +97,54 @@ return (
             Get started for Free
           </button>
           <TrustedSec />
-        </div>        
-      <pre>
-        <code className={`language-javascript`}>{output}</code>
-      </pre>
-        <img
-          src={data?.sms?.pageimg}
-          className="img-fluid product-page-img mx-auto"
-          alt="#"
-        />
+        </div>
+        <div className="code-wrp">
+          <ul className="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+            <li className="nav-item" role="presentation">
+              <button className="nav-link active btn-sm" id="pills-cURL-tab" data-bs-toggle="pill" data-bs-target="#pills-cURL" type="button" role="tab" aria-controls="pills-cURL" aria-selected="true">cURL</button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button className="nav-link" id="pills-node-tab" data-bs-toggle="pill" data-bs-target="#pills-node" type="button" role="tab" aria-controls="pills-node" aria-selected="false">Node</button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button className="nav-link" id="pills-php-tab" data-bs-toggle="pill" data-bs-target="#pills-php" type="button" role="tab" aria-controls="pills-php" aria-selected="false">PHP</button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button className="nav-link" id="pills-ruby-tab" data-bs-toggle="pill" data-bs-target="#pills-ruby" type="button" role="tab" aria-controls="pills-ruby" aria-selected="false">Ruby</button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button className="nav-link" id="pills-python-tab" data-bs-toggle="pill" data-bs-target="#pills-python" type="button" role="tab" aria-controls="pills-python" aria-selected="false">Python</button>
+            </li>
+          </ul>
+          <div className="tab-content" id="pills-tabContent">
+            <div className="tab-pane fade show active" id="pills-cURL" role="tabpanel" aria-labelledby="pills-cURL-tab" >
+              <pre>
+                <code className={`language-javascript`}>{cURL}</code>
+              </pre>
+            </div>
+            <div className="tab-pane fade" id="pills-node" role="tabpanel" aria-labelledby="pills-node-tab" >
+              <pre>
+                <code className={`language-javascript`}>{node}</code>
+              </pre>
+            </div>
+            <div className="tab-pane fade" id="pills-php" role="tabpanel" aria-labelledby="pills-php-tab" >
+              <pre>
+                <code className={`language-javascript`}>{php}</code>
+              </pre>
+            </div>
+            <div className="tab-pane fade" id="pills-ruby" role="tabpanel" aria-labelledby="pills-ruby-tab" >
+              <pre>
+                <code className={`language-javascript`}>{ruby}</code>
+              </pre>
+            </div>
+            <div className="tab-pane fade" id="pills-python" role="tabpanel" aria-labelledby="pills-python-tab" >
+              <pre>
+                <code className={`language-javascript`}>{python}</code>
+              </pre>
+            </div>
+          </div>
+        </div>
+          
       </div>
 
       <div className=" c-bg-grey px-sm-0 d-flex flex-column justify-content-center justift-content-sm-start section ">
@@ -170,7 +200,7 @@ return (
               - {data?.sms?.morefeatures?.one}
             </span>
             <span className="c-fs-3 mt-1">
-              - {data?.hsms?.morefeatures?.two}
+              - {data?.sms?.morefeatures?.two}
             </span>
             <span className="c-fs-3 mt-1">
               - {data?.sms?.morefeatures?.three}

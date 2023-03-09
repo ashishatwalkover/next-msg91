@@ -201,8 +201,8 @@ const index = () => {
           </a>
         </div>
 
-        <div className="d-flex flex-wrap g-4 pt-5 ">
-          <div className="py-7 stats py-3 pe-3  col-6 col-lg-6 col-xl-3">
+        <div className="d-flex flex-wrap g-4 pt-5 mx-2">
+          <div className="py-7 stats py-3 pe-3  col-12 col-sm-6 col-xl-3">
             <div className="lh-1 d-flex flex-column align-items-center align-items-sm-start">
               <span className="mb-1 small-heading c-fw-sb text-primary">
                 {data?.index?.stats?.api}
@@ -210,7 +210,7 @@ const index = () => {
               <span className="c-fs-2 c-fw-m">API calls /Month</span>
             </div>
           </div>
-          <div className="py-7 stats py-3 pe-3   col-6 col-lg-6 col-xl-3">
+          <div className="py-7 stats py-3 pe-3   col-12 col-sm-6 col-xl-3">
             <div className="lh-1 d-flex flex-column align-items-center align-items-sm-start">
               <span className="mb-1 small-heading c-fw-sb text-primary">
                 {data?.index?.stats?.ticket}
@@ -219,7 +219,7 @@ const index = () => {
             </div>
           </div>
 
-          <div className="py-7 stats py-3 pe-3   col-6 col-lg-6 col-xl-3">
+          <div className="py-7 stats py-3 pe-3 col-12 col-sm-6 col-xl-3">
             <div className="lh-1 d-flex flex-column align-items-center align-items-sm-start">
               <span className="mb-1 small-heading c-fw-sb text-primary">
                 {data?.index?.stats?.email}
@@ -227,7 +227,7 @@ const index = () => {
               <span className="c-fs-2 c-fw-m">Emails Sent/Month</span>
             </div>
           </div>
-          <div className="py-7 stats py-3  pe-3  col-6 col-lg-6 col-xl-3">
+          <div className="py-7 stats py-3  pe-3  col-12 col-sm-6 col-xl-3">
             <div className="lh-1 d-flex flex-column align-items-center align-items-sm-start">
               <span className="mb-1 small-heading c-fw-sb text-primary">
                 {data?.index?.stats?.sms}
@@ -238,7 +238,7 @@ const index = () => {
         </div>
       </section>
 
-      <section className="utilities col-12 section">
+      <section className="utilities section">
         <div className="us-cont d-flex  container justify-content-between alighn-items-center col-12">
           <div className="us-nav-cont col-3 d-lg-block d-md-none d-sm-none d-none ">
             <div className="us-nav" id="utilities-items">
@@ -273,24 +273,24 @@ const index = () => {
             </div>
           </div>
 
-          <div className="us-main-cont ">
+          <div className="us-main-cont col-lg-9 col-12 ps-0 ps-lg-4 ">
             <div style={{ marginTop: "70px" }}></div>
 
             <div
-              className="us-main d-flex flex-md-row flex-column align-items-center"
+              className="us-main d-flex flex-lg-row flex-column align-items-center"
               id="url-shortner"
             >
-              <div className="">
+              <div className="col-lg-7  mx-auto col-12">
                 <div className="d-flex align-items-center mb-2">
                   <img src="/img/short-url-ico.svg" className="pe-4" />
                   <span className="small-heading align-middle ">
                     URl Shortner
                   </span>
                 </div>
-                <p className="c-fs-4 c-fw-b">
+                <p className="c-fs-2 c-fw-b mb-3">
                   {data?.index?.utility?.urlshortener?.heading}
                 </p>
-                <p className="c-fs-4">
+                <p className="c-fs-2">
                   {data?.index?.utility?.urlshortener?.content}
                 </p>
                 <button
@@ -300,26 +300,26 @@ const index = () => {
                   Learn More <MdArrowForward />
                 </button>
               </div>
-              <img src="/img/url-shortener-img.svg" className="utility-img" />
+              <img src="/img/url-shortener-img.svg" className="utility-img col-12 mx-auto col-lg-5" />
             </div>
 
             <div className="us-spacer"></div>
 
             <div
-              className="us-main d-flex flex-md-row-reverse flex-column align-items-center"
+              className="us-main d-flex flex-lg-row flex-column align-items-center"
               id="knowledge-base"
             >
-              <div>
+              <div className="col-lg-7  mx-auto col-12">
                 <div className="d-flex align-items-center mb-2">
                   <img src="/img/kb-ico.svg" className="pe-4" />
                   <span className="small-heading align-middle ">
                     Knowledgebase
                   </span>
                 </div>
-                <p className="c-fs-4 c-fw-b">
+                <p className="c-fs-2 c-fw-b mb-3">
                   {data?.index?.utility?.knowledgebase?.heading}
                 </p>
-                <p className="c-fs-4">
+                <p className="c-fs-2">
                   {data?.index?.utility?.knowledgebase?.content}
                 </p>
                 <button
@@ -329,36 +329,36 @@ const index = () => {
                   Learn More <MdArrowForward />
                 </button>
               </div>
-              <img src="/img/knowledgebase-img.svg" className="utility-img" />
+              <img src="/img/knowledgebase-img.svg" className="utility-img col-12 mx-auto col-lg-5" />
             </div>
 
             <div className="us-spacer"></div>
 
             <div
-              className="us-main d-flex flex-md-row flex-column align-items-center"
+              className="us-main d-flex flex-lg-row flex-column align-items-center"
               id="file-hosting"
             >
-              <div>
-                <div className="d-flex align-items-center mb-2">
+              <div className="col-lg-7  mx-auto col-12">
+                <div className="d-flex align-items-center mb-2 col-12">
                   <img src="/img/files-ico.svg" className="pe-4" />
                   <span className="small-heading align-middle ">
                     File Hosting
                   </span>
                 </div>
-                <p className="c-fs-4 c-fw-b">
+                <p className="c-fs-2 c-fw-b mb-3">
                   {data?.index?.utility?.filehosting?.heading}
                 </p>
-                <p className="c-fs-4">
+                <p className="c-fs-2">
                   {data?.index?.utility?.filehosting?.content}
                 </p>
                 <button
-                  href="#"
+                  href="#" 
                   className="btn btn-outline-primary c-fs-5 c-fw-m mt-2"
                 >
                   Learn More <MdArrowForward />
                 </button>
               </div>
-              <img src="/img/file-hosting-img.svg" className="utility-img" />
+              <img src="/img/file-hosting-img.svg" className="utility-img col-12 mx-auto col-lg-5" />
             </div>
 
             <div style={{ marginTop: "70px" }}></div>
@@ -369,7 +369,7 @@ const index = () => {
       <div className="container mt-5">
         <h2 className="sub-heading c-ff-h my-5">Our Client stories</h2>
         <div className=" d-flex flex-column flex-md-row mt-3 ">
-          <div className="d-flex flex-column col-12 col-md-9  col-lg-6  pe-0 pe-md-5 justify-content-center justify-content-md-start">
+          <div className="d-flex flex-column col-12 col-lg-9 col-xl-6  pe-0 pe-md-5 justify-content-center justify-content-md-start">
             <img src="/img/milkbasket img.png" className="clint-main-img " />
             <p className="c-fs-2 c-fw-m pt-4 col-12 d-none d-md-block">
               {data?.index?.clintstory?.milkbasket?.heading}
@@ -378,10 +378,10 @@ const index = () => {
             {data?.index?.clintstory?.milkbasket?.content}
             </p>
           </div>
-          <div className="col-12 col-md-3 col-lg-6 mt-5 mt-md-0 mt-lg-0 d-flex  flex-row flex-md-column justify-content-center justify-content-md-start  ">
+          <div className="col-12 col-lg-3 col-xl-6 mt-5 mt-md-0 mt-lg-0 d-flex  flex-row flex-md-column justify-content-center justify-content-md-start  ">
             <div className=" d-flex  mb-5 mb-lg-0 me-0 me-lg-5  ">
-              <img src="/img/unacademy img.png" className=" col-12 col-lg-4 " />
-              <div className="container-fluid d-none d-lg-block">
+              <img src="/img/unacademy img.png" className=" col-12 col-md-4 col-lg-12 col-xl-4 " />
+              <div className="container-fluid d-none d-xl-block">
                 <p className="c-fs-2 c-fw-m  ps-3">
                 {data?.index?.clintstory?.unacademy?.heading}
                 </p>
@@ -407,8 +407,8 @@ const index = () => {
               </div>
             </div>
             <div className="  d-flex  mb-5 mb-lg-0 me-0 me-lg-5 ms-5 ms-md-0  mt-0 mt-lg-5  ">
-              <img src="/img/ixigo img.png" className="col-12 col-lg-4 " />
-              <div className="container-fluid d-none d-lg-block">
+              <img src="/img/ixigo img.png" className="col-12  col-lg-12 col-md-4 col-xl-4 " />
+              <div className="container-fluid d-none d-xl-block">
                 <p className="c-fs-2 c-fw-m  ps-3 ">
                 {data?.index?.clintstory?.ixigo?.heading}
                 </p>

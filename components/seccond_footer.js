@@ -9,7 +9,7 @@ const SeccondFooter =()=>{
                     <button className="btn btn-primary ms-lg-4 my-1 c-fs-4 mx-2"> Get started for free</button>
                 </div>
             </div>
-            <div className=" mt-5  d-flex flex-column align-items-center text-center justify-content-center">
+            <div className=" mt-5  d-flex flex-column align-items-center text-center justify-content-center mx-2">
                 <p className="c-fs-3 my-2">Have More Questions? We’re always here to help you!</p>
                 <button className="btn btn-outline-primary px-3 py-2 c-fs-4 mx-auto">Talk to Sales</button>
             </div>

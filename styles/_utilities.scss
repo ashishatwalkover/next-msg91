@@ -1,7 +1,7 @@
 .us-cont{
     width: 100%;    
     display: flex;   
-    gap:100px 
+    // gap:100px /
 }
 .us-nav-cont{
     height: auto;
@@ -50,9 +50,7 @@
     }
 }
 
-.utility-img{
-    width: clamp(300px,60vw,500px);
-}
+
 @media only screen and (max-width: 992px) {
     .us-main{
         padding: 10px;
