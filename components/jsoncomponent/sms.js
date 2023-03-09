@@ -1,7 +1,44 @@
+// import { useState, useEffect } from "react";
+// import { useRouter } from "next/router";
+// import TrustedSec from "@/components/trusted_by";
+// const sms = () => {
+//   const router = useRouter();
+//   var path;
+
+//   if (
+//     router.pathname.split("/")[1].length > 2 ||
+//     router.pathname.split("/")[1].length === 0
+//   ) {
+//     path = "global";
+//   } else {
+//     path = router.pathname.split("/")[1];
+//   }
+
+//   const [data, setData] = useState(null);
+//   useEffect(() => {
+//     const fetchD = async () => {
+//       let content = await fetchData();
+//       setData(content);
+//     };
+//     fetchD();
+//   }, []);
+
+//   var fetchData = async () => {
+//     const response = await import(`@/pages/content/${path}.json`);
+//     const jsonData = await response.default;
+//     return jsonData;
+//   };
+
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import TrustedSec from "@/components/trusted_by";
-const sms = () => {
+
+import Prism from "prismjs";
+import "prismjs/themes/prism-tomorrow.css";
+
+const sms = () => {  
+  var HTTPSnippet = require('httpsnippet');
+
   const router = useRouter();
   var path;
 
@@ -21,6 +58,8 @@ const sms = () => {
       setData(content);
     };
     fetchD();
+
+    Prism.highlightAll();
   }, []);
 
   var fetchData = async () => {
@@ -28,10 +67,54 @@ const sms = () => {
     const jsonData = await response.default;
     return jsonData;
   };
+    
+  const snippet = new HTTPSnippet({
+    "log": {
+      "version": "1.2",
+      "entries": [
+        {
+          "request": {
+            "method": "POST",
+            "url": "https://control.msg91.com/api/v5/flow/",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "Authkey",
+                "value": "<authkey>"
+              },
+              {
+                "name": "accept",
+                "value": "application/json"
+              },
+              {
+                "name": "content-type",
+                "value": "application/json"
+              }
+            ],
+            "queryString": [],
+            "headersSize": -1,
+            "bodySize": -1,
+            "postData": {
+              "mimeType": "application/json",
+              "text": "{\"template_id\":\"EntertemplateID\",\"sender\":\"EnterSenderID\",\"short_url\":\"1 (On) or 0 (Off)\",\"mobiles\":\"919XXXXXXXXX\",\"VAR1\":\"VALUE 1\",\"VAR2\":\"VALUE 2\"}"
+            }
+          }
+        }
+      ]
+    }
+  });
+  
+  
+  const node = snippet.convert('node');
+  const cURL = snippet.convert('shell', 'curl');  
+  const php = snippet.convert('php');
+  const python = snippet.convert('python');
+  const ruby = snippet.convert('ruby');
 
   return (
     <>
-      <div className="container text-center  overflow-hidden ">
+      <div className="container  text-center overflow-hidden ">
         <div className=" mx-auto text-center justify-content-center py-2 py-md-5 col-12 col-sm-8">
           <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
             <img src="../img/sms.svg" className="product-page-logo" />
@@ -49,12 +132,54 @@ const sms = () => {
           </button>
         </div>
           <TrustedSec />
-        <img
-          src={data?.sms?.pageimg}
-          className="img-fluid product-page-img mx-auto"
-          alt="#"
-        />
-      </div>
+          <div className="code-wrp">
+          <ul className="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+            <li className="nav-item" role="presentation">
+              <button className="nav-link active btn-sm" id="pills-cURL-tab" data-bs-toggle="pill" data-bs-target="#pills-cURL" type="button" role="tab" aria-controls="pills-cURL" aria-selected="true">cURL</button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button className="nav-link" id="pills-node-tab" data-bs-toggle="pill" data-bs-target="#pills-node" type="button" role="tab" aria-controls="pills-node" aria-selected="false">Node</button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button className="nav-link" id="pills-php-tab" data-bs-toggle="pill" data-bs-target="#pills-php" type="button" role="tab" aria-controls="pills-php" aria-selected="false">PHP</button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button className="nav-link" id="pills-ruby-tab" data-bs-toggle="pill" data-bs-target="#pills-ruby" type="button" role="tab" aria-controls="pills-ruby" aria-selected="false">Ruby</button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button className="nav-link" id="pills-python-tab" data-bs-toggle="pill" data-bs-target="#pills-python" type="button" role="tab" aria-controls="pills-python" aria-selected="false">Python</button>
+            </li>
+          </ul>
+          <div className="tab-content" id="pills-tabContent">
+            <div className="tab-pane fade show active" id="pills-cURL" role="tabpanel" aria-labelledby="pills-cURL-tab" >
+              <pre>
+                <code className={`language-javascript`}>{cURL}</code>
+              </pre>
+            </div>
+            <div className="tab-pane fade" id="pills-node" role="tabpanel" aria-labelledby="pills-node-tab" >
+              <pre>
+                <code className={`language-javascript`}>{node}</code>
+              </pre>
+            </div>
+            <div className="tab-pane fade" id="pills-php" role="tabpanel" aria-labelledby="pills-php-tab" >
+              <pre>
+                <code className={`language-javascript`}>{php}</code>
+              </pre>
+            </div>
+            <div className="tab-pane fade" id="pills-ruby" role="tabpanel" aria-labelledby="pills-ruby-tab" >
+              <pre>
+                <code className={`language-javascript`}>{ruby}</code>
+              </pre>
+            </div>
+            <div className="tab-pane fade" id="pills-python" role="tabpanel" aria-labelledby="pills-python-tab" >
+              <pre>
+                <code className={`language-javascript`}>{python}</code>
+              </pre>
+            </div>
+          </div>
+        </div>
+        </div>
+      
 
       <div className=" c-bg-grey  px-sm-0 d-flex flex-column justify-content-center justift-content-sm-start section ">
         <span className="container sub-heading c-ff-h  pt-4 pt-md-0">Features</span>
@@ -156,6 +281,7 @@ const sms = () => {
           </div>
         </div>
       </div>
+    
     </>
   );
 };

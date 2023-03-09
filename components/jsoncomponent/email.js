@@ -1,7 +1,12 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import TrustedSec from "@/components/trusted_by";
+
+import Prism from "prismjs";
+import "prismjs/themes/prism-tomorrow.css";
+
 const email = () => {
+  var HTTPSnippet = require('httpsnippet');
   const router = useRouter();
   var path;
 
@@ -21,39 +26,128 @@ const email = () => {
       setData(content);
     };
     fetchD();
+    Prism.highlightAll();
   }, []);
 
+
+  
   var fetchData = async () => {
     const response = await import(`@/pages/content/${path}.json`);
     const jsonData = await response.default;
     return jsonData;
   };
 
-  return (
+  const snippet = new HTTPSnippet({
+    "log": {
+        "version": "1.2",
+        "entries": [
+            {
+                "request": {
+                    "method": "POST",
+                    "url": "https://control.msg91.com/api/v5/email/send",
+                    "httpVersion": "HTTP/1.1",
+                    "cookies": [],
+                    "headers": [
+                        {
+                            "name": "Authkey",
+                            "value": "<authkey>"
+                        },
+                        {
+                            "name": "accept",
+                            "value": "application/json"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "queryString": [],
+                    "headersSize": -1,
+                    "bodySize": -1,
+                    "postData": {
+                        "mimeType": "application/json",
+                        "text": "\n{\"to\":[{\"name\":\"Mark\",\"email\":\"recipient@email.address\"}],\"from\":{\"name\":\"Joe\",\"email\":\"sender@email.address\"},\"cc\":[{\"email\":\"cc@email.address\"},{\"email\":\"test@email.address\"}],\"bcc\":[{\"email\":\"bcc@email.address\"},{\"email\":\"test1@email.address\"}],\"domain\":\"The domain which you have registered with us. We sign DKIM with this domain.\",\"mail_type_id\":\"1 for Transactional, 2 for Notificational, 3 for Promotional - Default is 3\",\"in_reply_to\":\"If the current mail is reply of any mail then that mail Message ID.\",\"reply_to\":[{\"email\":\"mail1@domain.com\"},{\"email\":\"mail2@domain.com\"}],\"attachments\":[{\"filePath\":\"Public path for file.\",\"fileName\":\"File Name\"},{\"file\":\"File in Data URI format data:content/type;base64,<data>.\",\"fileName\":\"File Name\"}],\"template_id\":\"YOUR_UNIQUE_TEMPLATE_NAME\",\"variables\":{\"VAR1\":\"VAR1 VALUE\",\"VAR2\":\"VAR2 VALUE\"}}\n"
+                    }
+                }
+            }
+        ]
+    }
+  });
+  
+  
+  const node = snippet.convert('node');
+  const cURL = snippet.convert('shell', 'curl');  
+  const php = snippet.convert('php');
+  const python = snippet.convert('python');
+  const ruby = snippet.convert('ruby'); 
+
+return (
     <>
-      <div className="container text-center  overflow-hidden ">
-        <div className=" mx-auto text-center justify-content-center py-2 py-md-5 col-12 col-sm-8">
+<div className="container text-center overflow-hidden px-4  col-12 col-sm-10  ">
+        <div className="text-center justify-content-center py-5">
           <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
             <img src="../img/email.svg" className="product-page-logo" />
             <h1 className="heading">Email</h1>
           </div>
-
-          <p className="c-fs-4 text-uppercase col-email c-ls-20 mx-auto">
-            {data?.email?.smallheading}
+          <p className="c-fs-5 c-fw-sb text-uppercase col-campaign c-ls-20 mx-auto">
+          {data?.email?.smallheading}
           </p>
-          <h2 className="small-heading px-3 w-md-75 w-100 mx-auto">
-            {data?.email?.tagline}
+          <h2 className="small-heading c-ff-b c-fw-r w-100 mx-auto">
+          {data?.email?.tagline}
           </h2>
           <button className="btn btn-primary btn-lg mt-3 c-fs-2" type="button">
             Get started for Free
           </button>
-        </div>
           <TrustedSec />
-        <img
-          src={data?.email?.pageimg}
-          className="img-fluid product-page-img mx-auto"
-          alt="#"
-        />
+        </div>
+        
+        <div className="code-wrp">
+          <ul className="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+            <li className="nav-item" role="presentation">
+              <button className="nav-link active btn-sm" id="pills-cURL-tab" data-bs-toggle="pill" data-bs-target="#pills-cURL" type="button" role="tab" aria-controls="pills-cURL" aria-selected="true">cURL</button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button className="nav-link" id="pills-node-tab" data-bs-toggle="pill" data-bs-target="#pills-node" type="button" role="tab" aria-controls="pills-node" aria-selected="false">Node</button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button className="nav-link" id="pills-php-tab" data-bs-toggle="pill" data-bs-target="#pills-php" type="button" role="tab" aria-controls="pills-php" aria-selected="false">PHP</button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button className="nav-link" id="pills-ruby-tab" data-bs-toggle="pill" data-bs-target="#pills-ruby" type="button" role="tab" aria-controls="pills-ruby" aria-selected="false">Ruby</button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button className="nav-link" id="pills-python-tab" data-bs-toggle="pill" data-bs-target="#pills-python" type="button" role="tab" aria-controls="pills-python" aria-selected="false">Python</button>
+            </li>
+          </ul>
+          <div className="tab-content" id="pills-tabContent">
+            <div className="tab-pane fade show active" id="pills-cURL" role="tabpanel" aria-labelledby="pills-cURL-tab" >
+              <pre>
+                <code className={`language-javascript`}>{cURL}</code>
+              </pre>
+            </div>
+            <div className="tab-pane fade" id="pills-node" role="tabpanel" aria-labelledby="pills-node-tab" >
+              <pre>
+                <code className={`language-javascript`}>{node}</code>
+              </pre>
+            </div>
+            <div className="tab-pane fade" id="pills-php" role="tabpanel" aria-labelledby="pills-php-tab" >
+              <pre>
+                <code className={`language-javascript`}>{php}</code>
+              </pre>
+            </div>
+            <div className="tab-pane fade" id="pills-ruby" role="tabpanel" aria-labelledby="pills-ruby-tab" >
+              <pre>
+                <code className={`language-javascript`}>{ruby}</code>
+              </pre>
+            </div>
+            <div className="tab-pane fade" id="pills-python" role="tabpanel" aria-labelledby="pills-python-tab" >
+              <pre>
+                <code className={`language-javascript`}>{python}</code>
+              </pre>
+            </div>
+          </div>
+        </div>
+        
       </div>
 
       <div className=" c-bg-grey  px-sm-0 d-flex flex-column justify-content-center justift-content-sm-start section ">
