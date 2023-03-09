@@ -306,7 +306,7 @@ const index = () => {
             <div className="us-spacer"></div>
 
             <div
-              className="us-main d-flex flex-lg-row flex-column align-items-center"
+              className="us-main d-flex flex-lg-row-reverse flex-column align-items-center"
               id="knowledge-base"
             >
               <div className="col-lg-7  mx-auto col-12">
