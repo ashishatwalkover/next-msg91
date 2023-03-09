@@ -6,7 +6,7 @@ const rcs = () => {
   var path;
 
   if (
-    router.pathname.split("/")[1].length > 3 ||
+    router.pathname.split("/")[1].length > 2 ||
     router.pathname.split("/")[1].length === 0
   ) {
     path = "global";
@@ -35,7 +35,7 @@ const rcs = () => {
         <div className=" mx-auto text-center justify-content-center py-2 py-md-5 col-12 col-sm-8">
           <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
             <img src="../img/rcs.svg" className="product-page-logo" />
-            <h1 className="heading">Rcs</h1>
+            <h1 className="heading">cs</h1>
           </div>
 
           <p className="c-fs-4 text-uppercase col-rcs c-ls-20 mx-auto">
