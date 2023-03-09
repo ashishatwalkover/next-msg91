@@ -4,7 +4,7 @@ import TrustedSec from "@/components/trusted_by";
 const files = () => {
   const router = useRouter();
   var path;
-  
+
   if (
     router.pathname.split("/")[1].length > 3 ||
     router.pathname.split("/")[1].length === 0
@@ -31,14 +31,14 @@ const files = () => {
 
   return (
     <>
-      <div className="container text-center  overflow-hidden col-12 col-sm-8">
-        <div className="text-center justify-content-center py-5">
+      <div className="container text-center  overflow-hidden ">
+        <div className=" mx-auto text-center justify-content-center py-2 py-md-5 col-12 col-sm-8">
           <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
-            <img src="../img/hello.svg" className="product-page-logo" />
-            <h1 className="heading">Hello</h1>
+            <img src="../img/filehosting.svg" className="product-page-logo" />
+            <h1 className="heading">Filehosting</h1>
           </div>
 
-          <p className="c-fs-4 text-uppercase col-files c-ls-20 mx-auto">
+          <p className="c-fs-4 text-uppercase col-filehosting c-ls-20 mx-auto">
             {data?.filehosting?.smallheading}
           </p>
           <h2 className="small-heading px-3 w-md-75 w-100 mx-auto">
@@ -47,8 +47,8 @@ const files = () => {
           <button className="btn btn-primary btn-lg mt-3 c-fs-2" type="button">
             Get started for Free
           </button>
-          <TrustedSec />
         </div>
+          <TrustedSec />
         <img
           src={data?.filehosting?.pageimg}
           className="img-fluid product-page-img mx-auto"
@@ -110,10 +110,10 @@ const files = () => {
       
       </div>
 
-      <div className="container pt-4 pt-md-0">
-        <span className="sub-heading">More features</span>
-        <div className="container d-flex flex-column flex-md-row my-3">
-          <div className="d-flex flex-column justify-content-center align-items-flex-start col-lg-6 mt-2">
+      <div className="section mx-0 mx-md-5 mt-5 pt-4 pt-md-0">
+        <span className="sub-heading px-3 ">More features</span>
+        <div className="w-100 d-flex flex-column flex-md-row my-2">
+          <div className="container d-flex flex-column justify-content-center align-items-flex-start col-lg-6 mt-2 px-3">
             <span className="c-fs-3">- {data?.filehosting?.morefeatures?.one}</span>
             <span className="c-fs-3 mt-1">
               - {data?.filehosting?.morefeatures?.two}
@@ -131,13 +131,29 @@ const files = () => {
               - {data?.filehosting?.morefeatures?.six}
             </span>
           </div>
-          <div className=" c-bg-grey  p-3 p-lg-5  container text-center d-md-flex justify-content-sm-between align-items-center flex-xl-row flex-lg-column flex-sm-column flex-md-column"> 
-                <span className="small-heading ">Experience The Awesomeness</span>
-                <div className="mt-3 mt-lg-0">
-                    <button className="btn btn-outline-primary my-1 c-fs-4 mx-2"> See pricing</button>
-                    <button className="btn btn-primary ms-lg-4 my-1 c-fs-4 mx-2"> Get started for free</button>
-                </div>
-            </div>
+          <div className="col-12 col-md-6  my-auto mt-3  px-0 px-md-3  d-flex py-5 c-bg-grey flex-column flex-lg-row justify-content-center">
+            <span className="c-fs-2 c-ff-h mx-auto">Looking for more?</span>
+            <div className="mx-auto py-4 py-lg-0 ">
+
+            <button className=" d-flex  btn btn-outline-primary c-fs-4 ms-0 ms-md-3 mt-3 mt-md-0">
+              {" "}
+              Request a Feature
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="bi bi-arrow-right ms-2"
+                viewBox="0 0 16 16"
+                >
+                <path
+                  fillRule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+              </svg>
+            </button>
+                  </div>
+          </div>
         </div>
       </div>
     </>
