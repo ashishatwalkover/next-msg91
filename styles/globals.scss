@@ -342,8 +342,8 @@ h2,
 
 // termsof use
 .terms-nav {
-  position: fixed;
-  z-index:-1;
+  // position: fixed; 
+  z-index:1;
   // top: 5rem;
 }
 .terms-cont {
@@ -367,6 +367,9 @@ h2,
     border-radius: 10px 10px 0 0;
 
     height: auto;
+  }
+  .terms-nav{
+    // position: relative;
   }
 }
 

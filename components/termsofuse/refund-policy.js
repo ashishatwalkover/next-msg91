@@ -3,7 +3,7 @@ const refundpolicy = () => {
         <>
             <div className="mb-5">
                 <h2 className="c-fs-2 c-fw-m">Refund Policy</h2>
-                <p className="c-fs-4">
+                <span className="c-fs-4">
                 We will refund your amount, but if someone tries to misuse, they’re legally bound.
                     <div className="my-3"></div>
                     Account closing
@@ -66,11 +66,11 @@ const refundpolicy = () => {
                     The provisions of Civil Code, the act on copyright and neighbouring rights, an act on electronic services providing and other provisions of effective law shall be applicable in issues not governed by these terms and conditions.
                     <div className="my-3"></div>
                     Our terms are aligned and subject to modification according to laws and guidelines by local government bodies like TRAI in India.
-                </p>
+                </span>
             </div>
             <div className="mb-5">
                 <h2 className="c-fs-2 c-fw-m">Cancellation Policy</h2>
-                <p className="c-fs-4">
+                <span className="c-fs-4">
                     We are with you but if someone tries to misuse, here's hwo they will be legally bound.
                     <div className="my-3"></div>
                     Our services consist of the platform, features and connectivity
@@ -89,11 +89,11 @@ const refundpolicy = () => {
                     these terms. By accessing or using the Services, you acknowledge
                     that you have carefully read and understood whatever has been
                     listed, and you agree to be bound by these Terms.
-                </p>
+                </span>
             </div>
             <div className="mb-5">
                 <h2 className="c-fs-2 c-fw-m">Cancellation Policy</h2>
-                <p className="c-fs-4">
+                <span className="c-fs-4">
                     We are with you but if someone tries to misuse, here's hwo they will be legally bound.
                     <div className="my-3"></div>
                     Our services consist of the platform, features and connectivity
@@ -112,11 +112,11 @@ const refundpolicy = () => {
                     these terms. By accessing or using the Services, you acknowledge
                     that you have carefully read and understood whatever has been
                     listed, and you agree to be bound by these Terms.
-                </p>
+                </span>
             </div>
             <div className="mb-5">
                 <h2 className="c-fs-2 c-fw-m">Cancellation Policy</h2>
-                <p className="c-fs-4">
+                <span className="c-fs-4">
                     We are with you but if someone tries to misuse, here's hwo they will be legally bound.
                     <div className="my-3"></div>
                     Our services consist of the platform, features and connectivity
@@ -135,11 +135,11 @@ const refundpolicy = () => {
                     these terms. By accessing or using the Services, you acknowledge
                     that you have carefully read and understood whatever has been
                     listed, and you agree to be bound by these Terms.
-                </p>
+                </span>
             </div>
             <div className="mb-5">
                 <h2 className="c-fs-2 c-fw-m">Cancellation Policy</h2>
-                <p className="c-fs-4">
+                <span className="c-fs-4">
                     We are with you but if someone tries to misuse, here's hwo they will be legally bound.
                     <div className="my-3"></div>
                     Our services consist of the platform, features and connectivity
@@ -158,11 +158,11 @@ const refundpolicy = () => {
                     these terms. By accessing or using the Services, you acknowledge
                     that you have carefully read and understood whatever has been
                     listed, and you agree to be bound by these Terms.
-                </p>
+                </span>
             </div>
             <div className="mb-5">
                 <h2 className="c-fs-2 c-fw-m">Cancellation Policy</h2>
-                <p className="c-fs-4">
+                <span className="c-fs-4">
                     We are with you but if someone tries to misuse, here's hwo they will be legally bound.
                     <div className="my-3"></div>
                     Our services consist of the platform, features and connectivity
@@ -181,7 +181,7 @@ const refundpolicy = () => {
                     these terms. By accessing or using the Services, you acknowledge
                     that you have carefully read and understood whatever has been
                     listed, and you agree to be bound by these Terms.
-                </p>
+                </span>
             </div>
         </>
 

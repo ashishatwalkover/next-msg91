@@ -3,15 +3,15 @@ const startuppolicy = () => {
         <>
             <div className="mb-5">
                 <h2 className="c-fs-2 c-fw-m">Startup policy</h2>
-                <p className="my-3 c-fs-4">
+                <div className="my-3 c-fs-4">
                     <strong>We love Startups. After all, we too are a Startup!</strong>
                     <div className="my-3"></div>
                     You grow, we grow! We have set the boundaries in detail so nobody can misuse.
-                </p>
+                </div>
             </div>
             <div className="mb-5">
                 <h2 className="c-fs-2 c-fw-m">Terms and conditions acceptance</h2>
-                <p className="c-fs-4">
+                <div className="c-fs-4">
                     1. MSG91 renders ‘MSG91’ services on principles set out in this terms and conditions document.
                     <div className="my-3"></div>
                     2. By accepting these terms and conditions, the user confirms to have read, understood and accepted its contents.
@@ -23,11 +23,11 @@ const startuppolicy = () => {
                     5. MSG91 reserves the right to modify the provisions of these terms and conditions without each time notifying the user of the implemented modifications. The user may at any time familiarize himself with the currently effective privacy policy.
                     <div className="my-3"></div>
                     6. Further use of products and rendered services after additional modifications in the terms and conditions have been implemented, shall constitute the consent to accept these modifications. Refusal to accept these modifications shall preclude the user from using the offered products and services.
-                </p>
+                </div>
             </div>
             <div className="mb-5">
                 <h2 className="c-fs-2 c-fw-m">Services description</h2>
-                <p className="c-fs-4">
+                <div className="c-fs-4">
                     1. All software, used by users in accordance with its application and purpose defined in these terms and conditions, available on <a href="https://msg91.com/startups/"> www.msg91.com/startups </a> and provided by MSG91 shall be deemed as service or product.
                     <div className="my-3"></div>
                     2. The use of any new services and products available on aforementioned website, after the user has accepted the terms and conditions shall be subject to its provisions.
@@ -35,11 +35,11 @@ const startuppolicy = () => {
                     3. MSG91 is exclusively entitled to decide on functionality, the use, subject matter and the range of particular services and products as well as to cease rendering these services.
                     <div className="my-3"></div>
                     4. MSG91 is exclusively authorized to decide on the contents and the nature of the software as well as to freely add, change or remove particular elements.
-                </p>
+                </div>
             </div>
             <div className="mb-5">
                 <h2 className="c-fs-2 c-fw-m">Access and the use of services</h2>
-                <p className="c-fs-4">
+                <div className="c-fs-4">
                     1. MSG91 services and products are exclusively designated for business use and must be used only in accordance with their purpose, application and their general characteristics.
                     <div className="my-3"></div>
                     2. MSG91 services and products can be accessed solely by logging on particular website.
@@ -71,11 +71,11 @@ const startuppolicy = () => {
                     15. MSG91 reserves the right to access individual users’ accounts for the technical and administrative purposes and for security reasons. The obtained information in such a manner shall not be processed or made available to third parties unless required by provisions of law.
                     <div className="my-3"></div>
                     16. Hosting providers, Developers, Consultancy services, Educational institutions, Event organizers, etc., are not eligible for the offer.
-                </p>
+                </div>
             </div>
             <div className="mb-5">
                 <h2 className="c-fs-2 c-fw-m">Trademarks and copyright</h2>
-                <p className="c-fs-4">
+                <div className="c-fs-4">
                     1. “MSG91” is a trademark owned by MSG91 Software SA, registered in United States Patent and Trademark Office and is therefore subject to national as well as international protection.
                     <div className="my-3"></div>
                     2. The MSG91 service provider states that it has rights to intangible assets in the form of a graphic project of offered services and software, website layout, computer software as well as to all company signs, symbols and trademarks used within its scope of business activity.
@@ -91,7 +91,7 @@ const startuppolicy = () => {
                     7. The user must not modify or change the purpose and use of offered services and products. Misleading others as to the existence of cooperation, association, relationship or acting on behalf of MSG91 is prohibited.
                     <div className="my-3"></div>
                     Our terms are aligned and subject to modification according to laws and guidelines by local government bodies like TRAI in India.
-                </p>
+                </div>
             </div>
         </>
 

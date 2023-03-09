@@ -3,15 +3,15 @@ const nospam = () => {
         <>
             <div className="mb-5">
                 <h2 className="c-fs-2 c-fw-m">No spam policy</h2>
-                <p className="c-fs-4">
+                <span className="c-fs-4">
                 We don’t SPAM and won’t accept anyone’s either!
                     <div className="my-3"></div>
                     Any unsolicited, unexpected or unwanted SMS sent to the recipients in order to mislead them is considered SPAM by us. Also, if you send messages to unregistered users- SPAM.
-                </p>
+                </span>
             </div>
             <div className="mb-5">
                 <h2 className="c-fs-2 c-fw-m">MSG91’s No-Spam Policy</h2>
-                <p className="c-fs-4">
+                <span className="c-fs-4">
                 General conditions
                     <div className="my-3"></div>
                     We consider SMS to be a compelling tool for delivering useful information, alerts and notifications.
@@ -173,7 +173,7 @@ const nospam = () => {
                     Our terms are aligned and subject to modification according to laws and guidelines by local government bodies like TRAI in India
                     <div className="my-3"></div>
                     Please note, that we do not knowingly do business with any company or person that sends unsolicited messages.
-                </p>
+                </span>
             </div>
         </>
 

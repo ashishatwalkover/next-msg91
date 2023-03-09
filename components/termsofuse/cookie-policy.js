@@ -3,7 +3,7 @@ const cookiepolicy = () => {
         <>
 <div className="mb-5">
                 <h2 className="c-fs-2 c-fw-m">Cookie policy</h2>
-                <p className="c-fs-4">
+                <span className="c-fs-4">
                 We love cookies…umm both kinds 😉
                     <div className="my-3"></div>
                     Cookies are small pieces of information saved about you when you’re online, to help us track you as you browse.
@@ -11,11 +11,11 @@ const cookiepolicy = () => {
                     So say you go to the Regional SMS page to see how you can send SMS in regional language; the next time you visit our site, we will remember your choice because of cookies. It is one of our ways to create a better user experience for you.
                     <div className="my-1"></div>
                     Some cookies are necessary for technical reasons; some enable a personalized experience.
-                </p>
+                </span>
             </div>
             <div className="mb-5">
                 <h2 className="c-fs-2 c-fw-m">What Is A Cookie?</h2>
-                <p className="c-fs-4">
+                <span className="c-fs-4">
                 A cookie is a piece of data contained in a small file stored in the web browser. It contains a string of letters and numbers called as identifiers that are sent by a web server to a web browser. Each time the browser requests a page from the server, the identifier is sent back to the server.
                     <div className="my-3"></div>
                     Cookies allow MSG91 to identify and track users as they navigate different pages on our publicly accessible website (www.msg91.com) and identify users returning to the website. This helps make users navigating and interacting with our website and account portal more easy and efficient.
@@ -35,11 +35,11 @@ const cookiepolicy = () => {
                     Our website uses cookies to enhance our services based on user preferences. We use cookies and similar technologies like web beacons, pixel tags or local shared objects to deliver, measure, and improve our services.
                     <div className="my-3"></div>
                     We use these cookies when you visit our site and service both, through a browser and through our mobile app. As we adopt additional technologies, we may also gather additional data through other methods.
-                </p>
+                </span>
             </div>
             <div className="mb-5">
                 <h2 className="c-fs-2 c-fw-m">We Use Cookies To:</h2>
-                <p className="c-fs-4">
+                <span className="c-fs-4">
                     <div className="my-3"></div>
                     <li>
                     Validate the authenticity of person/s attempting to gain access to user account.
@@ -65,11 +65,11 @@ const cookiepolicy = () => {
                     <li>
                     Remember the settings and other choices you’ve made at our website.
                     </li>
-                </p>
+                </span>
             </div>
             <div className="mb-5">
                 <h2 className="c-fs-2 c-fw-m">Information We Collect:</h2>
-                <p className="c-fs-4">
+                <span className="c-fs-4">
                 We collect certain data from you directly
                     <div className="my-3"></div>
                     <li>
@@ -125,21 +125,21 @@ const cookiepolicy = () => {
                     <li>
                     Comments you make
                     </li>
-                </p>
+                </span>
             </div>
             <div className="mb-5">
                 <h2 className="c-fs-2 c-fw-m">What Are My Privacy Options?</h2>
-                <p className="c-fs-4">
+                <span className="c-fs-4">
                 Most browsers automatically accept cookies, but you can change your browser settings to decline cookies by consulting your browser’s support articles. If you decide to decline cookies, please note that you may not be able to sign in, customize or use some interactive features on our website or panel.
                     <div className="my-3"></div>
                     For general information about targeting cookies and how to disable them, visit
                     <div className="my-1"></div>
                     <a href="https://www.allaboutcookies.org/"><strong>www.allaboutcookies.org</strong></a>
-                </p>
+                </span>
             </div>
             <div className="mb-5">
                 <h2 className="c-fs-2 c-fw-m">We Use Cookies To:</h2>
-                <p className="c-fs-4">
+                <span className="c-fs-4">
                 We may update this Cookie Policy from time to time. If we do, we’ll notify you by posting the policy on our site with a new effective date.
                     <div className="my-3"></div>
                     If you have any questions about our use of cookies, please email us at <a href="https://msg91.com/cdn-cgi/l/email-protection">[email protected]</a>
@@ -147,7 +147,7 @@ const cookiepolicy = () => {
                     Our terms are aligned and subject to modification according to laws and guidelines by local government bodies like TRAI in India.
                     <div className="my-3"></div>
                     This Cookie Policy was last updated on Feb 18, 2019
-                </p>
+                </span>
             </div>
         </>
 

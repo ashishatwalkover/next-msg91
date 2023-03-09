@@ -4,15 +4,15 @@ const privacypolicy = ()=>{
         <div className="col-12  terms-content">
           <div className="mb-5">
             <h2 className="c-fs-2 c-fw-m">Privacy policy</h2>
-            <p className="c-fs-4">
+            <span className="c-fs-4">
               Your privacy, our priority
               <div className="my-3"></div>
               We take a “No Nonsense” approach to data protection. We will never misuse your data and to know all of the ways we gather, use and manage yours or your client’s data and for the purposes is set out here.
-            </p>
+            </span>
           </div>
           <div className="mb-5">
             <h2 className="c-fs-2 c-fw-m">Your information. Our responsibility.</h2>
-            <p className="c-fs-4">
+            <span className="c-fs-4">
               At MSG91, Your privacy. On priority.
               <div className="my-3"></div>
               This application (hereinafter “Application”) collects some Personal Data from its Users. The Data are collected and processed for the purposes set out below.
@@ -160,7 +160,7 @@ const privacypolicy = ()=>{
               This privacy policy is exclusive to this application.
               <div className="my-3"></div>
               Our terms are aligned and subject to modification according to laws and guidelines by local government bodies.
-              </p>
+              </span>
           </div>
           
         </div>
