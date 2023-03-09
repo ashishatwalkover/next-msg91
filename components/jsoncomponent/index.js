@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { MdFavorite, MdArrowForward } from "react-icons/md";
+import Trustedsec from "../trusted_by";
 import Link from "next/link";
 const index = () => {
   const router = useRouter();
@@ -42,40 +43,8 @@ const index = () => {
       </div>
 
       <section className="trusted-by  d-flex flex-column mx-auto text-center">
-        <div className="mb-5 c-fs-2">
-          <MdFavorite className="love" /> Trusted by
-        </div>
-        <div className="d-flex flex-wrap justify-content-center col-12  mb-5 mx-auto">
-          <div className="col-lg-2 col-sm-3 col-md-3 col-6">
-            <div className="mb-4 text-center align-middle">
-              <img src="img/ixigo.svg" alt="" />
-            </div>
-          </div>
+      <Trustedsec/>
 
-          <div className="col-lg-2 col-sm-3 col-md-3 col-6 d-none d-md-block">
-            <div className="mb-4 text-center">
-              <img src="img/unacademy.svg" alt="" />
-            </div>
-          </div>
-
-          <div className="col-lg-2 col-sm-3 col-md-3 col-6">
-            <div className="mb-4 text-center">
-              <img src="img/indeed.svg" alt="" />
-            </div>
-          </div>
-
-          <div className="col-lg-2 col-sm-3 col-md-3 col-6 d-none d-lg-block">
-            <div className="mb-4 text-center">
-              <img src="img/nsic.png" alt="" />
-            </div>
-          </div>
-
-          <div className="col-lg-2 col-sm-3 col-md-3 col-6 d-none d-sm-block">
-            <div className="mb-4 text-center">
-              <img src="img/xiaomi.png" alt="" />
-            </div>
-          </div>
-        </div>
       </section>
 
       <section className="products">
