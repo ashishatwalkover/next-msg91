@@ -112,17 +112,17 @@
     "tagline": "Boost audience engagement through smart communication and on-time delivery.",
     "features": {
       "one": {
-        "img": "/img/camp-f-img-one.svg",
+        "img": "/img/whatsapp-feature-one.svg",
         "heading": "Automate sending messages under defined conditions",
         "content": "Define different messaging parameters like time, region, number of messages per day, and more to make sure that your campaigns reach your audience under the right circumstances automatically, without any delays."
       },
       "two": {
-        "img": "/img/camp-f-img-two.svg",
+        "img": "/img/whatsapp-feature-two.svg",
         "heading": "An all-in-one platform for all your campaigns",
         "content": "Optimise your links and create short links that inspire confidence. Include short links in your custom messages with ease."
       },
       "three": {
-        "img": "/img/camp-f-img-three.svg",
+        "img": "/img/whatsapp-feature-three.svg",
         "heading": "Make your communication more secure",
         "content": "Now protect your Campaigns with our token-based workflow and a robust security framework. Implement best customer-engagement practices and shape communication to fit your brand while ensuring optimum security through and through."
       }
@@ -143,12 +143,12 @@
     "tagline": "Deliver a Consistent Experience with Transactional Email",
     "features": {
       "one": {
-        "img": "/img/camp-f-img-one.svg",
+        "img": "/img/whatsapp-feature-one.svg",
         "heading": "Email Tracking and Analytics",
         "content": "Get access to the reporting dashboard to analyse transactional email data like open rate, click-through rate, A/B testing etc. Debug a specific request or status of an email delivery or analyse report. Get 30 days of log retention and 7 days message retention."
       },
       "two": {
-        "img": "/img/camp-f-img-two.svg",
+        "img": "/img/whatsapp-feature-two.svg",
         "heading": "Suppression Management",
         "content": "Manage your opt-in, opt-out contacts and automatically deliver with our transactional email provider. Make the suppression list management easy. Automate the entire email opt-out collection with the webhooks to process and distribute in real-time."
       }
@@ -169,12 +169,12 @@
     "tagline": "Send text messages globally with the powerful and robust Transactional SMS API.",
     "features": {
       "one": {
-        "img": "/img/camp-f-img-one.svg",
+        "img": "/img/whatsapp-feature-one.svg",
         "heading": "DND Allowed",
         "content": "MSG91’s transactional SMS service lets you send transactional SMS to DND (Do Not Disturb) numbers in your contact list. This feature is not available with promotional messages. The feature is most useful in the case of OTPs and important notifications that are not marketing-driven."
       },
       "two": {
-        "img": "/img/camp-f-img-two.svg",
+        "img": "/img/whatsapp-feature-two.svg",
         "heading": "Send SMS 24×7",
         "content": "Since the nature of transactional SMS are meant to support a user along the customer journey, and is triggered by an action of the user on a website/app, they can be automated and sent at any time of the day as per the user action. This allows users to carry secure online transactions at any time of the day with ample information."
       }
@@ -195,17 +195,17 @@
     "tagline": "MSG91 Voice Call API Programmable yet personal",
     "features": {
       "one": {
-        "img": "/img/camp-f-img-one.svg",
+        "img": "/img/voice-feature-one.svg",
         "heading": "Customise & Craft Calls",
         "content": "The intuitive Voice Call API lets you build the call experience you want. Every call can be customised.Route customers to the right department or agent for solving their problem. A simple HTTP request allows you to embed PSTN, SIP or VoIP into your tool."
       },
       "two": {
-        "img": "/img/camp-f-img-two.svg",
+        "img": "/img/voice-feature-two.svg",
         "heading": "Clear Calls",
         "content": "Ensuring high quality so you enjoy clear audio with low latency. Our main goal is to keep your customer satisfied and help them to scale their business rapidly."
       },
       "three": {
-        "img": "/img/camp-f-img-three.svg",
+        "img": "/img/voice-feature-three.svg",
         "heading": "Control Calls",
         "content": "Get extensive reports to analyze and further build comprehensive calling experience. Provide your customers everything they need- customer history, order details, previous call records- all in one place, for fast personal support."
       }
@@ -226,17 +226,17 @@
     "tagline": "One API for WhatsApp",
     "features": {
       "one": {
-        "img": "/img/camp-f-img-one.svg",
+        "img": "/img/whatsapp-feature-one.svg",
         "heading": "Send alerts & notifications",
         "content": "Enable WhatsApp API to send strategic business messages. From bank account notification, payment receipts to delivery alerts, WhatsApp API does it all."
       },
       "two": {
-        "img": "/img/camp-f-img-two.svg",
+        "img": "/img/whatsapp-feature-two.svg",
         "heading": "Secured communication",
         "content": "WhatsApp Business API messages are encrypted & secured over HTTPS. Win over your customers’ trust by enabling private conversations with your users."
       },
       "three": {
-        "img": "/img/camp-f-img-three.svg",
+        "img": "/img/whatsapp-feature-three.svg",
         "heading": "WhatsApp Business API for customer support",
         "content": "Join the faster and seamless way to customer conflict resolution. Solve customers’ queries & provide support on their preferred chat platform."
       }
@@ -257,17 +257,17 @@
     "tagline": "Redefine A2P messaging with RCS - Rich Communication Services",
     "features": {
       "one": {
-        "img": "/img/camp-f-img-one.svg",
+        "img": "/img/whatsapp-feature-one.svg",
         "heading": "Bring on the conversations across every channel",
         "content": "Serve your customers wherever they are."
       },
       "two": {
-        "img": "/img/camp-f-img-two.svg",
+        "img": "/img/whatsapp-feature-two.svg",
         "heading": "Add modern messaging into every application",
         "content": "Initiate a modern messaging experience for your customers into your brand’s website and mobile apps."
       },
       "three": {
-        "img": "/img/camp-f-img-three.svg",
+        "img": "/img/whatsapp-feature-three.svg",
         "heading": "Deliver consistent and interactive experience",
         "content": "JBe extraordinary while live chat with AI, bots and integrated apps for conversational business at scale."
       }
@@ -350,17 +350,17 @@
     "tagline": "Run targeted campaigns, personalize marketing content, precise data access with customer segmentation.",
     "features": {
       "one": {
-        "img": "/img/camp-f-img-one.svg",
+        "img": "/img/whatsapp-feature-one.svg",
         "heading": "Personalize Marketing Content",
         "content": "Generate personalized content for different segments. Subdivide and send relevant content to users, boost up your customer retention by tailoring and segmenting."
       },
       "two": {
-        "img": "/img/camp-f-img-two.svg",
+        "img": "/img/whatsapp-feature-two.svg",
         "heading": "Run Targeted Campaigns",
         "content": "Filter out ceasing and inactive customers, personalize information for them, rebuild permanent customers by running targeted campaigns."
       },
       "three": {
-        "img": "/img/camp-f-img-three.svg",
+        "img": "/img/whatsapp-feature-three.svg",
         "heading": "Precise Data Access",
         "content": "Slice it off and only access data that you need. Teams can segment data according to their needs by filtering it and take actions accordingly."
       }
@@ -381,17 +381,17 @@
     "tagline": "Run targeted campaigns, personalize marketing content, precise data access with customer segmentation.",
     "features": {
       "one": {
-        "img": "/img/camp-f-img-one.svg",
+        "img": "/img/whatsapp-feature-one.svg",
         "heading": "Personalize Marketing Content",
         "content": "Generate personalized content for different segments. Subdivide and send relevant content to users, boost up your customer retention by tailoring and segmenting."
       },
       "two": {
-        "img": "/img/camp-f-img-two.svg",
+        "img": "/img/whatsapp-feature-two.svg",
         "heading": "Run Targeted Campaigns",
         "content": "Filter out ceasing and inactive customers, personalize information for them, rebuild permanent customers by running targeted campaigns."
       },
       "three": {
-        "img": "/img/camp-f-img-three.svg",
+        "img": "/img/whatsapp-feature-three.svg",
         "heading": "Precise Data Access",
         "content": "Slice it off and only access data that you need. Teams can segment data according to their needs by filtering it and take actions accordingly."
       }
@@ -412,17 +412,17 @@
     "tagline": "Run targeted campaigns, personalize marketing content, precise data access with customer segmentation.",
     "features": {
       "one": {
-        "img": "/img/camp-f-img-one.svg",
+        "img": "/img/whatsapp-feature-one.svg",
         "heading": "Personalize Marketing Content",
         "content": "Generate personalized content for different segments. Subdivide and send relevant content to users, boost up your customer retention by tailoring and segmenting."
       },
       "two": {
-        "img": "/img/camp-f-img-two.svg",
+        "img": "/img/whatsapp-feature-two.svg",
         "heading": "Run Targeted Campaigns",
         "content": "Filter out ceasing and inactive customers, personalize information for them, rebuild permanent customers by running targeted campaigns."
       },
       "three": {
-        "img": "/img/camp-f-img-three.svg",
+        "img": "/img/whatsapp-feature-three.svg",
         "heading": "Precise Data Access",
         "content": "Slice it off and only access data that you need. Teams can segment data according to their needs by filtering it and take actions accordingly."
       }
@@ -443,17 +443,17 @@
     "tagline": "Run targeted campaigns, personalize marketing content, precise data access with customer segmentation.",
     "features": {
       "one": {
-        "img": "/img/camp-f-img-one.svg",
+        "img": "/img/whatsapp-feature-one.svg",
         "heading": "Personalize Marketing Content",
         "content": "Generate personalized content for different segments. Subdivide and send relevant content to users, boost up your customer retention by tailoring and segmenting."
       },
       "two": {
-        "img": "/img/camp-f-img-two.svg",
+        "img": "/img/whatsapp-feature-two.svg",
         "heading": "Run Targeted Campaigns",
         "content": "Filter out ceasing and inactive customers, personalize information for them, rebuild permanent customers by running targeted campaigns."
       },
       "three": {
-        "img": "/img/camp-f-img-three.svg",
+        "img": "/img/whatsapp-feature-three.svg",
         "heading": "Precise Data Access",
         "content": "Slice it off and only access data that you need. Teams can segment data according to their needs by filtering it and take actions accordingly."
       }
