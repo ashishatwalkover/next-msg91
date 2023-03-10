@@ -26,20 +26,20 @@ const email = () => {
     Prism.highlightAll();
   }, []);
 
-  var fetchData = async () => {
-    const response = await import(`@/pages/content/${path}.json`);
-    const jsonData = await response.default;
+  var fetchData = () => {
+    const response =  import(`@/pages/content/${path}.json`);
+    const jsonData =  response.default;
     return jsonData;
   };
-  const fetchD = async () => {
-    let content = await fetchData();
+  const fetchD =  () => {
+    let content =  fetchData();
     setData(content);
   };
   fetchD();
   
-  var fetchData = async () => {
-    const response = await import(`@/pages/content/${path}.json`);
-    const jsonData = await response.default;
+  var fetchData =  () => {
+    const response =  import(`@/pages/content/${path}.json`);
+    const jsonData =  response.default;
     return jsonData;
   };
 
