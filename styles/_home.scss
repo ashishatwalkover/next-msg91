@@ -1,100 +1,134 @@
-.love{
-  color: #EA6666;
+.love {
+  color: #ea6666;
 }
-.trusted-by{
-  img{
+.trusted-by {
+  img {
     height: 24px;
   }
 }
-.products{
-  .title{
+.products {
+  height: fit-content;
+  .product-sec{
+    height: 100%;
+  }
+  .title {
     font-size: 32px;
     padding: 24px;
     font-weight: normal;
   }
-  .spacer{
-    height: 400px;
+
+
+    
+  
+  .spacer {
+    height: 30vw;
   }
-  .pro-footer{
+
+  .pro-footer {
+    height: 35%;
     background: rgba(17, 87, 166, 0.9);
     padding: 20px;
-    &.alt{
-      background: #1157A6;
+    &.alt {
+      background: #1157a6;
     }
-    .pro-text{
+    .pro-text {
       color: #fff;
       margin-bottom: 16px;
     }
-    .icon{
-      width: 40px;
-      height: 40px;
+    .icon {
+      width: clamp(20px,8vw,40px);
+      height: clamp(20px,8vw,40px);
     }
-    .pro-btn{
+    .pro-btn {
       display: flex;
       align-items: center;
-      padding: 8px 20px;
+      padding: 4px 12px;
       background: #fff;
       border-radius: var(--radius2);
-      width: 260px;
+      width: clamp(170px,40vw,200px);
       color: var(--bs-body-color);
       text-decoration: none;
       margin-top: 16px;
-      .btn-label{
+      .btn-label {
         font-size: 20px;
         padding-left: 8px;
       }
     }
   }
-  .hello-icon{
+  .hello-icon {
     background: url(/img/hello.svg);
   }
-  .segmento-icon{
+  .segmento-icon {
     background: url(/img/segmento.svg);
   }
-  .campaign-icon{
+  .campaign-icon {
     background: url(/img/campaign.svg);
   }
-  .otp-icon{
+  .otp-icon {
     background: url(/img/otp.svg);
   }
 
-  .segmento{
+  .segmento {
     background: url(/img/segmento-pro.png);
     // background-size: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: #E7EEF6;
   }
-  .hello{
+  .hello {
     background: url(/img/hello-pro.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    // background-size: 100%;
+    // background-size: 180%;
+    background-color: #AECCEA;
+    
   }
-  .campaign{
-    background: url(/img/campaign2-pro.png);
+  .campaign {
+    background: url(/img/campaign-pro.png);
+    background-color: #AECCEA;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     // background-size: 100%;
   }
-  .otp{
+  .otp {
     background: url(/img/otp-pro.png);
+    background-color: #E7F1FF;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     // background-size: 100%;
   }
 }
+@media only screen and (max-width: 991px){
+  .products{
+    
+    .spacer{
 
-.channels{
+    height:50vw;
+  }
+  }
+  
+}
+@media only screen and (max-width: 501px){
+  .products{
+    
+    .spacer{
 
-  .icon{
+    height:100vw;
+  }
+  }
+  
+}
+
+.channels {
+  .icon {
     width: 40px;
     height: 40px;
   }
-  .chn-btn{
+  .chn-btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,49 +140,49 @@
     text-decoration: none;
     margin-right: 24px;
     margin-bottom: 24px;
-    .icon{
+    .icon {
       background-size: 40px !important;
     }
-    &.sms{
+    &.sms {
       background: var(--sms-light);
-      .icon{
+      .icon {
         background: url(/img/sms.svg);
       }
     }
-    &.email{
+    &.email {
       background: var(--email-light);
-      .icon{
+      .icon {
         background: url(/img/email.svg);
       }
     }
-    &.whatsapp{
+    &.whatsapp {
       background: var(--whatsapp-light);
-      .icon{
+      .icon {
         background: url(/img/whatsapp.svg);
       }
     }
-    &.telegram{
+    &.telegram {
       background: var(--telegram-light);
-      .icon{
+      .icon {
         background: url(/img/telegram.svg);
       }
     }
-    &.voice{
+    &.voice {
       background: var(--voice-light);
-      .icon{
+      .icon {
         background: url(/img/voice.svg);
       }
     }
-    &.rcs{
+    &.rcs {
       background: var(--rcs-light);
-      .icon{
+      .icon {
         background: url(/img/rcs.svg);
       }
     }
-    .btn-label{
+    .btn-label {
       font-size: 20px;
       padding-left: 8px;
-      span{
+      span {
         padding-right: 20px;
       }
     }
@@ -162,24 +196,21 @@
       width: 110px;
       height: 110px;
       margin: 16px;
-      
-      .btn-label{
+
+      .btn-label {
         padding: 0;
-        span{
+        span {
           justify-content: center;
           text-align: center;
-          padding:  0!important;
-          
+          padding: 0 !important;
         }
       }
     }
-  
-    
   }
-  .stats{  
+  .stats {
     // text-align: center;
-    // width: 225px;  
-    .stats-title{
+    // width: 225px;
+    .stats-title {
       font-size: var(--small-heading);
       color: var(--primary-color);
       font-weight: 500;
@@ -187,6 +218,6 @@
   }
 }
 
-.utilities{
-  background: var(--light-blue);  
+.utilities {
+  background: var(--light-blue);
 }
