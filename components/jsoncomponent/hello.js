@@ -1,7 +1,18 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import TrustedSec from "@/components/trusted_by";
+import axios from "axios"
 const hello = () => {
+
+  const getData = async() =>{
+    const response = await axios.get('https://api.airtable.com/v0/appc4wGbR2QjI3yFC/msgone', {
+        headers: {
+            'Authorization': 'Bearer pat1bRfY2UL5uouDk.b8baed91ed949d0998455969a115b213c864a533014928999f00a82de5d1dc44'
+        }
+      });
+      console.log(response?.data?.records)
+  }
+  getData();
   const router = useRouter();
   var path;
 
