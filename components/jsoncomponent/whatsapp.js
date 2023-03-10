@@ -22,11 +22,8 @@ const whatsapp = () => {
 
   const [data, setData] = useState(null);
   useEffect(() => {
-    const fetchD = async () => {
-      let content = await fetchData();
-      setData(content);
-    };
-    fetchD();
+    
+
     Prism.highlightAll();
   }, []);
 
@@ -35,7 +32,11 @@ const whatsapp = () => {
     const jsonData = await response.default;
     return jsonData;
   };
-
+  const fetchD = async () => {
+    let content = await fetchData();
+    setData(content);
+  };
+  fetchD();
   const snippet = new HTTPSnippet({
     "log": {
         "version": "1.2",

@@ -15,19 +15,16 @@ const files = () => {
   }
 
   const [data, setData] = useState(null);
-  useEffect(() => {
-    const fetchD = async () => {
-      let content = await fetchData();
-      setData(content);
-    };
-    fetchD();
-  }, []);
-
   var fetchData = async () => {
     const response = await import(`@/pages/content/${path}.json`);
     const jsonData = await response.default;
     return jsonData;
   };
+  const fetchD = async () => {
+    let content = await fetchData();
+    setData(content);
+  };
+  fetchD();
 
   return (
     <>

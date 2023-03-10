@@ -21,11 +21,8 @@ const voice = () => {
 
   const [data, setData] = useState(null);
   useEffect(() => {
-    const fetchD = async () => {
-      let content = await fetchData();
-      setData(content);
-    };
-    fetchD();
+    
+
     Prism.highlightAll();
   }, []);
 
@@ -34,6 +31,11 @@ const voice = () => {
     const jsonData = await response.default;
     return jsonData;
   };
+  const fetchD = async () => {
+    let content = await fetchData();
+    setData(content);
+  };
+  fetchD();
 
   const snippet = new HTTPSnippet({
     "log": {
