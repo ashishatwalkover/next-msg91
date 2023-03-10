@@ -49,7 +49,7 @@ const contactus = () => {
           </li>
         </ul>
       </div>
-      <div className="d-flex w-100 h-auto c-bg-grey py-4 flex-column  gap-4 gap-lg-0 flex-lg-row">
+      <div className="d-none w-100 h-auto c-bg-grey py-4 flex-column  gap-4 gap-lg-0 flex-lg-row">
         <div className="col-12 col-lg-4 d-flex flex-column flex-lg-column flex-sm-row align-items-center justify-content-center ">
           <div className="w-100 d-flex flex-column align-items-center">
             <span className="c-fs-1   rounded-circle social-circle justify-content-center align-items-center d-flex">
@@ -68,7 +68,7 @@ const contactus = () => {
             </p>
           </div>
         </div>
-        <div className="col-12 col-lg-8">
+        {/* <div className="col-12 col-lg-8">
           <div className="tab-content " id="pills-tabContent">
             <div
               className="tab-pane fade show active"
@@ -87,7 +87,74 @@ const contactus = () => {
               <InlineWidget url="https://calendly.com/support--msg91" />
             </div>
           </div>
-        </div>
+        </div> */}
+      </div>
+      <div className="w-100 h-auto c-bg-grey">
+        
+          <div className="tab-content " id="pills-tabContent">
+            <div
+              className="tab-pane fade show active "
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+            >
+              <div className=" d-flex w-100 h-auto c-bg-grey py-4 flex-column  gap-4 gap-lg-0 flex-lg-row">
+              <div className="col-12 col-lg-4 d-flex flex-column flex-lg-column flex-sm-row align-items-center justify-content-center ">
+                <div className="w-100 d-flex flex-column align-items-center">
+                  <span className="c-fs-1   rounded-circle social-circle justify-content-center align-items-center d-flex">
+                    <MdOutlineEmail className="p-auto c-fw-sb text-primary" />
+                  </span>
+                  <p className="c-fs-2 px-3 py-3 mt-n2 rounded w-75 text-center bg-white">
+                    sales@msg91.com
+                  </p>
+                </div>
+                <div className="w-100 d-flex flex-column align-items-center mt-4 mt-sm-0 mt-lg-4">
+                  <span className="c-fs-1 c-fw-b  rounded-circle social-circle justify-content-center align-items-center d-flex">
+                    <MdAddCall className="p-auto text-primary" />
+                  </span>
+                  <p className="c-fs-2 px-3 py-3 mt-n2 rounded w-75 text-center bg-white">
+                    +91-987654321
+                  </p>
+                </div>
+              </div>
+              <div className="col-12 col-lg-8">
+                <InlineWidget url="https://calendly.com/sales-msg91/pre-sales" />
+              </div>
+            </div>
+            </div>
+            <div
+              className="tab-pane fade "
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+            >
+              <div className=" d-flex w-100 h-auto c-bg-grey py-4 flex-column  gap-4 gap-lg-0 flex-lg-row">
+              <div className="col-12 col-lg-4 d-flex flex-column flex-lg-column flex-sm-row align-items-center justify-content-center ">
+                <div className="w-100 d-flex flex-column align-items-center">
+                  <span className="c-fs-1   rounded-circle social-circle justify-content-center align-items-center d-flex">
+                    <MdOutlineEmail className="p-auto c-fw-sb text-primary" />
+                  </span>
+                  <p className="c-fs-2 px-3 py-3 mt-n2 rounded w-75 text-center bg-white">
+                    support@msg91.com
+                  </p>
+                </div>
+                <div className="w-100 d-flex flex-column align-items-center mt-4 mt-sm-0 mt-lg-4">
+                  <span className="c-fs-1 c-fw-b  rounded-circle social-circle justify-content-center align-items-center d-flex">
+                    <MdAddCall className="p-auto text-primary" />
+                  </span>
+                  <p className="c-fs-2 px-3 py-3 mt-n2 rounded w-75 text-center bg-white">
+                    +91-987654321
+                  </p>
+                </div>
+              </div>
+              <div className="col-12 col-lg-8">
+              <InlineWidget url="https://calendly.com/support--msg91" />
+              </div>
+              </div>
+            </div>
+          
+          </div>
+    
       </div>
 
       <Footer />
