@@ -5,24 +5,22 @@ import Footer from "@/components/footer";
 import FaqSection from "@/components/faq";
 import Hello from "@/components/jsoncomponent/hello";
 
-
 export async function getStaticProps(context) {
   const response = await import(`@/pages/content/global.json`);
   const jsonData = await response.default;
 
   return {
-    props: { sid: jsonData },
-  }
+    props: { dataProps: jsonData },
+  };
 }
 
-const hello = ({sid}) => {
-  // console.log("DATA+>>>",sid);
+const hello = ({ dataProps }) => {
   return (
     <>
       <HeadTag />
       <Notification />
       <Header />
-      <Hello dataa = {sid} />
+      <Hello datajson={dataProps} />
       <FaqSection />
       <Footer />
     </>
