@@ -5,13 +5,22 @@ import Footer from "@/components/footer";
 import FaqSection from "@/components/faq";
 import Email from "@/components/jsoncomponent/email";
 
-const email = () => {
+export async function getStaticProps(context) {
+  const response = await import(`@/pages/content/uk.json`);
+  const jsonData = await response.default;
+
+  return {
+    props: { dataProps: jsonData },
+  };
+}
+
+const email = ({ dataProps }) => {
   return (
     <>
       <HeadTag />
       <Notification />
       <Header />
-      <Email />
+      <Email datajson={dataProps} />
       <FaqSection />
       <Footer />
     </>
