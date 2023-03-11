@@ -236,6 +236,12 @@ const mininav = (props) => {
               >
                 Pricing
               </a>
+              <a
+                href="/contact-us"
+                className="nav-a c-fs-2 c-fw-sb mb-3"
+              >
+                Contact Us
+              </a>
             </div>
 
             {/* <div className="v-divider mx-5"></div> */}

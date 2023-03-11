@@ -43,67 +43,76 @@ const index = () => {
       <Trustedsec />
 
       <section className="products">
-        <div className="row g-0">
-          <div className="hello col-12 col-lg-3 col-sm-6">
-            <h2 className="small-heading m-3">Conversation</h2>
-            <div className="spacer"></div>
+        <div className="row g-0 h-100">
+          <div className="col-12 col-lg-3 col-sm-6 product-sec">
+            <div className="spacer hello">
+            <h2 className="small-heading p-3">Conversation</h2>
+
+            </div>
             <div className="pro-footer">
-              <div className="c-fs-2 text-white">
+              <div className="c-fs-3 text-white">
                 {data?.index?.products?.hello}
               </div>
               <a href="/hello" target="_blank" className="pro-btn">
-                <div className="icon hello-icon"></div>
+              <img className="icon "src="img/hello.svg"/>
                 <div className="btn-label d-flex flex-fill justify-content-between align-items-center">
-                  <span className="c-fs-2 c-fw-m">Hello</span>{" "}
+                  <span className="c-fs-3 c-fw-m">Hello</span>{" "}
                   <MdArrowForward />
                 </div>
               </a>
+            
             </div>
           </div>
-          <div className="segmento col-12 col-lg-3 col-sm-6">
-            <h2 className="small-heading m-3">Segmentation</h2>
-            <div className="spacer"></div>
+          <div className=" col-12 col-lg-3 col-sm-6 product-sec">
+            <div className="spacer segmento">
+            <h2 className="small-heading p-3">Segmentation</h2>
+
+            </div>
             <div className="pro-footer alt">
-              <div className="c-fs-2 text-white">
+              <div className="c-fs-3 text-white">
                 {data?.index?.products?.segmento}
               </div>
-              <a href="/hello" target="_blank" className="pro-btn">
-                <div className="icon segmento-icon"></div>
+              <a href="/segmento" target="_blank" className="pro-btn">
+                <img className="icon "src="img/segmento.svg"/>
                 <div className="btn-label d-flex flex-fill justify-content-between align-items-center">
-                  <span className="c-fs-2 c-fw-m">Segmento</span>{" "}
+                  <span className="c-fs-3 c-fw-m">Segmento</span>{" "}
                   <MdArrowForward />
                 </div>
               </a>
             </div>
           </div>
-          <div className="campaign col-12 col-lg-3 col-sm-6">
-            <h2 className="small-heading m-3">Flow/OneAPI</h2>
-            <div className="spacer"></div>
+          <div className=" col-12 col-lg-3 col-sm-6 product-sec">
+            <div className="spacer campaign">
+            <h2 className="small-heading p-3">Flow/OneAPI</h2>
+
+            </div>
             <div className="pro-footer">
-              <div className="c-fs-2 text-white">
+              <div className="c-fs-3 text-white">
                 {data?.index?.products?.campaign}
               </div>
-              <a href="/hello" target="_blank" className="pro-btn">
-                <div className="icon campaign-icon"></div>
+              <a href="/campaign" target="_blank" className="pro-btn">
+              <img className="icon "src="img/campaign.svg"/>
                 <div className="btn-label d-flex flex-fill justify-content-between align-items-center">
-                  <span className="c-fs-2 c-fw-m">Campaign</span>{" "}
+                  <span className="c-fs-3 c-fw-m">Campaign</span>{" "}
                   <MdArrowForward />
                 </div>
               </a>
             </div>
           </div>
-          <div className="otp col-12 col-lg-3 col-sm-6">
-            <h2 className="small-heading m-3">Verification</h2>
-            <div className="spacer"></div>
+          <div className=" col-12 col-lg-3 col-sm-6 product-sec">
+            <div className="spacer otp">
+            <h2 className="small-heading p-3">Verification</h2>
+
+            </div>
             <div className="pro-footer alt">
-              <div className="c-fs-2 text-white">
+              <div className="c-fs-3 text-white">
                 {data?.index?.products?.otp}
               </div>
-              <a href="/hello" target="_blank" className="pro-btn">
-                <div className="icon otp-icon"></div>
+              <a href="/otp" target="_blank" className="pro-btn">
+              <img className="icon "src="img/otp.svg"/>
                 <div className="btn-label d-flex flex-fill justify-content-between align-items-center">
                   {" "}
-                  <span className="c-fs-2 c-fw-m">OTP</span> <MdArrowForward />
+                  <span className="c-fs-3 c-fw-m">OTP</span> <MdArrowForward />
                 </div>
               </a>
             </div>
