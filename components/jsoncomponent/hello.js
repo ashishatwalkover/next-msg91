@@ -1,4 +1,3 @@
-
 import TrustedSec from "@/components/trusted_by";
 const hello = (props) => {
   const data = props.datajson;
