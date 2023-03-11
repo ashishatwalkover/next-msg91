@@ -1,19 +1,27 @@
 import Header from "@/components/header";
 import Notification from "@/components/notification";
 import HeadTag from "./head";
-import TrustedSec from "@/components/trusted_by";
-import Link from "next/link";
 import Footer from "@/components/footer";
 import FaqSection from "@/components/faq";
-import Shorturl from "@/components/jsoncomponent/shorturl";
+import ShortUrl from "@/components/jsoncomponent/shorturl";
 
-const shorturl = () => {
+export async function getStaticProps(context) {
+  const response = await import(`@/pages/content/ae.json`);
+  const jsonData = await response.default;
+
+  return {
+    props: { dataProps: jsonData },
+  };
+}
+
+const shorturl = ({ dataProps }) => {
   return (
     <>
       <HeadTag />
       <Notification />
       <Header />
-      <Shorturl />
+      <ShortUrl datajson={dataProps} />
+      <FaqSection />
       <Footer />
     </>
   );
