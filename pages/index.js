@@ -5,17 +5,27 @@ import ProductMenu from "@/components/productmenu";
 import Footer from "@/components/footer";
 import Home from "@/components/home";
 import Index from "@/components/jsoncomponent/index";
-const IndexPage = () => {
+export async function getStaticProps(context) {
+  const response = await import(`@/pages/content/global.json`);
+  const jsonData = await response.default;
+
+  return {
+    props: { dataProps: jsonData },
+  };
+}
+
+const IndexPage = ({ dataProps }) => {
   return (
-    <div>
+    <>
       <HeadTag />
       <Notification />
       <Header />
-      <Home />
-      <ProductMenu />
-      <Index/>
+      <Home/>
+      <ProductMenu/>
+      <Index datajson={dataProps} />
+      <FaqSection />
       <Footer />
-    </div>
+    </>
   );
 };
 export default IndexPage;

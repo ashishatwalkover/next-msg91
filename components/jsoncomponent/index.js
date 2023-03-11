@@ -1,35 +1,9 @@
-import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
-import { MdFavorite, MdArrowForward } from "react-icons/md";
+
+import {MdArrowForward } from "react-icons/md";
 import Trustedsec from "../trusted_by";
 import Link from "next/link";
-const index = () => {
-  const router = useRouter();
-  var path;
-
-  if (
-    router.pathname.split("/")[1].length > 3 ||
-    router.pathname.split("/")[1].length === 0
-  ) {
-    path = "global";
-  } else {
-    path = router.pathname.split("/")[1];
-  }
-
-  const [data, setData] = useState(null);
-  useEffect(() => {
-    const fetchD = async () => {
-      let content = await fetchData();
-      setData(content);
-    };
-    fetchD();
-  }, []);
-
-  var fetchData = async () => {
-    const response = await import(`@/pages/content/${path}.json`);
-    const jsonData = await response.default;
-    return jsonData;
-  };
+const index = (props) => {
+  const data = props.datajson;
   return (
     <>
       <div className="container text-center px-4 col-xs-12 col-sm-10 col-md-10 mx-auto section">
@@ -46,34 +20,31 @@ const index = () => {
         <div className="row g-0 h-100">
           <div className="col-12 col-lg-3 col-sm-6 product-sec">
             <div className="spacer hello">
-            <h2 className="small-heading p-3">Conversation</h2>
-
+              <h2 className="small-heading p-3">Conversation</h2>
             </div>
             <div className="pro-footer">
               <div className="c-fs-3 text-white">
                 {data?.index?.products?.hello}
               </div>
               <a href="/hello" target="_blank" className="pro-btn">
-              <img className="icon "src="img/hello.svg"/>
+                <img className="icon " src="img/hello.svg" />
                 <div className="btn-label d-flex flex-fill justify-content-between align-items-center">
                   <span className="c-fs-3 c-fw-m">Hello</span>{" "}
                   <MdArrowForward />
                 </div>
               </a>
-            
             </div>
           </div>
           <div className=" col-12 col-lg-3 col-sm-6 product-sec">
             <div className="spacer segmento">
-            <h2 className="small-heading p-3">Segmentation</h2>
-
+              <h2 className="small-heading p-3">Segmentation</h2>
             </div>
             <div className="pro-footer alt">
               <div className="c-fs-3 text-white">
                 {data?.index?.products?.segmento}
               </div>
               <a href="/segmento" target="_blank" className="pro-btn">
-                <img className="icon "src="img/segmento.svg"/>
+                <img className="icon " src="img/segmento.svg" />
                 <div className="btn-label d-flex flex-fill justify-content-between align-items-center">
                   <span className="c-fs-3 c-fw-m">Segmento</span>{" "}
                   <MdArrowForward />
@@ -83,15 +54,14 @@ const index = () => {
           </div>
           <div className=" col-12 col-lg-3 col-sm-6 product-sec">
             <div className="spacer campaign">
-            <h2 className="small-heading p-3">Flow/OneAPI</h2>
-
+              <h2 className="small-heading p-3">Flow/OneAPI</h2>
             </div>
             <div className="pro-footer">
               <div className="c-fs-3 text-white">
                 {data?.index?.products?.campaign}
               </div>
               <a href="/campaign" target="_blank" className="pro-btn">
-              <img className="icon "src="img/campaign.svg"/>
+                <img className="icon " src="img/campaign.svg" />
                 <div className="btn-label d-flex flex-fill justify-content-between align-items-center">
                   <span className="c-fs-3 c-fw-m">Campaign</span>{" "}
                   <MdArrowForward />
@@ -101,15 +71,14 @@ const index = () => {
           </div>
           <div className=" col-12 col-lg-3 col-sm-6 product-sec">
             <div className="spacer otp">
-            <h2 className="small-heading p-3">Verification</h2>
-
+              <h2 className="small-heading p-3">Verification</h2>
             </div>
             <div className="pro-footer alt">
               <div className="c-fs-3 text-white">
                 {data?.index?.products?.otp}
               </div>
               <a href="/otp" target="_blank" className="pro-btn">
-              <img className="icon "src="img/otp.svg"/>
+                <img className="icon " src="img/otp.svg" />
                 <div className="btn-label d-flex flex-fill justify-content-between align-items-center">
                   {" "}
                   <span className="c-fs-3 c-fw-m">OTP</span> <MdArrowForward />
