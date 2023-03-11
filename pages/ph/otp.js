@@ -6,7 +6,7 @@ import FaqSection from "@/components/faq";
 import Otp from "@/components/jsoncomponent/otp";
 
 export async function getStaticProps(context) {
-  const response = await import(`@/pages/content/global.ph`);
+  const response = await import(`@/pages/content/ph.json`);
   const jsonData = await response.default;
 
   return {
