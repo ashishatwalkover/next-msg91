@@ -69,12 +69,12 @@ const pricingemail = ({subscriptionEmail, fetchSubscriptionEmail}) => {
                           : 
                           <span className="text-success c-fs-3"><MdDone /></span> 
                           }
-                        {item.plan_services[1].service_credit.free_credits} Email Varifications
+                        {item.plan_services[1].service_credit.free_credits} Email Verifications
                       </div>
 
-                      <button className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
+                      <a href="https://control.msg91.com/signup/" className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
                         Get Started
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>  
@@ -104,12 +104,12 @@ const pricingemail = ({subscriptionEmail, fetchSubscriptionEmail}) => {
                         : 
                         <span className="text-success c-fs-3"><MdDone /></span> 
                         }
-                      {item.plan_services[1].service_credit.free_credits} Email Varifications
+                      {item.plan_services[1].service_credit.free_credits} Email Verifications
                     </div>
 
-                    <button className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
+                    <a href="https://control.msg91.com/signup/" className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
                       Get Started
-                    </button>
+                    </a>
                   </div>
                 </div>
               }
