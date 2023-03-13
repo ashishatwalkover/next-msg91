@@ -122,87 +122,26 @@ adventure now</h1>
           <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
             <h2 className="heading">5 minute setup</h2>
           </div>
-          <p className="c-fs-3 mx-auto">
+          <p className="c-fs-3 mx-auto mt-5">
           Build real-time communications into your apps in a few minutes and a few lines of code.
           </p>
           <p className="c-fs-3 mx-auto mb-3">
           The SDKs seamlessly connect to MSG91 global infrastructure.
           </p>
+          <div className="d-flex text-center justify-content-center">
+          <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
+            <a href="https://github.com/MSG91/sendotp-android" target="_blank">
+            <img src="/img/android_developers.svg" className="mt-5 me-5"></img>
+            </a>
+          </div>
+          <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
+            <a href="https://github.com/MSG91/sendotp-ios" target="_blank">
+            <img src="/img/ios_developers.svg" className="mt-5 ms-5"></img>
+            </a>
+          </div>
+          </div>
         </div>
       </div>
-      {/* <div className="container px-3 px-md-auto">
-        <h2 className="sub-heading">Benifits of Startup Program</h2>
-        <div className="mt-2 ">
-          <span className="c-fs-1 c-fw-b text-green">
-            <MdDone />
-          </span>
-          <span className="c-fs-4 ms-2">
-            25000 SMS credits every months for 6 months.
-          </span>
-        </div>
-        <div className="mt-2 ">
-          <span className="c-fs-1 c-fw-b text-green">
-            <MdDone />
-          </span>
-          <span className="c-fs-4 ms-2">
-            Can be used for OTP, Transactional SMS, Emails.
-          </span>
-        </div>
-        <div className=" mt-2">
-          <span className="c-fs-1 c-fw-b text-green">
-            <MdDone />
-          </span>
-          <span className="c-fs-4 ms-2">
-            Leverage our Cloud contact center HELLO and Customer Segmentation
-            product.
-          </span>
-        </div>
-        <div className="mt-2 ">
-          <span className="c-fs-1 c-fw-b text-green">
-            <MdDone />
-          </span>
-          <span className="c-fs-4 ms-2">
-            Get support from our Superherose to integrate scalable APIs.
-          </span>
-        </div>
-      </div>
-      <section className="my-5 py-5 c-bg-grey">
-        <div className="container px-3 px-md-auto">
-          <h2 className="sub-heading my-2">Our Collaborators</h2>
-          <p className="c-fs-4 w-100 mb-2 ">
-            We’re proud to be associated with a growing set of Venture
-            Capitalists, Accelerators,Incubators and Crowdfunding platforms
-            across to inspire, identify and develop end-to-end solutions for
-            businesses to discover and engage.
-          </p>
-          <img className="w-100 collab-img mt-2" src="/img/collab-img.png" />
-        </div>
-      </section> */}
-      {/* <div className="container px-3 px-md-auto">
-        <h2 className="sub-heading">
-          Checklist to become a part of the program
-        </h2>
-        <div className=" ">
-          <span className="c-fs-1 c-fw-b text-green">
-            <MdDone />
-          </span>
-          <span className="c-fs-4 ms-2">New MSG91 subsriber</span>
-        </div>
-        <div className=" ">
-          <span className="c-fs-1 c-fw-b text-green">
-            <MdDone />
-          </span>
-          <span className="c-fs-4 ms-2">Sign up from a private domain ID</span>
-        </div>
-        <div className=" ">
-          <span className="c-fs-1 c-fw-b text-green">
-            <MdDone />
-          </span>
-          <span className="c-fs-4 ms-2">
-            Associated with our preferred collaborators
-          </span>
-        </div>
-      </div> */}
       <div className="container p-5 d-flex flex-column justify-content-sm-center align-items-center">
         <div className=" c-bg-grey  p-2 p-md-5  container text-center d-md-flex justify-content-sm-between align-items-center flex-xl-row flex-lg-column flex-sm-column flex-md-column">
           <span className="c-fs-2 c-">Register with us to give voice to your Startup</span>
@@ -211,14 +150,6 @@ adventure now</h1>
               Apply now
             </a>
           </div>
-        </div>
-        <div className=" mt-5  d-flex flex-column align-items-center text-center justify-content-center">
-          <p className="c-fs-3 my-2">
-            Have More Questions? We’re always here to help you!
-          </p>
-          <a href="/contact-us" className="btn btn-outline-primary px-3 py-2 c-fs-4 mx-auto">
-            Talk to Sales
-          </a>
         </div>
       </div>
       <Footertwo />
