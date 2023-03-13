@@ -2,7 +2,7 @@ import { InlineWidget } from "react-calendly";
 import Trustedsec from "@/components/trusted_by";
 import HeadTag from "./head";
 import Header from "@/components/header";
-import Footer from "@/components/footer-sec";
+import Footer from "@/components/footer";
 import { MdDoneOutline, MdArrowForward } from "react-icons/md";
 const partnerprogram = () => {
   return (
@@ -156,7 +156,7 @@ const partnerprogram = () => {
             </div>
           </div>
         </div>
-        <a className="mx-auto text-primary c-fs-4 c-fw-m " href="#">
+        <a className="mx-auto text-primary c-fs-4 c-fw-m mt-5" href="/partners-and-integrations">
           Explore more partners <MdArrowForward />
         </a>
       </div>

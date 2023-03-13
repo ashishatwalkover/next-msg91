@@ -1,6 +1,6 @@
 import Header from "@/components/header";
 import Head from "next/head";
-import Footer from "@/components/footer-sec";
+import Footer from "@/components/footer";
 import Startupone from "@/components/startup-one";
 import Startuptwo from "@/components/startup-two";
 import Startupthree from "@/components/startup-three";

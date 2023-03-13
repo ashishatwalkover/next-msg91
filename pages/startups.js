@@ -1,6 +1,6 @@
 import HeadTag from "./head";
 import Header from "@/components/header";
-import Footertwo from "@/components/footer-sec";
+import Footertwo from "@/components/footer";
 import { MdKeyboardArrowRight, MdDone } from "react-icons/md";
 
 const startup = () => {

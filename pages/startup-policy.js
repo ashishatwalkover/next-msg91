@@ -1,6 +1,6 @@
 import HeadTag from "./head";
 import Header from "@/components/header";
-import Footer from "@/components/footer-sec";
+import Footer from "@/components/footer";
 import Link from "next/link";
 import Startuppolicy from "@/components/termsofuse/startup-policy";
 const termsofuse = () => {
