@@ -91,10 +91,10 @@ const Footer = () => {
                 <a href="/developers" className="c-fs-5 mt-2 c-fw-t">
                   Developers
                 </a>
-                <a href="/startup" className="c-fs-5 mt-2 c-fw-t">
+                <a href="/startups" className="c-fs-5 mt-2 c-fw-t">
                   MSG91 For Startups
                 </a>
-                <a href="/startup" className="c-fs-5 mt-2 c-fw-t">
+                <a href="/partners-and-integrations" className="c-fs-5 mt-2 c-fw-t">
                   Partners and Integrations
                 </a>
                 <a href="/become-a-partner" className="c-fs-5 mt-2 c-fw-t">

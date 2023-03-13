@@ -1,3 +1,4 @@
+import { InlineWidget } from "react-calendly";
 import Trustedsec from "@/components/trusted_by";
 import HeadTag from "./head";
 import Header from "@/components/header";
@@ -86,10 +87,7 @@ const partnerprogram = () => {
         </div>
       </section>
       <div className="container d-flex p-5">
-        <img
-          className="partnership-meet mx-auto"
-          src="/img/partnership-meet-img.png"
-        ></img>
+        <InlineWidget url="https://calendly.com/partnership-msg91/discussion" styles={{width: '100%', height: '700px'}} />
       </div>
       <section className="section c-bg-grey">
         <div className="container d-flex flex-wrap">
