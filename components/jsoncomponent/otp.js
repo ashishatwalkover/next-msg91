@@ -1,30 +1,6 @@
-import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
 import TrustedSec from "@/components/trusted_by";
-const otp = () => {
-  const router = useRouter();
-  var path;
-
-  if (
-    router.pathname.split("/")[1].length > 2 ||
-    router.pathname.split("/")[1].length === 0
-  ) {
-    path = "global";
-  } else {
-    path = router.pathname.split("/")[1];
-  }
-
-  const [data, setData] = useState(null);
-  var fetchData = async () => {
-    const response = await import(`@/pages/content/${path}.json`);
-    const jsonData = await response.default;
-    return jsonData;
-  };
-  const fetchD = async () => {
-    let content = await fetchData();
-    setData(content);
-  };
-  fetchD();
+const otp = (props) => {
+  const data = props.datajson;
 
   return (
     <>
@@ -45,7 +21,7 @@ const otp = () => {
             Get started for Free
           </button>
         </div>
-          <TrustedSec />
+        <TrustedSec />
         <img
           src={data?.otp?.pageimg}
           className="img-fluid product-page-img mx-auto"
@@ -54,7 +30,9 @@ const otp = () => {
       </div>
 
       <div className=" c-bg-grey  px-sm-0 d-flex flex-column justify-content-center justift-content-sm-start section ">
-        <span className="container sub-heading c-ff-h  pt-4 pt-md-0">Features</span>
+        <span className="container sub-heading c-ff-h  pt-4 pt-md-0">
+          Features
+        </span>
 
         <div className="container flex-column d-flex flex-md-row-reverse align-items-center justify-content-between mb-5">
           <div className="  col-12 col-md-7 d-flex">
@@ -104,7 +82,6 @@ const otp = () => {
             </span>
           </div>
         </div>
-      
       </div>
 
       <div className="section mx-0 mx-md-5 mt-5 pt-4 pt-md-0">
@@ -131,25 +108,24 @@ const otp = () => {
           <div className="col-12 col-md-6  my-auto mt-3  px-0 px-md-3  d-flex py-5 c-bg-grey flex-column flex-lg-row justify-content-center">
             <span className="c-fs-2 c-ff-h mx-auto">Looking for more?</span>
             <div className="mx-auto py-4 py-lg-0 ">
-
-            <button className=" d-flex  btn btn-outline-primary c-fs-4 ms-0 ms-md-3 mt-3 mt-md-0">
-              {" "}
-              Request a Feature
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                className="bi bi-arrow-right ms-2"
-                viewBox="0 0 16 16"
+              <button className=" d-flex  btn btn-outline-primary c-fs-4 ms-0 ms-md-3 mt-3 mt-md-0">
+                {" "}
+                Request a Feature
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-arrow-right ms-2"
+                  viewBox="0 0 16 16"
                 >
-                <path
-                  fillRule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  <path
+                    fillRule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
                   />
-              </svg>
-            </button>
-                  </div>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>

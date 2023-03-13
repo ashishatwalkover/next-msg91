@@ -1,18 +1,26 @@
 import Header from "@/components/header";
 import Notification from "@/components/notification";
 import HeadTag from "./head";
-import TrustedSec from "@/components/trusted_by";
 import Footer from "@/components/footer";
 import FaqSection from "@/components/faq";
-import Pushnotification from "@/components/jsoncomponent/pushnotification";
+import PushNotification from "@/components/jsoncomponent/pushnotification";
 
-const pushnotification = () => {
+export async function getStaticProps(context) {
+  const response = await import(`@/pages/content/in.json`);
+  const jsonData = await response.default;
+
+  return {
+    props: { dataProps: jsonData },
+  };
+}
+
+const pushnotification = ({ dataProps }) => {
   return (
     <>
       <HeadTag />
       <Notification />
       <Header />
-      <Pushnotification/>
+      <PushNotification datajson={dataProps} />
       <FaqSection />
       <Footer />
     </>

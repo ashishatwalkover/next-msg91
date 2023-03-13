@@ -1,19 +1,26 @@
 import Header from "@/components/header";
 import Notification from "@/components/notification";
 import HeadTag from "./head";
-import TrustedSec from "@/components/trusted_by";
-import Link from "next/link";
 import Footer from "@/components/footer";
 import FaqSection from "@/components/faq";
-import Whatsapp from "@/components/jsoncomponent/whatsapp";
+import WhatsApp from "@/components/jsoncomponent/whatsapp";
 
-const whatsapp = () => {
+export async function getStaticProps(context) {
+  const response = await import(`@/pages/content/sg.json`);
+  const jsonData = await response.default;
+
+  return {
+    props: { dataProps: jsonData },
+  };
+}
+
+const whatsapp = ({ dataProps }) => {
   return (
     <>
       <HeadTag />
       <Notification />
       <Header />
-      <Whatsapp />
+      <WhatsApp datajson={dataProps} />
       <FaqSection />
       <Footer />
     </>

@@ -1,23 +1,30 @@
 import Header from "@/components/header";
 import Notification from "@/components/notification";
 import HeadTag from "./head";
-import TrustedSec from "@/components/trusted_by";
-import Link from "next/link";
 import Footer from "@/components/footer";
 import FaqSection from "@/components/faq";
-import Knowledgebase from "@/components/jsoncomponent/knowledgebase";
+import KnowladgeBase from "@/components/jsoncomponent/knowledgebase";
 
-const knowledgebase = () => {
+export async function getStaticProps(context) {
+  const response = await import(`@/pages/content/us.json`);
+  const jsonData = await response.default;
+
+  return {
+    props: { dataProps: jsonData },
+  };
+}
+
+const knowladgeBase = ({ dataProps }) => {
   return (
     <>
-       <HeadTag /> 
+      <HeadTag />
       <Notification />
       <Header />
-      <Knowledgebase />
+      <KnowladgeBase datajson={dataProps} />
       <FaqSection />
       <Footer />
     </>
   );
 };
 
-export default knowledgebase;
+export default knowladgeBase;

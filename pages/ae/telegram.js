@@ -1,23 +1,30 @@
 import Header from "@/components/header";
 import Notification from "@/components/notification";
 import HeadTag from "./head";
-import TrustedSec from "@/components/trusted_by";
-import Link from "next/link";
 import Footer from "@/components/footer";
 import FaqSection from "@/components/faq";
 import Telegram from "@/components/jsoncomponent/telegram";
 
-const rcs = () => {
+export async function getStaticProps(context) {
+  const response = await import(`@/pages/content/ae.json`);
+  const jsonData = await response.default;
+
+  return {
+    props: { dataProps: jsonData },
+  };
+}
+
+const telegram = ({ dataProps }) => {
   return (
     <>
       <HeadTag />
       <Notification />
       <Header />
-      <Telegram />
+      <Telegram datajson={dataProps} />
       <FaqSection />
       <Footer />
     </>
   );
 };
 
-export default rcs;
+export default telegram;

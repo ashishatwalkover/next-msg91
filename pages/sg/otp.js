@@ -1,19 +1,26 @@
 import Header from "@/components/header";
 import Notification from "@/components/notification";
 import HeadTag from "./head";
-import TrustedSec from "@/components/trusted_by";
-import Link from "next/link";
 import Footer from "@/components/footer";
 import FaqSection from "@/components/faq";
 import Otp from "@/components/jsoncomponent/otp";
 
-const otp = () => {
+export async function getStaticProps(context) {
+  const response = await import(`@/pages/content/sg.json`);
+  const jsonData = await response.default;
+
+  return {
+    props: { dataProps: jsonData },
+  };
+}
+
+const otp = ({ dataProps }) => {
   return (
     <>
       <HeadTag />
       <Notification />
       <Header />
-      <Otp />
+      <Otp datajson={dataProps} />
       <FaqSection />
       <Footer />
     </>

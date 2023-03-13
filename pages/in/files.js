@@ -1,22 +1,30 @@
 import Header from "@/components/header";
 import Notification from "@/components/notification";
 import HeadTag from "./head";
-import TrustedSec from "@/components/trusted_by";
-import Link from "next/link";
 import Footer from "@/components/footer";
 import FaqSection from "@/components/faq";
-import Filehosting from "@/components/jsoncomponent/filehosting";
+import Files from "@/components/jsoncomponent/filehosting";
 
-const files = () => {
+export async function getStaticProps(context) {
+  const response = await import(`@/pages/content/in.json`);
+  const jsonData = await response.default;
+
+  return {
+    props: { dataProps: jsonData },
+  };
+}
+
+const filehosting = ({ dataProps }) => {
   return (
     <>
-        <HeadTag /> 
+      <HeadTag />
       <Notification />
       <Header />
-      <Filehosting />
+      <Files datajson={dataProps} />
       <FaqSection />
-      <Footer />    </>
+      <Footer />
+    </>
   );
 };
 
-export default files;
+export default filehosting;

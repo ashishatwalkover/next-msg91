@@ -5,43 +5,13 @@ import TrustedSec from "@/components/trusted_by";
 import Prism from "prismjs";
 import "prismjs/themes/prism-tomorrow.css";
 
-const email = () => {
-  var HTTPSnippet = require('httpsnippet');
-  const router = useRouter();
-  var path;
+const email = (props) => {
+  const data = props.datajson;
+  var HTTPSnippet = require("httpsnippet");
 
-  if (
-    router.pathname.split("/")[1].length > 3 ||
-    router.pathname.split("/")[1].length === 0
-  ) {
-    path = "global";
-  } else {
-    path = router.pathname.split("/")[1];
-  }
-
-  const [data, setData] = useState(null);
   useEffect(() => {
-    
-
     Prism.highlightAll();
   }, []);
-
-  var fetchData = async () => {
-    const response = await import(`@/pages/content/${path}.json`);
-    const jsonData = await response.default;
-    return jsonData;
-  };
-  const fetchD = async () => {
-    let content = await fetchData();
-    setData(content);
-  };
-  fetchD();
-  
-  var fetchData = async () => {
-    const response = await import(`@/pages/content/${path}.json`);
-    const jsonData = await response.default;
-    return jsonData;
-  };
 
   const snippet = new HTTPSnippet({
     "log": {
