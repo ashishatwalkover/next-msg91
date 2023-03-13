@@ -6,8 +6,8 @@ const telegram = (props) => {
       <div className="container text-center  overflow-hidden ">
         <div className=" mx-auto text-center justify-content-center py-2 py-md-5 col-12 col-sm-8">
           <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
-            <img src="../img/hello.svg" className="product-page-logo" />
-            <h1 className="heading">Hello</h1>
+            <img src="../img/telegram.svg" className="product-page-logo" />
+            <h1 className="heading">Telegram</h1>
           </div>
 
           <p className="c-fs-4 text-uppercase col-hello c-ls-20 mx-auto">
