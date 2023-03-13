@@ -7,7 +7,7 @@ const shorturl = (props) => {
         <div className=" mx-auto text-center justify-content-center py-2 py-md-5 col-12 col-sm-8">
           <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
             <img src="../img/short-url-ico.svg" className="product-page-logo" />
-            <h1 className="heading">Shorturl</h1>
+            <h1 className="heading">Short URL</h1>
           </div>
 
           <p className="c-fs-4 text-uppercase col-shorturl c-ls-20 mx-auto">

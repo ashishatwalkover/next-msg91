@@ -103,7 +103,8 @@ const startup = () => {
             across to inspire, identify and develop end-to-end solutions for
             businesses to discover and engage.
           </p>
-          <img className="w-100 collab-img mt-2" src="/img/collab-img.png" />
+          <iframe className="airtable-embed" src="https://airtable.com/embed/shrMAxbTEzIuHmC2j?backgroundColor=cyan&viewControls=on" style={{background: 'transparent', border: '1px solid #ccc', height: '100vh', width: '100%'}} />
+
         </div>
       </section>
       <div className="container px-3 px-md-auto">

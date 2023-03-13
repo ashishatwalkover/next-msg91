@@ -87,23 +87,20 @@ const Footer = () => {
                 </a>
                 <a href="/contact-us" className="c-fs-5 mt-2 c-fw-t">
                   Contact Us
+                </a>                                
+                <a href="/developers" className="c-fs-5 mt-2 c-fw-t">
+                  Developers
                 </a>
-                <a href="partner-program" className="c-fs-5 mt-2 c-fw-t">
-                  Partner Program
-                </a>
-                <a href="/msg91-for-developers" className="c-fs-5 mt-2 c-fw-t">
-                  MSG91 For Developers
-                </a>
-                <a href="/startup" className="c-fs-5 mt-2 c-fw-t">
+                <a href="/startups" className="c-fs-5 mt-2 c-fw-t">
                   MSG91 For Startups
                 </a>
-                {/* <a href="/tools-and-addons" className="c-fs-5 mt-2 c-fw-t">
-                  Tools And Addons
-                </a> */}
-                {/* <a href="/our-programs" className="c-fs-5 mt-2 c-fw-t">
-                  Our Programs
-                </a> */}
-                <a href="/career" className="c-fs-5 mt-2 c-fw-t">
+                <a href="/partners-and-integrations" className="c-fs-5 mt-2 c-fw-t">
+                  Partners and Integrations
+                </a>
+                <a href="/become-a-partner" className="c-fs-5 mt-2 c-fw-t">
+                  Become a Partner
+                </a>
+                <a href="https://apply.workable.com/walkover/" target="_blank" className="c-fs-5 mt-2 c-fw-t">
                   Career
                 </a>
               </div>
@@ -115,7 +112,7 @@ const Footer = () => {
                   Download Apps
                 </span>
                 <div className="footer-social-a d-flex mt-3 justify-content-start justify-content-lg-end">
-                  <a href="https://play.google.com/store/apps/details?id=com.msg91.android" target="_blank" className="me-4">
+                  <a href="https://play.google.com/store/apps/details?id=com.hellornapp" target="_blank" className="me-4">
                     <Image
                       src="../img/android.svg"
                       width={20}
@@ -123,7 +120,7 @@ const Footer = () => {
                       alt="#"
                     />
                   </a>
-                  <a href="https://itunes.apple.com/us/app/msg91/id981827687" target="_blank">
+                  <a href="https://apps.apple.com/in/app/hello-by-msg91/id1635375551" target="_blank">
                     <Image src="../img/apple.svg" width={20} height={24} alt="#" />
                   </a>
                 </div>
