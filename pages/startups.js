@@ -115,7 +115,7 @@ const startup = () => {
           <span className="c-fs-1 c-fw-b text-green">
             <MdDone />
           </span>
-          <span className="c-fs-4 ms-2">New MSG91 subsriber</span>
+          <span className="c-fs-4 ms-2">New MSG91 subscriber</span>
         </div>
         <div className=" ">
           <span className="c-fs-1 c-fw-b text-green">
