@@ -1,6 +1,6 @@
 import HeadTag from "./head";
 import Header from "@/components/header";
-import Footer from "@/components/footer-sec";
+import Footer from "@/components/footer";
 import Cookiepolicy from "@/components/termsofuse/cookie-policy";
 import Link from "next/link";
 const cookiepolicy = () => {

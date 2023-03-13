@@ -1,7 +1,7 @@
 import HeadTag from "./head";
 import Header from "@/components/header";
 import Fairpricingpolicy from "@/components/termsofuse/fair-pricing-policy";
-import Footer from "@/components/footer-sec";
+import Footer from "@/components/footer";
 import Link from "next/link";
 const fairuse = () => {
   return (

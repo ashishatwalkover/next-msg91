@@ -1,38 +1,18 @@
 import Header from "@/components/header";
 import Notification from "@/components/notification";
-import HeadTag from "./head";
 import TrustedSec from "@/components/trusted_by";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/footer";
 import FaqSection from "@/components/faq";
+import HeadTag from "./head";
 
 const about_us = () => {
     return (
-        <>
-            {/* <div className="container text-center overflow-hidden px-4  col-12 col-sm-10  ">
-        <div className="text-center justify-content-center py-5">
-          <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
-            <img src="../img/campaign.svg" className="product-page-logo" />
-            <h1 className="heading">Campaign</h1>
-          </div>
-          <p className="c-fs-4 mx-auto">Event based automation</p>
-          <h2 className="c-fs-2 c-ff-b c-fw-r w-100 mx-auto">
-            Boost audience engagement through smart communication and on-time
-            delivery.{" "}
-          </h2>
-          <button className="btn btn-primary btn-lg mt-3 c-fs-3" type="button">
-            Get started for Free
-          </button>
-          <TrustedSec />
-        </div>
-        <img
-          src={"/img/Campaign_flow.svg"}
-          className="img-fluid product-page-img mx-auto"
-          alt="#"
-        />
-      </div> */}
-
+        <>            
+            <HeadTag />
+            <Notification />
+            <Header />
             <div className="container d-flex flex-column flex-sm-row">
                 <img src="#" className="col-sm-5 bg-success"></img>
                 <img src="#" className="col-sm-5 offset-sm-2 bg-success"></img>
@@ -212,7 +192,7 @@ const about_us = () => {
                             </span>
                         </div>
                     </div>
-                    <button class="btn btn-outline-secondary" type="button">Contact us</button><span className="mx-4 mt-5">or</span><button class="btn btn-outline-secondary" type="button">Talk to an Expert</button>
+                    <a href="/contact-us" class="btn btn-outline-secondary" type="button">Talk to an Expert</a>
                 </div>
             </div>
 

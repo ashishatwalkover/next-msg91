@@ -50,11 +50,14 @@ const Header = () => {
       $("#learning-center, #menu-backdrop").addClass("active");
       $("body").addClass("oh");
     });
+    
+    $("#link-pricing").on("mouseenter", function () {
+      $("#product-menu, #learning-center, #menu-backdrop").removeClass("active");
+      $("body").removeClass("oh");
+    });
 
     $("#menu-backdrop").on("mouseenter", function () {
-      $("#product-menu, #learning-center, #menu-backdrop").removeClass(
-        "active"
-      );
+      $("#product-menu, #learning-center, #menu-backdrop").removeClass("active");
       $("body").removeClass("oh");
     });
 
@@ -101,14 +104,14 @@ const Header = () => {
           >
             <div className="navbar-nav px-3 product-navbar navbar-w">
               <a
-                className="nav-link c-fs-3 c-fw-r d-lg-block d-none"
+                className="nav-link c-fs-3 c-fw-b d-lg-block d-none text-black"
                 href="#"
                 id="link-products"
               >
                 Products <span className="sr-only"></span>
               </a>
               <a
-                className="nav-link c-fs-3 c-fw-r d-lg-block d-none"
+                className="nav-link c-fs-3 c-fw-b d-lg-block d-none text-black"
                 href="#"
                 id="link-learning"
               >
@@ -117,7 +120,7 @@ const Header = () => {
               </a>
               <Link
                 href="/pricing"
-                className="nav-link c-fs-3 c-fw-r d-lg-block d-none"
+                className="nav-link c-fs-3 c-fw-b d-lg-block d-none text-black"
                 id="link-pricing"
               >
                 Pricing

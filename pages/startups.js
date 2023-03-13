@@ -1,6 +1,6 @@
 import HeadTag from "./head";
 import Header from "@/components/header";
-import Footertwo from "@/components/footer-sec";
+import Footer from "@/components/footer";
 import { MdKeyboardArrowRight, MdDone } from "react-icons/md";
 
 const startup = () => {
@@ -10,12 +10,12 @@ const startup = () => {
       <Header />
       <div className="container mt-md-5 my-md-0 my-5 d-flex flex-column-reverse flex-md-row justify-content-between">
         <div className="d-flex col-md-6 col-12 justify-content-center flex-column align-items-md-start me-md-5 me-0 mt-4 mt-md-0 text-center text-md-start align-items-center">
-          <h1 className="heading">Expand your Vision with Us</h1>
+          <h1 className="heading">Expand your Vision with us</h1>
           <p className="c-fs-1">
             Get a complimentary communication API package for every product
             Startup.
           </p>
-          <button className="btn btn-primary c-fs-4 mt-2">Apply Now</button>
+          <a href="/startups-form" className="btn btn-primary c-fs-4 mt-2">Apply Now</a>
         </div>
         <div className="col-12 col-md-6">
 
@@ -23,7 +23,7 @@ const startup = () => {
         </div>
       </div>
       <section className="c-bg-grey p-5 text-center small-heading">
-        "Today we help you, tomorrow we can can change the world together."
+        "Today we help you, tomorrow we can change the world together."
       </section>
       <div className=" p-5 text-center justify-content-center">
         <h3 className="sub-heading">
@@ -103,18 +103,19 @@ const startup = () => {
             across to inspire, identify and develop end-to-end solutions for
             businesses to discover and engage.
           </p>
-          <img className="w-100 collab-img mt-2" src="/img/collab-img.png" />
+          <iframe className="airtable-embed" src="https://airtable.com/embed/shrMAxbTEzIuHmC2j?backgroundColor=cyan&viewControls=on" style={{background: 'transparent', border: '1px solid #ccc', height: '100vh', width: '100%'}} />
+
         </div>
       </section>
       <div className="container px-3 px-md-auto">
         <h2 className="sub-heading">
-          Cecklist to become a part of the program
+          Checklist to become a part of the program
         </h2>
         <div className=" ">
           <span className="c-fs-1 c-fw-b text-green">
             <MdDone />
           </span>
-          <span className="c-fs-4 ms-2">New MSG91 subsriber</span>
+          <span className="c-fs-4 ms-2">New MSG91 subscriber</span>
         </div>
         <div className=" ">
           <span className="c-fs-1 c-fw-b text-green">
@@ -131,26 +132,8 @@ const startup = () => {
           </span>
         </div>
       </div>
-      <div className="container p-5 d-flex flex-column justify-content-sm-center align-items-center">
-        <div className=" c-bg-grey  p-2 p-md-5  container text-center d-md-flex justify-content-sm-between align-items-center flex-xl-row flex-lg-column flex-sm-column flex-md-column">
-          <span className="c-fs-2 c-">Register with us to give voice to your Startup</span>
-          <div className="mt-3 mt-lg-0">
-            <button className="btn btn-primary ms-lg-4 my-1 c-fs-4 mx-2">
-              {" "}
-              Apply now
-            </button>
-          </div>
-        </div>
-        <div className=" mt-5  d-flex flex-column align-items-center text-center justify-content-center">
-          <p className="c-fs-3 my-2">
-            Have More Questions? We’re always here to help you!
-          </p>
-          <button className="btn btn-outline-primary px-3 py-2 c-fs-4 mx-auto">
-            Talk to Sales
-          </button>
-        </div>
-      </div>
-      <Footertwo />
+      
+      <Footer />
     </>
   );
 };
