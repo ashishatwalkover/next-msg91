@@ -1,11 +1,6 @@
-import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
 import TrustedSec from "@/components/trusted_by";
-import axios from "axios"
-import { data } from "jquery";
-
-
 const hello = (props) => {
+  const data = props.datajson;
 
   // const getData = async() =>{
   //   const response = await axios.get('https://api.airtable.com/v0/appc4wGbR2QjI3yFC/msgone', {
@@ -16,33 +11,8 @@ const hello = (props) => {
   //     // console.log(response?.data?.records)
   // }
   // getData();
-  // const router = useRouter();
-  // var path;
 
-  // if (
-  //   router.pathname.split("/")[1].length > 3 ||
-  //   router.pathname.split("/")[1].length === 0
-  // ) {
-  //   path = "global";
-  // } else {
-  //   path = router.pathname.split("/")[1];
-  // }
-
-  // const [data, setData] = useState(null);
-
-  // var fetchData = async () => {
-  //   const response = await import(`@/pages/content/${path}.json`);
-  //   const jsonData = await response.default;
-  //   return jsonData;
-  // };
-  // const fetchD = async () => {
-  //   let content = await fetchData();
-  //   setData(content);
-  // };
-  // fetchD();
-
-  const data = props.dataa;
-  console.log(data);
+  // console.log(data);
   return (
     <>
       <div className="container text-center  overflow-hidden ">

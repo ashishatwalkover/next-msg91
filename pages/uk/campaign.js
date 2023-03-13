@@ -3,15 +3,24 @@ import Notification from "@/components/notification";
 import HeadTag from "./head";
 import Footer from "@/components/footer";
 import FaqSection from "@/components/faq";
-import Campaign from "@/components/jsoncomponent/campaign";
+import Hello from "@/components/jsoncomponent/hello";
 
-const campaign = () => {
+export async function getStaticProps(context) {
+  const response = await import(`@/pages/content/uk.json`);
+  const jsonData = await response.default;
+
+  return {
+    props: { dataProps: jsonData },
+  };
+}
+
+const campaign = ({ dataProps }) => {
   return (
     <>
       <HeadTag />
       <Notification />
       <Header />
-      <Campaign />
+      <Hello datajson={dataProps} />
       <FaqSection />
       <Footer />
     </>

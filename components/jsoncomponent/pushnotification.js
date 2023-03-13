@@ -1,30 +1,6 @@
-import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
 import TrustedSec from "@/components/trusted_by";
-const pushnotification = () => {
-  const router = useRouter();
-  var path;
-
-  if (
-    router.pathname.split("/")[1].length > 3 ||
-    router.pathname.split("/")[1].length === 0
-  ) {
-    path = "global";
-  } else {
-    path = router.pathname.split("/")[1];
-  }
-
-  const [data, setData] = useState(null);
-  var fetchData = async () => {
-    const response = await import(`@/pages/content/${path}.json`);
-    const jsonData = await response.default;
-    return jsonData;
-  };
-  const fetchD = async () => {
-    let content = await fetchData();
-    setData(content);
-  };
-  fetchD();
+const pushnotification = (props) => {
+  const data = props.datajson;
 
   return (
     <>

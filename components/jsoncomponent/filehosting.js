@@ -1,31 +1,6 @@
-import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
 import TrustedSec from "@/components/trusted_by";
-const files = () => {
-  const router = useRouter();
-  var path;
-
-  if (
-    router.pathname.split("/")[1].length > 3 ||
-    router.pathname.split("/")[1].length === 0
-  ) {
-    path = "global";
-  } else {
-    path = router.pathname.split("/")[1];
-  }
-
-  const [data, setData] = useState(null);
-  var fetchData = async () => {
-    const response = await import(`@/pages/content/${path}.json`);
-    const jsonData = await response.default;
-    return jsonData;
-  };
-  const fetchD = async () => {
-    let content = await fetchData();
-    setData(content);
-  };
-  fetchD();
-
+const filehosting = (props) => {
+  const data = props.datajson;
   return (
     <>
       <div className="container text-center  overflow-hidden ">
@@ -157,4 +132,4 @@ const files = () => {
   );
 };
 
-export default files;
+export default filehosting;
