@@ -2,7 +2,7 @@ import { InlineWidget } from "react-calendly";
 import Trustedsec from "@/components/trusted_by";
 import HeadTag from "./head";
 import Header from "@/components/header";
-import Footer from "@/components/footer-sec";
+import Footer from "@/components/footer";
 import { MdDoneOutline, MdArrowForward } from "react-icons/md";
 const partnerprogram = () => {
   return (
@@ -14,12 +14,12 @@ const partnerprogram = () => {
         <p className="c-fs-1 mt-3 text-center w-100 w-md-50">
           Leverage your communication tactics with the MSG91 CPaaS solution
         </p>
-        <button className="btn btn-primary c-fs-3 mt-3 mb-5">Apply Now</button>
+        <a href="#partnership-meet" className="btn btn-primary c-fs-3 mt-3 mb-5">Apply Now</a>
         <Trustedsec className="" />
       </div>
       <section className="section c-bg-grey">
         <div className="container">
-          <h2 className="sub-heading ps-3 pe-md-0">Partnership Solutions</h2>
+          <h2 className="sub-heading ps-3 ps-lg-0 pe-md-0">Partnership Solutions</h2>
           <div className=" d-flex flex-column flex-md-row justify-content-between align-items-center my-2 my-md-4 py-2">
             <div className=" c-w-pp p-3 p-md-0">
               <h3 className=" c-fs-1 c-fw-m">
@@ -86,7 +86,7 @@ const partnerprogram = () => {
           </div>
         </div>
       </section>
-      <div className="container d-flex p-5">
+      <div className="container d-flex p-5" id="partnership-meet">
         <InlineWidget url="https://calendly.com/partnership-msg91/discussion" styles={{width: '100%', height: '700px'}} />
       </div>
       <section className="section c-bg-grey">
@@ -137,7 +137,7 @@ const partnerprogram = () => {
             <div className="d-flex flex-column">
               <p className="c-fs-3 my-3">
                 Our long standing Partnership with MSG91 has been very
-                successful. The quality of services and support MSG91 rovides is
+                successful. The quality of services and support MSG91 provides is
                 excellent. We have been treated with a positive response every
                 single time.
               </p>
@@ -156,7 +156,7 @@ const partnerprogram = () => {
             </div>
           </div>
         </div>
-        <a className="mx-auto text-primary c-fs-4 c-fw-m " href="#">
+        <a className="mx-auto text-primary c-fs-4 c-fw-m mt-5" href="/partners-and-integrations">
           Explore more partners <MdArrowForward />
         </a>
       </div>

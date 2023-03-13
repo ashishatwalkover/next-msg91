@@ -1,12 +1,12 @@
 import Head from "next/head";
+import HeadTag from "./head";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 const errorPage = () => {
   return (
     <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>404 | No page fround !</title>
-        <link rel="icon" href="/fav.svg" />
-      </Head>
+      <HeadTag />      
+      <Header />
       <div className="pageerror w-100 d-flex c-bg-grey">
         <div className="m-auto d-flex flex-column flex-lg-row">
           <div className="d-flex flex-column justify-content-center me-5">
@@ -30,6 +30,7 @@ const errorPage = () => {
           />
         </div>
       </div>
+      <Footer />
     </>
   );
 };

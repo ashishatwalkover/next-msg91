@@ -34,7 +34,7 @@ const LearningCenter = () => {
         <div className="c-fs-4">
           <a href="/case-studies">Our client Stories (Case study)</a>
           <a href="/partner-program">Become a Partner (MSG91 Partner Program)</a>
-          <a href="tel:9898989898">Talk to Sales : +91 999 99 999 99</a>          
+          {/* <a href="tel:9898989898">Talk to Sales : +91 999 99 999 99</a> */}
         </div>
       </div>
       </div>

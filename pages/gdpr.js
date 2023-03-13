@@ -1,6 +1,6 @@
 import HeadTag from "./head";
 import Header from "@/components/header";
-import Footer from "@/components/footer-sec";
+import Footer from "@/components/footer";
 import Gdpr from "@/components/termsofuse/gdpr";
 import Link from "next/link";
 import Notification from "@/components/notification";

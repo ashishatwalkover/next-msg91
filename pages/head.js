@@ -22,7 +22,7 @@ const HeadTag =()=> {
   // console.log(pagemeta)
   return (
     <>
-  <Head>    
+  <Head>  
     <title>{metadata[pagemeta]?.title}</title>
     <meta name="description" content={metadata[pagemeta]?.description}></meta>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>    
