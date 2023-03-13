@@ -97,12 +97,12 @@ const Footer = () => {
                 <a href="/startup" className="c-fs-5 mt-2 c-fw-t">
                   MSG91 For Startups
                 </a>
-                <a href="/tools-and-addons" className="c-fs-5 mt-2 c-fw-t">
+                {/* <a href="/tools-and-addons" className="c-fs-5 mt-2 c-fw-t">
                   Tools And Addons
-                </a>
-                <a href="/our-programs" className="c-fs-5 mt-2 c-fw-t">
+                </a> */}
+                {/* <a href="/our-programs" className="c-fs-5 mt-2 c-fw-t">
                   Our Programs
-                </a>
+                </a> */}
                 <a href="/career" className="c-fs-5 mt-2 c-fw-t">
                   Career
                 </a>
@@ -185,10 +185,10 @@ const Footer = () => {
                 <a href="/startup-policy" className="c-fs-5 ">
                   Startup Policy
                 </a>
-                <span className="f2-spacer"> | </span>
+                {/* <span className="f2-spacer"> | </span>
                 <a href="/developer-policy" className="c-fs-5 ">
                   Developer Policy
-                </a>
+                </a> */}
                 <span className="f2-spacer"> | </span>
                 <a href="/cookie-policy" className="c-fs-5 ">
                   Cookie Policy
