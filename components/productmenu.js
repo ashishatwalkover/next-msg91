@@ -142,7 +142,7 @@ const ProductsMenu = () => {
                 <div className="d-flex align-items-center">
                   <Image src="../img/kb-ico.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">
-                    <h4 className="c-fs-2 c-ff-h mb-1">Knowladgebase</h4>
+                    <h4 className="c-fs-2 c-ff-h mb-1">Knowledgebase</h4>
                     <p className="c-fs-5">Manage help Doc and guidess</p>
                   </div>
                 </div>
