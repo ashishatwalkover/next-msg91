@@ -1,6 +1,6 @@
 import HeadTag from "./head";
 import Header from "@/components/header";
-import Footertwo from "@/components/footer";
+import Footer from "@/components/footer";
 import { MdKeyboardArrowRight, MdDone } from "react-icons/md";
 
 const startup = () => {
@@ -15,7 +15,7 @@ const startup = () => {
             Get a complimentary communication API package for every product
             Startup.
           </p>
-          <a href="https://msg91.com/startups-form/" className="btn btn-primary c-fs-4 mt-2">Apply Now</a>
+          <a href="/startups-form" className="btn btn-primary c-fs-4 mt-2">Apply Now</a>
         </div>
         <div className="col-12 col-md-6">
 
@@ -132,25 +132,8 @@ const startup = () => {
           </span>
         </div>
       </div>
-      <div className="container p-5 d-flex flex-column justify-content-sm-center align-items-center">
-        <div className=" c-bg-grey  p-2 p-md-5  container text-center d-md-flex justify-content-sm-between align-items-center flex-xl-row flex-lg-column flex-sm-column flex-md-column">
-          <span className="c-fs-2 c-">Register with us to give voice to your Startup</span>
-          <div className="mt-3 mt-lg-0">
-            <a href="https://msg91.com/startups-form/" className="btn btn-primary ms-lg-4 my-1 c-fs-4 mx-2">
-              Apply now
-            </a>
-          </div>
-        </div>
-        <div className=" mt-5  d-flex flex-column align-items-center text-center justify-content-center">
-          <p className="c-fs-3 my-2">
-            Have More Questions? We’re always here to help you!
-          </p>
-          <a href="https://msg91.com/contact-us/" className="btn btn-outline-primary px-3 py-2 c-fs-4 mx-auto">
-            Talk to Sales
-          </a>
-        </div>
-      </div>
-      <Footertwo />
+      
+      <Footer />
     </>
   );
 };

@@ -194,7 +194,7 @@ const Footer = () => {
               <div className="mt-4 mt-lg-0">
                 <span>
                   A Product of{" "}
-                  <Image src="../img/walkover.svg" width={20} height={20} alt="#"/>
+                  <Image src="../img/walkover.svg" width={20} height={20} alt="#"/>{" "}
                   <a href="https://walkover.in" target="_blank">Walkover</a>
                 </span>
               </div>

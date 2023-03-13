@@ -50,11 +50,14 @@ const Header = () => {
       $("#learning-center, #menu-backdrop").addClass("active");
       $("body").addClass("oh");
     });
+    
+    $("#link-pricing").on("mouseenter", function () {
+      $("#product-menu, #learning-center, #menu-backdrop").removeClass("active");
+      $("body").removeClass("oh");
+    });
 
     $("#menu-backdrop").on("mouseenter", function () {
-      $("#product-menu, #learning-center, #menu-backdrop").removeClass(
-        "active"
-      );
+      $("#product-menu, #learning-center, #menu-backdrop").removeClass("active");
       $("body").removeClass("oh");
     });
 
