@@ -3,28 +3,45 @@ import Header from "@/components/header";
 import Footertwo from "@/components/footer-sec";
 import { MdKeyboardArrowRight, MdDone } from "react-icons/md";
 
-const startup = () => {
+const developers = () => {
   return (
     <>
       <HeadTag />
       <Header />
       <div className="container mt-md-5 my-md-0 my-5 d-flex flex-column-reverse flex-md-row justify-content-between">
         <div className="d-flex col-md-6 col-12 justify-content-center flex-column align-items-md-start me-md-5 me-0 mt-4 mt-md-0 text-center text-md-start align-items-center">
-          <h1 className="heading">Expand your Vision with us</h1>
-          <p className="c-fs-1">
-            Get a complimentary communication API package for every product
-            Startup.
+          <h1 className="heading">MSG91 APIs for
+Global messaging</h1>
+          <p className="c-fs-2 mt-3">
+          Integrate SMS, Email, Voice API with Java, PHP, HTTP Scripts. Build apps, innovation and ideas for rapid growing business, or just integrate for your team development.
           </p>
-          <a href="https://msg91.com/startups-form/" className="btn btn-primary c-fs-4 mt-2">Apply Now</a>
+          <a href="https://msg91.com/startups-form/" className="btn btn-primary c-fs-4 mt-4">Explore documentation</a>
         </div>
         <div className="col-12 col-md-6">
 
-        <img className="startup-home-img flip-vertical  " src="/img/startup-home-img.svg" />
         </div>
       </div>
-      <section className="c-bg-grey p-5 text-center small-heading">
-        "Today we help you, tomorrow we can change the world together."
-      </section>
+      <div className="container text-center  overflow-hidden ">
+        <div className=" mx-auto text-center justify-content-center py-2 py-md-5 col-12 col-sm-8">
+          <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
+            <h2 className="heading">One API</h2>
+          </div>
+
+          <p className="c-fs-1 c-fw-b mx-auto mb-3">
+          To revolutionalise the way developers integrate
+          </p>
+          <p className="c-fs-2  mx-auto">
+          A single, unified API to simplify communication across multiple architectures. Build integrations faster and deliver a unified experience across channels for faster performance, more productivity and greater innovation.
+          </p>
+          <p className="c-fs-2 c-fw-b">
+            Get started for Free
+          </p>
+        </div>
+        <img
+          className="img-fluid product-page-img mx-auto"
+          alt="#"
+        />
+      </div>
       <div className=" p-5 text-center justify-content-center">
         <h3 className="sub-heading">
           Grow your Startup with Robust Infrastructure
@@ -153,4 +170,4 @@ const startup = () => {
     </>
   );
 };
-export default startup;
+export default developers;
