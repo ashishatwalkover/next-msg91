@@ -132,7 +132,7 @@ const ProductsMenu = () => {
                 <div className="d-flex align-items-center">
                   <Image src="../img/short-url-ico.svg" width={40} height={40} alt="#" />
                   <div className="product-dis">
-                    <h4 className="c-fs-2 c-ff-h mb-1">URL Shrtnr</h4>
+                    <h4 className="c-fs-2 c-ff-h mb-1">Short URL</h4>
                     <p className="c-fs-5">Customize and track URL's</p>
                   </div>
                 </div>
