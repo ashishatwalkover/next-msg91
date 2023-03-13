@@ -86,7 +86,7 @@
         "content": "Define different messaging parameters like time, region, number of messages per day, and more to make sure that your campaigns reach your audience under the right circumstances automatically, without any delays."
       },
       "two": {
-        "img": "/img/us/camp-f-img-two.svg",
+        "img": "/img/us/campaign-feature-two.svg",
         "heading": "An all-in-one platform for all your campaigns",
         "content": "Optimise your links and create short links that inspire confidence. Include short links in your custom messages with ease."
       },
@@ -116,7 +116,7 @@
         "content": "Define different messaging parameters like time, region, number of messages per day, and more to make sure that your campaigns reach your audience under the right circumstances automatically, without any delays."
       },
       "two": {
-        "img": "/img/us/camp-f-img-two.svg",
+        "img": "/img/us/campaign-feature-two.svg",
         "heading": "An all-in-one platform for all your campaigns",
         "content": "Optimise your links and create short links that inspire confidence. Include short links in your custom messages with ease."
       },
@@ -147,7 +147,7 @@
         "content": "Get access to the reporting dashboard to analyse transactional email data like open rate, click-through rate, A/B testing etc. Debug a specific request or status of an email delivery or analyse report. Get 30 days of log retention and 7 days message retention."
       },
       "two": {
-        "img": "/img/us/camp-f-img-two.svg",
+        "img": "/img/us/campaign-feature-two.svg",
         "heading": "Suppression Management",
         "content": "Manage your opt-in, opt-out contacts and automatically deliver with our transactional email provider. Make the suppression list management easy. Automate the entire email opt-out collection with the webhooks to process and distribute in real-time."
       }
@@ -173,7 +173,7 @@
         "content": "MSG91’s transactional SMS service lets you send transactional SMS to DND (Do Not Disturb) numbers in your contact list. This feature is not available with promotional messages. The feature is most useful in the case of OTPs and important notifications that are not marketing-driven."
       },
       "two": {
-        "img": "/img/us/camp-f-img-two.svg",
+        "img": "/img/us/campaign-feature-two.svg",
         "heading": "Send SMS 24×7",
         "content": "Since the nature of transactional SMS are meant to support a user along the customer journey, and is triggered by an action of the user on a website/app, they can be automated and sent at any time of the day as per the user action. This allows users to carry secure online transactions at any time of the day with ample information."
       }
@@ -199,7 +199,7 @@
         "content": "The intuitive Voice Call API lets you build the call experience you want. Every call can be customised.Route customers to the right department or agent for solving their problem. A simple HTTP request allows you to embed PSTN, SIP or VoIP into your tool."
       },
       "two": {
-        "img": "/img/us/camp-f-img-two.svg",
+        "img": "/img/us/campaign-feature-two.svg",
         "heading": "Clear Calls",
         "content": "Ensuring high quality so you enjoy clear audio with low latency. Our main goal is to keep your customer satisfied and help them to scale their business rapidly."
       },
@@ -230,7 +230,7 @@
         "content": "Enable WhatsApp API to send strategic business messages. From bank account notification, payment receipts to delivery alerts, WhatsApp API does it all."
       },
       "two": {
-        "img": "/img/us/camp-f-img-two.svg",
+        "img": "/img/us/campaign-feature-two.svg",
         "heading": "Secured communication",
         "content": "WhatsApp Business API messages are encrypted & secured over HTTPS. Win over your customers’ trust by enabling private conversations with your users."
       },
@@ -261,7 +261,7 @@
         "content": "Serve your customers wherever they are."
       },
       "two": {
-        "img": "/img/us/camp-f-img-two.svg",
+        "img": "/img/us/campaign-feature-two.svg",
         "heading": "Add modern messaging into every application",
         "content": "Initiate a modern messaging experience for your customers into your brand’s website and mobile apps."
       },
@@ -292,7 +292,7 @@
         "content": "Our OTP service platform provides the back-end logic needed for PIN generation (OTP) so you don't have to. Each code is tied to an individual user and can only be used once."
       },
       "two": {
-        "img": "/img/us/camp-f-img-two.svg",
+        "img": "/img/us/campaign-feature-two.svg",
         "heading": "Number Lookup",
         "content": "Save money and increase conversation rates with our number validation. We're able to catch invalid numbers as they're entered, making sure your message is headed to a valid number."
       },
@@ -323,7 +323,7 @@
         "content": "Enhance the deliverability of messages through our globally accepted best practices. Ensure improved deliverability and boost click-through rates for higher revenues."
       },
       "two": {
-        "img": "/img/us/camp-f-img-two.svg",
+        "img": "/img/us/campaign-feature-two.svg",
         "heading": "Track performance to enhance campaign outcome",
         "content": "Users can track the outcome of the messages sent out to the audience. Assessing performance can help in making suitable tweaks to the messages in future."
       },
@@ -354,7 +354,7 @@
         "content": "Generate personalized content for different segments. Subdivide and send relevant content to users, boost up your customer retention by tailoring and segmenting."
       },
       "two": {
-        "img": "/img/us/camp-f-img-two.svg",
+        "img": "/img/us/campaign-feature-two.svg",
         "heading": "Run Targeted Campaigns",
         "content": "Filter out ceasing and inactive customers, personalize information for them, rebuild permanent customers by running targeted campaigns."
       },
@@ -385,7 +385,7 @@
         "content": "Generate personalized content for different segments. Subdivide and send relevant content to users, boost up your customer retention by tailoring and segmenting."
       },
       "two": {
-        "img": "/img/us/camp-f-img-two.svg",
+        "img": "/img/us/campaign-feature-two.svg",
         "heading": "Run Targeted Campaigns",
         "content": "Filter out ceasing and inactive customers, personalize information for them, rebuild permanent customers by running targeted campaigns."
       },
@@ -416,7 +416,7 @@
         "content": "Generate personalized content for different segments. Subdivide and send relevant content to users, boost up your customer retention by tailoring and segmenting."
       },
       "two": {
-        "img": "/img/us/camp-f-img-two.svg",
+        "img": "/img/us/campaign-feature-two.svg",
         "heading": "Run Targeted Campaigns",
         "content": "Filter out ceasing and inactive customers, personalize information for them, rebuild permanent customers by running targeted campaigns."
       },
@@ -447,7 +447,7 @@
         "content": "Generate personalized content for different segments. Subdivide and send relevant content to users, boost up your customer retention by tailoring and segmenting."
       },
       "two": {
-        "img": "/img/us/camp-f-img-two.svg",
+        "img": "/img/us/campaign-feature-two.svg",
         "heading": "Run Targeted Campaigns",
         "content": "Filter out ceasing and inactive customers, personalize information for them, rebuild permanent customers by running targeted campaigns."
       },

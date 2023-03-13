@@ -36,7 +36,7 @@ const index = () => {
         <h1 className="heading">{data?.index?.heading}</h1>
         <p className="c-fs-1  m-auto col-md-8">{data?.index?.tagline}</p>
         <button className="btn btn-primary btn-lg c-fs-3 mt-4" type="button">
-          Get started for Free
+          <a href="https://control.msg91.com/signup/" className="text-white"> Get started for Free </a>
         </button>
       </div>
 
@@ -127,7 +127,7 @@ const index = () => {
         </div>
 
         <div className="d-flex flex-wrap justify-content-md-start  justify-content-center my-4">
-          <a href="/hello" target="_blank" className="chn-btn sms">
+          <a href="/sms" target="_blank" className="chn-btn sms">
             <div className="icon sms-icon"></div>
             <div className="btn-label d-flex flex-none flex-md-fill justify-content-between align-items-center">
               <span className="c-fs-3">SMS</span>{" "}
@@ -135,7 +135,7 @@ const index = () => {
             </div>
           </a>
 
-          <a href="/hello" target="_blank" className="chn-btn email">
+          <a href="/email" target="_blank" className="chn-btn email">
             <div className="icon email-icon"></div>
             <div className="btn-label d-flex flex-none flex-md-fill justify-content-between align-items-center">
               <span className="c-fs-3">Email</span>{" "}
@@ -143,14 +143,14 @@ const index = () => {
             </div>
           </a>
 
-          <a href="/hello" target="_blank" className="chn-btn voice">
+          <a href="/voice" target="_blank" className="chn-btn voice">
             <div className="icon voice-icon"></div>
             <div className="btn-label d-flex flex-none flex-md-fill justify-content-between align-items-center">
               <span className="c-fs-3">Voice</span>{" "}
               <MdArrowForward className="d-none d-md-block" />
             </div>
           </a>
-          <a href="/hello" target="_blank" className="chn-btn whatsapp">
+          <a href="/whatsapp" target="_blank" className="chn-btn whatsapp">
             <div className="icon whatsapp-icon"></div>
             <div className="btn-label d-flex flex-none flex-md-fill justify-content-between align-items-center">
               <span className="c-fs-3">WhatsApp</span>{" "}
@@ -158,14 +158,14 @@ const index = () => {
             </div>
           </a>
 
-          <a href="/hello" target="_blank" className="chn-btn telegram">
+          <a href="/telegram" target="_blank" className="chn-btn telegram">
             <div className="icon telegram-icon"></div>
             <div className="btn-label d-flex flex-none flex-md-fill justify-content-between align-items-center">
               <span className="c-fs-3">Telegram</span>{" "}
               <MdArrowForward className="d-none d-md-block" />
             </div>
           </a>
-          <a href="/hello" target="_blank" className="chn-btn rcs">
+          <a href="/rcs" target="_blank" className="chn-btn rcs">
             <div className="icon rcs-icon"></div>
             <div className="btn-label d-flex flex-none flex-md-fill justify-content-between align-items-center">
               <span className="c-fs-3">RCS</span>{" "}
@@ -221,7 +221,7 @@ const index = () => {
                 id="link-shortner"
               >
                 <img src="../img/fill-circle.svg"></img>
-                <a href="#url-shortner">
+                <a href="/shorturl">
                   <span className="c-fs-2 text-dark">URL Shortner</span>
                 </a>
               </div>
@@ -230,7 +230,7 @@ const index = () => {
                 id="link-knowledge"
               >
                 <img src="../img/fill-circle.svg"></img>
-                <a href="#knowledge-base">
+                <a href="/knowledgebase">
                   <span className="c-fs-2 text-dark">Knowledgebase</span>
                 </a>
               </div>
@@ -239,7 +239,7 @@ const index = () => {
                 id="link-file"
               >
                 <img src="../img/fill-circle.svg"></img>
-                <a href="#file-hosting">
+                <a href="/files">
                   <span className="c-fs-2 text-dark">File Hosting</span>
                 </a>
               </div>
@@ -257,7 +257,7 @@ const index = () => {
                 <div className="d-flex align-items-center mb-2">
                   <img src="/img/short-url-ico.svg" className="pe-4" />
                   <span className="small-heading align-middle ">
-                    URl Shortner
+                    URL Shortner
                   </span>
                 </div>
                 <p className="c-fs-2 c-fw-b mb-3">
@@ -266,12 +266,12 @@ const index = () => {
                 <p className="c-fs-2">
                   {data?.index?.utility?.urlshortener?.content}
                 </p>
-                <button
-                  href="#"
+                <a
+                  href="shorturl"
                   className="btn btn-outline-primary c-fs-4 c-fw-m mt-2"
                 >
                   Learn More <MdArrowForward />
-                </button>
+                </a>
               </div>
               <img
                 src="/img/url-shortener-img.svg"
@@ -298,12 +298,12 @@ const index = () => {
                 <p className="c-fs-2">
                   {data?.index?.utility?.knowledgebase?.content}
                 </p>
-                <button
-                  href="#"
+                <a
+                  href="/knowledgebase"
                   className="btn btn-outline-primary c-fs-4 c-fw-m mt-2"
                 >
                   Learn More <MdArrowForward />
-                </button>
+                </a>
               </div>
               <img
                 src="/img/knowledgebase-img.svg"
@@ -330,12 +330,12 @@ const index = () => {
                 <p className="c-fs-2">
                   {data?.index?.utility?.filehosting?.content}
                 </p>
-                <button
-                  href="#"
-                  className="btn btn-outline-primary c-fs-5 c-fw-m mt-2"
+                <a
+                  href="/files"
+                  className="btn btn-outline-primary c-fs-4 c-fw-m mt-2"
                 >
                   Learn More <MdArrowForward />
-                </button>
+                </a>
               </div>
               <img
                 src="/img/file-hosting-img.svg"
@@ -359,6 +359,25 @@ const index = () => {
             <p className="c-fs-4 d-none d-md-block">
               {data?.index?.clintstory?.milkbasket?.content}
             </p>
+            <Link
+                  href="/case-studies/milkbasket"
+                  className=" c-fs-4 btn btn-link text-decoration-none py-2 text-start"
+                >
+                  Learn More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    className="bi bi-arrow-right ms-3"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
+                  </svg>
+                </Link>
           </div>
           <div className="col-12 col-md-3 col-xl-6 mt-5 mt-md-0 mt-lg-0 d-flex  flex-row flex-md-column justify-content-center justify-content-md-start  ">
             <div className=" d-flex  mb-5 mb-lg-0 me-0 me-lg-5  ">
@@ -401,7 +420,7 @@ const index = () => {
                   {data?.index?.clintstory?.ixigo?.heading}
                 </p>
                 <Link
-                  href="#"
+                  href="/case-studies/ixigo"
                   className=" c-fs-4 btn btn-link text-decoration-none py-2 px-3 mx-auto"
                 >
                   Learn More
