@@ -59,9 +59,9 @@ const pricingwp = ({subscriptionWhatsapp, fetchSubscriptionWhatsapp}) => {
                         </span>
                         {item.plan_services[0].service_credit.free_credits} for Outbound calls
                       </div>                    
-                      <button className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
+                      <a href="https://control.msg91.com/signup/" target="_blank" className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
                         Get Started
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -84,9 +84,9 @@ const pricingwp = ({subscriptionWhatsapp, fetchSubscriptionWhatsapp}) => {
                       </span>
                       {item.plan_services[0].service_credit.service_credit_rates[0].free_credits} for for Whatsapp
                     </div>                    
-                    <button className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
+                    <a href="https://control.msg91.com/signup/" target="_blank" className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
                       Get Started
-                    </button>
+                    </a>
                   </div>
                 </div>
               }

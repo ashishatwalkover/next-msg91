@@ -64,9 +64,9 @@ const pricingvoice = ({
                         <p className="c-fs-5"> - </p>
                         <h2 className="c-fs-2 c-ff-b text-green">₹{amountArr[index]} </h2>
                         <p className="c-fs-5">+18% GST</p>
-                        <button className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
+                        <a href="https://control.msg91.com/signup/" target="_blank" className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
                           Get Started
-                        </button>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -78,9 +78,9 @@ const pricingvoice = ({
                       <p className="c-fs-5"> - </p>
                       <h2 className="c-fs-2 c-ff-b text-green">₹{amountArr[index]} </h2>
                       <p className="c-fs-5">+18% GST</p>
-                      <button className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
+                      <a href="https://control.msg91.com/signup/" target="_blank" className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
                         Get Started
-                      </button>
+                      </a>
                     </div>
                   </div>:""
               }

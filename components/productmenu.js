@@ -126,7 +126,7 @@ const ProductsMenu = () => {
             </div>
 
             <div className="menu nav-utilities">              
-              <p className="c-fs-4 c-ff-h text-uppercase">Utiliteis</p>
+              <p className="c-fs-4 c-ff-h text-uppercase">Utilities</p>
 
               <a href={`${path}/shorturl`} className="product-cont">
                 <div className="d-flex align-items-center">
