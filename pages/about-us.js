@@ -13,10 +13,10 @@ const about_us = () => {
             <HeadTag />
             <Notification />
             <Header />
-            <div className="container d-flex flex-column flex-sm-row">
+            {/* <div className="container d-flex flex-column flex-sm-row">
                 <img src="#" className="col-sm-5 bg-success"></img>
                 <img src="#" className="col-sm-5 offset-sm-2 bg-success"></img>
-            </div>
+            </div> */}
 
             <div className="container text-center justify-content-center p-5">
                 <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
@@ -94,8 +94,7 @@ const about_us = () => {
             <div class="container row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mx-auto">
                 <div class="col col-lg-4 col-sm-4 col-sm-12">
                     <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
-
+                    <div><img src="/img/pushpendra_agrawal.jpg" className="card-img-top" alt></img></div>
                         <div class="card-body">
                             <p className="c-fs-3 c-fw-m card-text">Pushpendra Agrawal</p>
                             <p className="c-fs-4 card-text mt-2">Founder & Advisor</p>
@@ -105,8 +104,7 @@ const about_us = () => {
                 </div>
                 <div class="col col-lg-4 col-sm-4 col-sm-12">
                     <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
-
+                    <div><img src="/img/shubhendra_agrawal.png" className="card-img-top" alt></img></div>
                         <div class="card-body">
                             <p className="c-fs-3 c-fw-m card-text">Shubhendra Agrawal</p>
 
@@ -118,8 +116,7 @@ const about_us = () => {
                 </div>
                 <div class="col col-lg-4 col-sm-4 col-sm-12">
                     <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
-
+                    <div><img src="/img/ravi_dangi.png" className="card-img-top" alt></img></div>
                         <div class="card-body">
                             <p className="c-fs-3 c-fw-m card-text">Ravi Dangi</p>
 
@@ -132,8 +129,7 @@ const about_us = () => {
 
                 <div class="col col-lg-4 col-sm-4 col-sm-12">
                     <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
-
+                    <div><img src="/img/vipin_sharma.png" className="card-img-top" alt></img></div>
                         <div class="card-body">
                             <p className="c-fs-3 c-fw-m card-text">Vipin Sharma</p>
 
@@ -145,8 +141,7 @@ const about_us = () => {
                 </div>
                 <div class="col col-lg-4 col-sm-4 col-sm-12">
                     <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
-
+                    <div><img src="/img/alisha_chouhan.png" className="card-img-top" alt></img></div>
                         <div class="card-body">
                             <p className="c-fs-3 c-fw-m card-text">Alisha Chouhan</p>
 
@@ -158,8 +153,8 @@ const about_us = () => {
                 </div>
                 <div class="col col-lg-4 col-sm-4 col-sm-12">
                     <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
-
+                        {/* <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg> */}
+                        <div><img src="/img/chinmay_daga.png" className="card-img-top" alt></img></div>
                         <div class="card-body">
                             <p className="c-fs-3 c-fw-m card-text">Chinmay Daga</p>
 

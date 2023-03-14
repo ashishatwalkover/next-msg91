@@ -18,7 +18,7 @@ const developers = () => {
           <a href="https://msg91.com/startups-form/" className="btn btn-primary c-fs-4 mt-4">Explore documentation</a>
         </div>
         <div className="col-12 col-md-6">
-        <img className="startup-home-img flip-vertical" src="#" />
+          <img className="startup-home-img flip-vertical" src="#" />
         </div>
       </div>
       <div className="container text-center  overflow-hidden ">
@@ -83,38 +83,38 @@ const developers = () => {
           </div>
         </div>
         <p className="c-fs-1 c-fw-b mx-auto mb-3">
-        Powerful sending infrastructure
-          </p>
-          <p className="c-fs-3 mx-auto mb-3">
+          Powerful sending infrastructure
+        </p>
+        <p className="c-fs-3 mx-auto mb-3">
           Easy API integration and a simple, HTTP or JSON/XML API enables your App with Text, Voice and Email functionality. Scale quickly, whether it’s a matter of communicating to 10 users or 10 million.
-          </p>
-          <p className="c-fs-3 mx-auto mb-3">
-          Build exactly what you need with flexible <a href="/oneapi">APIs.</a> 
-          </p>
-          <p className="c-fs-2 c-fw-b mb-3">
+        </p>
+        <p className="c-fs-3 mx-auto mb-3">
+          Build exactly what you need with flexible <a href="/oneapi">APIs.</a>
+        </p>
+        <p className="c-fs-2 c-fw-b mb-3">
           Tracking and analytics
-          </p>
-          <p className="c-fs-3 mx-auto mb-3">
+        </p>
+        <p className="c-fs-3 mx-auto mb-3">
           Searchable logs means you always know what is happening to your messages, while tags make it easy to report on your data and all that via our efficient panel and webhooks.
-          </p>
-          <p className="c-fs-2 c-fw-b mb-3">
+        </p>
+        <p className="c-fs-2 c-fw-b mb-3">
           Manage your contact and SMS campaigns wisely
-          </p>
-          <p className="c-fs-3 mx-auto mb-3">
+        </p>
+        <p className="c-fs-3 mx-auto mb-3">
           Track and optimize your SMS campaign and know how your customer is interacting with your messages.
-          </p>
+        </p>
       </div>
       <div className="container mt-md-5 my-md-0 my-5 d-flex flex-column-reverse flex-md-row justify-content-between">
         <div className="d-flex col-md-6 col-12 justify-content-center flex-column align-items-md-start me-md-5 me-0 mt-4 mt-md-0 text-center text-md-start align-items-center">
           <h1 className="c-fs-1 c-fw-b">Start your custom code
-adventure now</h1>
+            adventure now</h1>
           <p className="c-fs-3">
-          Easily integrate MSG91 APIs for Sending SMS, OTP verification or communicate across channels. Access sample codes in Ruby, Python, PHP, Java and more.
+            Easily integrate MSG91 APIs for Sending SMS, OTP verification or communicate across channels. Access sample codes in Ruby, Python, PHP, Java and more.
           </p>
           <a href="https://github.com/MSG91" className="c-fs-4 mt-2">Take me to MSG91 Github Repositories</a>
         </div>
         <div className="col-12 col-md-6">
-        <img className="mx-auto" src="/img/developers.svg" />
+          <img className="mx-auto" src="/img/developers.svg" />
         </div>
       </div>
       <div className="container text-center overflow-hidden mt-3">
@@ -122,103 +122,24 @@ adventure now</h1>
           <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
             <h2 className="heading">5 minute setup</h2>
           </div>
-          <p className="c-fs-3 mx-auto">
-          Build real-time communications into your apps in a few minutes and a few lines of code.
+          <p className="c-fs-3 mx-auto mt-5">
+            Build real-time communications into your apps in a few minutes and a few lines of code.
           </p>
           <p className="c-fs-3 mx-auto mb-3">
-          The SDKs seamlessly connect to MSG91 global infrastructure.
+            The SDKs seamlessly connect to MSG91 global infrastructure.
           </p>
-        </div>
-      </div>
-      {/* <div className="container px-3 px-md-auto">
-        <h2 className="sub-heading">Benifits of Startup Program</h2>
-        <div className="mt-2 ">
-          <span className="c-fs-1 c-fw-b text-green">
-            <MdDone />
-          </span>
-          <span className="c-fs-4 ms-2">
-            25000 SMS credits every months for 6 months.
-          </span>
-        </div>
-        <div className="mt-2 ">
-          <span className="c-fs-1 c-fw-b text-green">
-            <MdDone />
-          </span>
-          <span className="c-fs-4 ms-2">
-            Can be used for OTP, Transactional SMS, Emails.
-          </span>
-        </div>
-        <div className=" mt-2">
-          <span className="c-fs-1 c-fw-b text-green">
-            <MdDone />
-          </span>
-          <span className="c-fs-4 ms-2">
-            Leverage our Cloud contact center HELLO and Customer Segmentation
-            product.
-          </span>
-        </div>
-        <div className="mt-2 ">
-          <span className="c-fs-1 c-fw-b text-green">
-            <MdDone />
-          </span>
-          <span className="c-fs-4 ms-2">
-            Get support from our Superherose to integrate scalable APIs.
-          </span>
-        </div>
-      </div>
-      <section className="my-5 py-5 c-bg-grey">
-        <div className="container px-3 px-md-auto">
-          <h2 className="sub-heading my-2">Our Collaborators</h2>
-          <p className="c-fs-4 w-100 mb-2 ">
-            We’re proud to be associated with a growing set of Venture
-            Capitalists, Accelerators,Incubators and Crowdfunding platforms
-            across to inspire, identify and develop end-to-end solutions for
-            businesses to discover and engage.
-          </p>
-          <img className="w-100 collab-img mt-2" src="/img/collab-img.png" />
-        </div>
-      </section> */}
-      {/* <div className="container px-3 px-md-auto">
-        <h2 className="sub-heading">
-          Checklist to become a part of the program
-        </h2>
-        <div className=" ">
-          <span className="c-fs-1 c-fw-b text-green">
-            <MdDone />
-          </span>
-          <span className="c-fs-4 ms-2">New MSG91 subsriber</span>
-        </div>
-        <div className=" ">
-          <span className="c-fs-1 c-fw-b text-green">
-            <MdDone />
-          </span>
-          <span className="c-fs-4 ms-2">Sign up from a private domain ID</span>
-        </div>
-        <div className=" ">
-          <span className="c-fs-1 c-fw-b text-green">
-            <MdDone />
-          </span>
-          <span className="c-fs-4 ms-2">
-            Associated with our preferred collaborators
-          </span>
-        </div>
-      </div> */}
-      <div className="container p-5 d-flex flex-column justify-content-sm-center align-items-center">
-        <div className=" c-bg-grey  p-2 p-md-5  container text-center d-md-flex justify-content-sm-between align-items-center flex-xl-row flex-lg-column flex-sm-column flex-md-column">
-          <span className="c-fs-2 c-">Register with us to give voice to your Startup</span>
-          <div className="mt-3 mt-lg-0">
-            <a href="https://msg91.com/startups-form/" className="btn btn-primary ms-lg-4 my-1 c-fs-4 mx-2">
-              Apply now
-            </a>
+          <div className="d-flex text-center justify-content-center">
+            <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
+              <a href="https://github.com/MSG91/sendotp-android" target="_blank">
+                <img src="/img/android_developers.svg" className="mt-5 me-5"></img>
+              </a>
+            </div>
+            <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
+              <a href="https://github.com/MSG91/sendotp-ios" target="_blank">
+                <img src="/img/ios_developers.svg" className="mt-5 ms-5"></img>
+              </a>
+            </div>
           </div>
-        </div>
-        <div className=" mt-5  d-flex flex-column align-items-center text-center justify-content-center">
-          <p className="c-fs-3 my-2">
-            Have More Questions? We’re always here to help you!
-          </p>
-          <a href="/contact-us" className="btn btn-outline-primary px-3 py-2 c-fs-4 mx-auto">
-            Talk to Sales
-          </a>
         </div>
       </div>
       <Footer />
