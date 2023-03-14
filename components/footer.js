@@ -20,7 +20,7 @@ const Footer = () => {
                   Segmento
                 </a>
                 <a href="/campaign" className="c-fs-5 mt-2 c-fw-t">
-                  campaign
+                  Campaign
                 </a>
                 <a href="/otp" className="c-fs-5 mt-2 c-fw-t">
                   OTP
@@ -43,11 +43,17 @@ const Footer = () => {
                 <a href="/rcs" className="c-fs-5 mt-2 c-fw-t">
                   RCS
                 </a>
-                <a href="/virtual-number" className="c-fs-5 mt-2 c-fw-t">
+                {/* <a href="/virtual-number" className="c-fs-5 mt-2 c-fw-t">
                   Virtual Number
-                </a>
+                </a> */}
                 <a href="/whatsapp" className="c-fs-5 mt-2 c-fw-t">
                   WhatsApp
+                </a>
+                <a href="/virtual-number" className="c-fs-5 mt-2 c-fw-t">
+                  Telegram
+                </a>
+                <a href="/virtual-number" className="c-fs-5 mt-2 c-fw-t">
+                  Push Notification
                 </a>
                 {/* <a href="#" className="c-fs-5 mt-2 c-fw-t">
                   View All Channels

@@ -63,7 +63,7 @@ return (
         <div className="text-center justify-content-center py-5">
           <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
             <img src="../img/email.svg" className="product-page-logo" />
-            <h1 className="heading">Email</h1>
+            <h1 className="sub-heading">Email</h1>
           </div>
           <p className="c-fs-5 c-fw-sb text-uppercase col-campaign c-ls-20 mx-auto">
           {data?.email?.smallheading}

@@ -9,7 +9,7 @@ import HeadTag from "./head";
 
 const about_us = () => {
     return (
-        <>            
+        <>
             <HeadTag />
             <Notification />
             <Header />
@@ -20,68 +20,78 @@ const about_us = () => {
 
             <div className="container text-center justify-content-center p-5">
                 <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
-                    <span className="c-fs-2 mx-auto p-5">
-                        We empower developers with communication APIs
-                        in addition to building tools & supporting ideas that run majorly on communication.
-                    </span>
+                    <h1 className="heading">About MSG91 Team</h1>
                 </div>
-            </div>
-
-            <div className="container d-lg-flex flex-row align-items-center mt-5">
-                <div className=" col col-lg-6 col-md-6 col-sm-12 flex-column align-items-flex-start mt-lg-5">
-                    <img src="/img/Bootstrap.png" className="rounded-circle feature-img bg-success w-50" />
-                </div>
-                <div className="col col-lg-7 col-md-5 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start">
-                    <span className="c-fs-1 c-ff-h">
-                        Every brand offers its own culture, and this is what we offer you...
-                    </span>
-                </div>
-            </div>
-
-            <div className="container text-center justify-content-center p-5">
                 <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
-                    <h1 className="heading mx-auto p-5">
+                    <span className="c-fs-2 mx-auto">
+                        We empower developers with communication APIs
+                        in addition to
+                    </span>
+                </div>
+                <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
+                    <span className="c-fs-2 mx-auto">
+                        building tools & supporting ideas that run majorly on communication.
+                    </span>
+                </div>
+            </div>
+
+            <div className="px-auto">
+                <img src="/img/team_Image.svg" className="p-5"></img>
+            </div>
+
+            <div className="container-fluid d-lg-flex flex-row justify-content-center mt-5 c-bg-grey pt-5">
+                    <h1 className="sub-heading">
+                        Every brand offers its own culture,
+                    </h1>
+            </div>
+            <div className="container-fluid d-lg-flex flex-row justify-content-center c-bg-grey pb-5">
+                    <h1 className="sub-heading">
+                         and this is what we offer you...
+                    </h1>
+            </div>
+
+            <div className="container p-5">
+                <div className="d-flex flex-column flex-sm-row">
+                    <h1 className="sub-heading p-4">
                         We believe in
                     </h1>
                 </div>
             </div>
+            
+            
 
             <div class="container row align-items-flex-start mx-auto">
-                <div class="col-lg-6 col-md-6 col-sm-12 px-5">
-                    <div class="h-100 p-5 bg-white border border-primary rounded-3">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    {/* <div class="h-100 p-5 bg-white border border-primary rounded-3">
                         <img src="../img/campaign.svg" className="product-page-logo" />
-                        <h2>Thinking like a Customer</h2>
-                        <p>We try to get into your shoes to understand your communication issues and then, solve it with our problem-solving vision.</p>
-                    </div>
+                        <p>Thinking like a Customer</p>
+                    </div> */}
+                    <div class="w-100 d-flex flex-column align-items-center"><span class="c-fs-1 rounded-circle social-circle justify-content-center align-items-center d-flex"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="p-auto c-fw-sb text-primary" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path></svg></span><p class="c-fs-2 c-fw-b px-3 py-3 mt-n2 rounded w-75 text-center c-bg-grey">Thinking like a Customer</p></div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 px-5">
-                    <div class="p-5 bg-white border border-success rounded-3">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    {/* <div class="p-5 bg-white border border-success rounded-3">
                         <img src="../img/campaign.svg" className="product-page-logo" />
-                        <h2>Our magic Wand is our Innovations</h2>
-                        <p>There is no set rule book to follow, we experiment, we fail, we learn and come up stronger. We figure it out, eventually, everyone does; all we do is write it down and start sailling.</p>
-                    </div>
+                        <p>Our magic Wand is our Innovations</p>
+                    </div> */}
+                    <div class="w-100 d-flex flex-column align-items-center"><span class="c-fs-1 rounded-circle social-circle justify-content-center align-items-center d-flex"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="p-auto c-fw-sb text-primary" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path></svg></span><p class="c-fs-2 c-fw-b px-3 py-3 mt-n2 rounded w-75 text-center c-bg-grey">Our Magic Wand is Innovations</p></div>
                 </div>
-            </div>
-
-            <div class="container row align-items-flex-start py-5 mx-auto">
-                <div class="col-lg-6 col-md-6 col-sm-12 px-5">
-                    <div class="h-100 p-5 bg-white border border-danger rounded-3">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    {/* <div class="h-100 p-5 bg-white border border-danger rounded-3">
                         <img src="../img/Bootstrap.png" className="product-page-logo" />
-                        <h2>Uplifting each Other</h2>
-                        <p>Liberal thoughts, ideas, solutions, innovation anywhere, everywhere!
-                            Our focus is not ME, it is WE.</p>
-                    </div>
+                        <p>Uplifting each Other</p>
+                    </div> */}
+                    <div class="w-100 d-flex flex-column align-items-center"><span class="c-fs-1 rounded-circle social-circle justify-content-center align-items-center d-flex"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="p-auto c-fw-sb text-primary" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path></svg></span><p class="c-fs-2 c-fw-b px-3 py-3 mt-n2 rounded w-75 text-center c-bg-grey">Uplifting each other</p></div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 px-5">
-                    <div class="p-5 bg-white border border-warning rounded-3">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    {/* <div class="p-5 bg-white border border-warning rounded-3">
                         <img src="../img/campaign.svg" className="product-page-logo" />
-                        <h2>Sustainability</h2>
-                        <p>Our quest for sustainability has to transform the way we think about products, technologies, processes and business models.</p>
-                    </div>
+                        <p>Sustainability</p>
+                    </div> */}
+                    <div class="w-100 d-flex flex-column align-items-center"><span class="c-fs-1 rounded-circle social-circle justify-content-center align-items-center d-flex"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="p-auto c-fw-sb text-primary" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path></svg></span><p class="c-fs-2 c-fw-b px-3 py-3 mt-n2 rounded w-75 text-center c-bg-grey">Sustainability is Priority</p></div>
                 </div>
             </div>
 
-            <div className="container text-center justify-content-center py-5">
+            <div className="container-fluid text-center justify-content-center py-5 c-bg-grey mt-5">
                 <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
                     <h1 className="heading">Our leadership team</h1>
                 </div>
@@ -91,10 +101,10 @@ const about_us = () => {
                 </h2>
             </div>
 
-            <div class="container row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mx-auto">
-                <div class="col col-lg-4 col-sm-4 col-sm-12">
+            <div class="container-fluid row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mx-auto p-5 c-bg-grey">
+                <div class="col col-lg-4 col-sm-4 col-sm-12  px-5">
                     <div class="card shadow-sm">
-                    <div><img src="/img/pushpendra_agrawal.jpg" className="card-img-top" alt></img></div>
+                        <div><img src="/img/pushpendra_agrawal.jpg" className="card-img-top" alt></img></div>
                         <div class="card-body">
                             <p className="c-fs-3 c-fw-m card-text">Pushpendra Agrawal</p>
                             <p className="c-fs-4 card-text mt-2">Founder & Advisor</p>
@@ -102,9 +112,9 @@ const about_us = () => {
                         </div>
                     </div>
                 </div>
-                <div class="col col-lg-4 col-sm-4 col-sm-12">
+                <div class="col col-lg-4 col-sm-4 col-sm-12 px-5">
                     <div class="card shadow-sm">
-                    <div><img src="/img/shubhendra_agrawal.png" className="card-img-top" alt></img></div>
+                        <div><img src="/img/shubhendra_agrawal.png" className="card-img-top" alt></img></div>
                         <div class="card-body">
                             <p className="c-fs-3 c-fw-m card-text">Shubhendra Agrawal</p>
 
@@ -114,22 +124,22 @@ const about_us = () => {
                         </div>
                     </div>
                 </div>
-                <div class="col col-lg-4 col-sm-4 col-sm-12">
+                <div class="col col-lg-4 col-sm-4 col-sm-12 px-5">
                     <div class="card shadow-sm">
-                    <div><img src="/img/ravi_dangi.png" className="card-img-top" alt></img></div>
+                        <div><img src="/img/ravi_dangi.png" className="card-img-top" alt></img></div>
                         <div class="card-body">
                             <p className="c-fs-3 c-fw-m card-text">Ravi Dangi</p>
 
                             <p className="c-fs-4 card-text mt-2">Sales</p>
 
-                            <p class="c-fs-5 card-text mt-2">Mistakenly believed Engineer, he’s actually a sales buff.</p>
+                            <p class="c-fs-5 card-text mt-2">Mistakenly believed Engineer, he’s a sales buff.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col col-lg-4 col-sm-4 col-sm-12">
+                <div class="col col-lg-4 col-sm-4 col-sm-12 px-5">
                     <div class="card shadow-sm">
-                    <div><img src="/img/vipin_sharma.png" className="card-img-top" alt></img></div>
+                        <div><img src="/img/vipin_sharma.png" className="card-img-top" alt></img></div>
                         <div class="card-body">
                             <p className="c-fs-3 c-fw-m card-text">Vipin Sharma</p>
 
@@ -139,9 +149,9 @@ const about_us = () => {
                         </div>
                     </div>
                 </div>
-                <div class="col col-lg-4 col-sm-4 col-sm-12">
+                <div class="col col-lg-4 col-sm-4 col-sm-12 px-5">
                     <div class="card shadow-sm">
-                    <div><img src="/img/alisha_chouhan.png" className="card-img-top" alt></img></div>
+                        <div><img src="/img/alisha_chouhan.png" className="card-img-top" alt></img></div>
                         <div class="card-body">
                             <p className="c-fs-3 c-fw-m card-text">Alisha Chouhan</p>
 
@@ -151,7 +161,7 @@ const about_us = () => {
                         </div>
                     </div>
                 </div>
-                <div class="col col-lg-4 col-sm-4 col-sm-12">
+                <div class="col col-lg-4 col-sm-4 col-sm-12 px-5">
                     <div class="card shadow-sm">
                         {/* <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg> */}
                         <div><img src="/img/chinmay_daga.png" className="card-img-top" alt></img></div>
@@ -166,141 +176,92 @@ const about_us = () => {
                 </div>
             </div>
 
-            <div className="container text-center justify-content-center p-5">
-                <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row p-5">
-                    <p className="c-fs-4 mx-auto p-5">Striving to fulfil our vision by hiring passionate people who are willing to push their benchmark, and of the industry, as well.
+            <div className="container text-center justify-content-center c-bg-grey m-5 mx-auto">
+                <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
+                    <p className="c-fs-2 mx-auto p-5">Striving to fulfil our vision by hiring passionate people who are willing to push their benchmark, and of the industry, as well.
                         Want to join our vision? <strong>We’re</strong> <strong><a href="https://apply.workable.com/walkover/" target="_blank" rel="nofollow noopener">Hiring!</a></strong></p>
-                </div>
-            </div>
-
-            <div class="container col-md-12 col-md-12 col-sm-12 mx-auto">
-                <div class="h-100 p-5 bg-light border rounded-3">
-                    <div className="d-lg-flex flex-row align-items-center justify-content-center">
-                        <div className=" col col-lg-6 col-md-6 col-sm-12 flex-column align-items-flex-start mt-lg-5 ms-lg-5 order-lg-2">
-                            <img src="../img/Bootstrap.png" className="product-page-logo w-50" />
-                        </div>
-                        <div className="col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column align-items-flex-start ms-5">
-                            <h1 className="c-fw-m mb-5">Our Team is Our Strength</h1>
-                            <span className=" col-md-6 c-fs-5 mb-2">The team of Superheroes makes us stand out. There are no supernatural powers, just the will and dedication to serve you helps us in delivering eminence.
-                            </span>
-                            <span className="col-md-6 c-fs-5 mb-3">For any query and suggestion reach out to our Superheroes.
-                            </span>
-                        </div>
-                    </div>
-                    <a href="/contact-us" class="btn btn-outline-secondary" type="button">Talk to an Expert</a>
-                </div>
-            </div>
-
-            <div className="container text-center justify-content-center mx-auto">
-                <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
-                    <h1 className="heading mx-auto p-5">
-                        MSG91 today is
-                    </h1>
-                </div>
-            </div>
-
-            <div class="container row mx-auto text-center ">
-                <div class="col-lg-4 col-md-4 col-sm-12 px-2">
-                    <div class="h-100 p-5 bg-white border-0 rounded-3">
-                        <h2>#1</h2>
-                        <p className="c-fs-3">A2P communication provider in India, serving clients worldwide.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 px-2">
-                    <div class="p-5 bg-white border-0 rounded-3">
-                        <h2>1 Billion+</h2>
-                        <p className="c-fs-3">OTPs, Transactional & Promotional SMS delivered per month without fail.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 px-2">
-                    <div class="p-5 bg-white border-0 rounded-3">
-                        <h2>15k</h2>
-                        <p className="c-fs-3">Active users globally.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div className="container text-center justify-content-center mx-auto">
-                <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
-                    <h1 className="col-lg-6 col-md-6 col-sm-12 heading mx-auto p-5">
-                        We are
-                        who our Clients say we are!
-                    </h1>
-                </div>
-            </div>
-
-            <div class="container row mx-auto text-center ">
-                <div class="col-lg-4 col-md-4 col-sm-12 px-2">
-                    <div class="h-100 p-5 bg-white border-0 rounded-3">
-                        <p className="c-fs-4">MSG91 has been an extremely reliable communication service for us. Their OTP infra has been instrumental in reducing customer drop-outs. Great support too!</p>
-                        <div className="d-flex py-5">
-                            <img src="../img/Bootstrap.png" className="me-3 product-page-logo" />
-                            <div class="client-detail">
-                                <h5 class="c-fs-3 c-fw-b">Manan Bajoria</h5>
-                                <small class="text-start text-muted c-fs-4">Ixigo</small>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 px-2">
-                    <div class="p-5 bg-white border-0 rounded-3">
-                        <p className="c-fs-4">You guys have been instrumental in getting our customer connect via SMS trustworthy. Appreciate your technical support services as well. Quite responsive!</p>
-                        <div className="d-flex py-5">
-                            <img src="../img/Bootstrap.png" className="me-3 product-page-logo" />
-                            <div class="client-detail">
-                                <h5 class="c-fs-3 c-fw-b">Sushant Khairnar</h5>
-                                <small class="text-start text-muted c-fs-4">Policybazaar (former)</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 px-2">
-                    <div class="p-5 bg-white border-0 rounded-3">
-                        <p className="c-fs-4">MSG91 has helped us in delivering great customer experience through consistent communication!</p>
-                        <div className="d-flex mt-5 py-5">
-                            <img src="../img/Bootstrap.png" className="me-3 product-page-logo" />
-                            <div class="client-detail">
-                                <h5 class="c-fs-3 c-fw-b">Aditya Sriganesh</h5>
-                                <small class="text-start text-muted c-fs-4">IndiaLends</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container col-md-12 col-md-12 col-sm-12 mx-auto py-5">
-                <div class="h-100 p-5 bg-white border border-dark rounded-3">
-                    <div className="d-lg-flex flex-row align-items-center justify-content-center">
-                        <div className=" col col-lg-4 col-md-8 col-sm-12 flex-column text-center order-lg-2">
-                            <img src="../img/Bootstrap.png" className="product-page-logo w-50 ms-5" />
-                        </div>
-                        <div className="container">
-                            <h1 className="col-lg-12 col-md-12 col-sm-12 c-fw-m mb-4">Creating a supportive community</h1>
-                            <span className="col-lg-6 col-md-6 col-sm-12 c-fs-4">We believe in empowering and love to get our hands dirty where we can to improve lives and help in making it better.</span>
-                            <p className="col-lg-12 col-md-12 col-sm-12 c-fs-4 mt-4">That’s why our social policy provides a push to startups by providing them with communication benefits, support NGO and their amazing work, push budding Developers to think beyond as we’ve the platform built for them and help Organizations like yours to expand their impact using communications technologies.</p>
-                        </div>
-                        
-                    </div>
                 </div>
             </div>
 
             <div class="container col-md-12 col-md-12 col-sm-12 mx-auto py-5 mt-5">
                 <div class="h-100 bg-white rounded-3">
                     <div className="d-lg-flex flex-row align-items-center justify-content-center">
-                        <div className=" col col-lg-4 col-md-8 col-sm-12 flex-column text-center order-lg-2">
-                            <img src="../img/Bootstrap.png" className="product-page-logo w-50 ms-5" />
+                        <div className=" col col-lg-6 col-md-8 col-sm-12 flex-column text-center order-lg-2">
+                            <img src="../img/team_Image1.svg" className="product-page-logo w-50 ms-5" />
                         </div>
                         <div className="container">
-                            <h1 className="col-lg-12 col-md-12 col-sm-12 c-fw-b mb-4">Our remote presence all over the world keeps us connected</h1>
-                            <span className="col-lg-6 col-md-6 col-sm-12 c-fs-4">We act faster and interact with our customers every day, providing needful solutions, fulfilling local requirements, based on proven best-practices.</span>
-                            <p className="col-lg-12 col-md-12 col-sm-12 c-fs-4 c-fw-b mt-4">#remoteworkingteam</p>
+                            <h1 className="col-lg-12 col-md-12 col-sm-12 c-fw-b mb-4">Our Team is our Strength</h1>
+                            <span className="col-lg-6 col-md-6 col-sm-12 c-fs-2">The team of Superheroes makes us stand out. There are no supernatural powers, just the will and dedication to serve you helps us in delivering eminence.</span>
                         </div>
-                        
                     </div>
                 </div>
             </div>
 
+            <div className="container text-center justify-content-center mx-auto">
+                <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
+                    <h1 className="heading mx-auto p-5 c-fw-b">
+                        MSG91 today is
+                    </h1>
+                </div>
+            </div>
+
+            <div class="container row mx-auto text-center p-5">
+                <div class="col-lg-4 col-md-4 col-sm-12 px-1">
+                    <div class="h-100 p-5 bg-white border-0 rounded-3">
+                        <p className="text-primary c-fs-1 c-fw-b">#1</p>
+                        <p className="c-fs-3 c-fw-b">A2P communication provider in India, serving clients worldwide.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 px-1">
+                    <div class="p-5 bg-white border-0 rounded-3">
+                        <p className="text-primary c-fs-1 c-fw-b">1 Billion+</p>
+                        <p className="c-fs-3 c-fw-b">OTPs, Transactional & Promotional SMS delivered per month without fail.</p>
+                    </div>
+                </div> 
+                <div class="col-lg-4 col-md-4 col-sm-12 px-1">
+                    <div class="p-5 bg-white border-0 rounded-3">
+                        <p className="text-primary c-fs-1 c-fw-b">15k</p>
+                        <p className="c-fs-3 c-fw-b">Active users of across the globe.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container text-center justify-content-center mx-auto">
+                <div className="d-flex justify-content-center align-items-center flex-column flex-sm-row">
+                    <p className="col-lg-10 col-md-6 col-sm-12 sub-heading c-fw-b mx-auto p-2">
+                        We are
+                        who our Clients say we are!
+                    </p>
+                </div>
+            </div>
+
+            <div class="container row mx-auto text-center ">
+                <div class="col-lg-4 col-md-4 col-sm-12 px-2">
+                    <div class="h-100 p-5 bg-white border-0 rounded-3">
+                        <p className="c-fs-4 text-muted">MSG91 has been an extremely reliable communication service for us. Their OTP infra has been instrumental in reducing customer drop-outs. Great support too!</p>
+                        <div className="d-flex">
+                            <img src="../img/ixigo_Ss.svg" className="product-page-logo w-100" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 px-2">
+                    <div class="p-5 bg-white border-0 rounded-3">
+                        <p className="c-fs-4 text-muted">You guys have been instrumental in getting our customer connect via SMS trustworthy. Appreciate your technical support services as well. Quite responsive!</p>
+                        <div className="d-flex">
+                            <img src="../img/policy_Bazaar.svg" className="product-page-logo w-100" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 px-2">
+                    <div class="p-5 bg-white border-0 rounded-3">
+                        <p className="c-fs-4 text-muted">MSG91 has helped us in delivering great customer experience through consistent communication!</p>
+                        <div className="d-flex mt-4">
+                            <img src="../img/indialends.svg" className="product-page-logo w-100" />
+                        </div>
+                    </div>
+                </div>
+            </div>
             <Footer />
         </>
     );

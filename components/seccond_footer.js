@@ -5,7 +5,7 @@ const SeccondFooter =()=>{
             <div className=" c-bg-grey  p-3 p-lg-5  container text-center d-md-flex justify-content-sm-between align-items-center flex-xl-row flex-lg-column flex-sm-column flex-md-column"> 
                 <span className="small-heading ">Experience The Awesomeness</span>
                 <div className="mt-3 mt-lg-0">
-                    <a href="/pricing" className="btn btn-outline-primary my-1 c-fs-4 mx-2"> See pricing</a>
+                    <a href="/pricing" className="btn btn-outline-primary my-1 c-fs-4 mx-2"> See Pricing</a>
                     <a href="https://control.msg91.com/signup/" className="btn btn-primary ms-lg-4 my-1 c-fs-4 mx-2"> Get started for free</a>
                 </div>
             </div>
