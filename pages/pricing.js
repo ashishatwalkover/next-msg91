@@ -13,6 +13,7 @@ import Pricingsegmento from "@/components/pricing-segmento";
 import Pricingcampaign from "@/components/pricing-campaign";
 import Pricingrcs from "@/components/pricing-rcs";
 import axios from "axios";
+import { InlineWidget } from "react-calendly";
 
 /*
   API to get subscription plans
@@ -43,7 +44,7 @@ const campaign = () => {
     var newData = price
     amountArr.forEach(async function (item, index) {
       if (price.length <= amountArr.length) {  
-        const response = await axios.get(`https://api.msg91.com/api/v5/web/fetchPricingDetails?price=${item}&currency=inr&originCountry=${origin}&destinationCountry=${destination}`)
+        const response = await axios.get(`https://test.msg91.com/api/v5/web/fetchPricingDetails?price=${item}&currency=inr&originCountry=${origin}&destinationCountry=${destination}`)
         newData.push(response.data.data)
           setPricing([...newData])
       } 
@@ -73,7 +74,7 @@ const campaign = () => {
 
   
   useEffect(() => {
-     fetchSMSData(pricing, originCountry, destinationCountry)
+     fetchSMSData([], originCountry, destinationCountry)
   }, []);
 
   return (
@@ -206,6 +207,15 @@ const campaign = () => {
                 <Pricingcampaign/>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="modal fade" id="custom-pricing-modal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-xl">
+          <div className="modal-content">            
+            <div className="modal-body">
+              <InlineWidget url="https://calendly.com/sales-msg91/pre-sales" styles={{height: '700px'}} />
+            </div>            
           </div>
         </div>
       </div>

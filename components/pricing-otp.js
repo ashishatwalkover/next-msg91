@@ -65,9 +65,9 @@ const pricingotp = ({
                         <p className="c-fs-5"> - </p>
                         <h2 className="c-fs-2 c-ff-b text-green">₹{amountArr[index]} </h2>
                         <p className="c-fs-5">+18% GST</p>
-                        <button className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
+                        <a href="https://control.msg91.com/signup/" target="_blank" className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
                           Get Started
-                        </button>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -79,15 +79,24 @@ const pricingotp = ({
                       <p className="c-fs-5"> - </p>
                       <h2 className="c-fs-2 c-ff-b text-green">₹{amountArr[index]} </h2>
                       <p className="c-fs-5">+18% GST</p>
-                      <button className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
+                      <a href="https://control.msg91.com/signup/" target="_blank" className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
                         Get Started
-                      </button>
+                      </a>
                     </div>
                   </div>:""
               }
             </div>
           );
         })}
+        <div className="card border-0 text-center mb-4 mb-sm-0 c-bg-grey">
+          <div className="card-body">
+            <h3 className="c-fs-3">CUSTOM</h3>                  
+            <p className="c-fs-5">Talk to sales for a customized plan.</p>
+            <button data-bs-toggle="modal" data-bs-target="#custom-pricing-modal" className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
+              Talk to sales
+            </button>
+          </div>
+        </div>
       </div>
     </>
   );

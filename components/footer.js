@@ -1,8 +1,12 @@
 import SeccondFooter from "./seccond_footer";
 import Image from "next/image";
+import { useRouter } from 'next/router';
 // import a from "next/a";
 
 const Footer = () => {
+  const router = useRouter()
+  var path = router.pathname.split("/")[1];
+  path = (path.length == 2) ? '/'+path : '';
   return (
     <>
     <SeccondFooter/>
@@ -13,16 +17,16 @@ const Footer = () => {
             <div className="col-6 col-lg-2 mb-4">
               <h4 className=" c-fs-5 d-flex flex-column">Our Products</h4>
               <div className="a-nav-link-cont d-flex flex-column mt-2 align-items-start">                
-                <a href="/hello" className="c-fs-5 mt-2 c-fw-t">
+                <a href={`${path}/hello`} className="c-fs-5 mt-2 c-fw-t">
                   Hello
                 </a>
-                <a href="/segmento" className="c-fs-5 mt-2 c-fw-t">
+                <a href={`${path}/segmento`} className="c-fs-5 mt-2 c-fw-t">
                   Segmento
                 </a>
-                <a href="/campaign" className="c-fs-5 mt-2 c-fw-t">
-                  Campaign
+                <a href={`${path}/campaign`} className="c-fs-5 mt-2 c-fw-t">
+                  campaign
                 </a>
-                <a href="/otp" className="c-fs-5 mt-2 c-fw-t">
+                <a href={`${path}/otp`} className="c-fs-5 mt-2 c-fw-t">
                   OTP
                 </a>
               </div>
@@ -31,22 +35,22 @@ const Footer = () => {
             <div className="col-6 col-lg-2 mb-4">
               <h4 className=" c-fs-5 d-flex flex-column">Channels</h4>
               <div className="a-nav-link-cont d-flex flex-column mt-2 align-items-start">
-                <a href="/sms" className="c-fs-5 mt-2 c-fw-t">
+                <a href={`${path}/sms`} className="c-fs-5 mt-2 c-fw-t">
                   SMS
                 </a>
-                <a href="/email" className="c-fs-5 mt-2 c-fw-t">
+                <a href={`${path}/email`} className="c-fs-5 mt-2 c-fw-t">
                   Email
                 </a>
-                <a href="/voice" className="c-fs-5 mt-2 c-fw-t">
+                <a href={`${path}/voice`} className="c-fs-5 mt-2 c-fw-t">
                   Voice
                 </a>
-                <a href="/rcs" className="c-fs-5 mt-2 c-fw-t">
+                <a href={`${path}/rcs`} className="c-fs-5 mt-2 c-fw-t">
                   RCS
                 </a>
-                {/* <a href="/virtual-number" className="c-fs-5 mt-2 c-fw-t">
+                <a href={`${path}/virtual-number`} className="c-fs-5 mt-2 c-fw-t">
                   Virtual Number
-                </a> */}
-                <a href="/whatsapp" className="c-fs-5 mt-2 c-fw-t">
+                </a>
+                <a href={`${path}/whatsapp`} className="c-fs-5 mt-2 c-fw-t">
                   WhatsApp
                 </a>
                 <a href="/virtual-number" className="c-fs-5 mt-2 c-fw-t">
@@ -64,20 +68,23 @@ const Footer = () => {
             <div className="col-6 col-lg-2 mb-4">
               <h4 className="c-fs-5 d-flex flex-column">Resources</h4>
               <div className="a-nav-link-cont d-flex flex-column mt-2 align-items-start">
-                <a href="/industries" className="c-fs-5 mt-2 c-fw-t">
+                {/* <a href="/industries" target="_blank" className="c-fs-5 mt-2 c-fw-t">
                   Industries
-                </a>
-                <a href="/blogs#" className="c-fs-5 mt-2 c-fw-t">
-                  Blogs
+                </a> */}
+                <a href="https://msg91.com/guide/" target="_blank" className="c-fs-5 mt-2 c-fw-t">
+                  Guide
                 </a>
                 <a href="/case-studies" className="c-fs-5 mt-2 c-fw-t">
                   Case Studies
                 </a>
-                <a href="/faq" className="c-fs-5 mt-2 c-fw-t">
+                <a href="https://msg91.com/help" target="_blank" className="c-fs-5 mt-2 c-fw-t">
                   FAQ
                 </a>
-                <a href="/api-documentation" className="c-fs-5 mt-2 c-fw-t">
+                <a href="https://docs.msg91.com/reference/send-sms" target="_blank" className="c-fs-5 mt-2 c-fw-t">
                   API Documentation
+                </a>
+                <a href="https://features.msg91.com/feature-requests" target="_blank" className="c-fs-5 mt-2 c-fw-t">
+                  Request a Feature
                 </a>
               </div>
             </div>

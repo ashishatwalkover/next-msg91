@@ -59,9 +59,9 @@ const pricingCalls = ({subscriptionVoice, fetchSubscriptionVoice}) => {
                         </span>
                         {item.plan_services[0].service_credit.free_credits} for Outbound calls
                       </div>                    
-                      <button className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
+                      <a href="https://control.msg91.com/signup/" target="_blank" className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
                         Get Started
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -84,9 +84,9 @@ const pricingCalls = ({subscriptionVoice, fetchSubscriptionVoice}) => {
                       </span>
                       {item.plan_services[0].service_credit.free_credits} for Outbound calls
                     </div>                    
-                    <button className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
+                    <a href="https://control.msg91.com/signup/" target="_blank" className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
                       Get Started
-                    </button>
+                    </a>
                   </div>
                 </div>
               }
@@ -94,6 +94,16 @@ const pricingCalls = ({subscriptionVoice, fetchSubscriptionVoice}) => {
             )
           }):''
       }
+        <div className="card border-0 text-center mb-4 mb-sm-0 c-bg-grey">
+          <div className="card-body">
+            <h3 className="c-fs-3">CUSTOM</h3>                  
+            <p className="c-fs-5">Talk to sales for a customized plan.</p>
+            <button data-bs-toggle="modal" data-bs-target="#custom-pricing-modal" className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
+              Talk to sales
+            </button>
+          </div>
+        </div>
+        
       </div>
     </>
   );
