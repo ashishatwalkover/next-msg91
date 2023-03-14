@@ -58,20 +58,23 @@ const Footer = () => {
             <div className="col-6 col-lg-2 mb-4">
               <h4 className="c-fs-5 d-flex flex-column">Resources</h4>
               <div className="a-nav-link-cont d-flex flex-column mt-2 align-items-start">
-                <a href="/industries" className="c-fs-5 mt-2 c-fw-t">
+                {/* <a href="/industries" target="_blank" className="c-fs-5 mt-2 c-fw-t">
                   Industries
-                </a>
-                <a href="/blogs#" className="c-fs-5 mt-2 c-fw-t">
-                  Blogs
+                </a> */}
+                <a href="https://msg91.com/guide/" target="_blank" className="c-fs-5 mt-2 c-fw-t">
+                  Guide
                 </a>
                 <a href="/case-studies" className="c-fs-5 mt-2 c-fw-t">
                   Case Studies
                 </a>
-                <a href="/faq" className="c-fs-5 mt-2 c-fw-t">
+                <a href="https://msg91.com/help" target="_blank" className="c-fs-5 mt-2 c-fw-t">
                   FAQ
                 </a>
-                <a href="/api-documentation" className="c-fs-5 mt-2 c-fw-t">
+                <a href="https://docs.msg91.com/reference/send-sms" target="_blank" className="c-fs-5 mt-2 c-fw-t">
                   API Documentation
+                </a>
+                <a href="https://features.msg91.com/feature-requests" target="_blank" className="c-fs-5 mt-2 c-fw-t">
+                  Request a Feature
                 </a>
               </div>
             </div>

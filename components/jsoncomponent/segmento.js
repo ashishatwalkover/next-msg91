@@ -17,9 +17,9 @@ const segmento = (props) => {
           <h2 className="small-heading px-3 w-md-75 w-100 mx-auto">
             {data?.segmento?.tagline}
           </h2>
-          <button className="btn btn-primary btn-lg mt-3 c-fs-2" type="button">
+          <a href="https://control.msg91.com/signup/" target="_blank" className="btn btn-primary btn-lg mt-3 c-fs-2" >
             Get started for Free
-          </button>
+          </a>
         </div>
           <TrustedSec />
         <img
