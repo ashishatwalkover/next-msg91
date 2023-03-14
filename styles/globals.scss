@@ -9,6 +9,9 @@ html {
 h1 {
   font-family: var(--c-ff-h);
 }
+a{
+  color: #2d2d2d;
+}
 
 /* Overwrite the default to keep the scrollbar always visible */
 
@@ -352,6 +355,17 @@ h2,
   overflow-y: auto;
   display: flex;
   flex-direction: column!important;
+}
+
+// developer
+.developers-card{
+  width: 280px;
+}
+.dev-page-ico{
+  div{
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @media (max-width: 767px) {
