@@ -35,19 +35,19 @@ const about_us = () => {
                 </div>
             </div>
 
-            <div className="px-auto">
-                <img src="/img/team_Image.svg" className="p-5"></img>
+            <div className="d-flex justify-content-center">
+                <img src="/img/team_Image.svg" className="img-fluid"></img>
             </div>
 
             <div className="container-fluid d-lg-flex flex-row justify-content-center mt-5 c-bg-grey pt-5">
-                    <h1 className="sub-heading">
-                        Every brand offers its own culture,
-                    </h1>
+                <h1 className="sub-heading">
+                    Every brand offers its own culture,
+                </h1>
             </div>
             <div className="container-fluid d-lg-flex flex-row justify-content-center c-bg-grey pb-5">
-                    <h1 className="sub-heading">
-                         and this is what we offer you...
-                    </h1>
+                <h1 className="sub-heading">
+                    and this is what we offer you...
+                </h1>
             </div>
 
             <div className="container p-5">
@@ -57,36 +57,20 @@ const about_us = () => {
                     </h1>
                 </div>
             </div>
-            
-            
 
-            <div class="container row align-items-flex-start mx-auto">
+
+
+            <div class="container row align-items-flex-start mx-auto g-5 pb-5">
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                    {/* <div class="h-100 p-5 bg-white border border-primary rounded-3">
-                        <img src="../img/campaign.svg" className="product-page-logo" />
-                        <p>Thinking like a Customer</p>
-                    </div> */}
                     <div class="w-100 d-flex flex-column align-items-center"><span class="c-fs-1 rounded-circle social-circle justify-content-center align-items-center d-flex"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="p-auto c-fw-sb text-primary" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path></svg></span><p class="c-fs-2 c-fw-b px-3 py-3 mt-n2 rounded w-75 text-center c-bg-grey">Thinking like a Customer</p></div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                    {/* <div class="p-5 bg-white border border-success rounded-3">
-                        <img src="../img/campaign.svg" className="product-page-logo" />
-                        <p>Our magic Wand is our Innovations</p>
-                    </div> */}
                     <div class="w-100 d-flex flex-column align-items-center"><span class="c-fs-1 rounded-circle social-circle justify-content-center align-items-center d-flex"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="p-auto c-fw-sb text-primary" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path></svg></span><p class="c-fs-2 c-fw-b px-3 py-3 mt-n2 rounded w-75 text-center c-bg-grey">Our Magic Wand is Innovations</p></div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                    {/* <div class="h-100 p-5 bg-white border border-danger rounded-3">
-                        <img src="../img/Bootstrap.png" className="product-page-logo" />
-                        <p>Uplifting each Other</p>
-                    </div> */}
                     <div class="w-100 d-flex flex-column align-items-center"><span class="c-fs-1 rounded-circle social-circle justify-content-center align-items-center d-flex"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="p-auto c-fw-sb text-primary" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path></svg></span><p class="c-fs-2 c-fw-b px-3 py-3 mt-n2 rounded w-75 text-center c-bg-grey">Uplifting each other</p></div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                    {/* <div class="p-5 bg-white border border-warning rounded-3">
-                        <img src="../img/campaign.svg" className="product-page-logo" />
-                        <p>Sustainability</p>
-                    </div> */}
                     <div class="w-100 d-flex flex-column align-items-center"><span class="c-fs-1 rounded-circle social-circle justify-content-center align-items-center d-flex"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="p-auto c-fw-sb text-primary" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path></svg></span><p class="c-fs-2 c-fw-b px-3 py-3 mt-n2 rounded w-75 text-center c-bg-grey">Sustainability is Priority</p></div>
                 </div>
             </div>
@@ -101,76 +85,77 @@ const about_us = () => {
                 </h2>
             </div>
 
-            <div class="container-fluid row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mx-auto p-5 c-bg-grey">
-                <div class="col col-lg-4 col-sm-4 col-sm-12  px-5">
-                    <div class="card shadow-sm">
-                        <div><img src="/img/pushpendra_agrawal.jpg" className="card-img-top" alt></img></div>
-                        <div class="card-body">
-                            <p className="c-fs-3 c-fw-m card-text">Pushpendra Agrawal</p>
-                            <p className="c-fs-4 card-text mt-2">Founder & Advisor</p>
-                            <p class="c-fs-5 card-text mt-2">Pushpendra is a serial entrepreneur.</p>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mx-auto c-bg-grey">
+                <div className="row col-lg-8 col-md-9 mx-auto g-2">
+                    <div class="col col-lg-4 col-sm-4 col-sm-12  px-5">
+                        <div class="card shadow-sm">
+                            <div><img src="/img/pushpendra_agrawal.jpg" className="card-img-top" alt></img></div>
+                            <div class="card-body">
+                                <p className="c-fs-3 c-fw-m card-text">Pushpendra Agrawal</p>
+                                <p className="c-fs-4 card-text mt-2">Founder & Advisor</p>
+                                <p class="c-fs-5 card-text mt-2">Pushpendra is a serial entrepreneur.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col col-lg-4 col-sm-4 col-sm-12 px-5">
-                    <div class="card shadow-sm">
-                        <div><img src="/img/shubhendra_agrawal.png" className="card-img-top" alt></img></div>
-                        <div class="card-body">
-                            <p className="c-fs-3 c-fw-m card-text">Shubhendra Agrawal</p>
+                    <div class="col col-lg-4 col-sm-4 col-sm-12 px-5">
+                        <div class="card shadow-sm">
+                            <div><img src="/img/shubhendra_agrawal.png" className="card-img-top" alt></img></div>
+                            <div class="card-body">
+                                <p className="c-fs-3 c-fw-m card-text">Shubhendra Agrawal</p>
 
-                            <p className="c-fs-4 card-text mt-2">Founder & CEO</p>
+                                <p className="c-fs-4 card-text mt-2">Founder & CEO</p>
 
-                            <p class="c-fs-5 card-text mt-2">Shubhendra is an absolute Finance man.</p>
+                                <p class="c-fs-5 card-text mt-2">Shubhendra is an absolute Finance man.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col col-lg-4 col-sm-4 col-sm-12 px-5">
-                    <div class="card shadow-sm">
-                        <div><img src="/img/ravi_dangi.png" className="card-img-top" alt></img></div>
-                        <div class="card-body">
-                            <p className="c-fs-3 c-fw-m card-text">Ravi Dangi</p>
+                    <div class="col col-lg-4 col-sm-4 col-sm-12 px-5">
+                        <div class="card shadow-sm">
+                            <div><img src="/img/ravi_dangi.png" className="card-img-top" alt></img></div>
+                            <div class="card-body">
+                                <p className="c-fs-3 c-fw-m card-text">Ravi Dangi</p>
 
-                            <p className="c-fs-4 card-text mt-2">Sales</p>
+                                <p className="c-fs-4 card-text mt-2">Sales</p>
 
-                            <p class="c-fs-5 card-text mt-2">Mistakenly believed Engineer, he’s a sales buff.</p>
+                                <p class="c-fs-5 card-text mt-2">Mistakenly believed Engineer, he’s a sales buff.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col col-lg-4 col-sm-4 col-sm-12 px-5">
-                    <div class="card shadow-sm">
-                        <div><img src="/img/vipin_sharma.png" className="card-img-top" alt></img></div>
-                        <div class="card-body">
-                            <p className="c-fs-3 c-fw-m card-text">Vipin Sharma</p>
+                    <div class="col col-lg-4 col-sm-4 col-sm-12 px-5">
+                        <div class="card shadow-sm">
+                            <div><img src="/img/vipin_sharma.png" className="card-img-top" alt></img></div>
+                            <div class="card-body">
+                                <p className="c-fs-3 c-fw-m card-text">Vipin Sharma</p>
 
-                            <p className="c-fs-4 card-text mt-2">Technology</p>
+                                <p className="c-fs-4 card-text mt-2">Technology</p>
 
-                            <p class="c-fs-5 card-text mt-2">Mostly found in the gym or at the TT table.</p>
+                                <p class="c-fs-5 card-text mt-2">Mostly found in the gym or at the TT table.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col col-lg-4 col-sm-4 col-sm-12 px-5">
-                    <div class="card shadow-sm">
-                        <div><img src="/img/alisha_chouhan.png" className="card-img-top" alt></img></div>
-                        <div class="card-body">
-                            <p className="c-fs-3 c-fw-m card-text">Alisha Chouhan</p>
+                    <div class="col col-lg-4 col-sm-4 col-sm-12 px-5">
+                        <div class="card shadow-sm">
+                            <div><img src="/img/alisha_chouhan.png" className="card-img-top" alt></img></div>
+                            <div class="card-body">
+                                <p className="c-fs-3 c-fw-m card-text">Alisha Chouhan</p>
 
-                            <p className="c-fs-4 card-text mt-2">Global Business</p>
+                                <p className="c-fs-4 card-text mt-2">Global Business</p>
 
-                            <p class="c-fs-5 card-text mt-2">Works hard, has fun, makes a difference.</p>
+                                <p class="c-fs-5 card-text mt-2">Works hard, has fun, makes a difference.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col col-lg-4 col-sm-4 col-sm-12 px-5">
-                    <div class="card shadow-sm">
-                        {/* <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg> */}
+                    <div class="col col-lg-4 col-sm-4 col-sm-12 px-5">
+                        <div class="card shadow-sm">
                         <div><img src="/img/chinmay_daga.png" className="card-img-top" alt></img></div>
-                        <div class="card-body">
-                            <p className="c-fs-3 c-fw-m card-text">Chinmay Daga</p>
+                            <div class="card-body">
+                                <p className="c-fs-3 c-fw-m card-text">Chinmay Daga</p>
 
-                            <p className="c-fs-4 card-text mt-2">Operations</p>
+                                <p className="c-fs-4 card-text mt-2">Operations</p>
 
-                            <p class="c-fs-5 card-text mt-2">The Processes & Partnerships pro.</p>
+                                <p class="c-fs-5 card-text mt-2">The Processes & Partnerships pro.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -217,7 +202,7 @@ const about_us = () => {
                         <p className="text-primary c-fs-1 c-fw-b">1 Billion+</p>
                         <p className="c-fs-3 c-fw-b">OTPs, Transactional & Promotional SMS delivered per month without fail.</p>
                     </div>
-                </div> 
+                </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 px-1">
                     <div class="p-5 bg-white border-0 rounded-3">
                         <p className="text-primary c-fs-1 c-fw-b">15k</p>
