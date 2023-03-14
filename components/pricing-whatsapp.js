@@ -50,8 +50,10 @@ const pricingwp = ({subscriptionWhatsapp, fetchSubscriptionWhatsapp}) => {
                         /
                         {(selectedMode === 'Monthly') ? 'Month' : (selectedMode === 'Half yearly') ? 'Half yearly' : 'Yearly'}
                       </h5>
+                      <p className="c-fs-5">+</p>
+                      <a href="https://developers.facebook.com/docs/whatsapp/pricing" target="_blank" className="c-fs-5">WhatsApp Pricing</a>
                       <p className="c-fs-5"> 
-                        {(item.plan_amounts[0]?.plan_amount === 0) ? '-' : '+18%GST'}
+                        {(item.plan_amounts[0]?.plan_amount === 0) ? '' : '+18%GST'}
                       </p>
                       <div className="c-fs-5 mt-2">
                         <span className="text-success c-fs-3">
@@ -75,8 +77,10 @@ const pricingwp = ({subscriptionWhatsapp, fetchSubscriptionWhatsapp}) => {
                       /
                       {(selectedMode === 'Monthly') ? 'Monthly' : 'Yearly'}
                     </h5>
+                    <p className="c-fs-5">+</p>
+                    <a href="https://developers.facebook.com/docs/whatsapp/pricing" target="_blank" className="c-fs-5">WhatsApp Pricing</a>
                     <p className="c-fs-5"> 
-                      {(item.plan_amounts[0]?.plan_amount === 0) ? '-' : '+18%GST'}
+                      {(item.plan_amounts[0]?.plan_amount === 0) ? '' : '+18%GST'}
                     </p>
                     <div className="c-fs-5 mt-2">
                       <span className="text-success c-fs-3">
@@ -94,63 +98,15 @@ const pricingwp = ({subscriptionWhatsapp, fetchSubscriptionWhatsapp}) => {
             )
           }):''
       }
-        {/* <div className="card  border-0 text-center mb-4 mb-sm-0 c-bg-grey">
+        <div className="card border-0 text-center mb-4 mb-sm-0 c-bg-grey">
           <div className="card-body">
-            <h3 className="c-fs-3">Free</h3>
-            <h5 className="c-fs-4 mt-2">$0/Month</h5>
-            <p className="c-fs-5">+</p>
-            <a href="https://developers.facebook.com/docs/whatsapp/pricing" target="_blank" className="c-fs-5">WhatsApp Pricing</a>
-            <div className="c-fs-5 mt-2">
-              <span className="text-success c-fs-3">
-                <MdDone />
-              </span>
-              Free Balance of $50
-            </div>
-            
-
-            <button className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
-              Get Started
+            <h3 className="c-fs-3">CUSTOM</h3>                  
+            <p className="c-fs-5">Talk to sales for a customized plan.</p>
+            <button data-bs-toggle="modal" data-bs-target="#custom-pricing-modal" className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
+              Talk to sales
             </button>
           </div>
         </div>
-        
-        <div className="  mx-3 text-center d-flex flex-column mb-4 mb-sm-0 align-items-center ">
-          <div className="popular-chip c-fs-6">POPULAR</div>
-          <div className="card  card-popular border-primary text-center c-bg-grey">
-            <div className="card-body">
-              <h3 className="c-fs-3">Basic</h3>
-              <h5 className="c-fs-4 mt-2">$5,000/Month</h5>
-              <p className="c-fs-5">+</p>
-            <a href="https://developers.facebook.com/docs/whatsapp/pricing" target="_blank" className="c-fs-5">WhatsApp Pricing</a>
-              
-              <div className="c-fs-5 mt-2">
-                <span className="text-success c-fs-3">
-                  <MdDone />
-                </span>
-                Balance of $3,500 
-              </div>
-              
-
-              <button className="c-fs-5 btn btn-sm w-100 btn-primary mt-2">
-                Get Started
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="card mb-4 mb-sm-0 border-0 text-center c-bg-grey">
-          <div className="card-body">
-            <h3 className="c-fs-3">Custom</h3>
-            <h5 className="c-fs-4 mt-2">Custom Pricing</h5>
-            <p className="c-fs-5">-</p>
-            <div className="c-fs-5 mt-2">
-              Need to send more? Talk to us for a customized plan.
-            </div>
-
-            <button className="c-fs-5 btn btn-sm w-100 btn-outline-primary mt-2">
-              Talk to an Expert
-            </button>
-          </div>
-        </div> */}
       </div>
     </>
   );
