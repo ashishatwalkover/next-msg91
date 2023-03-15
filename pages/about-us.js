@@ -39,16 +39,16 @@ const about_us = () => {
                 <img src="/img/team_Image.svg" className="img-fluid"></img>
             </div>
 
-            <div className="container-fluid d-lg-flex flex-row justify-content-center mt-5 c-bg-grey pt-5">
+            <div className="container-fluid d-lg-flex flex-row justify-content-center mt-5 c-bg-grey pt-5 pb-5">
                 <h1 className="sub-heading">
-                    Every brand offers its own culture,
+                    Every brand offers its own culture, and this is what we offer you...
                 </h1>
             </div>
-            <div className="container-fluid d-lg-flex flex-row justify-content-center c-bg-grey pb-5">
+            {/* <div className="container-fluid d-lg-flex flex-row justify-content-center c-bg-grey pb-5">
                 <h1 className="sub-heading">
                     and this is what we offer you...
                 </h1>
-            </div>
+            </div> */}
 
             <div className="container p-5">
                 <div className="d-flex flex-column flex-sm-row">
@@ -171,8 +171,8 @@ const about_us = () => {
             <div class="container col-md-12 col-md-12 col-sm-12 mx-auto py-5 mt-5">
                 <div class="h-100 bg-white rounded-3">
                     <div className="d-lg-flex flex-row align-items-center justify-content-center">
-                        <div className=" col col-lg-6 col-md-8 col-sm-12 flex-column text-center order-lg-2">
-                            <img src="../img/team_Image1.svg" className="product-page-logo w-50 ms-5" />
+                        <div className="col-lg-6 flex-column text-lg-center order-lg-2">
+                            <img src="../img/team_Image1.svg" className="product-page-logo w-50 mb-4 ms-3" />
                         </div>
                         <div className="container">
                             <h1 className="col-lg-12 col-md-12 col-sm-12 c-fw-b mb-4">Our Team is our Strength</h1>
